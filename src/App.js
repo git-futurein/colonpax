@@ -1,7 +1,7 @@
 import './App.css';
 import MainLayout from './pages/MainLayout';
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Quiz from './pages/quiz/quiz';
 import Footer from './pages/footer/Footer';
 
@@ -9,14 +9,10 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Switch>
-					<Route exact path="/">
-						<MainLayout />
-					</Route>
-					<Route path="/quiz">
-						<Quiz />
-					</Route>
-				</Switch>
+				<Routes>
+					<Route path="/quiz" element={<Quiz />} />
+					<Route path="/" element={<MainLayout />} />
+				</Routes>
 				<Footer />
 			</Router>
 		</div>
