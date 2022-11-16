@@ -1,0 +1,79 @@
+.quiz .hero_section::after {
+	background-image: url('../../assets/quiz-bg.png');
+	bottom: 0;
+	right: 0;
+	height: 580px;
+	width: 636px;
+}
+.quiz .header-box {
+	max-width: 1170px;
+	width: 95%;
+	height: 117px;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 65px;
+	text-align: center;
+	padding: 42px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #e97575e6 0% 0% no-repeat padding-box;
+	border: 1px solid #ececf1;
+	border-radius: 20px;
+}
+.quiz .header-box h2 {
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+.quiz .heading {
+	font-size: 120px;
+	font-weight: 700;
+	color: #333333;
+	display: flex;
+	justify-content: center;
+}
+.quiz .banner-img-part {
+	margin-left: -209px;
+	margin-top: -100px;
+}
+.quiz .banner-img-part img {
+	/* width: 1015px;
+	height: 881px; */
+	height: 881px;
+	width: auto;
+}
+
+/* benefits */
+.benefits {
+	padding: 8rem 0;
+}
+.benefits__list img {
+	width: 100%;
+}
+/* .benefits__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+} */
+/* .benefits__item {
+}
+.benefits__item img {
+	height: 79px;
+	width: 100%;
+} */
+
+@media only screen and (max-width: 992px) {
+	.quiz .header-box h2 {
+		font-size: 20px;
+	}
+	.quiz .heading {
+		font-size: 80px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.quiz .heading {
+		font-size: 70px;
+	}
+}

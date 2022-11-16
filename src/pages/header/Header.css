@@ -1,0 +1,120 @@
+button:hover {
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+.link {
+        text-align: left;
+        font: normal normal normal 16px/32px Poppins-Regular;
+        letter-spacing: 1px;
+        color: #333333;
+        opacity: 1;
+        margin-right: 1.4rem;
+        font-family: 'Poppins', sans-serif !important;
+        transition: all 0.3s;
+}
+
+.link:hover {
+        color: #62C476;
+}
+
+.nav_btn {
+        background: #62C476;
+        border-radius: 14px;
+        opacity: 1;
+        width: 170px;
+        height: 48px;
+        border: none;
+        color: #FFFFFF;
+        text-transform: uppercase;
+}
+
+.navbar-expand-lg {
+        height: 110px;
+}
+
+/*======== large device =========*/
+@media (min-width: 992px) and (max-width: 1367px) {}
+
+/*======== medium device =========*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+        .navbar-expand-lg {
+                height: 110px;
+                line-height: 90px;
+        }
+
+        .navbar-collapse {
+                align-items: center;
+                background-color: #edf7f0;
+                z-index: 9;
+                padding: 10px;
+                text-align: center;
+        }
+
+        .link {
+                text-align: center;
+        }
+
+        .nav_btn {
+                line-height: 48px;
+        }
+
+        .link {
+                margin-right: 0px;
+        }
+}
+
+/*======== small device =========*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+        .navbar-expand-lg {
+                height: 110px;
+                line-height: 90px;
+        }
+
+        .navbar-collapse {
+                align-items: center;
+                background-color: #edf7f0;
+                z-index: 9;
+                padding: 10px;
+                text-align: center;
+        }
+
+        .link {
+                text-align: center;
+        }
+
+        .nav_btn {
+                line-height: 48px;
+        }
+
+        .link {
+                margin-right: 0px;
+        }
+}
+
+/*======== Extra small device =========*/
+@media (max-width: 575.98px) {
+        .navbar-expand-lg {
+                height: 110px;
+                line-height: 90px;
+        }
+
+        .navbar-collapse {
+                align-items: center;
+                background-color: #edf7f0;
+                z-index: 9;
+                padding: 10px;
+                text-align: center;
+        }
+
+        .link {
+                text-align: center;
+        }
+
+        .nav_btn {
+                line-height: 48px;
+        }
+
+        .link {
+                margin-right: 0px;
+        }
+}

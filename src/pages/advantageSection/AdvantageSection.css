@@ -1,0 +1,125 @@
+.grid_div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: start;
+        grid-gap: 1rem;
+        padding: 30px 0;
+}
+
+.content-box {
+        padding: 50px 30px;
+        border: 1px solid #d1d1d194;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        height: 350px;
+}
+
+
+.content-box img {
+        padding-bottom: 20px;
+}
+
+.adv_h4 {
+        /* UI Properties */
+        text-align: center;
+        letter-spacing: 0px;
+        color: #103B19;
+        opacity: 1;
+        padding-bottom: 1rem;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Lora', serif !important;
+        padding-bottom: 20px;
+        margin-top: 0.5rem;
+
+}
+
+.adv_p {
+        /* UI Properties */
+        margin-top: -2%;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #333333;
+        opacity: 1;
+        padding: 0;
+        font-family: 'Poppins', sans-serif !important;
+}
+
+.link_paragraph {
+        text-align: center;
+        text-decoration: underline;
+        letter-spacing: 1.25px;
+        color: #103B19BF;
+        text-transform: uppercase;
+        opacity: 1;
+        font-family: 'Poppins', sans-serif !important;
+}
+
+.advantage_h2 {
+        text-align: center;
+        letter-spacing: -1px;
+        color: #103B19;
+        opacity: 1;
+        font-size: 56px;
+        font-weight: bold;
+        font-family: 'Lora', serif !important;
+}
+
+.advantage_p {
+        text-align: center;
+        letter-spacing: 1px;
+        color: #333333;
+        opacity: 1;
+        font-family: 'Poppins', sans-serif !important;
+        padding: 1rem 7rem;
+        padding-bottom: 20px;
+}
+
+
+/*======== large device =========*/
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/*======== medium device =========*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+        .advantage_h2 {
+                font-size: 42px;
+        }
+}
+
+/*======== small device =========*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+        .advantage_h2 {
+                font-size: 36px;
+        }
+
+        .advantage_p {
+                padding: 0 0 20px;
+        }
+
+        .content-box {
+                padding: 30px 0px;
+        }
+
+        .adv_p {
+                padding: 0 20px;
+        }
+}
+
+/*======== Extra small device =========*/
+@media (max-width: 575.98px) {
+        .advantage_h2 {
+                font-size: 36px;
+        }
+
+        .advantage_p {
+                padding: 0 0 20px;
+        }
+
+        .content-box {
+                padding: 30px 0px;
+        }
+
+        .adv_p {
+                padding: 0 20px;
+        }
+}
