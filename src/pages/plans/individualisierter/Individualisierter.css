@@ -1,0 +1,97 @@
+.Individualisierter {
+	background-color: #edf7f0;
+	padding-top: 276px;
+	padding-bottom: 139px;
+}
+.Individualisierter-item {
+	height: 100%;
+}
+.Individualisierter-item .active {
+	background-color: #62c476;
+	color: #fff;
+}
+.Individualisierter-item .active h4 {
+	color: #fff;
+}
+.Individualisierter-item img {
+	height: 100%;
+	width: 100%;
+}
+.Individualisierter h3 {
+	font-size: 30px;
+	font-weight: 700;
+	color: #103b19;
+	margin-bottom: 38px;
+}
+.Individualisierter-card-item {
+	background-color: #fff;
+	padding: 32px 27px;
+	border-radius: 16px;
+}
+.Individualisierter h4 {
+	font-size: 24px;
+	font-weight: 500;
+	color: #333333;
+	text-align: center;
+}
+.Individualisierter ul {
+	padding-left: 0 !important;
+}
+.Individualisierter ul li {
+	padding: 10px;
+}
+.Individualisierter ul li:not(:last-child) {
+	border-bottom: 1px solid rgba(51, 51, 51, 0.137);
+}
+.Individualisierter ul li .text {
+	font-size: 16px;
+	color: #333;
+}
+.Individualisierter ul li i {
+	color: red;
+}
+
+.Individualisierter-box {
+	background-color: #d1e8d8;
+	border-radius: 16px;
+	padding: 42px 56px;
+	margin-bottom: 50px;
+	margin-top: -25%;
+}
+.Individualisierter-box .item {
+	height: 100%;
+}
+.Individualisierter-box h2 {
+	font-size: 56px;
+}
+.Individualisierter-box .text {
+	font-size: 16px;
+}
+
+.Individualisierter-box .item-2 {
+	display: flex;
+	justify-content: flex-end;
+}
+.Individualisierter-box .free-area {
+	position: relative;
+	max-width: 245px;
+	height: 100%;
+}
+.Individualisierter-box .free-area .free-img {
+	height: 100%;
+	width: 100%;
+}
+.Individualisierter-box .free-area .star-1,
+.Individualisierter-box .free-area .star-2 {
+	position: absolute;
+	width: 38px;
+	height: 53px;
+}
+.Individualisierter-box .free-area .star-1 {
+	top: -20px;
+	left: -25px;
+}
+.Individualisierter-box .free-area .star-2 {
+	bottom: -20px;
+	right: -25px;
+}

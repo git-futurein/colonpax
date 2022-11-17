@@ -1,6 +1,6 @@
 import React from 'react';
 import '../quiz.css';
-import Header from '../header';
+import Header from '../headerBox';
 import Health from '../health';
 
 const Male = () => {
@@ -17,7 +17,7 @@ const Male = () => {
 					</div>
 				</div>
 
-				<h2 className="heading mb-5">Colonpax</h2>
+				<h2 className="heading-2 mb-5">Colonpax</h2>
 				<Health />
 			</div>
 		</div>

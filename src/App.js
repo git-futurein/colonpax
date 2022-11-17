@@ -6,6 +6,7 @@ import Quiz from './pages/quiz/quiz';
 import Footer from './pages/footer/Footer';
 import Male from './pages/quiz/male/male';
 import Female from './pages/quiz/female/female';
+import Plans from './pages/plans/plans';
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 				<Routes>
 					<Route path="/quiz/male" element={<Male />} />
 					<Route path="/quiz/female" element={<Female />} />
+					<Route path="/plans" element={<Plans />} />
 					<Route path="/quiz" element={<Quiz />} />
 					<Route path="/" element={<MainLayout />} />
 				</Routes>

@@ -9,15 +9,15 @@ import gluten from '../../assets/Group 120.svg';
 import star from '../../assets/Group 8.svg';
 import person from '../../assets/quiz-img-1.png';
 import Benefits from './benefits';
-import Header from './header';
+import HeaderBox from './headerBox';
 import { Link } from 'react-router-dom';
 
 const Quiz = () => {
 	return (
 		<>
 			<div className="quiz">
-				<Header />
-				<h2 className="heading">Colonpax</h2>
+				<HeaderBox />
+				<h2 className="heading-2">Colonpax</h2>
 
 				<div className="hero_section">
 					<div className="container">

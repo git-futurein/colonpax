@@ -18,8 +18,8 @@ const Header = () => {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="justify-content-start flex-grow-1 mx-auto">
-							<Nav.Link href="#features" className="link">
-								Symptome
+							<Nav.Link className="link">
+								<Link to="/plans">Symptome</Link>
 							</Nav.Link>
 							<Nav.Link href="#pricing" className="link">
 								Lösung{' '}

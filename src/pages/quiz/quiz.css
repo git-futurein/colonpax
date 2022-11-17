@@ -27,7 +27,7 @@
 	letter-spacing: 0px;
 	color: #ffffff;
 }
-.heading {
+.heading-2 {
 	font-size: 120px;
 	font-weight: 700;
 	color: #333333;
@@ -189,7 +189,7 @@
 	.quiz .header-box h2 {
 		font-size: 20px;
 	}
-	.quiz .heading {
+	.heading-2 {
 		font-size: 80px;
 	}
 	.male .heading {
@@ -208,7 +208,7 @@
 	}
 }
 @media only screen and (max-width: 480px) {
-	.quiz .heading {
+	.heading-2 {
 		font-size: 70px;
 	}
 	.male h3 {

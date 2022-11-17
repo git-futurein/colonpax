@@ -1,7 +1,7 @@
 import React from 'react';
 import './quiz.css';
 
-const Header = () => {
+const HeaderBox = () => {
 	return (
 		<div>
 			<div className="header-box">
@@ -11,4 +11,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default HeaderBox;
