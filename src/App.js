@@ -4,12 +4,16 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Quiz from './pages/quiz/quiz';
 import Footer from './pages/footer/Footer';
+import Male from './pages/quiz/male/male';
+import Female from './pages/quiz/female/female';
 
 function App() {
 	return (
 		<div className="App">
 			<Router>
 				<Routes>
+					<Route path="/quiz/male" element={<Male />} />
+					<Route path="/quiz/female" element={<Female />} />
 					<Route path="/quiz" element={<Quiz />} />
 					<Route path="/" element={<MainLayout />} />
 				</Routes>

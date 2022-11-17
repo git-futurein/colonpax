@@ -34,7 +34,7 @@ const Header = () => {
 								Blog
 							</Nav.Link>
 						</Nav>
-						<Nav>
+						<Nav className="align-items-center">
 							<Nav.Link href="#deets">
 								<img src={avatar} alt="Bitmap" className="img-fluid" />
 							</Nav.Link>

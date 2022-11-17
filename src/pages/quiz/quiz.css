@@ -5,7 +5,7 @@
 	height: 580px;
 	width: 636px;
 }
-.quiz .header-box {
+.header-box {
 	max-width: 1170px;
 	width: 95%;
 	height: 117px;
@@ -21,13 +21,13 @@
 	border: 1px solid #ececf1;
 	border-radius: 20px;
 }
-.quiz .header-box h2 {
+.header-box h2 {
 	font-size: 24px;
 	font-weight: 400;
 	letter-spacing: 0px;
 	color: #ffffff;
 }
-.quiz .heading {
+.heading {
 	font-size: 120px;
 	font-weight: 700;
 	color: #333333;
@@ -64,6 +64,127 @@
 	width: 100%;
 } */
 
+/* ======================== */
+/* quiz male */
+/* ======================== */
+.male .header-box {
+	margin-bottom: 29px;
+}
+.male .header-box {
+	margin-bottom: 29px;
+}
+
+.male .heading {
+	font-size: 57px;
+	margin-bottom: 34px;
+}
+.male h3 {
+	font-size: 44px;
+	color: #103b19;
+	text-align: center;
+	margin-bottom: 48px;
+}
+.male .range-wrapper {
+	max-width: 1170px;
+	width: 95%;
+	margin: 0 auto;
+	height: 12px;
+	background: #edf7f0;
+	border-radius: 4px;
+	position: relative;
+	margin-bottom: 70px;
+}
+
+.male .range-wrapper .range {
+	width: 10%;
+	background-color: #62c476;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	border-radius: 4px;
+}
+.male .range-wrapper .range-squire {
+	width: 49px;
+	height: 34px;
+	/* background-color: red; */
+	position: absolute;
+	top: 50%;
+	/* left: 8%; */
+	transform: translateY(-50%);
+
+	/* UI Properties */
+	background: #62c476;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.health-list {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 16px;
+	padding-bottom: 288px;
+	padding-left: 0 !important;
+}
+.health-item {
+	max-width: 400px;
+	width: 100%;
+}
+.health-item .btn {
+	background: #edf7f0;
+	border: 1px solid #ececf1;
+	padding: 15px 0 15px 40px;
+	border-radius: 12px;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	width: 100%;
+}
+.health-item .btn:hover {
+	background: #62c476;
+	border: 1px solid #ececf1;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0);
+}
+.health-item .icon {
+	width: 48px;
+	height: 50px;
+	transition: all 0.3s;
+}
+.health-item .text {
+	color: #103b19;
+	font-size: 22px;
+	font-weight: 800;
+	transition: all 0.3s;
+}
+.health-item .btn:hover .text,
+.health-item .btn:hover .icon {
+	color: #fff;
+	fill: #fff;
+}
+
+.top-bg,
+.bottom-bg {
+	position: absolute;
+	z-index: -1;
+}
+.top-bg {
+	top: -43%;
+	right: -5%;
+}
+.bottom-bg {
+	bottom: -2%;
+	left: 0%;
+}
+
+/* ======================== */
+/* responsive */
+/* ======================== */
 @media only screen and (max-width: 992px) {
 	.quiz .header-box h2 {
 		font-size: 20px;
@@ -71,9 +192,33 @@
 	.quiz .heading {
 		font-size: 80px;
 	}
+	.male .heading {
+		font-size: 48px;
+	}
+	.male h3 {
+		font-size: 36px;
+	}
+
+	.health-item .text {
+		font-size: 20px;
+	}
+	.health-item .icon {
+		width: 42px;
+		height: 46px;
+	}
 }
 @media only screen and (max-width: 480px) {
 	.quiz .heading {
 		font-size: 70px;
+	}
+	.male h3 {
+		font-size: 28px;
+	}
+	.health-item .text {
+		font-size: 14px;
+	}
+	.health-item .icon {
+		width: 46px;
+		height: 40px;
 	}
 }

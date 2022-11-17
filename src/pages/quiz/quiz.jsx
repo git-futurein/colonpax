@@ -9,14 +9,14 @@ import gluten from '../../assets/Group 120.svg';
 import star from '../../assets/Group 8.svg';
 import person from '../../assets/quiz-img-1.png';
 import Benefits from './benefits';
+import Header from './header';
+import { Link } from 'react-router-dom';
 
 const Quiz = () => {
 	return (
 		<>
 			<div className="quiz">
-				<div className="header-box">
-					<h2>AUTUMN SALE waiting ahead up to 65% OFF 23:49:38</h2>
-				</div>
+				<Header />
 				<h2 className="heading">Colonpax</h2>
 
 				<div className="hero_section">
@@ -34,8 +34,13 @@ const Quiz = () => {
 
 								<h4 className="bold_tag">Wähle dein Geschlecht:</h4>
 
-								<button className="btn_one">MALE</button>
-								<button className="btn_two">FEMALE</button>
+								<Link to="/quiz/male">
+									<button className="btn_one">MALE</button>
+								</Link>
+								<Link to="/quiz/female">
+									<button className="btn_two">FEMALE</button>
+								</Link>
+
 								<br />
 								<div className="star">
 									<ul>

@@ -6,6 +6,7 @@ import ohne from '../../assets/Ohne Genetic.svg';
 import lakto from '../../assets/Group 9.svg';
 import gluten from '../../assets/Group 120.svg';
 import star from '../../assets/Group 8.svg';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
 	return (
@@ -24,8 +25,13 @@ const HeroSection = () => {
 
 						<h4 className="bold_tag">Mache das Quiz:</h4>
 
-						<button className="btn_one">MÄNNLICH</button>
-						<button className="btn_two">WEIBLICH</button>
+						<Link to="/quiz/male">
+							<button className="btn_one">MÄNNLICH</button>
+						</Link>
+						<Link to="/quiz/female">
+							<button className="btn_two">WEIBLICH</button>
+						</Link>
+
 						<br />
 						<div className="star">
 							<ul>
