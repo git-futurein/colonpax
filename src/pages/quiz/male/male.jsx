@@ -2,8 +2,11 @@ import React from 'react';
 import '../quiz.css';
 import Header from '../headerBox';
 import Health from '../health';
+import { useSelector } from 'react-redux';
 
 const Male = () => {
+	const { rangePageCount } = useSelector((state) => state.counter);
+
 	return (
 		<div className="male position-relative">
 			<img src="/images/top-bg.svg" alt="" className="top-bg" />
@@ -11,9 +14,9 @@ const Male = () => {
 			<Header />
 			<div className="container">
 				<div className="range-wrapper">
-					<div class="range" style={{ width: '10%' }}></div>
-					<div className="range-squire" style={{ left: '8%' }}>
-						2
+					<div className="range" style={{ width: `${rangePageCount * 10}%` }}></div>
+					<div className="range-squire" style={{ left: `${rangePageCount * 10 - 2}%` }}>
+						{rangePageCount}
 					</div>
 				</div>
 

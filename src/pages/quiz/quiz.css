@@ -126,24 +126,38 @@
 .health-list {
 	display: flex;
 	align-items: center;
-	flex-direction: column;
+	/* flex-direction: column; */
+	justify-content: center;
 	gap: 16px;
 	padding-bottom: 288px;
 	padding-left: 0 !important;
+	flex-wrap: wrap;
 }
 .health-item {
-	max-width: 400px;
-	width: 100%;
+	width: 208px;
+}
+.health-item-text {
+	width: 288px;
+	height: 80px;
+}
+
+.health-item-text .btn {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .health-item .btn {
 	background: #edf7f0;
 	border: 1px solid #ececf1;
-	padding: 15px 0 15px 40px;
+	padding: 15px 10px;
 	border-radius: 12px;
 	transition: all 0.3s;
 	display: flex;
 	align-items: center;
-	gap: 40px;
+	justify-items: center;
+	flex-direction: column;
+	gap: 24px;
 	width: 100%;
 }
 .health-item .btn:hover {
@@ -151,16 +165,20 @@
 	border: 1px solid #ececf1;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0);
 }
+.health-item .btn span {
+	padding-right: 0;
+}
 .health-item .icon {
-	width: 48px;
-	height: 50px;
+	width: auto;
+	height: 90px;
 	transition: all 0.3s;
 }
 .health-item .text {
 	color: #103b19;
-	font-size: 22px;
+	font-size: 16px;
 	font-weight: 800;
 	transition: all 0.3s;
+	text-align: center;
 }
 .health-item .btn:hover .text,
 .health-item .btn:hover .icon {
@@ -183,6 +201,80 @@
 }
 
 /* ======================== */
+/* user data */
+/* ======================== */
+.userData {
+	display: flex;
+	width: 100%;
+	margin: 0px auto;
+	flex-direction: column;
+	max-width: 447px;
+	padding-bottom: 200px;
+}
+.userData-btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 20px;
+}
+.userData-btns .btn {
+	border-radius: 0;
+	border: 1px solid transparent;
+	text-transform: capitalize;
+}
+.userData .btn:hover {
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0);
+}
+.userData-btns .active {
+	border: 1px solid #eee;
+}
+
+.userData-item {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.userData-item input {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	width: 60%;
+}
+.userData-item label {
+}
+
+.form-control:focus {
+	color: #212529;
+	background-color: transparent;
+	border-color: #86b7fe;
+	outline: 0;
+	box-shadow: 0 0 0 0.05rem rgba(13, 110, 253, 0.25);
+}
+
+.userData-btn {
+	display: flex;
+	justify-content: center;
+}
+.userData-btn .btn {
+	padding: 19px 8px;
+	margin: 0px 0px 50px;
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background: rgb(34, 191, 142);
+	border: none;
+	border-radius: 9999px;
+	width: 100%;
+	text-transform: uppercase;
+	line-height: 1.4;
+	letter-spacing: 2px;
+}
+
+/* ======================== */
 /* responsive */
 /* ======================== */
 @media only screen and (max-width: 992px) {
@@ -198,14 +290,6 @@
 	.male h3 {
 		font-size: 36px;
 	}
-
-	.health-item .text {
-		font-size: 20px;
-	}
-	.health-item .icon {
-		width: 42px;
-		height: 46px;
-	}
 }
 @media only screen and (max-width: 480px) {
 	.heading-2 {
@@ -217,8 +301,13 @@
 	.health-item .text {
 		font-size: 14px;
 	}
-	.health-item .icon {
-		width: 46px;
-		height: 40px;
+
+	.health-list {
+		flex-direction: column;
+		gap: 40px;
+	}
+	.health-item {
+		max-width: 400px;
+		width: 100%;
 	}
 }
