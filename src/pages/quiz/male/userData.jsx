@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../quiz.css';
 import { useDispatch } from 'react-redux';
 import { incrementRangeValue } from '../../../counterSlice';
+import { Link } from 'react-router-dom';
 
 const UserData = () => {
 	const [imperial, setImperial] = useState(true);
@@ -99,7 +100,9 @@ const UserData = () => {
 						})}
 
 						<div className="userData-btn">
-							<button className="btn btn-contineu">contineu</button>
+							<Link to="/summary" className="btn btn-contineu">
+								contineu
+							</Link>
 						</div>
 					</form>
 				</div>
