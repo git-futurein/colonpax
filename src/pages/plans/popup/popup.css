@@ -1,0 +1,202 @@
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s;
+	z-index: 10;
+}
+.popup .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 80%;
+	width: 100%;
+	max-width: 570px;
+	background-color: #ffffff;
+	overflow-y: scroll;
+	padding: 40px 30px;
+}
+
+.close-btn {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.close-btn:hover {
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.close-btn i {
+	font-size: 25px;
+}
+
+.popup-active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup-range-item {
+	display: flex;
+	flex-direction: column;
+	/* justify-items: center; */
+	align-items: center;
+	position: relative;
+}
+.popup-range-item p {
+	text-transform: uppercase;
+}
+.popup .active {
+	background-color: transparent;
+	color: #000;
+}
+
+.popup .range {
+	height: 4px;
+	width: 80%;
+	background-color: rgba(11, 19, 23, 0.2);
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+.popup .range .range-1 {
+	height: 4px;
+	width: 50%;
+	background-color: rgba(34, 191, 141, 0);
+	/* background-color: rgb(34, 191, 142); */
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.popup .range .range-2 {
+	height: 4px;
+	width: 50%;
+	background-color: rgba(34, 191, 141, 0);
+	/* background-color: rgb(34, 191, 142); */
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.popup .range .complated {
+	background-color: rgb(34, 191, 142);
+}
+
+.popup-range-circle {
+	position: relative;
+	width: 1rem;
+	height: 1rem;
+	background-color: rgb(255, 255, 255);
+	border: 4px solid rgba(11, 19, 23, 0.2);
+	border-radius: 50%;
+	z-index: 3;
+}
+.active .popup-range-circle {
+	border: 4px solid rgb(34, 191, 142);
+}
+
+.popup h2 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+/* shipping */
+
+.popup form input,
+.popup form select {
+	width: 100%;
+	padding: 10px 0;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border-bottom: 1px solid rgba(51, 51, 51, 0.503);
+	margin-bottom: 12px;
+}
+.popup form select,
+.popup form input:not(:last-child) {
+}
+
+.popup form #contact-checkbox {
+	width: auto;
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+.popup form #contact-checkbox {
+	width: auto;
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+.popup .contact-label {
+	font-size: 14px;
+}
+.popup .desc {
+	margin-top: 10px;
+	display: block;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	line-height: 1.33;
+}
+
+.btn-submit {
+	line-height: 1.4;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: 100%;
+	padding: 16px 52px;
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background: rgb(34, 191, 142);
+	border: none;
+	border-radius: 9999px;
+	cursor: pointer;
+}
+
+.btn-submit:hover {
+	color: rgb(255, 255, 255);
+	background: rgb(34, 191, 142);
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+/* shipping-icons */
+.shipping-icons {
+}
+.shipping-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.shipping-icon .icon {
+	height: 48px;
+	width: 48px;
+	margin-bottom: 10px;
+}
+.shipping-icon .text {
+	padding-right: 0;
+	text-align: center;
+	letter-spacing: 1;
+	margin: 0;
+	font-size: 12px;
+	color: rgb(115, 122, 133);
+	line-height: 1.5;
+	margin-top: 8px;
+}

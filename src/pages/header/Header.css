@@ -33,6 +33,10 @@ button:hover {
 	text-transform: uppercase;
 }
 
+.profile {
+	margin-right: 10px;
+}
+
 .navbar-expand-lg {
 	height: 110px;
 }

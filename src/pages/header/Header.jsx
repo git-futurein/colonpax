@@ -18,8 +18,8 @@ const Header = () => {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="justify-content-start flex-grow-1 mx-auto">
-							<Nav.Link className="link">
-								<Link to="/plans">Symptome</Link>
+							<Nav.Link href="#pricing" className="link">
+								Symptome
 							</Nav.Link>
 							<Nav.Link href="#pricing" className="link">
 								Lösung{' '}
@@ -35,9 +35,9 @@ const Header = () => {
 							</Nav.Link>
 						</Nav>
 						<Nav className="align-items-center">
-							<Nav.Link href="#deets">
+							<Link to="/email" className="profile">
 								<img src={avatar} alt="Bitmap" className="img-fluid" />
-							</Nav.Link>
+							</Link>
 
 							<Link to="/quiz">
 								<button className="nav_btn">MACH DEN TEST</button>

@@ -1,0 +1,243 @@
+.hero_section::after {
+	display: none;
+}
+.hero_section {
+	height: auto;
+	padding-top: 0;
+}
+
+.common_h2_secondary {
+	margin-top: 149px;
+	font-size: 40px;
+}
+
+.hero_section_heading {
+	margin-bottom: 160px;
+}
+.hero_section_heading h2 {
+	font-size: 45px;
+}
+.btn-product {
+	font-size: 16px;
+	padding: 17px 23px;
+	background-color: #62c476;
+	font-weight: 500;
+	color: #fff;
+	border-radius: 14px;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.btn-product:hover {
+	font-size: 16px;
+	padding: 17px 23px;
+	background-color: #62c476;
+	font-weight: 500;
+	color: #fff;
+	border-radius: 14px;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.banner-img-part img {
+	height: 684px;
+	margin-top: -128px;
+}
+
+/* weight */
+.weight {
+	border-top: 1px solid rgba(51, 51, 51, 0.226);
+	border-bottom: 1px solid rgba(51, 51, 51, 0.226);
+	padding: 20px 0;
+}
+.weight .common_h2_secondary {
+	margin-top: 35px;
+}
+.weight .button-area {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 48px;
+	margin-bottom: 30px;
+}
+
+.weight .item {
+	border: 1px solid #ececf1;
+	border-radius: 12px;
+	padding: 34px 42px;
+}
+
+.weight .item .h3 {
+	font-size: 27px;
+}
+.weight .item-top p {
+	margin-right: 18px;
+	margin-bottom: 5px;
+}
+.weight .item .text {
+	font-size: 16px;
+}
+.weight .item .cur-weight {
+	font-size: 37px;
+}
+.weight .item-date {
+	font-size: 19px;
+}
+.weight .prev-wegiht {
+	font-size: 45px;
+}
+.weight .item-chart {
+	max-width: 381px;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 39px;
+	margin-bottom: 10px;
+	height: 224px;
+}
+.weight .item-chart img {
+	width: 100%;
+	height: 100%;
+}
+
+/* deine */
+.deine {
+	padding: 40px;
+}
+.deine__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 20px;
+}
+
+.deine__item {
+	gap: 10px;
+	padding: 30px 26px;
+	border: 1px solid #ececf1;
+	border-radius: 12px;
+}
+
+.deine__item .desc h4 {
+	font-size: 24px;
+}
+.deine__item .desc p {
+	font-size: 20px;
+}
+
+.deine__img img {
+	max-width: 51px;
+	height: 60px;
+}
+
+/* dain-2 */
+.dain-2 {
+	border-bottom: 1px solid rgba(51, 51, 51, 0.226);
+}
+.dain-2 .deine__list {
+	grid-template-columns: repeat(auto-fit, minmax(577px, 1fr));
+}
+.dain-2 .deine__item {
+}
+.dain-2 .deine__item .desc h4 {
+	font-size: 32px;
+}
+.dain-2 .deine__item .desc p {
+	font-size: 16px;
+}
+.dain-2 .deine__img img {
+	width: 95px;
+}
+.common_h2_secondary {
+	font-weight: 400;
+	font-size: 40px;
+	margin-top: 10px !important;
+	text-align: left !important;
+}
+
+/* cards */
+
+.summary .cards::after {
+	display: none;
+}
+.summary .cards {
+	margin: 0;
+	border-radius: 0;
+}
+.summary .cards-item {
+	max-width: 820px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.summary .cards-img {
+	position: absolute;
+	height: 366px;
+	width: 366px;
+	z-index: 1;
+}
+.summary .cards-img-1 {
+	top: 20px;
+	right: -215px;
+	transform: rotate(340deg);
+}
+.summary .cards-img-2 {
+	left: -105px;
+	transform: rotate(345deg);
+	bottom: -197px;
+}
+
+/* =========================== */
+/* responsive */
+/* =========================== */
+@media only screen and (max-width: 992px) {
+	.common_h2_secondary {
+		margin-top: 50px;
+		font-size: 35px;
+	}
+	.hero_section_heading {
+		margin-bottom: 50px;
+	}
+	.hero_section_heading h2 {
+		font-size: 38px;
+	}
+
+	/* daine 2 */
+	.deine {
+		padding: 30px;
+	}
+	.dain-2 .deine__list {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	.dain-2 .deine__item .desc h4 {
+		font-size: 26px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.common_h2_secondary {
+		margin-top: 30px;
+		font-size: 32px;
+	}
+	.hero_section_heading {
+		margin-bottom: 30px;
+	}
+	.hero_section_heading h2 {
+		font-size: 34px;
+	}
+
+	/* daine */
+	.deine {
+		padding: 20px;
+	}
+	.deine__item .desc h4 {
+		font-size: 22px;
+	}
+	.deine__item .desc p {
+		font-size: 16px;
+	}
+
+	/* daine 2 */
+	.dain-2 .deine__list {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+	.dain-2 .deine__item {
+		flex-direction: column;
+	}
+}

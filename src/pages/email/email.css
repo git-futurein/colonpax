@@ -1,0 +1,87 @@
+.email {
+	padding-bottom: 100px;
+}
+
+.email .common_h2 {
+	font-size: 40px;
+}
+.email .banner-img-part img {
+	height: auto;
+	margin-top: 0;
+}
+
+.email_card {
+	gap: 20px;
+}
+.email_card img {
+	width: 70px;
+	height: 72px;
+}
+.email_card h5 {
+	font-size: 20px;
+	font-weight: 700;
+}
+.email_card p {
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 24px;
+}
+
+.email_card_2 img {
+	width: 42px;
+	height: 42px;
+}
+.email_card_2 h5 {
+	font-size: 12px;
+	font-weight: 400;
+}
+.email_card_2 p {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.email form {
+	box-shadow: 0px 67px 109px #0000000d;
+	border-radius: 14px;
+	padding: 10px 8px;
+	max-width: 483px;
+	width: 100%;
+}
+
+.email form label img {
+	width: 24px;
+	height: 24px;
+}
+.email form input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 10px;
+}
+.email form .btn {
+	background-color: #62c476;
+	padding: 16px 17px;
+	border-radius: 16px;
+	color: #fff;
+	font-weight: 600;
+}
+
+/* ======================== */
+/* responsive */
+/* ======================== */
+
+@media only screen and (max-width: 992px) {
+	.email .common_h2 {
+		font-size: 36px;
+	}
+}
+@media only screen and (max-width: 772px) {
+	.common_p {
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.email .common_h2 {
+		font-size: 30px;
+	}
+}

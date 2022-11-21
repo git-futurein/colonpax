@@ -1,16 +1,19 @@
 import React from 'react';
 import Header from './header/header';
 import Weight from './result/weight';
-import Result from './result/result';
 import HeaderBox from '../quiz/headerBox';
+import './summary.css';
+import Benefits from '../quiz/benefits';
+import Cards from './cards';
 
 const Summary = () => {
 	return (
-		<div>
+		<div className="summary">
 			<HeaderBox />
 			<Header />
 			<Weight />
-			<Result />
+			<Benefits />
+			<Cards />
 		</div>
 	);
 };

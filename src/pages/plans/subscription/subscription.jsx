@@ -1,8 +1,12 @@
 import React from 'react';
 import '../plans.css';
+import SubscriptionPopup from '../popup/subscriptionPopup';
+import { subscriptionPopupOpen } from '../../../counterSlice';
+import { useDispatch } from 'react-redux';
 
 const Subscription = ({ marginTop }) => {
-	// console.log(marginTop);
+	const dispatch = useDispatch();
+
 	const subscriptionData = [
 		{
 			id: 1,
@@ -39,6 +43,7 @@ const Subscription = ({ marginTop }) => {
 	];
 	return (
 		<div className={marginTop && 'marginMinus'}>
+			<SubscriptionPopup />
 			<div className="container">
 				<div className="subscription row g-5">
 					{subscriptionData.map((item) => {
@@ -71,31 +76,35 @@ const Subscription = ({ marginTop }) => {
 											);
 										})}
 									</ul>
-									<div class="form-check">
+									<div className="form-check">
 										<input
-											class="form-check-input"
+											className="form-check-input"
 											type="radio"
 											name={`flexRadioDefault1${id}`}
 											id={`flexRadioDefault1${id}`}
 										/>
-										<label class="form-check-label" for={`flexRadioDefault1${id}`}>
+										<label className="form-check-label" htmlFor={`flexRadioDefault1${id}`}>
 											Einmaliger Kauf
 										</label>
 									</div>
-									<div class="form-check">
+									<div className="form-check">
 										<input
-											class="form-check-input"
+											className="form-check-input"
 											type="radio"
 											name={`flexRadioDefault1${id}`}
 											id={`flexRadioDefault2${id}`}
-											checked
 										/>
-										<label class="form-check-label" for={`flexRadioDefault2${id}`}>
+										<label className="form-check-label" htmlFor={`flexRadioDefault2${id}`}>
 											Abonnieren & Sparen
 										</label>
 									</div>
 									<div className="discount mb-4">AUTUMN SALE -%{discount} off</div>
-									<button className="btn btn-subscription">Jetzt abonnieren</button>
+									<button
+										className="btn btn-subscription"
+										onClick={() => dispatch(subscriptionPopupOpen())}
+									>
+										Jetzt abonnieren
+									</button>
 									{sparan && <div className="sparan">{`> Sie Sparen bis zu - ${sparan}% <`}</div>}
 								</div>
 							</div>
