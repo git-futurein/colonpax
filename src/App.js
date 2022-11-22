@@ -9,17 +9,19 @@ import Female from './pages/quiz/female/female';
 import Plans from './pages/plans/plans';
 import Summary from './pages/summary/summary';
 import Email from './pages/email/email';
+import Tarms from './pages/tarms/tarms';
 
 function App() {
 	return (
 		<div className="App">
 			<Router>
 				<Routes>
+					<Route path="/tarms" element={<Tarms />} />
+					<Route path="/email" element={<Email />} />
+					<Route path="/plans" element={<Plans />} />
+					<Route path="/summary" element={<Summary />} />
 					<Route path="/quiz/male" element={<Male />} />
 					<Route path="/quiz/female" element={<Female />} />
-					<Route path="/plans" element={<Plans />} />
-					<Route path="/email" element={<Email />} />
-					<Route path="/summary" element={<Summary />} />
 					<Route path="/quiz" element={<Quiz />} />
 					<Route path="/" element={<MainLayout />} />
 				</Routes>

@@ -1,23 +1,23 @@
-.hero_section::after {
+.summary .hero_section::after {
 	display: none;
 }
-.hero_section {
+.summary .hero_section {
 	height: auto;
 	padding-top: 0;
 }
 
-.common_h2_secondary {
+.summary .common_h2_secondary {
 	margin-top: 149px;
 	font-size: 40px;
 }
 
-.hero_section_heading {
+.summary .hero_section_heading {
 	margin-bottom: 160px;
 }
-.hero_section_heading h2 {
+.summary .hero_section_heading h2 {
 	font-size: 45px;
 }
-.btn-product {
+.summary .btn-product {
 	font-size: 16px;
 	padding: 17px 23px;
 	background-color: #62c476;
@@ -26,7 +26,7 @@
 	border-radius: 14px;
 	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
-.btn-product:hover {
+.summary .btn-product:hover {
 	font-size: 16px;
 	padding: 17px 23px;
 	background-color: #62c476;
@@ -36,7 +36,7 @@
 	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
-.banner-img-part img {
+.summary .banner-img-part img {
 	height: 684px;
 	margin-top: -128px;
 }

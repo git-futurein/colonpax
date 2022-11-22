@@ -6,6 +6,8 @@ import PercentageSection from '../percentageSection/PercentageSection';
 import Review from '../review/Review';
 import Faq from '../faq/Faq';
 import Individualisierter from './individualisierter/individualisierter';
+import AdvantageSection from '../advantageSection/AdvantageSection';
+import Diese from './diese/diese';
 
 const Plans = () => {
 	return (
@@ -13,7 +15,9 @@ const Plans = () => {
 			<Header />
 			<Subscription />
 			<Individualisierter />
+			<AdvantageSection />
 			<PercentageSection />
+			<Diese />
 			<Review />
 			<Faq />
 			<Subscription marginTop="20%" />

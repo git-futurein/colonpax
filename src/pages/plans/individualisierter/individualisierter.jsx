@@ -5,7 +5,7 @@ const Individualisierter = () => {
 	return (
 		<div className="Individualisierter">
 			<div className="container">
-				<div className="Individualisierter-box row">
+				<div className="Individualisierter-box row g-5">
 					<div className="col-12 col-lg-7">
 						<div className="Individualisierter-box-item">
 							<h2 className="heading-2 mb-4">Dein individualisierter Diätplan für 28 Tage</h2>
@@ -18,6 +18,11 @@ const Individualisierter = () => {
 					<div className="col-12 col-lg-5">
 						<div className="Individualisierter-box-item item-2">
 							<div className="free-area">
+								<p className="text">Im Wert von</p>
+								<h2 className="heading2">FREE</h2>
+								<h5 className="heading5">39,99 Eur</h5>
+								<img src="/images/star-1.png" className="small-star small-star-1" alt="" />
+								<img src="/images/star-1.png" className="small-star small-star-2" alt="" />
 								<img src="/images/star-2.png" className="star-1" alt="" />
 								<img src="/images/star-2.png" className="star-2" alt="" />
 								<img src="/images/Badge.svg" className="free-img" alt="" />

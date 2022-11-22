@@ -49,7 +49,7 @@ const Subscription = ({ marginTop }) => {
 					{subscriptionData.map((item) => {
 						const { id, img, dose, price, formula, discount, angebot, active, sparan } = item;
 						return (
-							<div className="col-12 col-sm-6 col-lg-4" key={id}>
+							<div className="col-12 col-lg-4" key={id}>
 								<div className={active ? 'subscription-item active' : 'subscription-item'}>
 									{angebot && <div className="subscription-head">Beliebtestes Angebot</div>}
 

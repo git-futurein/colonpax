@@ -32,7 +32,7 @@ const UserData = () => {
 		},
 		{
 			id: 5,
-			placeholder: 'desired',
+			placeholder: 'desired weight',
 			label: 'lb',
 		},
 	];
@@ -45,18 +45,18 @@ const UserData = () => {
 		},
 		{
 			id: 3,
-			placeholder: 'in',
-			label: 'in',
+			placeholder: 'height',
+			label: 'cm',
 		},
 		{
 			id: 4,
 			placeholder: 'weight',
-			label: 'lb',
+			label: 'kg',
 		},
 		{
 			id: 5,
-			placeholder: 'desired',
-			label: 'lb',
+			placeholder: 'desired weight',
+			label: 'kg',
 		},
 	];
 

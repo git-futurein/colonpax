@@ -6,7 +6,7 @@ import twitter from '../../assets/Group 115.svg';
 import dot from '../../assets/Group 116.svg';
 import cloud from '../../assets/Union 8.svg';
 import colon from '../../assets/colon.png';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
 	const { pathname } = useLocation();
@@ -41,18 +41,15 @@ const Footer = () => {
 						<ul>
 							<li className="ul-header">MENU</li>
 							<li>
-								<a href="#">Symptome</a>{' '}
+								<a href="#">Symptome</a>
 							</li>
 							<li>
-								{' '}
-								<a href="#">Lösung</a>{' '}
+								<a href="#">Lösung</a>
 							</li>
 							<li>
-								{' '}
-								<a href="#">Ergebnisse</a>{' '}
+								<a href="#">Ergebnisse</a>
 							</li>
 							<li>
-								{' '}
 								<a href="#">Erfahrungen</a>
 							</li>
 						</ul>
@@ -62,16 +59,13 @@ const Footer = () => {
 							<li className="ul-header">SERVICE</li>
 							<li>FAQ </li>
 							<li>
-								{' '}
-								<a href="#">Kundendienst</a>{' '}
+								<a href="#">Kundendienst</a>
 							</li>
 							<li>
-								{' '}
-								<a href="#">allgemeine Geschäftsbedinungen</a>
+								<Link to="/tarms">allgemeine Geschäftsbedinungen</Link>
 							</li>
 							<li>
-								{' '}
-								<a href="#">Rückgabe</a>{' '}
+								<a href="#">Rückgabe</a>
 							</li>
 						</ul>
 					</div>

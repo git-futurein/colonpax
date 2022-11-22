@@ -1,0 +1,63 @@
+.diese h2 span,
+.diese h2 {
+	font-size: 56px;
+}
+
+span {
+	padding-right: 0;
+}
+
+.h2_primary {
+	max-width: 1032px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.diese .common_h2_bg {
+	position: relative;
+	height: 70px;
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 57px;
+}
+.diese .common_h2_bg img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.diese .common_h2_bg span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+.diese .text {
+	font-size: 20px;
+	text-decoration: underline;
+	color: #103b19bf;
+}
+.text-color {
+	color: #f5a623;
+}
+
+/* ============================ */
+/* responsive */
+/* ============================ */
+
+@media only screen and (max-width: 992px) {
+	.diese h2 span,
+	.diese h2 {
+		font-size: 42px;
+	}
+}
+@media only screen and (max-width: 560px) {
+	.diese h2 span,
+	.diese h2 {
+		font-size: 32px;
+	}
+}
