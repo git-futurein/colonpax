@@ -10,9 +10,6 @@ import AdvantageSection from '../advantageSection/AdvantageSection';
 import Diese from './diese/diese';
 
 const Plans = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
 	return (
 		<div className="plans">
 			<Header />

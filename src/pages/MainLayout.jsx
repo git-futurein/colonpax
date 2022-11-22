@@ -10,9 +10,6 @@ import HeroSection from './heroSection/HeroSection';
 import PercentageSection from './percentageSection/PercentageSection';
 
 const MainLayout = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
 	return (
 		<div>
 			<Header></Header>

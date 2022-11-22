@@ -7,9 +7,6 @@ import Benefits from '../quiz/benefits';
 import Cards from './cards';
 
 const Summary = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
 	return (
 		<div className="summary">
 			<HeaderBox />

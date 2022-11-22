@@ -117,10 +117,6 @@ const Tarms = () => {
 		},
 	];
 
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
-
 	return (
 		<div className="tarms">
 			<img src="/images/tarms-img-1.png" className="tarms-img tarms-img-1" alt="" />

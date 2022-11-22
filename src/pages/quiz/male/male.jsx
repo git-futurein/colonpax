@@ -7,10 +7,6 @@ import { useSelector } from 'react-redux';
 const Male = () => {
 	const { rangePageCount } = useSelector((state) => state.counter);
 
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
-
 	return (
 		<div className="male position-relative">
 			<img src="/images/top-bg.svg" alt="" className="top-bg" />

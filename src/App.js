@@ -10,11 +10,13 @@ import Plans from './pages/plans/plans';
 import Summary from './pages/summary/summary';
 import Email from './pages/email/email';
 import Tarms from './pages/tarms/tarms';
+import ScrollToTop from './component/scrollToTop';
 
 function App() {
 	return (
 		<div className="App">
 			<Router>
+				<ScrollToTop />
 				<Routes>
 					<Route path="/tarms" element={<Tarms />} />
 					<Route path="/email" element={<Email />} />
