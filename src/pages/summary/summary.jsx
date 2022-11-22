@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './header/header';
 import Weight from './result/weight';
 import HeaderBox from '../quiz/headerBox';
@@ -7,6 +7,9 @@ import Benefits from '../quiz/benefits';
 import Cards from './cards';
 
 const Summary = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className="summary">
 			<HeaderBox />

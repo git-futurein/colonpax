@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../quiz.css';
 import Header from '../headerBox';
 import Health from '../health';
@@ -6,6 +6,10 @@ import { useSelector } from 'react-redux';
 
 const Male = () => {
 	const { rangePageCount } = useSelector((state) => state.counter);
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<div className="male position-relative">

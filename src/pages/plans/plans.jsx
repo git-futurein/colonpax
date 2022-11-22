@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './plans.css';
 import Header from './header/header';
 import Subscription from './subscription/subscription';
@@ -10,6 +10,9 @@ import AdvantageSection from '../advantageSection/AdvantageSection';
 import Diese from './diese/diese';
 
 const Plans = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className="plans">
 			<Header />

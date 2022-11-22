@@ -200,3 +200,57 @@
 	line-height: 1.5;
 	margin-top: 8px;
 }
+
+/* ========================= */
+/* payment */
+/* ========================= */
+
+.payment_wrapper,
+.payment .dieloge {
+	padding: 20px 0;
+}
+.payment_item {
+	padding: 15px 0;
+	border-bottom: 1px solid rgb(115, 122, 133);
+}
+.payment_item .discount .text {
+	font-weight: 500;
+}
+.payment .amount_total {
+	font-size: 22px;
+}
+.payment .coupon a {
+	color: #000;
+}
+.payment .dieloge a {
+	color: rgb(34, 191, 142);
+}
+.payment .heading4 {
+	font-size: 16px;
+	text-align: center;
+}
+.payment .payment-method {
+	background-color: #ffc439;
+	padding: 10px 0;
+	width: 100%;
+	border-radius: 100px;
+	border: none;
+	outline: none;
+}
+
+.payment-form .card-number {
+	border-bottom: 1px solid rgba(51, 51, 51, 0.503);
+}
+
+.payment-form input {
+	/* padding: 0 !important; */
+}
+
+.payment-form .card-number input {
+	border-bottom: 1px solid rgba(51, 51, 51, 0);
+	margin-bottom: 0;
+}
+.payment-form .card-number img {
+	padding: 10px 0;
+	margin-right: 10px;
+}

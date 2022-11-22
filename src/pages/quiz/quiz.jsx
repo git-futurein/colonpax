@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../heroSection/HeroSection.css';
 import './quiz.css';
 import hero from '../../assets/1.png';
@@ -13,6 +13,9 @@ import HeaderBox from './headerBox';
 import { Link } from 'react-router-dom';
 
 const Quiz = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			<div className="quiz">

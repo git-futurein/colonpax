@@ -1,6 +1,6 @@
 import './App.css';
 import MainLayout from './pages/MainLayout';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Quiz from './pages/quiz/quiz';
 import Footer from './pages/footer/Footer';

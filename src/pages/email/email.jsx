@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../heroSection/HeroSection.css';
 import '../quiz/quiz.css';
 import './email.css';
 import HeaderBox from '../quiz/headerBox';
 
 const Email = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className="email">
 			<HeaderBox />

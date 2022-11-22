@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AdvantageSection from './advantageSection/AdvantageSection';
 import Carosel from './carosel/Carosel';
 import Review from './review/Review';
@@ -10,6 +10,9 @@ import HeroSection from './heroSection/HeroSection';
 import PercentageSection from './percentageSection/PercentageSection';
 
 const MainLayout = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div>
 			<Header></Header>
