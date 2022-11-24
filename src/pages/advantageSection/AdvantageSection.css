@@ -12,31 +12,39 @@
 	border-radius: 10px;
 	margin-bottom: 30px;
 	height: 100%;
-	/* height: 350px; */
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 15px;
 }
 
 .content-box img {
 	padding-bottom: 20px;
+	width: 100%;
+	height: auto;
 }
 
 .adv_h4 {
 	/* UI Properties */
-	text-align: center;
+	text-align: left;
 	letter-spacing: 0px;
 	color: #103b19;
 	opacity: 1;
-	padding-bottom: 1rem;
+	margin-bottom: 15px;
 	font-size: 20px;
 	font-weight: bold;
 	font-family: 'Lora', serif !important;
-	padding-bottom: 20px;
-	margin-top: 0.5rem;
+	/* padding-bottom: 20px; */
+	margin-top: 0;
+	text-transform: capitalize;
 }
 
 .adv_p {
 	/* UI Properties */
-	margin-top: -2%;
-	text-align: center;
+	/* margin-top: 10px; */
+	margin-bottom: 0 !important;
+	text-align: left;
 	letter-spacing: 1px;
 	color: #333333;
 	opacity: 1;

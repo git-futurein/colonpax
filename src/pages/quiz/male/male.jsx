@@ -9,9 +9,9 @@ const Male = () => {
 
 	return (
 		<div className="male position-relative">
-			<img src="/images/top-bg.svg" alt="" className="top-bg" />
-			<img src="/images/bottom-bg.svg" alt="" className="bottom-bg" />
-			<Header />
+			{/* <img src="/images/top-bg.svg" alt="" className="top-bg" />
+			<img src="/images/bottom-bg.svg" alt="" className="bottom-bg" /> */}
+			{/* <Header /> */}
 			<div className="container">
 				<div className="range-wrapper">
 					<div className="range" style={{ width: `${rangePageCount * 10}%` }}></div>

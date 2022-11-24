@@ -1,81 +1,80 @@
 #faq {
-        padding: 80px 0px 120px;
-        background: #EDF7F0;
+	padding: 80px 0px 120px;
+	background: #edf7f0;
 }
 
 .faq-p {
-        /* UI Properties */
-        text-align: left;
-        letter-spacing: 1px;
-        color: #103B19BF;
-        opacity: 1;
-        padding: 10px 0px 30px;
-        font-family: 'Poppins', sans-serif !important;
+	/* UI Properties */
+	text-align: left;
+	letter-spacing: 1px;
+	color: #103b19bf;
+	opacity: 1;
+	padding: 10px 0px 30px;
+	font-family: 'Poppins', sans-serif !important;
 }
 
 .faq_h2 {
-        padding-top: 80px;
-        text-align: left;
-        letter-spacing: -1px;
-        color: #103B19;
-        opacity: 1;
-        font-size: 56px;
-        font-weight: bold;
-        font-family: 'Lora', serif !important;
+	padding-top: 80px;
+	text-align: left;
+	letter-spacing: -1px;
+	color: #103b19;
+	opacity: 1;
+	font-size: 56px;
+	font-weight: bold;
+	font-family: 'Lora', serif !important;
 }
 
 .accordion-item {
-        border-bottom: 1px solid #62c47699 !important;
-        border-left: 0px;
-        border-right: 0px !important;
-        border-top: 0px;
-        padding: 5px 0px 15px;
+	border-bottom: 1px solid #62c47699 !important;
+	border-left: 0px;
+	border-right: 0px !important;
+	border-top: 0px;
+	padding: 5px 0px 15px;
 }
 
 .firstItem {
-        border-top: 1px solid #62c47699 !important;
+	border-top: 1px solid #62c47699 !important;
 }
 
 .faq_btn {
-        padding: 15px 25px;
-        /* UI Properties */
-        border: 1px solid #62c47699;
-        background-color: #fff;
-        border-radius: 6px;
-        opacity: 1;
-        border: none;
-        text-align: center;
-        font-size: 16px;
-        font-family: 'Lora', serif !important;
-        letter-spacing: 0px;
-        color: #62C476;
-        text-transform: uppercase;
-        opacity: 1;
-        transition: all 0.2s ease;
+	padding: 15px 25px;
+	/* UI Properties */
+	border: 1px solid #62c47699;
+	background-color: #fff;
+	border-radius: 6px;
+	opacity: 1;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Lora', serif !important;
+	letter-spacing: 0px;
+	color: #62c476;
+	text-transform: uppercase;
+	opacity: 1;
+	transition: all 0.2s ease;
 }
 
 .accordion-button {
-        background-color: #EDF7F0 !important;
-        border: none !important;
-        text-align: left !important;
-        letter-spacing: 0px !important;
-        color: #103B19 !important;
-        opacity: 1;
-        font-size: 24px !important;
-        font-weight: bold !important;
-        padding-top: 2rem !important;
-        box-shadow: none !important;
-        font-family: 'Poppins', sans-serif !important;
-
+	background-color: #edf7f0 !important;
+	border: none !important;
+	text-align: left !important;
+	letter-spacing: 0px !important;
+	color: #103b19 !important;
+	opacity: 1;
+	font-size: 24px !important;
+	font-weight: bold !important;
+	padding-top: 2rem !important;
+	box-shadow: none !important;
+	font-family: 'Poppins', sans-serif !important;
 }
 
 .accordion-item {
-        background-color: #EDF7F0 !important;
+	background-color: #edf7f0 !important;
 }
 
 .service_div {
-        padding-top: 7rem;
-        padding-bottom: 9rem;
+	padding-top: 7rem;
+	padding-bottom: 9rem;
 }
 
 /* .accordion-button:not(.collapsed)::after {
@@ -99,119 +98,118 @@
         border: 1px solid rgb(255, 0, 0);
 } */
 .service {
-        text-align: left;
-        font: normal normal bold 25px/30px Dejanire Headline;
-        letter-spacing: 0px;
-        color: #103B19;
-        opacity: 1;
+	text-align: left;
+	font-family: 'Lora', serif !important;
+	letter-spacing: 0px;
+	color: #103b19;
+	opacity: 1;
 }
 
 .accordion-body {
-        background: #EDF7F0;
-        letter-spacing: 1px;
-        color: #103B19BF;
-        opacity: 1;
-        font-family: 'Poppins', sans-serif !important;
+	background: #edf7f0;
+	letter-spacing: 1px;
+	color: #103b19bf;
+	opacity: 1;
+	font-family: 'Poppins', sans-serif !important;
 }
 
 .icon-text-part {
-        padding-top: 160px;
-        padding-bottom: 150px;
+	padding-top: 160px;
+	padding-bottom: 150px;
 }
 
 .icon-text-part .service {
-        text-align: center;
+	text-align: center;
 }
 
 .icon-text-part .service img {
-        padding-right: 10px;
+	padding-right: 10px;
 }
 
 /*======== large device =========*/
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
 
 /*======== medium device =========*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-        .faq_h2 {
-                font-size: 42px;
-        }
+	.faq_h2 {
+		font-size: 42px;
+	}
 
-        .accordion-button {
-                font-size: 20px !important;
-        }
+	.accordion-button {
+		font-size: 20px !important;
+	}
 
-        .icon-text-part .service img {
-                padding: 10px 50px;
-                display: block;
-        }
+	.icon-text-part .service img {
+		padding: 10px 50px;
+		display: block;
+	}
 }
-
 
 /*======== small device =========*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-        #faq .text-part {
-                text-align: center;
-                padding-bottom: 60px;
-        }
+	#faq .text-part {
+		text-align: center;
+		padding-bottom: 60px;
+	}
 
-        .faq_h2 {
-                padding-top: 0px;
-                font-size: 36px;
-                text-align: center;
-        }
+	.faq_h2 {
+		padding-top: 0px;
+		font-size: 36px;
+		text-align: center;
+	}
 
-        .faq-p {
-                text-align: center;
-        }
+	.faq-p {
+		text-align: center;
+	}
 
-        .accordion-button {
-                font-size: 18px !important;
-        }
+	.accordion-button {
+		font-size: 18px !important;
+	}
 
-        .accordion-body {
-                font-size: 14px;
-        }
+	.accordion-body {
+		font-size: 14px;
+	}
 
-        .icon-text-part {
-                padding-top: 125px;
-        }
+	.icon-text-part {
+		padding-top: 125px;
+	}
 
-        .icon-text-part .service {
-                padding-bottom: 20px;
-        }
+	.icon-text-part .service {
+		padding-bottom: 20px;
+	}
 }
 
 /*======== Extra small device =========*/
 @media (max-width: 575.98px) {
-        #faq .text-part {
-                text-align: center;
-                padding-bottom: 60px;
-        }
+	#faq .text-part {
+		text-align: center;
+		padding-bottom: 60px;
+	}
 
-        .faq_h2 {
-                padding-top: 0px;
-                font-size: 36px;
-                text-align: center;
-        }
+	.faq_h2 {
+		padding-top: 0px;
+		font-size: 36px;
+		text-align: center;
+	}
 
-        .faq-p {
-                text-align: center;
-        }
+	.faq-p {
+		text-align: center;
+	}
 
-        .accordion-button {
-                font-size: 18px !important;
-        }
+	.accordion-button {
+		font-size: 18px !important;
+	}
 
-        .accordion-body {
-                font-size: 14px;
-        }
+	.accordion-body {
+		font-size: 14px;
+	}
 
-        .icon-text-part {
-                padding-top: 125px;
-        }
+	.icon-text-part {
+		padding-top: 125px;
+	}
 
-        .icon-text-part .service {
-                padding-bottom: 20px;
-        }
-
+	.icon-text-part .service {
+		padding-bottom: 20px;
+	}
 }

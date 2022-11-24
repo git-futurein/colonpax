@@ -1,308 +1,295 @@
 .hero_section {
-        padding-top: 5rem;
-        position: relative;
-        height: 860px;
-        overflow: hidden;
+	padding-top: 5rem;
+	position: relative;
+	height: 860px;
+	overflow: hidden;
 }
 
 /* .hero_div{
         height: 700px;
 } */
 .hero_section::after {
-        background-image: url("../../assets/Group 1.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: start;
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 60%;
-        bottom: 0;
-        right: -10%;
-        z-index: -999;
+	display: none;
 }
 
 .common_h2 {
-        text-align: left;
-        /* font: normal normal bold 53px/59px Dejanire Headline !important; */
-        letter-spacing: -1.47px;
-        color: #103B19;
-        opacity: 1;
-        font-weight: bold;
-        font-size: 53px;
-        font-family: 'Lora', serif;
-
+	text-align: left;
+	/* font: normal normal bold 53px/59px Dejanire Headline !important; */
+	letter-spacing: -1.47px;
+	color: #103b19;
+	opacity: 1;
+	font-weight: bold;
+	font-size: 53px;
+	font-family: 'Lora', serif;
 }
 
 .common_p {
-        text-align: left;
-        font: normal normal normal 16px/32px Poppins-Regular;
-        letter-spacing: 1px;
-        color: #333333;
-        opacity: 1;
-        font-family: 'Poppins', sans-serif !important;
-        padding-right: 150px;
+	text-align: left;
+	font: normal normal normal 16px/32px Poppins-Regular;
+	letter-spacing: 1px;
+	color: #333333;
+	opacity: 1;
+	font-family: 'Poppins', sans-serif !important;
+	padding-right: 150px;
 }
 
 .mini_icon {
-        margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .bold_tag {
-        text-align: left;
-        /* font: normal normal bold 18px/59px Dejanire Headline; */
-        letter-spacing: -0.5px;
-        color: #103B19;
-        opacity: 1;
-        font-weight: bold;
-        font-size: 18px;
-        padding-bottom: 10px;
-        font-family: 'Lora', serif;
+	text-align: left;
+	/* font: normal normal bold 18px/59px Dejanire Headline; */
+	letter-spacing: -0.5px;
+	color: #103b19;
+	opacity: 1;
+	font-weight: bold;
+	font-size: 18px;
+	padding-bottom: 10px;
+	font-family: 'Lora', serif;
 }
 
 .btn_one {
-        width: 186px;
-        height: 48px;
-        /* UI Properties */
-        background: #62C476 0% 0% no-repeat padding-box;
-        border-radius: 14px;
-        opacity: 1;
-        text-align: center;
-        font: normal normal medium 16px/25px Poppins;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        text-transform: uppercase;
-        border: none;
-        margin-right: 1rem;
-
+	width: 186px;
+	height: 48px;
+	/* UI Properties */
+	background: #62c476 0% 0% no-repeat padding-box;
+	border-radius: 14px;
+	opacity: 1;
+	text-align: center;
+	font: normal normal medium 16px/25px Poppins;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-transform: uppercase;
+	border: none;
+	margin-right: 1rem;
 }
 
 .btn_two {
-        border: none;
-        width: 186px;
-        height: 48px;
-        /* UI Properties */
-        background: #DB5886 0% 0% no-repeat padding-box;
-        border-radius: 14px;
-        text-align: center;
-        font: normal normal medium 16px/25px Poppins;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        text-transform: uppercase;
-        opacity: 1;
+	border: none;
+	width: 186px;
+	height: 48px;
+	/* UI Properties */
+	background: #db5886 0% 0% no-repeat padding-box;
+	border-radius: 14px;
+	text-align: center;
+	font: normal normal medium 16px/25px Poppins;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-transform: uppercase;
+	opacity: 1;
 }
 
 .little_p {
-        text-align: left;
-        font-size: 12px;
-        line-height: 24px;
-        font-family: Poppins;
-        letter-spacing: 0.86px;
-        color: #103B19BF;
-        opacity: 1;
-        margin-bottom: 50px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 24px;
+	font-family: Poppins;
+	letter-spacing: 0.86px;
+	color: #103b19bf;
+	opacity: 1;
+	margin-bottom: 50px;
 }
 
 span {
-        text-align: left;
-        font: normal normal bold 14px/32px Poppins;
-        letter-spacing: 0.7px;
-        color: #333333;
-        opacity: 1;
-        margin: 0 5px;
-
+	text-align: left;
+	font: normal normal bold 14px/32px Poppins;
+	letter-spacing: 0.7px;
+	color: #333333;
+	opacity: 1;
+	margin: 0 5px;
 }
 
 .hero_div .star {
-        padding-top: 35px;
+	padding-top: 35px;
 }
 
 .hero_div .star ul {
-        padding-left: 0px;
+	padding-left: 0px;
 }
 
 .hero_div .star ul li {
-        display: inline-block;
-        padding-right: 10px;
+	display: inline-block;
+	padding-right: 10px;
 }
 
 .hero_div .star ul li .fa-solid,
 .fas {
-        font-weight: 900;
-        color: rgb(246, 156, 13);
-        font-size: 20px;
+	font-weight: 900;
+	color: rgb(246, 156, 13);
+	font-size: 20px;
 }
 
 .icon-box ul {
-        padding-left: 0px;
+	padding-left: 0px;
 }
 
 .icon-box ul li {
-        display: inline-block;
+	display: inline-block;
 }
 
 .icon-box ul li img {
-        padding-right: 10px;
+	padding-right: 10px;
 }
 
 .banner-img-part {
-        margin-left: -40px;
+	margin-left: -40px;
 }
 
 .banner-img-part img {
-        width: 110%;
+	width: 110%;
 }
 
 span {
-        padding-right: 1.5rem;
-
+	padding-right: 1.5rem;
 }
 
 .mini_icon img {
-        padding-right: 10px;
+	padding-right: 10px;
 }
 
 /*======== large device =========*/
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
 
 /*======== medium device =========*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-        .common_h2 {
-                font-size: 40px;
-        }
+	.common_h2 {
+		font-size: 40px;
+	}
 
-        .common_p {
-                padding: 10px 0px 20px 0px;
-        }
+	.common_p {
+		padding: 10px 0px 20px 0px;
+	}
 
-        .hero_section::after {
-                height: 72%;
-                width: 60%;
-                bottom: 189px;
-                right: -15%;
-                z-index: -999;
-        }
+	.hero_section::after {
+		height: 72%;
+		width: 60%;
+		bottom: 189px;
+		right: -15%;
+		z-index: -999;
+	}
 
-        .banner-img-part {
-                margin-left: 0;
-                padding-top: 150px;
-        }
+	.banner-img-part {
+		margin-left: 0;
+		padding-top: 150px;
+	}
 
-        .hero_section {
-                height: auto;
-        }
+	.hero_section {
+		height: auto;
+	}
 }
 
 /*======== small device =========*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-        .common_h2 {
-                text-align: center;
-                font-size: 36px;
-        }
+	.common_h2 {
+		text-align: center;
+		font-size: 36px;
+	}
 
-        .common_p {
-                text-align: center;
-                padding-right: 0px;
-                padding-top: 20px;
-        }
+	.common_p {
+		text-align: center;
+		padding-right: 0px;
+		padding-top: 20px;
+	}
 
-        .bold_tag {
-                text-align: center;
-                padding: 20px 0px;
-        }
+	.bold_tag {
+		text-align: center;
+		padding: 20px 0px;
+	}
 
-        .btn_one {
-                width: 100%;
-                height: 55px;
-                display: block;
-                margin-bottom: 10px;
-        }
+	.btn_one {
+		width: 100%;
+		height: 55px;
+		display: block;
+		margin-bottom: 10px;
+	}
 
-        .btn_two {
-                width: 100%;
-                height: 55px;
-                display: block;
-        }
+	.btn_two {
+		width: 100%;
+		height: 55px;
+		display: block;
+	}
 
-        .hero_section {
-                padding-top: 50px;
-                height: auto;
-        }
+	.hero_section {
+		padding-top: 50px;
+		height: auto;
+	}
 
-        .icon-box ul li {
-                padding-bottom: 20px;
-        }
+	.icon-box ul li {
+		padding-bottom: 20px;
+	}
 
-        .icon-box span {
-                font-size: 12px;
-        }
+	.icon-box span {
+		font-size: 12px;
+	}
 
-        .banner-img-part {
-                margin-left: 0px;
-        }
+	.banner-img-part {
+		margin-left: 0px;
+	}
 
-        .banner-img-part img {
-                width: 100%;
-        }
+	.banner-img-part img {
+		width: 100%;
+	}
 
-        .hero_section::after {
-                display: none;
-        }
+	.hero_section::after {
+		display: none;
+	}
 }
 
 /*======== Extra small device =========*/
 @media (max-width: 575.98px) {
-        .common_h2 {
-                text-align: center;
-                font-size: 36px;
-        }
+	.common_h2 {
+		text-align: center;
+		font-size: 36px;
+	}
 
-        .common_p {
-                text-align: center;
-                padding-right: 0px;
-                padding-top: 20px;
-        }
+	.common_p {
+		text-align: center;
+		padding-right: 0px;
+		padding-top: 20px;
+	}
 
-        .bold_tag {
-                text-align: center;
-                padding: 20px 0px;
-        }
+	.bold_tag {
+		text-align: center;
+		padding: 20px 0px;
+	}
 
-        .btn_one {
-                width: 100%;
-                height: 55px;
-                display: block;
-                margin-bottom: 10px;
-        }
+	.btn_one {
+		width: 100%;
+		height: 55px;
+		display: block;
+		margin-bottom: 10px;
+	}
 
-        .btn_two {
-                width: 100%;
-                height: 55px;
-                display: block;
-        }
+	.btn_two {
+		width: 100%;
+		height: 55px;
+		display: block;
+	}
 
-        .hero_section {
-                padding-top: 50px;
-                height: auto;
-        }
+	.hero_section {
+		padding-top: 50px;
+		height: auto;
+	}
 
-        .icon-box ul li {
-                padding-bottom: 20px;
-        }
+	.icon-box ul li {
+		padding-bottom: 20px;
+	}
 
-        .icon-box span {
-                font-size: 12px;
-        }
+	.icon-box span {
+		font-size: 12px;
+	}
 
-        .banner-img-part {
-                margin-left: 0px;
-        }
+	.banner-img-part {
+		margin-left: 0px;
+	}
 
-        .banner-img-part img {
-                width: 100%;
-        }
+	.banner-img-part img {
+		width: 100%;
+	}
 
-        .hero_section::after {
-                display: none;
-        }
+	.hero_section::after {
+		display: none;
+	}
 }

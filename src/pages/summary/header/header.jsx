@@ -7,7 +7,7 @@ import '../../heroSection/HeroSection.css';
 const Header = () => {
 	return (
 		<div>
-			<div className="hero_section overflow-hidden">
+			<div className="hero_section overflow-hidden pb-5">
 				<div className="container">
 					<div className="hero_section_heading d-flex justify-content-between align-items-center flex-wrap">
 						<h2 className="common_h2">Colonpax</h2>
@@ -16,27 +16,29 @@ const Header = () => {
 						</Link>
 					</div>
 					<div className="row ">
-						<div className="col-md-7 hero_div">
-							<h2 className="common_h2 d-none d-sm-block">
+						<div className="col-md-12 hero_div">
+							<h2 className="common_h2 d-none d-sm-block text-center">
 								So wird Colonpax <br /> dein Leben veränder
 							</h2>
-							<h2 className="common_h2 d-sm-none">So wird Colonpax dein Leben veränder</h2>
-							<p className="common_p">
+							<h2 className="common_h2 d-sm-none text-center">
+								So wird Colonpax dein Leben veränder
+							</h2>
+							<p className="common_p text-center">
 								Keiner redet darüber aber jeder macht es. Egal ob jung oder alt, reich oder arm,
 								Kanzler oder Königin.
 							</p>
-							<h2 className="common_h2 common_h2_secondary d-none d-sm-block">
+							{/* <h2 className="common_h2 common_h2_secondary d-none d-sm-block">
 								Basierend auf deinen <br /> Antworten wirst du
-							</h2>
-							<h2 className="common_h2 common_h2_secondary d-sm-none">
+							</h2> */}
+							{/* <h2 className="common_h2 common_h2_secondary d-sm-none">
 								Basierend auf deinen Antworten wirst du
-							</h2>
+							</h2> */}
 						</div>
-						<div className="col-md-5">
+						{/* <div className="col-md-5">
 							<div className="banner-img-part">
 								<img src="/images/plan-img-5.png" alt="hero image" className="" />
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Weight = () => {
+	const { healthCollectData } = useSelector((state) => state.counter);
+	console.log(healthCollectData);
+
 	return (
 		<div>
 			<div className="weight-container">

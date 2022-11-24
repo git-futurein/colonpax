@@ -1,41 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import '../quiz.css';
-import { useDispatch } from 'react-redux';
-import { incrementRangeValue } from '../../../counterSlice';
-import { Link } from 'react-router-dom';
+import { Link, redirect } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const UserData = () => {
-	const [imperial, setImperial] = useState(true);
-	const [metric, setMetric] = useState(false);
-	const dispatch = useDispatch();
-
-	const imperialData = [
-		{
-			id: 1,
-			placeholder: 'age',
-			label: 'years',
-		},
-		{
-			id: 2,
-			placeholder: 'height',
-			label: 'in',
-		},
-		{
-			id: 3,
-			placeholder: 'in',
-			label: 'in',
-		},
-		{
-			id: 4,
-			placeholder: 'weight',
-			label: 'lb',
-		},
-		{
-			id: 5,
-			placeholder: 'desired weight',
-			label: 'lb',
-		},
-	];
+	// const [imperial, setImperial] = useState(false);
+	// const [metric, setMetric] = useState(true);
+	// const [userCollectData, setuserCollectData] = useState([]);
 
 	const metricData = [
 		{
@@ -59,37 +30,20 @@ const UserData = () => {
 			label: 'kg',
 		},
 	];
-
-	const [userData, setUserData] = useState(imperialData);
+	// const [userData, setUserData] = useState(imperialData);
+	const handleSubmit = (e) => {
+		e.preventDefault();
+	};
 
 	return (
 		<div>
 			<div className="userData">
 				<div className="userData-btns">
-					<button
-						className={imperial ? 'btn btn-imperial active' : 'btn btn-imperial'}
-						onClick={() => {
-							setImperial(true);
-							setMetric(false);
-							setUserData(imperialData);
-						}}
-					>
-						imperial
-					</button>
-					<button
-						className={metric ? 'btn btn-metric active' : 'btn btn-metric'}
-						onClick={() => {
-							setMetric(true);
-							setImperial(false);
-							setUserData(metricData);
-						}}
-					>
-						Metric
-					</button>
+					<button className="btn btn-metric active">Metric</button>
 				</div>
 				<div className="userData-list">
-					<form className="userData-form">
-						{userData.map((item) => {
+					<form className="userData-form" onSubmit={handleSubmit}>
+						{metricData.map((item) => {
 							const { id, placeholder, label } = item;
 							return (
 								<div className="userData-item" key={id}>
@@ -100,7 +54,7 @@ const UserData = () => {
 						})}
 
 						<div className="userData-btn">
-							<Link to="/summary" className="btn btn-contineu">
+							<Link type="submit" className="btn btn-contineu" to="/summary">
 								contineu
 							</Link>
 						</div>

@@ -10,7 +10,9 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
 	const { pathname } = useLocation();
-
+	if (pathname.includes('quiz')) {
+		return;
+	}
 	return (
 		<div className="footer_section">
 			<div className="container">

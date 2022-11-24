@@ -1,10 +1,7 @@
-.quiz .hero_section::after {
-	background-image: url('../../assets/quiz-bg.png');
-	bottom: 0;
-	right: 0;
-	height: 580px;
-	width: 636px;
+.quiz .hero_section {
+	height: auto;
 }
+
 .header-box {
 	max-width: 1170px;
 	width: 95%;
@@ -27,13 +24,28 @@
 	letter-spacing: 0px;
 	color: #ffffff;
 }
-.heading-2 {
+.quiz .heading-2 {
 	font-size: 120px;
 	font-weight: 700;
 	color: #333333;
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	padding-top: 20px;
 }
+.quiz .hero_wrapper {
+	background-color: #edf7f0;
+	padding: 52px 20px;
+}
+
+.quiz .hero_div {
+	max-width: 890px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.quiz .common_p {
+	padding-right: 0;
+}
+
 .quiz .banner-img-part {
 	margin-left: -209px;
 	margin-top: -100px;
@@ -67,14 +79,19 @@
 /* ======================== */
 /* quiz male */
 /* ======================== */
-.male .header-box {
+/* .male .header-box {
 	margin-bottom: 29px;
 }
 .male .header-box {
 	margin-bottom: 29px;
+} */
+
+.male {
+	min-height: 100vh;
+	padding-top: 50px;
 }
 
-.male .heading {
+.male .heading-2 {
 	font-size: 57px;
 	margin-bottom: 34px;
 }
@@ -84,6 +101,7 @@
 	text-align: center;
 	margin-bottom: 48px;
 }
+
 .male .range-wrapper {
 	max-width: 1170px;
 	width: 95%;
@@ -93,6 +111,7 @@
 	border-radius: 4px;
 	position: relative;
 	margin-bottom: 70px;
+	/* margin-top: 50px; */
 }
 
 .male .range-wrapper .range {
@@ -125,20 +144,44 @@
 
 .health-list {
 	display: flex;
-	align-items: center;
+	/* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
+	align-items: stretch;
+	justify-items: stretch;
 	/* flex-direction: column; */
 	justify-content: center;
 	gap: 16px;
-	padding-bottom: 288px;
+	padding-bottom: 50px;
 	padding-left: 0 !important;
 	flex-wrap: wrap;
 }
 .health-item {
-	width: 208px;
+	width: 230px;
+	height: 100%;
 }
 .health-item-text {
 	width: 288px;
-	height: 80px;
+	height: auto;
+	position: relative;
+}
+
+.health-item-text i {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	color: #62c476;
+	display: none;
+}
+
+.health-item-text.checked i {
+	color: #fff;
+	display: block;
+}
+
+.health-item-text.checked .btn {
+	background: #62c476;
+}
+.health-item-text.checked .btn .text {
+	color: #fff;
 }
 
 .health-item-text .btn {
@@ -186,10 +229,54 @@
 	fill: #fff;
 }
 
-.top-bg,
+.btn-continue {
+	background-color: #62c476;
+	color: #fff;
+	padding: 0.8rem 2.5rem;
+	border-radius: 100px;
+	border: none;
+	outline: none;
+	/* text-align: center; */
+	margin: 0 auto;
+	display: block;
+	text-transform: uppercase;
+	opacity: 0.6;
+	pointer-events: none;
+}
+.btn-continue.show-btn {
+	opacity: 1;
+	pointer-events: visible;
+}
+
+.btn-back {
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.btn-back:hover {
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.btn-back a {
+	text-decoration: none;
+	color: #000;
+}
+.btn-back .text {
+	text-transform: uppercase;
+}
+
+/* .top-bg,
 .bottom-bg {
 	position: absolute;
 	z-index: -1;
+	display: ;
 }
 .top-bg {
 	top: -43%;
@@ -198,7 +285,7 @@
 .bottom-bg {
 	bottom: -2%;
 	left: 0%;
-}
+} */
 
 /* ======================== */
 /* user data */

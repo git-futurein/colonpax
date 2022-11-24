@@ -14,3 +14,14 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+h2,
+h3,
+h4 {
+	font-family: 'Lora', serif !important;
+}
+
+.p,
+.text {
+	font-family: 'Poppins', sans-serif !important;
+}

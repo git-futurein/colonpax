@@ -16,23 +16,24 @@ const Quiz = () => {
 	return (
 		<>
 			<div className="quiz">
-				<HeaderBox />
-				<h2 className="heading-2">Colonpax</h2>
+				<div className="container">
+					<h2 className="heading-2">Colonpax</h2>
+				</div>
 
 				<div className="hero_section">
 					<div className="container">
-						<div className="row overflow-hidden">
-							<div className="col-md-7 hero_div">
-								<h2 className="common_h2">
+						<div className="overflow-hidden hero_wrapper">
+							<div className=" hero_div text-center">
+								<h2 className="common_h2 text-center">
 									{/* Verbessere deine <br /> Darmgesundheit - <br /> Optimiere dein <br /> Körpergewicht */}
 									Feeling heaviness in your gut? Have unwanted weight or excess gas?
 								</h2>
-								<p className="common_p">
+								<p className="common_p text-center">
 									Colonpax is a safe and effective way to relieve constipation, lose weight and
 									cleanse your body. Take a quiz to see how it can help you.
 								</p>
 
-								<h4 className="bold_tag">Wähle dein Geschlecht:</h4>
+								<h4 className="bold_tag text-center">Wähle dein Geschlecht:</h4>
 
 								<Link to="/quiz/male">
 									<button className="btn_one">MALE</button>
@@ -42,8 +43,8 @@ const Quiz = () => {
 								</Link>
 
 								<br />
-								<div className="star">
-									<ul>
+								<div className="star text-center">
+									<ul className="text-center">
 										<li>
 											<i className="fa-solid fa-star"></i>
 										</li>
@@ -62,13 +63,13 @@ const Quiz = () => {
 									</ul>
 								</div>
 
-								<p className="little_p">
+								<p className="little_p text-center">
 									„Seitdem ich Colon Broom nehme, ist mein Blähbauch verschwunden und ich habe
 									weniger Lust auf Süßes oder Fastfood. Außerdem schmeckt es SO GUT.“
 								</p>
 
 								<div className="icon-box">
-									<ul>
+									<ul className="text-center">
 										<li>
 											<img src={vagan} alt="" className="ing-fluid" />
 											<span>VEGAN</span>
@@ -84,16 +85,10 @@ const Quiz = () => {
 									</ul>
 								</div>
 							</div>
-							<div className="col-md-5">
-								<div className="banner-img-part">
-									<img src={person} alt="hero image" className="" />
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<Benefits />
 		</>
 	);
 };
