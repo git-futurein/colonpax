@@ -22,58 +22,58 @@ const Health = () => {
 				id: 1,
 				img: 'e1',
 				selected: false,
-				text: 'Poor',
+				text: 'Schlecht',
 			},
 			{
 				id: 2,
 				img: 'e2',
 				selected: false,
-				text: 'Could be better',
+				text: 'Könnte besser sein',
 			},
 			{
 				id: 3,
 				img: 'e3',
 				selected: false,
-				text: 'Average',
+				text: 'Durchschnitt',
 			},
 			{
 				id: 4,
 				img: 'e4',
 				selected: false,
-				text: 'Pretty Good',
+				text: 'Ziemlich gut',
 			},
 			{
 				id: 5,
 				img: 'e5',
 				selected: false,
-				text: 'Feeling Great',
+				text: 'Großartig!',
 			},
 		],
 		[
 			{
 				id: 1,
 				selected: false,
-				text: 'Bloating',
+				text: 'Blähungen',
 			},
 			{
 				id: 2,
 				selected: false,
-				text: 'Weight-gain',
+				text: 'Gewichtszunahme',
 			},
 			{
 				id: 3,
 				selected: false,
-				text: 'Constipation',
+				text: 'Verstopfung',
 			},
 			{
 				id: 4,
 				selected: false,
-				text: 'Diarrhea',
+				text: 'Durchfall',
 			},
 			{
 				id: 5,
 				selected: false,
-				text: 'None',
+				text: 'Keine',
 				deselectAll: true,
 			},
 		],
@@ -82,115 +82,72 @@ const Health = () => {
 				id: 1,
 				img: 'health-6',
 				selected: false,
-				text: 'Everyday',
+				text: 'Täglich',
 			},
 			{
 				id: 2,
 				img: 'health-7',
 				selected: false,
-				text: 'Twice a week',
+				text: 'Zweimal pro Woche',
 			},
 			{
 				id: 3,
 				img: 'health-8',
 				selected: false,
-				text: 'Once a week',
+				text: 'Einmal pro Woche',
 			},
 			{
 				id: 4,
 				img: 'health-9',
 				selected: false,
-				text: 'Less than once a week',
+				text: 'Weniger als einmal pro Woche',
 			},
 		],
 		[
 			{
 				id: 1,
 				selected: false,
-				text: 'Skin issues (acne, eczema, rashes)',
+				text: 'Hautprobleme (Akne, Ekzeme, Hautausschläge)',
 			},
 			{
 				id: 2,
 				selected: false,
-				text: 'Bad breath',
+				text: 'Schlechter Atem',
 			},
 			{
 				id: 3,
 				selected: false,
-				text: 'Rectal or vaginal itching',
+				text: 'Sodbrennen',
 			},
 			{
 				id: 4,
 				selected: false,
-				text: 'Sugar and carbohydrate cravings',
+				text: 'Rektaler oder vaginaler Juckreiz',
 			},
 			{
 				id: 5,
 				selected: false,
-				text: 'Stomach pain and cramps',
+				text: 'Heißhunger auf Zucker und Kohlenhydrate',
 			},
 			{
 				id: 6,
 				selected: false,
-				text: 'Backache',
+				text: 'Magenschmerzen und Krämpfe',
 			},
 			{
 				id: 7,
 				selected: false,
-				text: 'Moodswings',
-			},
-			{
-				id: 8,
-				selected: false,
-				text: 'None',
-				deselectAll: true,
-			},
-		],
-		[
-			{
-				id: 1,
-				selected: false,
-				text: 'Skin and nail fungal infections',
-			},
-			{
-				id: 2,
-				selected: false,
-				text: 'Oral thrush',
-			},
-			{
-				id: 3,
-				selected: false,
-				text: 'Mood disorders',
-			},
-			{
-				id: 4,
-				selected: false,
-				text: 'Digestion issues',
-			},
-			{
-				id: 5,
-				selected: false,
-				text: 'Skin issues',
-			},
-			{
-				id: 6,
-				selected: false,
-				text: 'Recurring genital or urinary tract infections',
-			},
-			{
-				id: 7,
-				selected: false,
-				text: 'Increased appetite',
-			},
-			{
-				id: 8,
-				selected: false,
-				text: 'Joint pain',
+				text: 'Rückenschmerzen',
 			},
 			{
 				id: 9,
 				selected: false,
-				text: 'None',
+				text: 'Stimmungsschwankungen',
+			},
+			{
+				id: 8,
+				selected: false,
+				text: 'Keine',
 				deselectAll: true,
 			},
 		],
@@ -198,66 +155,114 @@ const Health = () => {
 			{
 				id: 1,
 				selected: false,
-				text: 'Wheat and gluten',
+				text: 'Haut- und Nagelpilzinfektionen',
 			},
 			{
 				id: 2,
 				selected: false,
-				text: 'Lactose',
+				text: 'Mundfäule',
 			},
 			{
 				id: 3,
 				selected: false,
-				text: 'Nuts',
+				text: 'Stimmungsschwankungen',
 			},
 			{
 				id: 4,
 				selected: false,
-				text: 'Fish',
+				text: 'Verdauungsprobleme',
 			},
 			{
 				id: 5,
 				selected: false,
-				text: 'Seafood',
+				text: 'Hautprobleme',
 			},
 			{
 				id: 6,
 				selected: false,
-				text: 'Citrus fruits',
+				text: 'Wiederkehrende Genital- oder Harnwegsinfektionen',
 			},
 			{
 				id: 7,
 				selected: false,
-				text: 'Strawberries',
+				text: 'Gesteigerter Appetit',
+			},
+			{
+				id: 8,
+				selected: false,
+				text: 'Gelenkschmerzen',
+			},
+			{
+				id: 9,
+				selected: false,
+				text: 'Keine',
+				deselectAll: true,
+			},
+		],
+		[
+			{
+				id: 1,
+				selected: false,
+				text: 'Weizen und Gluten',
+			},
+			{
+				id: 2,
+				selected: false,
+				text: 'Laktose',
+			},
+			{
+				id: 3,
+				selected: false,
+				text: 'Nüsse',
+			},
+			{
+				id: 4,
+				selected: false,
+				text: 'Fisch',
+			},
+			{
+				id: 5,
+				selected: false,
+				text: 'Meeresfrüchte',
+			},
+			{
+				id: 6,
+				selected: false,
+				text: 'Zitrusfrüchte',
+			},
+			{
+				id: 7,
+				selected: false,
+				text: 'Erdbeeren',
 			},
 			{
 				id: 8,
 
 				selected: false,
-				text: 'None',
+				text: 'Keine',
 				deselectAll: true,
 			},
 			{
 				id: 9,
 				selected: false,
-				text: 'Other',
+				text: 'Andere',
 			},
 		],
 		[
 			{
 				id: 1,
 				selected: false,
-				text: 'High cholesterol and/or blood triglycerides levels',
+				text: 'Hoher Cholesterin- und/oder Triglyceridspiegel im Blut',
 			},
 			{
 				id: 2,
 				selected: false,
-				text: 'Thyroid issues',
+				text: 'Schilddrüsenprobleme',
 			},
 			{
 				id: 3,
 				selected: false,
-				text: 'Gout',
+				text: 'Gicht',
 			},
 			{
 				id: 4,
@@ -268,13 +273,58 @@ const Health = () => {
 			{
 				id: 8,
 				selected: false,
-				text: 'None',
+				text: 'Keine',
 				deselectAll: true,
 			},
 			{
 				id: 9,
 				selected: false,
-				text: 'Other',
+				text: 'Andere',
+			},
+		],
+		[
+			{
+				id: 1,
+				selected: false,
+				text: 'Gastritis',
+			},
+			{
+				id: 2,
+				selected: false,
+				text: 'Reizdarmsyndrom (RDS)',
+			},
+			{
+				id: 3,
+				selected: false,
+				text: 'Gastroösophageale Refluxkrankheit (GERD)',
+			},
+			{
+				id: 4,
+				selected: false,
+				text: 'Divertikulitis',
+			},
+			{
+				id: 5,
+				selected: false,
+				text: 'Kolitis',
+				deselectAll: true,
+			},
+			{
+				id: 6,
+				selected: false,
+				text: 'Morbus Crohn',
+			},
+
+			{
+				id: 7,
+				selected: false,
+				text: 'Keine',
+				deselectAll: true,
+			},
+			{
+				id: 8,
+				selected: false,
+				text: 'Andere',
 			},
 		],
 		[
@@ -330,6 +380,7 @@ const Health = () => {
 			},
 		],
 	];
+
 	const [currentOption, setCurrentOption] = useState(0);
 	// dispatch(incrementRangePageCount(currentOption + 1));
 	const [quizData, setquizData] = useState([...healthData]);
@@ -337,18 +388,25 @@ const Health = () => {
 	const [isSelected, setIsSelected] = useState(false);
 
 	const handleQuizPages = () => {
-		console.log(currentOption, quizData.length);
+		// console.log(currentOption, quizData.length);
+		const newCurrentOption = currentOption + 1;
+		const rangeWidth = (100 / quizData.length) * newCurrentOption;
+		// console.log(rangeWidth, newCurrentOption);
 		if (currentOption < quizData.length - 1) {
-			const newCurrentOption = currentOption + 1;
 			setCurrentOption(newCurrentOption);
 			setCurrentQuiz(quizData[newCurrentOption]);
-			dispatch(incrementRangePageCount(newCurrentOption));
+			dispatch(incrementRangePageCount({ rangeWidth, newCurrentOption }));
 		} else {
 			setUserData(true);
-			dispatch(incrementRangePageCount(currentOption + 1));
+			dispatch(incrementRangePageCount({ rangeWidth, newCurrentOption }));
 		}
 		setIsSelected(false);
 	};
+
+	// useEffect(() => {
+	// 	const rangeWidth = (100 / quizData.length) * currentOption;
+	// 	dispatch(incrementRangePageCount({ rangeWidth, currentOption }));
+	// }, [dispatch, currentOption, quizData.length]);
 
 	const handleQuizPagesBack = () => {
 		// console.log(currentOption);
@@ -396,7 +454,7 @@ const Health = () => {
 
 	return (
 		<div>
-			<h3 className="heading-3">What is your current health state?</h3>
+			<h3 className="heading-3">Wie steht es um deine aktuelle Gesundheit?</h3>
 			{!userData ? (
 				<div>
 					<QuizOptions
@@ -409,7 +467,7 @@ const Health = () => {
 
 					<button className="btn-back" onClick={handleQuizPagesBack}>
 						<i className="bi bi-caret-left"></i>
-						<span className="text">go back</span>
+						<span className="text">Zurück</span>
 					</button>
 				</div>
 			) : (

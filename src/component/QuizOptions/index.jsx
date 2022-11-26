@@ -1,4 +1,10 @@
-export default function QuizOptions({ quizData, handleSelection, handleQuizPages, isSelected, currentOption }) {
+export default function QuizOptions({
+	quizData,
+	handleSelection,
+	handleQuizPages,
+	isSelected,
+	currentOption,
+}) {
 	return (
 		<>
 			{quizData && (
@@ -7,8 +13,11 @@ export default function QuizOptions({ quizData, handleSelection, handleQuizPages
 						const { id, img, text, png, selected } = item;
 						return (
 							<li
-								className={selected ? 'health-item health-item-text checked' : 'health-item health-item-text'}
-								key={id}>
+								className={
+									selected ? 'health-item health-item-text checked' : 'health-item health-item-text'
+								}
+								key={id}
+							>
 								{!img && !png ? (
 									<>
 										<i className="bi bi-check2"></i>
@@ -35,8 +44,11 @@ export default function QuizOptions({ quizData, handleSelection, handleQuizPages
 				</ul>
 			)}
 			{quizData && !quizData[0].img && !quizData[0].png ? (
-				<button onClick={handleQuizPages} className={isSelected ? 'btn-continue show-btn' : 'btn-continue'}>
-					continue
+				<button
+					onClick={handleQuizPages}
+					className={isSelected ? 'btn-continue show-btn' : 'btn-continue'}
+				>
+					Weiter
 				</button>
 			) : null}
 		</>

@@ -11,22 +11,22 @@ const UserData = () => {
 	const metricData = [
 		{
 			id: 1,
-			placeholder: 'age',
-			label: 'years',
+			placeholder: 'Alter',
+			label: 'Jahre',
 		},
 		{
 			id: 3,
-			placeholder: 'height',
+			placeholder: 'Körpergröße',
 			label: 'cm',
 		},
 		{
 			id: 4,
-			placeholder: 'weight',
+			placeholder: 'Gewicht',
 			label: 'kg',
 		},
 		{
 			id: 5,
-			placeholder: 'desired weight',
+			placeholder: 'Zielgewicht',
 			label: 'kg',
 		},
 	];
@@ -39,7 +39,7 @@ const UserData = () => {
 		<div>
 			<div className="userData">
 				<div className="userData-btns">
-					<button className="btn btn-metric active">Metric</button>
+					<button className="btn btn-metric active">Metrisch</button>
 				</div>
 				<div className="userData-list">
 					<form className="userData-form" onSubmit={handleSubmit}>
@@ -55,7 +55,7 @@ const UserData = () => {
 
 						<div className="userData-btn">
 							<Link type="submit" className="btn btn-contineu" to="/summary">
-								contineu
+								Weiter
 							</Link>
 						</div>
 					</form>

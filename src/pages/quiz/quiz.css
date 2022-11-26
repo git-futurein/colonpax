@@ -25,10 +25,10 @@
 	color: #ffffff;
 }
 .quiz .heading-2 {
-	font-size: 120px;
+	font-size: 50px;
 	font-weight: 700;
 	color: #333333;
-	text-align: center;
+	/* text-align: center; */
 	padding-top: 20px;
 }
 .quiz .hero_wrapper {
@@ -92,11 +92,11 @@
 }
 
 .male .heading-2 {
-	font-size: 57px;
+	font-size: 45px;
 	margin-bottom: 34px;
 }
 .male h3 {
-	font-size: 44px;
+	font-size: 34px;
 	color: #103b19;
 	text-align: center;
 	margin-bottom: 48px;
@@ -369,18 +369,18 @@
 		font-size: 20px;
 	}
 	.heading-2 {
-		font-size: 80px;
+		/* font-size: 80px; */
 	}
 	.male .heading {
 		font-size: 48px;
 	}
 	.male h3 {
-		font-size: 36px;
+		font-size: 32px;
 	}
 }
 @media only screen and (max-width: 480px) {
 	.heading-2 {
-		font-size: 70px;
+		/* font-size: 70px; */
 	}
 	.male h3 {
 		font-size: 28px;

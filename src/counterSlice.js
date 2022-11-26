@@ -12,6 +12,7 @@ export const counterSlice = createSlice({
 	initialState,
 	reducers: {
 		incrementRangePageCount: (state, action) => {
+			// console.log(action.payload);
 			state.rangePageCount = action.payload;
 		},
 		subscriptionPopupOpen: (state) => {

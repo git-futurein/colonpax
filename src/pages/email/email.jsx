@@ -8,7 +8,9 @@ const Email = () => {
 	return (
 		<div className="email">
 			<HeaderBox />
-			<h2 className="heading-2 mb-5">Colonpax</h2>
+			<div className="container">
+				<h2 className="heading-2 mb-5">Colonpax</h2>
+			</div>
 
 			<div className="hero_section">
 				<div className="container">

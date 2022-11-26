@@ -25,21 +25,21 @@ const Quiz = () => {
 						<div className="overflow-hidden hero_wrapper">
 							<div className=" hero_div text-center">
 								<h2 className="common_h2 text-center">
-									{/* Verbessere deine <br /> Darmgesundheit - <br /> Optimiere dein <br /> Körpergewicht */}
-									Feeling heaviness in your gut? Have unwanted weight or excess gas?
+									Völlegefühl? Zu viele lästige Pfunde oder Schmerzen im Bauch?
 								</h2>
 								<p className="common_p text-center">
-									Colonpax is a safe and effective way to relieve constipation, lose weight and
-									cleanse your body. Take a quiz to see how it can help you.
+									Colonpax ist ein sicherer Weg, um Verstopfung auf natürliche Weise zu lindern,
+									abzunehmen und deinen Körper effektiv zu entgiften. Mach den Test und erfahre, wie
+									es dir helfen kann.
 								</p>
 
 								<h4 className="bold_tag text-center">Wähle dein Geschlecht:</h4>
 
 								<Link to="/quiz/male">
-									<button className="btn_one">MALE</button>
+									<button className="btn_one">Männlich</button>
 								</Link>
 								<Link to="/quiz/female">
-									<button className="btn_two">FEMALE</button>
+									<button className="btn_two">Weiblich</button>
 								</Link>
 
 								<br />
