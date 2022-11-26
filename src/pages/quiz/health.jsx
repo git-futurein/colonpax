@@ -3,18 +3,17 @@ import './quiz.css';
 import UserData from './male/userData';
 import { useDispatch } from 'react-redux';
 import { incrementRangePageCount, updateHealthCollectData } from '../../counterSlice';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, redirect, useLocation } from 'react-router-dom';
+import QuizOptions from '../../component/QuizOptions';
 
 const Health = () => {
 	const dispatch = useDispatch();
-	// const location = useLocation();
+	const location = useLocation();
 	// const gender = location.pathname.split('/').slice(-1).toString();
 
-	const [quizCount, setQuizCount] = useState(0);
 	const [userData, setUserData] = useState(false);
 	const [healthCollectData, setHealthCollectData] = useState([]);
-	const [selectItem, setselectItem] = useState(true);
-	const [selectItemNumber, setselectItemNumber] = useState(null);
+
 	// const [textQuizes, setTextQuizes] = useState(false);
 
 	const healthData = [
@@ -75,6 +74,7 @@ const Health = () => {
 				id: 5,
 				selected: false,
 				text: 'None',
+				deselectAll: true,
 			},
 		],
 		[
@@ -143,6 +143,7 @@ const Health = () => {
 				id: 8,
 				selected: false,
 				text: 'None',
+				deselectAll: true,
 			},
 		],
 		[
@@ -190,6 +191,7 @@ const Health = () => {
 				id: 9,
 				selected: false,
 				text: 'None',
+				deselectAll: true,
 			},
 		],
 		[
@@ -233,6 +235,7 @@ const Health = () => {
 
 				selected: false,
 				text: 'None',
+				deselectAll: true,
 			},
 			{
 				id: 9,
@@ -266,6 +269,7 @@ const Health = () => {
 				id: 8,
 				selected: false,
 				text: 'None',
+				deselectAll: true,
 			},
 			{
 				id: 9,
@@ -326,292 +330,87 @@ const Health = () => {
 			},
 		],
 	];
+	const [currentOption, setCurrentOption] = useState(0);
+	// dispatch(incrementRangePageCount(currentOption + 1));
+	const [quizData, setquizData] = useState([...healthData]);
+	const [currentQuiz, setCurrentQuiz] = useState(quizData[currentOption]);
+	const [isSelected, setIsSelected] = useState(false);
 
-	const [quizData, setquizData] = useState(healthData);
-
-	const handleQuizPages = (text = '') => {
-		setHealthCollectData([...healthCollectData, text]);
-		if (quizCount !== healthData.length - 1) {
-			setQuizCount(quizCount + 1);
-			// setquizData(healthData[quizCount]);
-			dispatch(incrementRangePageCount(quizCount));
-			// console.log(quizCount);
+	const handleQuizPages = () => {
+		console.log(currentOption, quizData.length);
+		if (currentOption < quizData.length - 1) {
+			const newCurrentOption = currentOption + 1;
+			setCurrentOption(newCurrentOption);
+			setCurrentQuiz(quizData[newCurrentOption]);
+			dispatch(incrementRangePageCount(newCurrentOption));
 		} else {
 			setUserData(true);
-			dispatch(incrementRangePageCount(quizCount));
+			dispatch(incrementRangePageCount(currentOption + 1));
 		}
-	};
-
-	const handleClickedItem = (number) => {
-		setselectItemNumber(number);
+		setIsSelected(false);
 	};
 
 	const handleQuizPagesBack = () => {
-		setQuizCount(quizCount - 1);
-		dispatch(incrementRangePageCount(quizCount));
+		// console.log(currentOption);
+		if (currentOption > 0) {
+			const newCurrentOption = currentOption - 1;
+			setCurrentOption(newCurrentOption);
+			const newCurrentQuiz = quizData[newCurrentOption].map((option) => {
+				option.selected = false;
+				return option;
+			});
+			console.log(newCurrentQuiz);
+			setCurrentQuiz(quizData[newCurrentOption]);
+			dispatch(incrementRangePageCount(newCurrentOption));
+		} else {
+			window.location = '/';
+		}
 	};
 
-	// const handleSelected = (id) => {
-	// 	setquizData(
-	// 		quizData[quizCount].map((item) => {
-	// 			if (item.id === id) {
-	// 				item.selected = true;
-	// 			}
-	// 		})
-	// 	);
-	// };
+	const handleSelection = (selectedOption) => {
+		if (selectedOption.deselectAll && !selectedOption.selected) {
+			const newCurrentQuiz = currentQuiz.map((option) => {
+				option.selected = false;
+				if (option.id === selectedOption.id) {
+					option.selected = true;
+				}
+				return option;
+			});
+			setCurrentQuiz(newCurrentQuiz);
+		} else {
+			const newCurrentQuiz = currentQuiz.map((option) => {
+				if (option.id === selectedOption.id) {
+					option.selected = !selectedOption.selected;
+				}
+				if (option.deselectAll) {
+					option.selected = false;
+				}
+				return option;
+			});
+			setCurrentQuiz(newCurrentQuiz);
+		}
+
+		const isAnySelected = currentQuiz.some((item) => item.selected);
+		setIsSelected(isAnySelected);
+	};
 
 	return (
 		<div>
 			<h3 className="heading-3">What is your current health state?</h3>
 			{!userData ? (
 				<div>
-					<div className={quizCount === 0 ? 'd-block' : 'd-none'}>
-						<ul className="health-list">
-							{healthData[0].map((item) => {
-								const { id, img, text, png } = item;
-								return (
-									<li className="health-item" key={id}>
-										<button
-											className="btn btn-health"
-											onClick={() => handleQuizPages(text, img, png)}
-										>
-											{img && (
-												<svg className="icon">
-													<use xlinkHref={`/images/icons.svg#icon-${img}`}></use>
-												</svg>
-											)}
-											{png && <img src={png} className="icon" alt="" />}
-											<span className="text">{text}</span>
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-					<div className={quizCount === 1 ? 'd-block' : 'd-none'}>
-						<ul className="health-list">
-							{quizData[quizCount].map((item, i) => {
-								const { id, img, text, png, selected } = item;
-								return (
-									<li
-										className={
-											selectItemNumber === i
-												? 'health-item health-item-text checked'
-												: 'health-item health-item-text '
-										}
-										key={id}
-									>
-										<i className="bi bi-check2"></i>
-										<button className="btn btn-health" onClick={(e) => handleClickedItem(i)}>
-											<span className="text">{text}</span>
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-						<button
-							className={selectItem ? 'btn-continue show-btn' : 'btn-continue'}
-							onClick={() => handleQuizPages()}
-						>
-							continue
-						</button>
-					</div>
-					<div className={quizCount === 2 ? 'd-block' : 'd-none'}>
-						<ul className="health-list ">
-							{healthData[2].map((item) => {
-								const { id, img, text, png } = item;
-								return (
-									<li className="health-item" key={id}>
-										<button
-											className="btn btn-health"
-											onClick={() => handleQuizPages(text, img, png)}
-										>
-											{img && (
-												<svg className="icon">
-													<use xlinkHref={`/images/icons.svg#icon-${img}`}></use>
-												</svg>
-											)}
-											{png && <img src={png} className="icon" alt="" />}
-											<span className="text">{text}</span>
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-					<div className={quizCount === 3 ? 'd-block' : 'd-none'}>
-						<ul className="health-list">
-							{healthData[3].map((item, i) => {
-								const { id, img, text, png } = item;
-								return (
-									<li
-										className={
-											selectItemNumber === i
-												? 'health-item health-item-text checked'
-												: 'health-item health-item-text '
-										}
-										key={id}
-									>
-										<i className="bi bi-check2"></i>
-										<button className="btn btn-health" onClick={(e) => handleClickedItem(i)}>
-											<span className="text">{text}</span>
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-						<button
-							className={selectItem ? 'btn-continue show-btn' : 'btn-continue'}
-							onClick={() => handleQuizPages()}
-						>
-							continue
-						</button>
-					</div>
-					<div className={quizCount === 4 ? 'd-block' : 'd-none'}>
-						<ul className="health-list ">
-							{healthData[4].map((item, i) => {
-								const { id, img, text, png } = item;
-								return (
-									<li
-										className={
-											selectItemNumber === i
-												? 'health-item health-item-text checked'
-												: 'health-item health-item-text '
-										}
-										key={id}
-									>
-										<i className="bi bi-check2"></i>
-										<button className="btn btn-health" onClick={(e) => handleClickedItem(i)}>
-											<span className="text">{text}</span>
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-						<button
-							className={selectItem ? 'btn-continue show-btn' : 'btn-continue'}
-							onClick={() => handleQuizPages()}
-						>
-							continue
-						</button>
-					</div>
-					<div className={quizCount === 5 ? 'd-block' : 'd-none'}>
-						<ul className="health-list">
-							{healthData[5].map((item, i) => {
-								const { id, img, text, png } = item;
-								return (
-									<li
-										className={
-											selectItemNumber === i
-												? 'health-item health-item-text checked'
-												: 'health-item health-item-text '
-										}
-										key={id}
-									>
-										<i className="bi bi-check2"></i>
-										<button className="btn btn-health" onClick={(e) => handleClickedItem(i)}>
-											<span className="text">{text}</span>
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-						<button
-							className={selectItem ? 'btn-continue show-btn' : 'btn-continue'}
-							onClick={() => handleQuizPages()}
-						>
-							continue
-						</button>
-					</div>
-					<div className={quizCount === 6 ? 'd-block' : 'd-none'}>
-						<ul className="health-list">
-							{healthData[6].map((item, i) => {
-								const { id, img, text, png } = item;
-								return (
-									<li
-										className={
-											selectItemNumber === i
-												? 'health-item health-item-text checked'
-												: 'health-item health-item-text '
-										}
-										key={id}
-									>
-										<i className="bi bi-check2"></i>
-										<button className="btn btn-health" onClick={(e) => handleClickedItem(i)}>
-											<span className="text">{text}</span>
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-						<button
-							className={selectItem ? 'btn-continue show-btn' : 'btn-continue'}
-							onClick={() => handleQuizPages()}
-						>
-							continue
-						</button>
-					</div>
-					<div className={quizCount === 7 ? 'd-block' : 'd-none'}>
-						<ul className="health-list">
-							{healthData[7].map((item) => {
-								const { id, img, text, png } = item;
-								return (
-									<li className="health-item" key={id}>
-										<button
-											className="btn btn-health"
-											onClick={() => handleQuizPages(text, img, png)}
-										>
-											{img && (
-												<svg className="icon">
-													<use xlinkHref={`/images/icons.svg#icon-${img}`}></use>
-												</svg>
-											)}
-											{png && <img src={png} className="icon" alt="" />}
-											<span className="text">{text}</span>
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-					<div className={quizCount === 8 ? 'd-block' : 'd-none'}>
-						<ul className="health-list">
-							{healthData[8].map((item) => {
-								const { id, img, text, png } = item;
-								return (
-									<li className="health-item" key={id}>
-										<button
-											className="btn btn-health"
-											onClick={() => handleQuizPages(text, img, png)}
-										>
-											{img && (
-												<svg className="icon">
-													<use xlinkHref={`/images/icons.svg#icon-${img}`}></use>
-												</svg>
-											)}
-											{png && <img src={png} className="icon" alt="" />}
-											<span className="text">{text}</span>
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
+					<QuizOptions
+						quizData={currentQuiz}
+						handleSelection={handleSelection}
+						isSelected={isSelected}
+						handleQuizPages={handleQuizPages}
+						currentOption={currentOption}
+					/>
 
-					{quizCount === 0 ? (
-						<button className="btn-back">
-							<Link to="/">
-								<i className="bi bi-caret-left"></i>
-								<span className="text">go back</span>
-							</Link>
-						</button>
-					) : (
-						<button className="btn-back" onClick={() => handleQuizPagesBack()}>
-							<i className="bi bi-caret-left"></i>
-							<span className="text">go back</span>
-						</button>
-					)}
+					<button className="btn-back" onClick={handleQuizPagesBack}>
+						<i className="bi bi-caret-left"></i>
+						<span className="text">go back</span>
+					</button>
 				</div>
 			) : (
 				<UserData />
