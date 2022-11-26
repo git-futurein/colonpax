@@ -1,10 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const Weight = () => {
-	const { healthCollectData } = useSelector((state) => state.counter);
-	console.log(healthCollectData);
+	const [bowelMovement, setBowelMovement] = useState(0);
+	const { healthCollectData, gender, userCollectData } = useSelector((state) => state.counter);
+	const [bmi, setBmi] = useState(0);
+	const [bmiText, setBmiText] = useState('');
+
+	useEffect(() => {
+		if (healthCollectData.length > 0) {
+			healthCollectData[2].map((item) => {
+				setBowelMovement(item.text);
+			});
+		} else {
+			return;
+		}
+	}, [healthCollectData]);
+
+	useEffect(() => {
+		// const newBmi = weight / (((height / 100) * height) / 100);
+		// const newBmi = +userCollectData.weight / (((+userCollectData.height / 100) * +userCollectData.height) / 100);
+		const newBmi =
+			(+userCollectData.weight / (+userCollectData.height * +userCollectData.height)) * 10000;
+
+		setBmi(newBmi.toFixed(2));
+		if (bmi < 18.5) {
+			// 'Underweight';
+			setBmiText('Du Bist Untergewichtig');
+		} else if (18.5 <= bmi && bmi <= 24.9) {
+			// 'Healthy';
+			setBmiText('Du Hast Dein Idealgewicht');
+		} else if (25 <= bmi && bmi <= 29.9) {
+			// 'Overweight';
+			setBmiText('Du Bist Übergewichtig');
+		}
+	}, [userCollectData.weight, userCollectData.height, bmi]);
 
 	return (
 		<div>
@@ -63,9 +94,7 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Geschlecht</h4>
-									<p className="text">
-										Weiblich/ <br /> Männlich
-									</p>
+									<p className="text">{gender}</p>
 								</div>
 							</div>
 							<div className="deine__item d-flex align-items-start">
@@ -74,7 +103,7 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Alter</h4>
-									<p className="text">28</p>
+									<p className="text">{userCollectData.age}</p>
 								</div>
 							</div>
 							<div className="deine__item d-flex align-items-start">
@@ -83,7 +112,7 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Körpergrösse</h4>
-									<p className="text">178 cm</p>
+									<p className="text">{userCollectData.height} cm</p>
 								</div>
 							</div>
 							<div className="deine__item d-flex align-items-start">
@@ -92,7 +121,7 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Körpergewicht</h4>
-									<p className="text">85 kg</p>
+									<p className="text">{userCollectData.weight} kg</p>
 								</div>
 							</div>
 						</div>
@@ -106,10 +135,8 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Dein BMI</h4>
-									<h2 className="common_h2 common_h2_secondary ">26.83 kg/m2</h2>
-									<p className="text">
-										Du bist übergewichtig / Du bist untergewichtig / Du hast Dein idealgewicht
-									</p>
+									<h2 className="common_h2 common_h2_secondary ">{bmi} kg/m2</h2>
+									<p className="text">{bmiText}</p>
 								</div>
 							</div>
 							<div className="deine__item d-flex align-items-start">
@@ -118,7 +145,9 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Stoffwechselalter</h4>
-									<h2 className="common_h2 common_h2_secondary ">35 Jahre</h2>
+									<h2 className="common_h2 common_h2_secondary ">
+										{+userCollectData.age + 7} Jahre
+									</h2>
 									<p className="text">
 										Dein Stoffwechsel ist langsamer als er sein sollte Dein Stoffwechsel ist gut
 									</p>
@@ -130,7 +159,7 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Stuhlgang</h4>
-									<h2 className="common_h2 common_h2_secondary ">{'< 1 mal pro Woche'}</h2>
+									<h2 className="common_h2 common_h2_secondary ">{`${bowelMovement} mal pro Woche`}</h2>
 									<p className="text">Dein Stuhlgang is viel zu wenig</p>
 								</div>
 							</div>

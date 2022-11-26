@@ -4,12 +4,14 @@ export default function QuizOptions({
 	handleQuizPages,
 	isSelected,
 	currentOption,
+	title,
 }) {
 	return (
 		<>
+			<h3 className="heading-3">{title}</h3>
 			{quizData && (
 				<ul className="health-list">
-					{quizData.map((item, i) => {
+					{quizData.map((item) => {
 						const { id, img, text, png, selected } = item;
 						return (
 							<li
@@ -28,7 +30,13 @@ export default function QuizOptions({
 								) : null}
 
 								{img || png ? (
-									<button className="btn btn-health" onClick={handleQuizPages}>
+									<button
+										className="btn btn-health"
+										onClick={() => {
+											handleSelection(item);
+											handleQuizPages();
+										}}
+									>
 										{img && (
 											<svg className="icon">
 												<use xlinkHref={`/images/icons.svg#icon-${img}`}></use>

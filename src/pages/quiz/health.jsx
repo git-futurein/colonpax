@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import './quiz.css';
 import UserData from './male/userData';
 import { useDispatch } from 'react-redux';
-import { incrementRangePageCount, updateHealthCollectData } from '../../counterSlice';
-import { Link, redirect, useLocation } from 'react-router-dom';
+import { incrementRangePageCount, updateHealthCollectData, getGender } from '../../counterSlice';
+import { useLocation } from 'react-router-dom';
 import QuizOptions from '../../component/QuizOptions';
 
 const Health = () => {
 	const dispatch = useDispatch();
 	const location = useLocation();
-	// const gender = location.pathname.split('/').slice(-1).toString();
+	const gender = location.pathname.split('/').slice(-1).toString();
 
 	const [userData, setUserData] = useState(false);
-	const [healthCollectData, setHealthCollectData] = useState([]);
+	const [collectData, setCollectData] = useState([]);
 
 	// const [textQuizes, setTextQuizes] = useState(false);
 
@@ -332,25 +332,25 @@ const Health = () => {
 				id: 1,
 				img: 'health-10',
 				selected: false,
-				text: 'I workout',
+				text: 'Ich trainiere regelmäßig',
 			},
 			{
 				id: 2,
 				img: 'health-11',
 				selected: false,
-				text: "I'm in light mode",
+				text: 'Ich trainiere, aber unregelmäßig',
 			},
 			{
 				id: 3,
 				img: 'health-12',
 				selected: false,
-				text: 'Physically inactive',
+				text: 'Nicht wirklich aktiv',
 			},
 			{
 				id: 4,
 				img: 'health-13',
 				selected: false,
-				text: 'Other',
+				text: 'Andere',
 			},
 		],
 		[
@@ -358,40 +358,61 @@ const Health = () => {
 				id: 1,
 				png: '/images/tim1.png',
 				selected: false,
-				text: 'I workout',
+				text: 'Sehr wenig',
 			},
 			{
 				id: 2,
 				png: '/images/tim2.png',
 				selected: false,
-				text: "I'm in light mode",
+				text: '15–30 Minuten',
 			},
 			{
 				id: 3,
 				png: '/images/tim3.png',
 				selected: false,
-				text: 'Physically inactive',
+				text: '30–60 Minuten',
 			},
 			{
 				id: 4,
 				png: '/images/tim4.png',
 				selected: false,
-				text: 'Other',
+				text: '60–90 Minuten',
+			},
+			{
+				id: 5,
+				png: '/images/tim5.png',
+				selected: false,
+				text: '90+ Minuten',
 			},
 		],
 	];
+	const quizTitle = [
+		'Wie steht es um deine aktuelle Gesundheit?',
+		'Leidest du unter den folgenden Beschwerden?',
+		'Wie regelmäßig ist dein Stuhlgang?',
+		'Hast du eines dieser Symptome?',
+		'Was ist mit diesen Symptomen?',
+		'Hast du eine der folgenden Empfindlichkeiten oder Allergien gegen:',
+		'Hast du andere diagnostizierte Erkrankungen?',
+		'Hast/hattest du folgende Erkrankungen des Verdauungssystems?',
+		'Wie sportlich bist du?',
+		'Wie viel Zeit verbringst du mit Bewegung oder Sport?',
+		'Bitte gib deine Maße an',
+	];
 
 	const [currentOption, setCurrentOption] = useState(0);
-	// dispatch(incrementRangePageCount(currentOption + 1));
+	const [QuizTitleData, setQuizTitleData] = useState(quizTitle[currentOption]);
 	const [quizData, setquizData] = useState([...healthData]);
 	const [currentQuiz, setCurrentQuiz] = useState(quizData[currentOption]);
 	const [isSelected, setIsSelected] = useState(false);
-
+	// console.log(QuizTitleData, quizTitle);
 	const handleQuizPages = () => {
 		// console.log(currentOption, quizData.length);
 		const newCurrentOption = currentOption + 1;
 		const rangeWidth = (100 / quizData.length) * newCurrentOption;
+		setQuizTitleData(quizTitle[newCurrentOption]);
 		// console.log(rangeWidth, newCurrentOption);
+
 		if (currentOption < quizData.length - 1) {
 			setCurrentOption(newCurrentOption);
 			setCurrentQuiz(quizData[newCurrentOption]);
@@ -399,27 +420,29 @@ const Health = () => {
 		} else {
 			setUserData(true);
 			dispatch(incrementRangePageCount({ rangeWidth, newCurrentOption }));
+			// const newHealthCollectData =
 		}
 		setIsSelected(false);
-	};
 
-	// useEffect(() => {
-	// 	const rangeWidth = (100 / quizData.length) * currentOption;
-	// 	dispatch(incrementRangePageCount({ rangeWidth, currentOption }));
-	// }, [dispatch, currentOption, quizData.length]);
+		const filteredData = currentQuiz.filter((item) => item.selected);
+		const newCollectedData = [...collectData, filteredData];
+		setCollectData(newCollectedData);
+		dispatch(updateHealthCollectData(collectData));
+	};
 
 	const handleQuizPagesBack = () => {
 		// console.log(currentOption);
+		const newCurrentOption = currentOption - 1;
+		const rangeWidth = (100 / quizData.length) * newCurrentOption;
 		if (currentOption > 0) {
-			const newCurrentOption = currentOption - 1;
 			setCurrentOption(newCurrentOption);
 			const newCurrentQuiz = quizData[newCurrentOption].map((option) => {
 				option.selected = false;
 				return option;
 			});
-			console.log(newCurrentQuiz);
 			setCurrentQuiz(quizData[newCurrentOption]);
-			dispatch(incrementRangePageCount(newCurrentOption));
+			setQuizTitleData(quizTitle[newCurrentOption]);
+			dispatch(incrementRangePageCount({ rangeWidth, newCurrentOption }));
 		} else {
 			window.location = '/';
 		}
@@ -452,9 +475,13 @@ const Health = () => {
 		setIsSelected(isAnySelected);
 	};
 
+	useEffect(() => {
+		dispatch(getGender(gender));
+	}, [dispatch, gender]);
+
 	return (
 		<div>
-			<h3 className="heading-3">Wie steht es um deine aktuelle Gesundheit?</h3>
+			{/* <h3 className="heading-3">Wie steht es um deine aktuelle Gesundheit?</h3> */}
 			{!userData ? (
 				<div>
 					<QuizOptions
@@ -463,6 +490,7 @@ const Health = () => {
 						isSelected={isSelected}
 						handleQuizPages={handleQuizPages}
 						currentOption={currentOption}
+						title={QuizTitleData}
 					/>
 
 					<button className="btn-back" onClick={handleQuizPagesBack}>
@@ -471,7 +499,7 @@ const Health = () => {
 					</button>
 				</div>
 			) : (
-				<UserData />
+				<UserData title={QuizTitleData} />
 			)}
 		</div>
 	);

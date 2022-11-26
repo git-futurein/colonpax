@@ -109,7 +109,7 @@
 }
 
 .deine__item {
-	gap: 10px;
+	gap: 20px;
 	padding: 30px 26px;
 	border: 1px solid #ececf1;
 	border-radius: 12px;
@@ -120,11 +120,13 @@
 }
 .deine__item .desc p {
 	font-size: 20px;
+	margin-bottom: 0 !important;
+	text-transform: capitalize;
 }
 
 .deine__img img {
-	max-width: 51px;
-	height: 60px;
+	max-width: 40px;
+	height: 40px;
 }
 
 /* dain-2 */
@@ -137,18 +139,19 @@
 .dain-2 .deine__item {
 }
 .dain-2 .deine__item .desc h4 {
-	font-size: 32px;
+	font-size: 28px;
 }
 .dain-2 .deine__item .desc p {
 	font-size: 16px;
 }
 .dain-2 .deine__img img {
-	width: 95px;
+	max-width: 70px;
+	height: 60px;
 }
-.common_h2_secondary {
+.summary .dain-2 .common_h2_secondary {
 	font-weight: 400;
-	font-size: 40px;
-	margin-top: 10px !important;
+	font-size: 28px;
+	margin: 15px 0 !important;
 	text-align: left !important;
 }
 

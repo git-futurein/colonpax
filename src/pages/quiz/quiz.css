@@ -143,6 +143,7 @@
 }
 
 .health-list {
+	margin-top: 100px;
 	display: flex;
 	/* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
 	align-items: stretch;
@@ -154,12 +155,12 @@
 	padding-left: 0 !important;
 	flex-wrap: wrap;
 }
-.health-item {
+/* .health-item {
 	width: 230px;
 	height: 100%;
-}
+} */
 .health-item-text {
-	width: 288px;
+	width: 240px;
 	height: auto;
 	position: relative;
 }
@@ -213,7 +214,7 @@
 }
 .health-item .icon {
 	width: auto;
-	height: 90px;
+	height: 60px;
 	transition: all 0.3s;
 }
 .health-item .text {
@@ -307,14 +308,12 @@
 }
 .userData-btns .btn {
 	border-radius: 0;
-	border: 1px solid transparent;
+	border: none;
+	outline: none;
 	text-transform: capitalize;
 }
 .userData .btn:hover {
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0);
-}
-.userData-btns .active {
-	border: 1px solid #eee;
 }
 
 .userData-item {

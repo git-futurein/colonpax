@@ -3,8 +3,9 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
 	rangePageCount: 0,
 	subscriptionPopup: false,
+	gender: 'male',
 	healthCollectData: [],
-	userCollectData: [],
+	userCollectData: { age: 0, height: 0, weight: 0, desiredWeight: 0 },
 };
 
 export const counterSlice = createSlice({
@@ -22,10 +23,14 @@ export const counterSlice = createSlice({
 			state.subscriptionPopup = false;
 		},
 		updateHealthCollectData: (state, action) => {
-			state.healthCollectData = action.payload;
+			const payload = action.payload;
+			state.healthCollectData = payload;
 		},
 		updateUserCollectData: (state, action) => {
-			console.log(action.payload);
+			state.userCollectData = action.payload;
+		},
+		getGender: (state, action) => {
+			state.gender = action.payload;
 		},
 	},
 });
@@ -37,6 +42,7 @@ export const {
 	subscriptionPopupClose,
 	updateHealthCollectData,
 	updateUserCollectData,
+	getGender,
 } = counterSlice.actions;
 
 export default counterSlice.reducer;
