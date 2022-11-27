@@ -150,7 +150,7 @@ const Subscription = ({ marginTop }) => {
 											{option1}
 										</label>
 									</div>
-									<div className="form-check">
+									<div className="form-check mb-4">
 										<input
 											className="form-check-input"
 											type="radio"
@@ -163,14 +163,17 @@ const Subscription = ({ marginTop }) => {
 											{option2}
 										</label>
 									</div>
-									<div className="discount mb-4">AUTUMN SALE -%50 off</div>
+									{value === 1 && (
+										<div className="discount mb-4">
+											<div className="sparan">{`> Sie sparen 15%`}</div>
+										</div>
+									)}
 									<button
 										className="btn btn-subscription"
 										onClick={() => dispatch(subscriptionPopupOpen())}
 									>
 										{btns[value]}
 									</button>
-									{value === 1 && <div className="sparan">{`> Sie sparen 15%`}</div>}
 								</div>
 							</div>
 						);

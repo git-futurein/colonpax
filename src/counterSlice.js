@@ -43,9 +43,9 @@ export const counterSlice = createSlice({
 			// 	delay = delay - 1;
 			// 	minutes = Math.floor(delay / 60);
 			// 	seconds = Math.floor(delay % 60);
-			// 	state.timer = { minutes, seconds };
 			// }, 1000);
 			// console.log(delay, minutes, seconds);
+			// state.timer = { minutes, seconds };
 		},
 	},
 });
