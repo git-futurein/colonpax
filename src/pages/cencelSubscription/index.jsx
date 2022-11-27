@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import '../heroSection/HeroSection.css';
-import '../quiz/quiz.css';
-import './email.css';
-// import HeaderBox from '../quiz/headerBox';
 import { useNavigate } from 'react-router-dom';
+import Email from '../email/email';
 import EmailComp from '../../component/email';
 
-const Email = () => {
+const SubscriptionCancellation = () => {
 	const navigate = useNavigate();
 	const [email, setEmail] = useState('');
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		navigate('/plans');
+		navigate('/');
 	};
 	const handleInputChange = (e) => {
 		const value = e.target.value;
@@ -24,10 +21,10 @@ const Email = () => {
 	}, [email]);
 
 	return (
-		<>
-			<EmailComp submit={handleSubmit} change={handleInputChange} />
-		</>
+		<div className="subscription-cencel">
+			<EmailComp submit={handleSubmit} change={handleInputChange} cencelSubscription={true} />
+		</div>
 	);
 };
 
-export default Email;
+export default SubscriptionCancellation;

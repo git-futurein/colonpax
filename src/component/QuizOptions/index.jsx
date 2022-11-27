@@ -7,7 +7,7 @@ export default function QuizOptions({
 	title,
 }) {
 	return (
-		<>
+		<div className="quiz-wrapper">
 			<h3 className="heading-3">{title}</h3>
 			{quizData && (
 				<ul className="health-list">
@@ -59,6 +59,6 @@ export default function QuizOptions({
 					Weiter
 				</button>
 			) : null}
-		</>
+		</div>
 	);
 }

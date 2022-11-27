@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
 	rangePageCount: 0,
+	timer: 0,
 	subscriptionPopup: false,
 	gender: 'male',
 	healthCollectData: [],
@@ -32,6 +33,20 @@ export const counterSlice = createSlice({
 		getGender: (state, action) => {
 			state.gender = action.payload;
 		},
+		getTime: (state, action) => {
+			// const [delay, setDelay] = useState(+delayResend);
+			// let delay = action.payload;
+			// let minutes = Math.floor(delay / 60);
+			// let seconds = Math.floor(delay % 60);
+			// const timer = setInterval(() => {
+			// 	// setDelay(delay - 1);
+			// 	delay = delay - 1;
+			// 	minutes = Math.floor(delay / 60);
+			// 	seconds = Math.floor(delay % 60);
+			// 	state.timer = { minutes, seconds };
+			// }, 1000);
+			// console.log(delay, minutes, seconds);
+		},
 	},
 });
 
@@ -43,6 +58,7 @@ export const {
 	updateHealthCollectData,
 	updateUserCollectData,
 	getGender,
+	getTime,
 } = counterSlice.actions;
 
 export default counterSlice.reducer;

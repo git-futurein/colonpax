@@ -16,11 +16,11 @@
 	grid-template-columns: max-content 1fr;
 	justify-content: flex-start;
 	align-items: flex-start;
-	gap: 15px;
+	gap: 20px;
 }
 
 .content-box img {
-	padding-bottom: 20px;
+	max-width: 56px;
 	width: 100%;
 	height: auto;
 }

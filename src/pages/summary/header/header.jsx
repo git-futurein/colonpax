@@ -11,7 +11,7 @@ const Header = () => {
 				<div className="container">
 					<div className="hero_section_heading d-flex justify-content-between align-items-center flex-wrap">
 						<h2 className="common_h2">Colonpax</h2>
-						<Link to="/plans" className="btn btn-product text-decoration-none text-white">
+						<Link to="/email" className="btn btn-product text-decoration-none text-white">
 							PRODUKT ANZEIGEN
 						</Link>
 					</div>

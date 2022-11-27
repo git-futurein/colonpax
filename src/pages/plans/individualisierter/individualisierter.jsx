@@ -1,5 +1,6 @@
 import React from 'react';
 import './Individualisierter.css';
+import FeatureSection from '../../featureSection/FeatureSection';
 
 const Individualisierter = () => {
 	return (
@@ -19,7 +20,7 @@ const Individualisierter = () => {
 						<div className="Individualisierter-box-item item-2">
 							<div className="free-area">
 								<p className="text">Im Wert von</p>
-								<h2 className="heading2">FREE</h2>
+								<h2 className="heading2">kostenfrei</h2>
 								<h5 className="heading5">39,99 Eur</h5>
 								<img src="/images/star-1.png" className="small-star small-star-1" alt="" />
 								<img src="/images/star-1.png" className="small-star small-star-2" alt="" />
@@ -31,7 +32,8 @@ const Individualisierter = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container">
+			<FeatureSection />
+			{/* <div className="container">
 				<div className=" row">
 					<div className="col-12 col-lg-5">
 						<div className="Individualisierter-item">
@@ -112,7 +114,7 @@ const Individualisierter = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

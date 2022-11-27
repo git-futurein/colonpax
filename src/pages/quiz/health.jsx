@@ -83,24 +83,28 @@ const Health = () => {
 				img: 'health-6',
 				selected: false,
 				text: 'Täglich',
+				day: 7,
 			},
 			{
 				id: 2,
 				img: 'health-7',
 				selected: false,
 				text: 'Zweimal pro Woche',
+				day: 2,
 			},
 			{
 				id: 3,
 				img: 'health-8',
 				selected: false,
 				text: 'Einmal pro Woche',
+				day: 1,
 			},
 			{
 				id: 4,
 				img: 'health-9',
 				selected: false,
 				text: 'Weniger als einmal pro Woche',
+				day: 0,
 			},
 		],
 		[

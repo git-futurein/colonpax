@@ -19,7 +19,7 @@ const Cards = () => {
 						</p>
 
 						<button className="card_btn">
-							<Link to="/plans" className="text-decoration-none text-black">
+							<Link to="/email" className="text-decoration-none text-black">
 								PRODUKT ANZEIGEN
 							</Link>
 						</button>

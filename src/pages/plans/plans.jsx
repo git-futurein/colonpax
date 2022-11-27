@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './plans.css';
 import Header from './header/header';
 import Subscription from './subscription/subscription';
@@ -20,7 +20,7 @@ const Plans = () => {
 			<Diese />
 			<Review />
 			<Faq />
-			<Subscription marginTop="20%" />
+			<Subscription marginTop="-270px" />
 		</div>
 	);
 };

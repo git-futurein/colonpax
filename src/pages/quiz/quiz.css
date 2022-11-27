@@ -142,8 +142,12 @@
 	font-size: 14px;
 }
 
+.quiz-wrapper {
+	margin-top: 150px;
+}
+
 .health-list {
-	margin-top: 100px;
+	/* margin-top: 100px; */
 	display: flex;
 	/* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
 	align-items: stretch;

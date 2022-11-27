@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const Weight = () => {
-	const [bowelMovement, setBowelMovement] = useState(0);
+	const [bowelMovement, setBowelMovement] = useState({ text: 0, day: 0 });
 	const { healthCollectData, gender, userCollectData } = useSelector((state) => state.counter);
 	const [bmi, setBmi] = useState(0);
 	const [bmiText, setBmiText] = useState('');
@@ -11,7 +11,7 @@ const Weight = () => {
 	useEffect(() => {
 		if (healthCollectData.length > 0) {
 			healthCollectData[2].map((item) => {
-				setBowelMovement(item.text);
+				setBowelMovement({ text: item.text, day: item.day });
 			});
 		} else {
 			return;
@@ -19,8 +19,6 @@ const Weight = () => {
 	}, [healthCollectData]);
 
 	useEffect(() => {
-		// const newBmi = weight / (((height / 100) * height) / 100);
-		// const newBmi = +userCollectData.weight / (((+userCollectData.height / 100) * +userCollectData.height) / 100);
 		const newBmi =
 			(+userCollectData.weight / (+userCollectData.height * +userCollectData.height)) * 10000;
 
@@ -49,7 +47,7 @@ const Weight = () => {
 										<h3 className="heading-3 item-name">Gewicht</h3>
 										<div className="d-flex align-items-end">
 											<p className="text">Aktuelles Gewicht</p>
-											<div className="cur-weight">85 kg</div>
+											<div className="cur-weight">{userCollectData.weight} kg</div>
 										</div>
 									</div>
 									<div className="item-chart">
@@ -57,7 +55,7 @@ const Weight = () => {
 									</div>
 									<div className="item-bottom d-flex justify-content-between align-items-center">
 										<div className="item-date">{'Jetzt 2022 > Nov 2022'}</div>
-										<h3 className="heading-3 prev-wegiht">75 kg</h3>
+										<h3 className="heading-3 prev-wegiht">{userCollectData.desiredWeight} kg</h3>
 									</div>
 								</div>
 							</div>
@@ -72,13 +70,13 @@ const Weight = () => {
 									</div>
 									<div className="item-bottom d-flex justify-content-between align-items-center">
 										<div className="item-date">pro Woche</div>
-										<h3 className="heading-3 prev-wegiht">8 Mal</h3>
+										<h3 className="heading-3 prev-wegiht">{bowelMovement.day} Mal</h3>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className="button-area">
-							<Link to="/plans" className="btn btn-product text-decoration-none text-white">
+							<Link to="/email" className="btn btn-product text-decoration-none text-white">
 								PRODUKT ANZEIGEN
 							</Link>
 						</div>
@@ -159,7 +157,7 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Stuhlgang</h4>
-									<h2 className="common_h2 common_h2_secondary ">{`${bowelMovement} mal pro Woche`}</h2>
+									<h2 className="common_h2 common_h2_secondary ">{`${bowelMovement.text} mal pro Woche`}</h2>
 									<p className="text">Dein Stuhlgang is viel zu wenig</p>
 								</div>
 							</div>

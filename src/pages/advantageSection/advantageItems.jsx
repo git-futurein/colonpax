@@ -11,7 +11,7 @@ const AdvantageItems = ({ data }) => {
 						<div className="col-lg-6 col-md-6" key={id}>
 							<div className="content-box">
 								<div className="d-flex justify-content-center">
-									<img src={img} alt="" className="px-2" />
+									<img src={img} alt="" />
 								</div>
 								<div>
 									<h4 className="adv_h4">{title}</h4>

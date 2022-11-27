@@ -1,3 +1,6 @@
+.Individualisierter #feature {
+	padding: 0px;
+}
 .Individualisierter {
 	background-color: #edf7f0;
 	padding-top: 276px;
@@ -116,7 +119,7 @@
 }
 
 .free-area .heading2 {
-	font-size: 50px;
+	font-size: 34px;
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -146,7 +149,7 @@
 		display: flex;
 		justify-content: center;
 	}
-	.Individualisierter-box h2 {
+	.Individualisierter-box .heading-2 {
 		font-size: 38px;
 	}
 
@@ -167,7 +170,7 @@
 }
 
 @media only screen and (max-width: 560px) {
-	.Individualisierter-box h2 {
+	.Individualisierter-box .heading-2 {
 		font-size: 32px;
 	}
 	.Individualisierter h3 {

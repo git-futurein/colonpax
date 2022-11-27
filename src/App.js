@@ -11,6 +11,7 @@ import Summary from './pages/summary/summary';
 import Email from './pages/email/email';
 import Tarms from './pages/tarms/tarms';
 import ScrollToTop from './component/scrollToTop';
+import SubscriptionCancellation from './pages/cencelSubscription';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 				<Routes>
 					<Route path="/tarms" element={<Tarms />} />
 					<Route path="/email" element={<Email />} />
+					<Route path="/subscription-cancellation" element={<SubscriptionCancellation />} />
 					<Route path="/plans" element={<Plans />} />
 					<Route path="/summary" element={<Summary />} />
 					<Route path="/quiz/male" element={<Male />} />
