@@ -240,7 +240,7 @@ span {
 /*======== Extra small device =========*/
 @media (max-width: 575.98px) {
 	.common_h2 {
-		text-align: center;
+		/* text-align: center; */
 		font-size: 34px;
 	}
 
