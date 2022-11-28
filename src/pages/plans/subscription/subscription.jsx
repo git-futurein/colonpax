@@ -22,44 +22,45 @@ const Subscription = ({ marginTop }) => {
 			btns: ['Jetzt abonnieren', 'Jetzt Kaufen'],
 			prices: ['49', '58'],
 			formulas: [
-				['60 Portionen', '0,99 Cent pro Drink', '1 Dose wird geliefert'],
 				['60 Portionen', '0,91 Cent pro Drink', '1 Dose jeden Monat'],
+				['60 Portionen', '0,99 Cent pro Drink', '1 Dose wird geliefert'],
 			],
 			value: 0,
+			sparan: 'Sie sparen 15%',
 		},
 		{
 			id: 2,
 			img: '/images/plans-img-3.png',
 			angebot: true,
 			active: true,
-			sparan: '40',
 			dose: '3',
 			option1: 'Einmaliger Kauf',
 			option2: 'Abonnieren & Sparen',
 			btns: ['Jetzt abonnieren', 'Jetzt Kaufen'],
-			prices: ['44', '34'],
+			prices: ['34', '44'],
 			formulas: [
-				['60 Portionen', '0,67 Cent pro Drink', '3 Dosen werden geliefert'],
 				['60 Portionen', '0,59 Cent pro Drink', '3 Dosen jeden Monat'],
+				['60 Portionen', '0,67 Cent pro Drink', '3 Dosen werden geliefert'],
 			],
 			value: 0,
+			sparan: 'Sie Sparen bis zu 40%',
 		},
 		{
 			id: 3,
 			img: '/images/plans-img-4.png',
 			angebot: true,
 			active: false,
-			sparan: '50',
 			dose: '6',
 			prices: ['34', '24'],
 			formulas: [
-				['60 Portionen', '6 Dosen werden einmalig geliefert'],
 				['60 Portionen', '6 Dosen werden alle Monate geliefert'],
+				['60 Portionen', '6 Dosen werden einmalig geliefert'],
 			],
 			option1: 'Einmaliger Kauf',
 			option2: 'Abonnieren & Sparen',
 			btns: ['Jetzt abonnieren', 'Jetzt Kaufen'],
 			value: 0,
+			sparan: 'Sie sparen - 55 %',
 		},
 	];
 
@@ -144,7 +145,6 @@ const Subscription = ({ marginTop }) => {
 											name={`flexRadioDefault1${id}`}
 											id={`flexRadioDefault1${id}`}
 											onChange={(e) => handleOption2(e, id)}
-											// checked={value === 1}
 										/>
 										<label className="form-check-label" htmlFor={`flexRadioDefault1${id}`}>
 											{option1}
@@ -157,17 +157,16 @@ const Subscription = ({ marginTop }) => {
 											name={`flexRadioDefault1${id}`}
 											id={`flexRadioDefault2${id}`}
 											onChange={(e) => handleOption1(e, id)}
-											// checked={value === 0}
 										/>
 										<label className="form-check-label" htmlFor={`flexRadioDefault2${id}`}>
 											{option2}
 										</label>
 									</div>
-									{value === 1 && (
+									{value === 0 || id === 2 ? (
 										<div className="discount mb-4">
-											<div className="sparan">{`> Sie sparen 15%`}</div>
+											<div className="sparan">{sparan}</div>
 										</div>
-									)}
+									) : null}
 									<button
 										className="btn btn-subscription"
 										onClick={() => dispatch(subscriptionPopupOpen())}
