@@ -27,3 +27,7 @@ p,
 	/* font-family: 'Poppins', sans-serif !important; */
 	font-family: 'Roboto', sans-serif !important;
 }
+a:link,
+a:visited {
+	text-decoration: none;
+}
