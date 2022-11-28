@@ -189,6 +189,35 @@
 	bottom: -197px;
 }
 
+/* cards 2 */
+.cards2-wrapper {
+	/* margin: 0 40px; */
+}
+.cards2-wrapper .cards2 {
+	padding: 30px 26px;
+	border: 1px solid #ececf1;
+	border-radius: 12px;
+	max-width: 600px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 20px;
+	align-items: center;
+}
+.cards2-wrapper .parcent {
+	font-size: 40px;
+	font-weight: 700;
+}
+.cards2-wrapper .details {
+}
+.cards2-wrapper .text {
+	text-transform: capitalize;
+	text-align: left;
+}
+.cards2-wrapper .text .weight {
+	font-weight: 600;
+}
+
 /* =========================== */
 /* responsive */
 /* =========================== */

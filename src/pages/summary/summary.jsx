@@ -7,6 +7,7 @@ import Benefits from '../quiz/benefits';
 import Cards from './cards';
 import { useDispatch, useSelector } from 'react-redux';
 import { getTime } from '../../counterSlice';
+import Cards2 from './cards2';
 
 const Summary = () => {
 	// const { timer } = useSelector((state) => state.counter);
@@ -22,6 +23,7 @@ const Summary = () => {
 			{/* <HeaderBox /> */}
 			<Header />
 			<Weight />
+			<Cards2 />
 			<Benefits />
 			<Cards />
 		</div>
