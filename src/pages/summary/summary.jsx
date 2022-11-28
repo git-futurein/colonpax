@@ -10,32 +10,16 @@ import { getTime } from '../../counterSlice';
 
 const Summary = () => {
 	// const { timer } = useSelector((state) => state.counter);
-	const dispatch = useDispatch();
-	const delayResend = 60 * 30;
-	// const [delay, setDelay] = useState(+delayResend);
-	// const minutes = Math.floor(delay / 60);
-	// const seconds = Math.floor(delay % 60);
+	// const dispatch = useDispatch();
+	// const delayResend = 60 * 30;
+
 	// useEffect(() => {
-	// 	const timer = setInterval(() => {
-	// 		setDelay(delay - 1);
-	// 	}, 1000);
-
-	// 	if (delay === 0) {
-	// 		clearInterval(timer);
-	// 	}
-
-	// 	return () => {
-	// 		clearInterval(timer);
-	// 	};
+	// 	dispatch(getTime(delayResend));
 	// });
-
-	useEffect(() => {
-		dispatch(getTime(delayResend));
-	});
 
 	return (
 		<div className="summary">
-			<HeaderBox />
+			{/* <HeaderBox /> */}
 			<Header />
 			<Weight />
 			<Benefits />

@@ -80,6 +80,11 @@
 	font-weight: 600;
 }
 
+.email form .btn:active {
+	background-color: #62c476;
+	color: #fff;
+}
+
 /* ======================== */
 /* responsive */
 /* ======================== */

@@ -6,7 +6,7 @@ const Benefits = () => {
 	return (
 		<div className="benefits">
 			<div className="container">
-				<h2 className="common_h2 text-center mb-5">Psyllium Husk Benefits Covered in</h2>
+				<h2 className="common_h2 text-center mb-5">Bekannt aus</h2>
 
 				<div className="benefits__list">
 					<img src={partnar1} alt="" />

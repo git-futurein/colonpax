@@ -51,7 +51,7 @@ const Subscription = ({ marginTop }) => {
 			angebot: true,
 			active: false,
 			dose: '6',
-			prices: ['34', '24'],
+			prices: ['24', '34'],
 			formulas: [
 				['60 Portionen', '6 Dosen werden alle Monate geliefert'],
 				['60 Portionen', '6 Dosen werden einmalig geliefert'],
@@ -68,7 +68,7 @@ const Subscription = ({ marginTop }) => {
 
 	const handleOption1 = (e, id) => {
 		if (e.target.checked) {
-			const newData = subscriptionData.map((item) => {
+			const newData = data.map((item) => {
 				if (item.id === id) {
 					item.value = 0;
 				}
@@ -80,7 +80,7 @@ const Subscription = ({ marginTop }) => {
 	};
 	const handleOption2 = (e, id) => {
 		if (e.target.checked) {
-			const newData = subscriptionData.map((item) => {
+			const newData = data.map((item) => {
 				if (item.id === id) {
 					item.value = 1;
 				}

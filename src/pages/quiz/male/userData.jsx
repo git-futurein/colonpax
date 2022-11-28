@@ -38,7 +38,7 @@ const UserData = ({ title }) => {
 	const handleChange = (e) => {
 		const target = e.target;
 		// const newValue = [...values, value];
-		console.log(target.placeholder);
+		// console.log(target.placeholder);
 		if (target.placeholder === 'Alter') {
 			setAge(target.value);
 		} else if (target.placeholder === 'Körpergröße') {
@@ -58,9 +58,9 @@ const UserData = ({ title }) => {
 		<div>
 			<h3 className="heading-3">{title}</h3>
 			<div className="userData">
-				<div className="userData-btns">
+				{/* <div className="userData-btns">
 					<button className="btn btn-metric active">Metrisch</button>
-				</div>
+				</div> */}
 				<div className="userData-list">
 					<form
 						className="userData-form"

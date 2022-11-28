@@ -1,4 +1,5 @@
 import './App.css';
+import './assets/fonts/stylesheet.css';
 import MainLayout from './pages/MainLayout';
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

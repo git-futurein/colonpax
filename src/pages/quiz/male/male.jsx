@@ -3,6 +3,7 @@ import '../quiz.css';
 import Header from '../headerBox';
 import Health from '../health';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Male = () => {
 	const { rangePageCount } = useSelector((state) => state.counter);
@@ -14,7 +15,9 @@ const Male = () => {
 			<img src="/images/bottom-bg.svg" alt="" className="bottom-bg" /> */}
 			{/* <Header /> */}
 			<div className="container">
-				<h2 className="heading-2 mb-5">Colonpax</h2>
+				<Link to="/">
+					<img src="/images/logo.svg" alt="" className="img-fluid pb-5" />
+				</Link>
 
 				<div className="range-wrapper">
 					<div className="range" style={{ width: `${rangeWidth}%` }}></div>

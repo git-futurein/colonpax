@@ -18,10 +18,12 @@ code {
 h2,
 h3,
 h4 {
-	font-family: 'Lora', serif !important;
+	/* font-family: 'Lora', serif !important; */
+	font-family: 'P22 Mackinac', sans-serif !important;
 }
 
-.p,
+p,
 .text {
-	font-family: 'Poppins', sans-serif !important;
+	/* font-family: 'Poppins', sans-serif !important; */
+	font-family: 'Roboto', sans-serif !important;
 }

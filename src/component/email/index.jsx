@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import HeaderBox from '../../pages/quiz/headerBox';
 
 const EmailComp = ({ submit, change, cencelSubscription }) => {
@@ -18,10 +19,13 @@ const EmailComp = ({ submit, change, cencelSubscription }) => {
 		return (
 			<div>
 				<div className="email">
-					<HeaderBox />
 					<div className="container">
-						<h2 className="heading-2 mb-5">Colonpax</h2>
+						{/* <h2 className="heading-2 mb-5">Colonpax</h2> */}
+						<Link to="/">
+							<img src="/images/logo.svg" className="mt-5" alt="" />
+						</Link>
 					</div>
+					<HeaderBox />
 
 					<div className="hero_section">
 						<div className="container">
@@ -86,7 +90,9 @@ const EmailComp = ({ submit, change, cencelSubscription }) => {
 			<div>
 				<div className="email pt-5">
 					<div className="container">
-						<h2 className="heading-2 mb-5 text-left">Colonpax</h2>
+						<Link to="/">
+							<img src="/images/logo.svg" className="mb-5" alt="" />
+						</Link>
 					</div>
 
 					<div className="hero_section">

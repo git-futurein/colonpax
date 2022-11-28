@@ -15,9 +15,12 @@ import { Link } from 'react-router-dom';
 const Quiz = () => {
 	return (
 		<>
-			<div className="quiz">
+			<div className="quiz pt-5">
 				<div className="container">
-					<h2 className="heading-2">Colonpax</h2>
+					{/* <h2 className="heading-2">Colonpax</h2> */}
+					<Link to="/">
+						<img src="/images/logo.svg" alt="" className="img-fluid" />
+					</Link>
 				</div>
 
 				<div className="hero_section">

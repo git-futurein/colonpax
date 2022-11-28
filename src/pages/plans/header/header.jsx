@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import HeaderBox from '../../quiz/headerBox';
 
 const Header = () => {
 	return (
 		<div>
-			<HeaderBox />
-			<div className="container">
-				<h2 className="heading-2">Colonpax</h2>
+			<div className="container pt-5">
+				<Link to="/">
+					<img src="/images/logo.svg" alt="" />
+				</Link>
+				<HeaderBox />
 				<div className="content-wrapper row g-4">
 					<div className="col-12 col-lg-7">
 						<div className="content">

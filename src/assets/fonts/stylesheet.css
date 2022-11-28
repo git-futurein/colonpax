@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-ExtraBoldItalic.woff2') format('woff2'),
+        url('P22Mackinac-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-BookSC.woff2') format('woff2'),
+        url('P22Mackinac-BookSC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-MediumItalic.woff2') format('woff2'),
+        url('P22Mackinac-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-ExtraBoldSC.woff2') format('woff2'),
+        url('P22Mackinac-ExtraBoldSC.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-ExtraBoldSCItalic.woff2') format('woff2'),
+        url('P22Mackinac-ExtraBoldSCItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-ExtraBold.woff2') format('woff2'),
+        url('P22Mackinac-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-Medium.woff2') format('woff2'),
+        url('P22Mackinac-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-MediumSC.woff2') format('woff2'),
+        url('P22Mackinac-MediumSC.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-MediumItalicSC.woff2') format('woff2'),
+        url('P22Mackinac-MediumItalicSC.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac Pro';
+    src: url('P22MackinacPro-BoldItalic.woff2') format('woff2'),
+        url('P22MackinacPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac Pro';
+    src: url('P22MackinacPro-Book.woff2') format('woff2'),
+        url('P22MackinacPro-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac Pro';
+    src: url('P22MackinacPro-Bold.woff2') format('woff2'),
+        url('P22MackinacPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac Pro';
+    src: url('P22MackinacPro-BookItalic.woff2') format('woff2'),
+        url('P22MackinacPro-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac Pro';
+    src: url('P22MackinacPro-ExtraBoldItalic.woff2') format('woff2'),
+        url('P22MackinacPro-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac Pro';
+    src: url('P22MackinacPro-MediumItalic.woff2') format('woff2'),
+        url('P22MackinacPro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac Pro';
+    src: url('P22MackinacPro-ExtraBold.woff2') format('woff2'),
+        url('P22MackinacPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-BoldItalic.woff2') format('woff2'),
+        url('P22Mackinac-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-BoldItalicSC.woff2') format('woff2'),
+        url('P22Mackinac-BoldItalicSC.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac Pro';
+    src: url('P22MackinacPro-Medium.woff2') format('woff2'),
+        url('P22MackinacPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-Bold.woff2') format('woff2'),
+        url('P22Mackinac-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-BoldSC.woff2') format('woff2'),
+        url('P22Mackinac-BoldSC.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-Italic.woff2') format('woff2'),
+        url('P22Mackinac-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac.woff2') format('woff2'),
+        url('P22Mackinac.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Mackinac';
+    src: url('P22Mackinac-BookSCItalic.woff2') format('woff2'),
+        url('P22Mackinac-BookSCItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

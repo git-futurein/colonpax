@@ -43,35 +43,38 @@ const Weight = () => {
 						<div className="row g-5">
 							<div className="col-12 col-lg-6">
 								<div className="item">
-									<div className="item-top d-flex justify-content-between align-items-center">
+									<div className="item-top d-flex justify-content-center flex-column align-items-center">
 										<h3 className="heading-3 item-name">Gewicht</h3>
-										<div className="d-flex align-items-end">
-											<p className="text">Aktuelles Gewicht</p>
-											<div className="cur-weight">{userCollectData.weight} kg</div>
+										<p className="text">Aktuelles Gewicht</p>
+										<div className="d-flex align-items-center">
+											<div className="cur-weight text-capitalize fw-semibold">
+												{userCollectData.weight} kg to {userCollectData.desiredWeight} kg
+											</div>
+											{/* to
+											<h3 className="heading-3 prev-wegiht"></h3> */}
 										</div>
 									</div>
 									<div className="item-chart">
 										<img src="/images/chart-1-img.png" alt="" />
 									</div>
-									<div className="item-bottom d-flex justify-content-between align-items-center">
-										<div className="item-date">{'Jetzt 2022 > Nov 2022'}</div>
-										<h3 className="heading-3 prev-wegiht">{userCollectData.desiredWeight} kg</h3>
-									</div>
 								</div>
 							</div>
 							<div className="col-12 col-lg-6">
 								<div className="item item-2">
-									<div className="item-top ">
+									<div className="item-top text-center">
 										<h3 className="heading-3 item-name mb-1">Dein wöchentlicher Stuhlgang</h3>
 										<p className="text">Produces a bowel movement in 12-72 hours</p>
+										<div className="d-flex justify-content-center align-items-center gap-3">
+											<div className="item-date">pro Woche</div>
+											<div className="heading-3 prev-wegiht fw-semibold">
+												{bowelMovement.day} Mal
+											</div>
+										</div>
 									</div>
 									<div className="item-chart">
 										<img src="/images/chart-img-2.png" alt="" />
 									</div>
-									<div className="item-bottom d-flex justify-content-between align-items-center">
-										<div className="item-date">pro Woche</div>
-										<h3 className="heading-3 prev-wegiht">{bowelMovement.day} Mal</h3>
-									</div>
+									<div className="item-bottom "></div>
 								</div>
 							</div>
 						</div>
@@ -80,11 +83,13 @@ const Weight = () => {
 								PRODUKT ANZEIGEN
 							</Link>
 						</div>
-						<h2 className="common_h2 common_h2_secondary">Deine Persönliche Zusammenfassung</h2>
 					</div>
 
 					{/* Deine */}
 					<div className="deine">
+						<h2 className="common_h2 common_h2_secondary mb-5 text-center">
+							Deine Persönliche Zusammenfassung
+						</h2>
 						<div className="deine__list">
 							<div className="deine__item d-flex align-items-start ">
 								<div className="deine__img">

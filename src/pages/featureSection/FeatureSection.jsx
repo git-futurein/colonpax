@@ -25,32 +25,29 @@ const FeatureSection = () => {
 					<div className="col-lg-4 col-md-6 white_div">
 						<h4 className="title_one">Das Leben vor Colonpax</h4>
 						<p>
-							<img src={cross} alt="cross" className="img-fluid pe-2" /> Völlegefühl im Bauch{' '}
+							<img src={cross} alt="cross" className="img-fluid pe-2" /> Völlegefühl im Bauch
 						</p>
 						<hr />
 						<p>
 							<img src={cross} alt="cross" className="img-fluid pe-2" />
-							Verstopfung{' '}
+							Verstopfung
 						</p>
 						<hr />
 						<p>
-							{' '}
 							<img src={cross} alt="cross" className="img-fluid pe-2" />
 							Darmbeschwerden
 						</p>
 						<hr />
 						<p>
-							<img src={cross} alt="cross" className="img-fluid pe-2" /> Keine Erfolge beim Abnehmen{' '}
+							<img src={cross} alt="cross" className="img-fluid pe-2" /> Keine Erfolge beim Abnehmen
 						</p>
 						<hr />
 						<p>
-							{' '}
 							<img src={cross} alt="cross" className="img-fluid pe-2" />
 							Zu wenig Energie
 						</p>
 						<hr />
 						<p>
-							{' '}
 							<img src={cross} alt="cross" className="img-fluid pe-2" />
 							Unangenehme Blähungen
 						</p>
@@ -59,7 +56,7 @@ const FeatureSection = () => {
 					<div className="col-lg-4 col-md-6 green_div">
 						<h4 className="title_two">Das Leben nach Colonpax</h4>
 						<p>
-							<i className="fa-solid fa-check"></i> Ein flacher Bauch{' '}
+							<i className="fa-solid fa-check"></i> Ein flacher Bauch
 						</p>
 						<hr />
 						<p>
@@ -71,16 +68,16 @@ const FeatureSection = () => {
 						</p>
 						<hr />
 						<p>
-							<i className="fa-solid fa-check"></i> Kein Völlegefühl{' '}
+							<i className="fa-solid fa-check"></i> Kein Völlegefühl
 						</p>
 						<hr />
 						<p>
-							<i className="fa-solid fa-check"></i> Effektive und nachhaltige Abnehmerfoge{' '}
+							<i className="fa-solid fa-check"></i> Effektive und nachhaltige Abnehmerfoge
 						</p>
 						<hr />
 						<p>
 							<i className="fa-solid fa-check"></i> Das Zielgewicht halten
-						</p>{' '}
+						</p>
 						<hr />
 						<p>
 							<i className="fa-solid fa-check"></i> mehr Energie und Leistungsfähigkeit
