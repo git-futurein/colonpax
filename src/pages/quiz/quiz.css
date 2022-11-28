@@ -1,11 +1,12 @@
 .quiz .hero_section {
 	height: auto;
+	margin-bottom: 50px;
 }
 
 .header-box {
 	max-width: 1170px;
 	width: 95%;
-	height: 117px;
+	/* height: 117px; */
 	margin: 0 auto;
 	margin-top: 60px;
 	margin-bottom: 65px;
@@ -59,32 +60,15 @@
 
 /* benefits */
 .benefits {
-	padding: 8rem 0;
+	padding: 80px 0;
 }
 .benefits__list img {
 	width: 100%;
 }
-/* .benefits__list {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 20px;
-} */
-/* .benefits__item {
-}
-.benefits__item img {
-	height: 79px;
-	width: 100%;
-} */
 
 /* ======================== */
 /* quiz male */
 /* ======================== */
-/* .male .header-box {
-	margin-bottom: 29px;
-}
-.male .header-box {
-	margin-bottom: 29px;
-} */
 
 .male {
 	min-height: 100vh;
@@ -385,6 +369,32 @@
 	}
 	.male h3 {
 		font-size: 32px;
+	}
+
+	.quiz-wrapper {
+		margin-top: 80px;
+	}
+
+	.header-box {
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+	.header-box h2 {
+		font-size: 22px;
+	}
+}
+@media only screen and (max-width: 570px) {
+	.quiz-wrapper {
+		padding-bottom: 80px;
+	}
+
+	.header-box {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+
+	.header-box h2 {
+		font-size: 20px;
 	}
 }
 @media only screen and (max-width: 480px) {

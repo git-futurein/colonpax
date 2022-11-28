@@ -8,7 +8,7 @@ const AdvantageItems = ({ data }) => {
 				{data.map((item) => {
 					const { id, img, title, desc } = item;
 					return (
-						<div className="col-lg-6 col-md-6" key={id}>
+						<div className="col-12 col-lg-6" key={id}>
 							<div className="content-box">
 								<div className="d-flex justify-content-center">
 									<img src={img} alt="" />

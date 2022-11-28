@@ -155,7 +155,7 @@ span {
 /*======== medium device =========*/
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.common_h2 {
-		font-size: 40px;
+		font-size: 36px;
 	}
 
 	.common_p {
@@ -182,10 +182,10 @@ span {
 
 /*======== small device =========*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-	.common_h2 {
+	/* .common_h2 {
 		text-align: center;
-		font-size: 36px;
-	}
+		font-size: 34px;
+	} */
 
 	.common_p {
 		text-align: center;
@@ -241,7 +241,7 @@ span {
 @media (max-width: 575.98px) {
 	.common_h2 {
 		text-align: center;
-		font-size: 36px;
+		font-size: 34px;
 	}
 
 	.common_p {

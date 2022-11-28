@@ -275,4 +275,19 @@
 	.dain-2 .deine__item {
 		flex-direction: column;
 	}
+
+	.summary .hero_section_heading {
+		margin-bottom: 20px;
+		justify-content: center !important;
+		gap: 20px;
+	}
+
+	.weight .item .cur-weight {
+		font-size: 33px;
+	}
+
+	.summary .common_h2_secondary {
+		/* margin-top: 149px; */
+		font-size: 36px;
+	}
 }

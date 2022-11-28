@@ -105,29 +105,26 @@
 	}
 
 	.content-box {
-		padding: 30px 0px;
-	}
-
-	.adv_p {
-		padding: 0 20px;
+		padding: 30px 20px;
 	}
 }
 
 /*======== Extra small device =========*/
 @media (max-width: 575.98px) {
+	.content-box {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.content-box h4 {
+		text-align: center;
+	}
+	.content-box p {
+		text-align: center;
+	}
 	.advantage_h2 {
 		font-size: 36px;
 	}
 
 	.advantage_p {
 		padding: 0 0 20px;
-	}
-
-	.content-box {
-		padding: 30px 0px;
-	}
-
-	.adv_p {
-		padding: 0 20px;
 	}
 }
