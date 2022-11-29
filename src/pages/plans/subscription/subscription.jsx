@@ -67,27 +67,23 @@ const Subscription = ({ marginTop }) => {
 	const [data, setData] = useState(subscriptionData);
 
 	const handleOption1 = (e, id) => {
-		if (e.target.checked) {
-			const newData = data.map((item) => {
-				if (item.id === id) {
-					item.value = 0;
-				}
-				return item;
-			});
-			// console.log(newData);
-			setData(newData);
-		}
+		const newData = data.map((item) => {
+			if (item.id === id) {
+				item.value = 0;
+			}
+			return item;
+		});
+		// console.log(newData);
+		setData(newData);
 	};
 	const handleOption2 = (e, id) => {
-		if (e.target.checked) {
-			const newData = data.map((item) => {
-				if (item.id === id) {
-					item.value = 1;
-				}
-				return item;
-			});
-			setData(newData);
-		}
+		const newData = data.map((item) => {
+			if (item.id === id) {
+				item.value = 1;
+			}
+			return item;
+		});
+		setData(newData);
 	};
 
 	return (

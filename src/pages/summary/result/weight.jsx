@@ -7,6 +7,7 @@ const Weight = () => {
 	const { healthCollectData, gender, userCollectData } = useSelector((state) => state.counter);
 	const [bmi, setBmi] = useState(0);
 	const [bmiText, setBmiText] = useState('');
+	const [weightChange, setWeightChange] = useState(0);
 
 	useEffect(() => {
 		if (healthCollectData.length > 0) {
@@ -35,6 +36,16 @@ const Weight = () => {
 		}
 	}, [userCollectData.weight, userCollectData.height, bmi]);
 
+	const weight = 60;
+	const desweight = 50;
+
+	useEffect(() => {
+		// const value = userCollectData.weight - userCollectData.desiredWeight;
+		const value = weight - desweight / 3;
+		setWeightChange(value);
+		console.log(weightChange);
+	}, [userCollectData.weight, userCollectData.desiredWeight, weightChange]);
+
 	return (
 		<div>
 			<div className="weight-container">
@@ -44,31 +55,58 @@ const Weight = () => {
 							<div className="col-12 col-lg-6">
 								<div className="item">
 									<div className="item-top d-flex justify-content-center flex-column align-items-center">
-										<h3 className="heading-3 item-name">Gewicht</h3>
-										<p className="text">Aktuelles Gewicht</p>
+										<h3 className="heading-3 item-name">Gewicht:</h3>
+										<p className="text">basierend auf Deinen Antworten wirst Du:</p>
 										<div className="d-flex align-items-center">
 											<div className="cur-weight text-capitalize fw-semibold">
-												{userCollectData.weight} kg to {userCollectData.desiredWeight} kg
+												von {userCollectData.weight} Kg auf {userCollectData.desiredWeight} Kg
 											</div>
 											{/* to
 											<h3 className="heading-3 prev-wegiht"></h3> */}
 										</div>
 									</div>
 									<div className="item-chart">
-										<img src="/images/chart-1-img.png" alt="" />
+										<div className="chart-wrapper position-relative">
+											<img src="/images/chart.svg" alt="" />
+											<div className="month month-1">
+												<div className="top">
+													<div className="point">6 kg</div>
+													<div className="dot"></div>
+												</div>
+												<div className="bottom">Jan</div>
+											</div>
+											<div className="month month-2">
+												<div className="top">
+													<div className="point">6 kg</div>
+													<div className="dot"></div>
+												</div>
+												<div className="bottom">fab</div>
+											</div>
+											<div className="month month-3">
+												<div className="top">
+													<div className="point">6 kg</div>
+													<div className="dot"></div>
+												</div>
+												<div className="bottom">mar</div>
+											</div>
+										</div>
 									</div>
+									<p className="text text-center mt-4 mb-0">
+										Nov. 2022 <i className="bi bi-chevron-right"></i> Jan. 2023
+									</p>
 								</div>
 							</div>
 							<div className="col-12 col-lg-6">
 								<div className="item item-2">
 									<div className="item-top text-center">
 										<h3 className="heading-3 item-name mb-1">Dein wöchentlicher Stuhlgang</h3>
-										<p className="text">Produces a bowel movement in 12-72 hours</p>
+										<p className="text">
+											Colonpax bewirkt eine Verbesserung des Stuhlgangs in 12-72 Stunden
+										</p>
 										<div className="d-flex justify-content-center align-items-center gap-3">
+											<div className="item-date">von: 1 Mal auf</div>
+											<h3 className="heading-3 prev-wegiht fw-semibold">{bowelMovement.day} mal</h3>
 											<div className="item-date">pro Woche</div>
-											<div className="heading-3 prev-wegiht fw-semibold">
-												{bowelMovement.day} Mal
-											</div>
 										</div>
 									</div>
 									<div className="item-chart">

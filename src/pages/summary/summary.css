@@ -78,6 +78,7 @@
 }
 .weight .item .cur-weight {
 	font-size: 37px;
+	font-family: 'Lora', serif !important;
 }
 .weight .item-date {
 	font-size: 19px;
@@ -93,9 +94,72 @@
 	margin-bottom: 10px;
 	height: 224px;
 }
+.chart-wrapper {
+	width: 100%;
+	height: 100%;
+}
 .weight .item-chart img {
 	width: 100%;
 	height: 100%;
+}
+
+.chart-wrapper .month {
+	height: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.chart-wrapper .month .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.chart-wrapper .month .bottom {
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: -10px;
+}
+.chart-wrapper .month .point {
+	font-weight: 600;
+}
+.chart-wrapper .month .top .dot {
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	background-color: #62c476;
+	border: 3px solid #fff;
+}
+.chart-wrapper .month-1 {
+	top: 0;
+	left: 0;
+}
+.chart-wrapper .month-1 .top {
+	margin-top: -6px;
+}
+.chart-wrapper .month-2 .top {
+	margin-top: 62px;
+}
+.chart-wrapper .month-3 .top {
+	margin-top: 104px;
+}
+.chart-wrapper .month-2 {
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.chart-wrapper .month-3 {
+	top: 0;
+	right: 0;
+}
+.chart-wrapper {
+}
+.chart-wrapper {
+}
+.chart-wrapper {
+}
+.chart-wrapper {
 }
 
 /* deine */
@@ -199,8 +263,12 @@
 	border-radius: 12px;
 	max-width: 600px;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: max-content 1fr;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* display: grid;
+	grid-template-columns: max-content 1fr; */
 	gap: 20px;
 	align-items: center;
 }

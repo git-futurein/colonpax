@@ -10,7 +10,7 @@
 	color: #103b19bf;
 	opacity: 1;
 	padding: 10px 0px 30px;
-	font-family: 'Poppins', sans-serif !important;
+	/* font-family: 'Poppins', sans-serif !important; */
 }
 
 .faq_h2 {
@@ -65,7 +65,7 @@
 	font-weight: bold !important;
 	padding-top: 2rem !important;
 	box-shadow: none !important;
-	font-family: 'Poppins', sans-serif !important;
+	/* font-family: 'Poppins', sans-serif !important; */
 }
 
 .accordion-item {
@@ -111,7 +111,7 @@
 	letter-spacing: 1px;
 	color: #103b19bf;
 	opacity: 1;
-	font-family: 'Poppins', sans-serif !important;
+	/* font-family: 'Poppins', sans-serif !important; */
 }
 
 .icon-text-part {

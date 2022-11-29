@@ -50,8 +50,31 @@ const UserData = ({ title }) => {
 		}
 	};
 
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		// setAge(e.target.Alter.value);
+		// setHeight(e.target.Körpergröße.value);
+		// setWeight(e.target.Gewicht.value);
+		// setDesiredWeight(e.target.Zielgewicht.value);
+
+		navigate('/summary');
+	};
+	// const url = 'https://api.konnektive.com/leads/import/';
+	const url = 'https://jsonplaceholder.typicode.com/posts';
 	useEffect(() => {
-		dispatch(updateUserCollectData({ age, height, weight, desiredWeight }));
+		// console.log(age, height, weight, desiredWeight);
+		fetch(url, {
+			method: 'POST',
+			body: JSON.stringify({ age, height, weight, desiredWeight }),
+			headers: {
+				'Content-type': 'application/json; charset=UTF-8',
+			},
+		})
+			.then((response) => response.json())
+			.then((data) => {
+				dispatch(updateUserCollectData(data));
+			});
+		// dispatch(updateUserCollectData({ age, height, weight, desiredWeight }));
 	}, [dispatch, age, height, weight, desiredWeight]);
 
 	return (
@@ -62,13 +85,7 @@ const UserData = ({ title }) => {
 					<button className="btn btn-metric active">Metrisch</button>
 				</div> */}
 				<div className="userData-list">
-					<form
-						className="userData-form"
-						onSubmit={(e) => {
-							e.preventDefault();
-							navigate('/summary');
-						}}
-					>
+					<form className="userData-form" onSubmit={(e) => handleSubmit(e)}>
 						{metricData.map((item) => {
 							const { id, placeholder, label } = item;
 							return (
@@ -76,10 +93,11 @@ const UserData = ({ title }) => {
 									<input
 										type="number"
 										className="form-control"
+										name={placeholder}
 										id={id}
 										placeholder={placeholder}
-										onChange={(e) => handleChange(e)}
 										required
+										onChange={(e) => handleChange(e)}
 									/>
 									<label htmlFor={id}>{label}</label>
 								</div>
