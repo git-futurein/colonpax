@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './popup.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { subscriptionPopupClose } from '../../../counterSlice';
@@ -9,6 +9,39 @@ const SubscriptionPopup = () => {
 	const dispatch = useDispatch();
 	const [showContactConditions, setShowContactConditions] = useState(false);
 	const [popupNumber, setPopupNumber] = useState(1);
+	let paypalRef = useRef();
+	
+	useEffect(() => {
+		if (window.paypal) {
+		    let button = window.paypal
+			.Buttons({
+			    style: {
+				layout: "vertical",
+				size: "large",
+				label: "pay",
+				height: 40,
+				tagline: "false",
+			    },
+			    createOrder: (data, actions) => {
+				return actions.order.create({
+				    purchase_units: [
+					{
+					    description: "Payment to ColonPax",
+					    amount: {
+						currency_code: "USD",
+						value: 14.00,
+					    },
+					},
+				    ],
+				});
+			    },
+			    onApprove: async (data, actions) => {
+				await actions.order.capture();
+			    },
+			})
+			.render(paypalRef.current);
+		}
+	    }, []);
 
 	const handleContactConditions = (e) => {
 		if (e.target.checked) {
@@ -190,9 +223,7 @@ const SubscriptionPopup = () => {
 						</div>
 						<form className="shipping-form payment-form mb-5">
 							<h4 className="heading4 mb-3">Select a payment method</h4>
-							<button className="payment-method mb-3">
-								<img src="/images/payment-method.svg" alt="" />
-							</button>
+							<div className="w-full" ref={paypalRef} />
 
 							<label htmlFor="card-name">Name on card</label>
 							<input required type="text" id="card-name" placeholder="Full name" className="mb-3" />
