@@ -107,7 +107,7 @@ const Weight = () => {
                       <div className="month month-1">
                         <div className="top">
                           <div className="point">
-                            {parseInt(weightChange)} kg
+                            {userCollectData.weight - parseInt(weightChange)} kg
                           </div>
                           <div className="dot"></div>
                         </div>
@@ -116,7 +116,7 @@ const Weight = () => {
                       <div className="month month-2">
                         <div className="top">
                           <div className="point">
-                            {parseInt(weightChange)} kg
+                            {userCollectData.weight - parseInt(weightChange) * 2} kg
                           </div>
                           <div className="dot"></div>
                         </div>
@@ -125,7 +125,7 @@ const Weight = () => {
                       <div className="month month-3">
                         <div className="top">
                           <div className="point">
-                            {parseInt(weightChange)} kg
+                            {userCollectData.desiredWeight} kg
                           </div>
                           <div className="dot"></div>
                         </div>
