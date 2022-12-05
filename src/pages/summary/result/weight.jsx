@@ -56,6 +56,7 @@ const Weight = () => {
   ];
 
   const currentMonth = new Date().getMonth();
+  const currentYear = new Date().getFullYear();
   const firstMonth = currentMonth != 11 ? currentMonth + 1 : 0;
   const secondMonth =
     currentMonth != 10 && currentMonth != 11
@@ -107,22 +108,33 @@ const Weight = () => {
                       <div className="month month-1">
                         <div className="top">
                           <div className="point">
+                            {userCollectData.weight} kg
+                          </div>
+                          <div className="dot"></div>
+                        </div>
+                        <div className="bottom">{months[currentMonth]}</div>
+                      </div>
+                      <div className="month month-2">
+                        <div className="top">
+                          <div className="point">
                             {userCollectData.weight - parseInt(weightChange)} kg
                           </div>
                           <div className="dot"></div>
                         </div>
                         <div className="bottom">{months[firstMonth]}</div>
                       </div>
-                      <div className="month month-2">
+                      <div className="month month-3">
                         <div className="top">
                           <div className="point">
-                            {userCollectData.weight - parseInt(weightChange) * 2} kg
+                            {userCollectData.weight -
+                              parseInt(weightChange) * 2}{" "}
+                            kg
                           </div>
                           <div className="dot"></div>
                         </div>
                         <div className="bottom">{months[secondMonth]}</div>
                       </div>
-                      <div className="month month-3">
+                      <div className="month month-4">
                         <div className="top">
                           <div className="point">
                             {userCollectData.desiredWeight} kg
@@ -134,7 +146,9 @@ const Weight = () => {
                     </div>
                   </div>
                   <p className="text text-center mt-4 mb-0">
-                    Nov. 2022 <i className="bi bi-chevron-right"></i> Jan. 2023
+                    {months[currentMonth]} {currentYear}
+                    <i className="bi bi-chevron-right"></i> {months[thirdMonth]}{" "}
+                    {currentMonth > 8 ? currentYear + 1 : currentYear}
                   </p>
                 </div>
               </div>
