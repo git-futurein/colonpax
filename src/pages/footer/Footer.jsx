@@ -100,13 +100,13 @@ const Footer = () => {
 						<p className="down-p">Copyright © 2022 Colonpax. Alle Rechte vorbehalten.</p>
 					</div>
 					<div className="col-lg-2 col-md-6 ">
-						<a href="#">Nutzungsbedingungen</a>
+						<Link to="/tarms">Nutzungsbedingungen</Link>
 					</div>
 					<div className="col-lg-2 col-md-6">
-						<a href="#">Impressum</a>
+						<Link to="impressum">Impressum</Link>
 					</div>
 					<div className="col-lg-2 col-md-6">
-						<a href="#">Datenschutzbestimmungen</a>
+						<Link to="privacy">Datenschutzbestimmungen</Link>
 					</div>
 				</div>
 			</div>

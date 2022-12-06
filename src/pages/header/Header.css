@@ -4,7 +4,7 @@ button:hover {
 
 .link {
 	text-align: left;
-	font: normal normal normal 16px/32px Poppins-Regular;
+	font-family: 'Inter', sans-serif !important;
 	letter-spacing: 1px;
 	color: #333333;
 	opacity: 1;

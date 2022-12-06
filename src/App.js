@@ -13,6 +13,9 @@ import Email from './pages/email/email';
 import Tarms from './pages/tarms/tarms';
 import ScrollToTop from './component/scrollToTop';
 import SubscriptionCancellation from './pages/cencelSubscription';
+import Privacy from './pages/privacy/privacy';
+import Impressum from './pages/Impressum/Impressum';
+import Studies from './pages/studies/studies';
 
 function App() {
 	return (
@@ -20,7 +23,10 @@ function App() {
 			<Router>
 				<ScrollToTop />
 				<Routes>
+					<Route path="/studies" element={<Studies />} />
+					<Route path="/impressum" element={<Impressum />} />
 					<Route path="/tarms" element={<Tarms />} />
+					<Route path="/privacy" element={<Privacy />} />
 					<Route path="/email" element={<Email />} />
 					<Route path="/subscription-cancellation" element={<SubscriptionCancellation />} />
 					<Route path="/plans" element={<Plans />} />

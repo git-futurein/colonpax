@@ -27,8 +27,6 @@
 }
 
 .tarms-header .text {
-	max-width: 660px;
-	width: 100%;
 	margin-bottom: 25px;
 }
 .tarms-header .text a {
@@ -47,10 +45,17 @@
 	width: 100%;
 	margin-bottom: 35px;
 	word-wrap: break-word;
+	margin: 0 auto 20px auto;
 }
 .tarms .text {
 	font-size: 20px;
-	/* line-height: 32px; */
+}
+.tarms .text .text {
+	font-weight: 400;
+}
+.tarms .text a {
+	color: #000;
+	text-decoration: underline;
 }
 
 .tarms_wrapper {
@@ -65,6 +70,13 @@
 .tarms_item h5 {
 	font-size: 20px;
 	font-weight: 700;
+}
+.tarms_item h4 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.color-blue {
 }
 
 /* ============================ */
