@@ -24,7 +24,7 @@ const AdvantageSection = () => {
 		{
 			id: 3,
 			img: jar,
-			title: 'Mehr bessere Verdauung',
+			title: 'Mehr Energie und bessere Verdauung',
 			desc: 'Colonpax kann deine Energie steigern und bring die Darmfunktion in Schwung. Es löst die Verstofung, reduziert den Blähbauch und Blähungen und lindert die Krämpfe.',
 		},
 		{

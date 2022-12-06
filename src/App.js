@@ -16,6 +16,7 @@ import SubscriptionCancellation from './pages/cencelSubscription';
 import Privacy from './pages/privacy/privacy';
 import Impressum from './pages/Impressum/Impressum';
 import Studies from './pages/studies/studies';
+import Faq_page from './pages/faq_page';
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 			<Router>
 				<ScrollToTop />
 				<Routes>
+					<Route path="/faq" element={<Faq_page />} />
 					<Route path="/studies" element={<Studies />} />
 					<Route path="/impressum" element={<Impressum />} />
 					<Route path="/tarms" element={<Tarms />} />

@@ -72,6 +72,9 @@ const Footer = () => {
 							<li>
 								<Link to="/subscription-cancellation">Abo verwalten</Link>
 							</li>
+							<li>
+								<Link to="/studies">studies</Link>
+							</li>
 						</ul>
 					</div>
 					<div className="col-lg-2 col-md-6 social_link">

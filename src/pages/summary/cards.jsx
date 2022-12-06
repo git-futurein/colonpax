@@ -13,13 +13,9 @@ const Cards = () => {
 						<h2 className="card_h2 text-center">
 							Charme im Darm – endlich ein neues Darmgefühl, damit Dich nichts mehr aufhält!
 						</h2>
-						<p className="card_p text-center">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum erat eget
-							egestas tempus. Mauris commodo ipsum et ex lacinia facilisis.
-						</p>
 
 						<button className="card_btn">
-							<Link to="/email" className="text-decoration-none text-black">
+							<Link to="/email" className="text-decoration-none text-black fw-bold">
 								PRODUKT ANZEIGEN
 							</Link>
 						</button>
