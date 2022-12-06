@@ -23,7 +23,7 @@ const HeaderBox = () => {
 		return () => {
 			clearInterval(timer);
 		};
-	});
+	}, [delay]);
 
 	window.addEventListener('scroll', () => {
 		if (window.scrollY > 100) {

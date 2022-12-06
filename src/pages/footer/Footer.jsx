@@ -31,7 +31,9 @@ const Footer = () => {
 
 				<div className="row main-footer">
 					<div className="col-lg-5 col-md-7">
-						<img src={logo} alt="logo" className="img-fluid" />
+						<Link to="/">
+							<img src={logo} alt="logo" className="img-fluid" />
+						</Link>
 
 						<p className="footer_p pt-2">
 							ColonPax ist ein sicherer und effektiver Weg, wie du Verstopfungen auf eine natürliche
@@ -59,7 +61,9 @@ const Footer = () => {
 					<div className="col-lg-3 col-md-6">
 						<ul>
 							<li className="ul-header">SERVICE</li>
-							<li>FAQ </li>
+							<li>
+								<Link to="/faq">FAQ</Link>
+							</li>
 							<li>
 								<a href="#">Kundendienst</a>
 							</li>

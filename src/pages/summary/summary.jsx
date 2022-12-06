@@ -10,13 +10,6 @@ import { getTime } from '../../counterSlice';
 import Cards2 from './cards2';
 
 const Summary = () => {
-	// const { timer } = useSelector((state) => state.counter);
-	// const dispatch = useDispatch();
-	// const delayResend = 60 * 30;
-
-	// useEffect(() => {
-	// 	dispatch(getTime(delayResend));
-	// });
 	useEffect(() => {
 		if (localStorage.getItem('timer') && parseInt(localStorage.getItem('timer')) === 0) {
 			window.location = '/quiz';
@@ -25,10 +18,8 @@ const Summary = () => {
 
 	return (
 		<div className="summary">
-			{/* <HeaderBox /> */}
 			<Header />
 			<Weight />
-			{/* <Cards2 /> */}
 			<Benefits />
 			<Cards />
 		</div>
