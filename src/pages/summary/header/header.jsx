@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../heroSection/HeroSection.css';
-// import hero from '../../assets/1.png';
-// import { Link } from 'react-router-dom';
 import HeaderBox from '../../quiz/headerBox';
 
 const Header = () => {

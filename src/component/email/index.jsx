@@ -25,7 +25,7 @@ const EmailComp = ({ submit, change, cencelSubscription }) => {
 							<img src="/images/logo.svg" className="mt-5" alt="" />
 						</Link>
 					</div>
-					<HeaderBox />
+					<HeaderBox email={true} />
 
 					<div className="hero_section">
 						<div className="container">
@@ -39,9 +39,14 @@ const EmailComp = ({ submit, change, cencelSubscription }) => {
 										<img src="/images/email-img-2.png" alt="" />
 										<div className="desc">
 											<h5 className="heading-5">Fakt</h5>
-											<p className="common_p">
-												{genderGer} im Alter von {userCollectData.age} mit stron hatten eine{' '}
+											{/* <p className="common_p">
+												{genderGer} im Alter von {userCollectData.age} mit stron hatten eine
 												<strong>Erfolgsquote von 85%</strong> mit unserem Produkt.
+											</p> */}
+											<p className="common_p">
+												{genderGer} im Alter von {userCollectData.age} hatten eine{' '}
+												<strong>Erfolgsquote von 85% </strong>
+												mit unserem Produkt
 											</p>
 										</div>
 									</div>
@@ -106,16 +111,6 @@ const EmailComp = ({ submit, change, cencelSubscription }) => {
 										Bitte gib deine E-Mail-Adresse in das Formular unten ein, dann werden wir den
 										Link zur Verwaltung deines Abonnements an diese E-Mail-Adresse senden.
 									</p>
-									{/* <div className="email_card d-flex align-items-start mb-5">
-										<img src="/images/email-img-2.png" alt="" />
-										<div className="desc">
-											<h5 className="heading-5">Fakt</h5>
-											<p className="common_p">
-												{genderGer} im Alter von {userCollectData.age} mit stron hatten eine{' '}
-												<strong>Erfolgsquote von 85%</strong> mit unserem Produkt.
-											</p>
-										</div>
-									</div> */}
 
 									<form className="mb-5 d-flex align-items-center" onSubmit={(e) => submit(e)}>
 										<label htmlFor="email">
@@ -133,17 +128,6 @@ const EmailComp = ({ submit, change, cencelSubscription }) => {
 											FORTSETZEN
 										</button>
 									</form>
-
-									{/* <div className="email_card email_card_2 d-flex align-items-start">
-										<img src="/images/email-img-3.png" alt="" />
-										<div className="desc">
-											<h5 className="heading-5">Erhalte zukünftige News von uns.</h5>
-											<p className="common_p">
-												Wir versenden keinen Spam und geben keine E-Mail-Adressen weiter. Wir
-												respektieren deine Privatsphäre.
-											</p>
-										</div>
-									</div> */}
 								</div>
 								<div className="col-md-5">
 									<div className="banner-img-part">
