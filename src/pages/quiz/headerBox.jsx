@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 import './quiz.css';
 
 const HeaderBox = () => {
@@ -23,7 +22,7 @@ const HeaderBox = () => {
 		return () => {
 			clearInterval(timer);
 		};
-	}, [delay]);
+	});
 
 	window.addEventListener('scroll', () => {
 		if (window.scrollY > 100) {
@@ -37,8 +36,6 @@ const HeaderBox = () => {
 		<div>
 			<div className={sticky ? 'header-box sticky' : 'header-box'}>
 				<h2>
-					{/* Noch 00:{minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}{' '}
-					um Deinen Sonderpreis und den kostenfreien Versand freizuschalten */}
 					Du hast noch 00:{minutes < 10 ? `0${minutes}` : minutes}:
 					{seconds < 10 ? `0${seconds}` : seconds} um deinen Sonderpreis und den kostenfreien
 					Versand freizuschalten
