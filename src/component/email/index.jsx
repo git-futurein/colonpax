@@ -25,7 +25,7 @@ const EmailComp = ({ submit, change, cencelSubscription }) => {
 							<img src="/images/logo.svg" className="mt-5" alt="" />
 						</Link>
 					</div>
-					<HeaderBox />
+					<HeaderBox email={true} />
 
 					<div className="hero_section">
 						<div className="container">

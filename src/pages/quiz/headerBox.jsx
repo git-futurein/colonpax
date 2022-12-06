@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './quiz.css';
 
-const HeaderBox = () => {
+const HeaderBox = ({ email }) => {
 	const [sticky, setSticky] = useState(null);
 	const delayResend = localStorage.getItem('timer');
 	const [delay, setDelay] = useState(+delayResend);
@@ -25,7 +25,7 @@ const HeaderBox = () => {
 	});
 
 	window.addEventListener('scroll', () => {
-		if (window.scrollY > 100) {
+		if (window.scrollY > 100 && !email) {
 			setSticky(true);
 		} else {
 			setSticky(false);
