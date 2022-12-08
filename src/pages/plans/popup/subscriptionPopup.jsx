@@ -18,6 +18,7 @@ const SubscriptionPopup = () => {
   const dispatch = useDispatch();
   const [showContactConditions, setShowContactConditions] = useState(false);
   const [popupNumber, setPopupNumber] = useState(1);
+  const [orderId, setOrderId] = useState("");
   const [formData, setFormData] = useState({
     loginId: "colonpax-api",
     password: "ColonPaxAPI71React",
@@ -165,6 +166,7 @@ const SubscriptionPopup = () => {
     ).then(async (response) => {
       const data = await response.json();
       if (data.result === "SUCCESS") {
+        setOrderId(data.message.orderId);
         setPopupNumber(popupNumber + 1);
         sendMail();
       } else {
@@ -548,12 +550,14 @@ const SubscriptionPopup = () => {
                   <p className="text">KASSENBON</p>
                 </div>
               </div>
-              <h2 className="heading-2 mb-4">Erfolgreich</h2>
+              <h2 className="heading-2 mb-4 text-center">
+                Herzlichen Glückwunsch
+              </h2>
             </div>
-            <div>
+            <div className="text-center">
               <p style={{ fontSize: 20, marginBottom: 20 }}>
-                Ihre Bestellung wurde erfolgreich empfangen. Sie erhalten die
-                Lieferung in 7 Tagen
+                Deine Bestellung ist erfolgreich eingegangen. Du erhältst deine
+                Lieferung binnen 7 Tagen! Deine Bestellnummer lautet:
               </p>
             </div>
             <div className="shipping-icons d-flex justify-content-between align-items-center">
