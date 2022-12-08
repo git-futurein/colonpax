@@ -133,7 +133,16 @@ const SubscriptionPopup = () => {
     fetch(
       `https://api.konnektive.com/order/import/?${formBody}`,
       requestOptions
-    ).then((response) => console.log(response.text()));
+    ).then((response) => {
+      const data = response.json();
+      if (data.result === "SUCCESS") setPopupNumber(popupNumber + 1);
+      else {
+        alert(
+          "Entschuldigung, es gab ein Problem bei der Bearbeitung der Bestellung. Bitte versuche es erneut."
+        );
+        dispatch(subscriptionPopupClose());
+      }
+    });
   };
 
   useEffect(() => {
@@ -508,72 +517,14 @@ const SubscriptionPopup = () => {
                   <p className="text">KASSENBON</p>
                 </div>
               </div>
-              <h2 className="heading-2 mb-4">Submit a secure payment</h2>
+              <h2 className="heading-2 mb-4">Erfolgreich</h2>
             </div>
-            <div className="payment_wrapper">
-              <div className="payment_item">
-                <div className="gift d-flex justify-content-between flex-wrap">
-                  <p className="text mb-0">
-                    3 month supplements + free gift pack
-                  </p>
-                  <div className="amount">239.97 USD</div>
-                </div>
-                <div className="discount d-flex justify-content-between flex-wrap">
-                  <p className="text mb-0 text-danger">
-                    The Special Discount (-55%):
-                  </p>
-                  <div className="amount">-132.01 USD</div>
-                </div>
-              </div>
-
-              <div className="payment_item">
-                <div className="gift d-flex justify-content-between flex-wrap">
-                  <p className="text mb-0">Shipping to Austria</p>
-                  <div className="amount">15.00 USD</div>
-                </div>
-                <div className="discount d-flex justify-content-between flex-wrap">
-                  <p className="text mb-0 text-danger">Discount (-100%)</p>
-                  <div className="amount">-15.00 USD</div>
-                </div>
-              </div>
-
-              <div className="payment_item">
-                <div className="gift d-flex justify-content-between flex-wrap">
-                  <p className="text mb-0">Total amount billed</p>
-                  <div className="amount amount_total">239.97 USD</div>
-                </div>
-              </div>
-              <div className="dieloge">
-                By choosing a payment method you agree to the{" "}
-                <Link to="/tarms">T&Cs</Link> and
-                <Link to="#"> Privacy Policy</Link>.
-              </div>
+            <div>
+              <p style="font-size: 20px">
+                Ihre Bestellung wurde erfolgreich empfangen. Sie erhalten die
+                Lieferung in 7 Tagen
+              </p>
             </div>
-            {/* <form className="shipping-form payment-form mb-5">
-							<h4 className="heading4 mb-3">Select a payment method</h4>
-							<button className="payment-method mb-3">
-								<img src="/images/payment-method.svg" alt="" />
-							</button>
-
-							<label htmlFor="card-name">Name on card</label>
-							<input required type="text" id="card-name" placeholder="Full name" className="mb-3" />
-
-							<label htmlFor="card-number">card number</label>
-							<div className="card-number mb-3 d-flex">
-								<img src="/images/card-number.svg" alt="" />
-								<input required type="text" placeholder="1234 1234 1234 1234" id="card-number" />
-							</div>
-
-							<label htmlFor="Expiry">Expiry (MM/YY)</label>
-							<input required type="text" id="Expiry" placeholder="MM/YY" className="mb-3" />
-
-							<label htmlFor="cvv">CVV</label>
-							<input required type="text" id="cvv" placeholder="..." />
-
-							<button className="btn btn-submit mt-4" onClick={(e) => handleShippingSubmit(e)}>
-								Fortsetzen
-							</button>
-						</form> */}
             <div className="shipping-icons d-flex justify-content-between align-items-center">
               <div className="shipping-icon">
                 <svg className="icon icon-shipping-1">
