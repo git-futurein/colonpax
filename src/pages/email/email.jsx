@@ -25,9 +25,7 @@ const Email = () => {
         url={URL}
         render={({ subscribe, status }) => {
           if (status === "success") {
-            setTimeout(() => {
-              navigate("/plans");
-            }, 2000);
+            navigate("/plans");
           } else {
             return (
               <EmailComp
