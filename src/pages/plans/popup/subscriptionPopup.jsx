@@ -20,7 +20,7 @@ const SubscriptionPopup = () => {
   const [popupNumber, setPopupNumber] = useState(1);
   const [formData, setFormData] = useState({
     loginId: "colonpax-api",
-    password: "United@198535",
+    password: "ColonPax@API70",
     firstName: "",
     lastName: "",
     address1: "",
