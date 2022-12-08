@@ -23,22 +23,24 @@ const Email = () => {
     <>
       <MailchimpSubscribe
         url={URL}
-        render={({ subscribe, status, message }) => (
-          <EmailComp
-            submit={() => {
-              subscribe({
-                EMAIL: email, // This shouldn't be change. Because this is exactly used by mailchimp
-              });
-              if (status === "success") {
-                alert(message);
-                setTimeout(() => {
-                  navigate("/plans");
-                }, 2000);
-              }
-            }}
-            change={handleInputChange}
-          />
-        )}
+        render={({ subscribe, status }) => {
+          if (status === "success") {
+            setTimeout(() => {
+              navigate("/plans");
+            }, 2000);
+          } else {
+            return (
+              <EmailComp
+                submit={() => {
+                  subscribe({
+                    EMAIL: email, // This shouldn't be change. Because this is exactly used by mailchimp
+                  });
+                }}
+                change={handleInputChange}
+              />
+            );
+          }
+        }}
       />
     </>
   );
