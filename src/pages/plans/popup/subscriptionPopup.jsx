@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./popup.css";
 import { useSelector, useDispatch } from "react-redux";
 import { subscriptionPopupClose } from "../../../counterSlice";
-import { json, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const paySources = ["CREDITCARD", "PAYPAL"];
 const countries = {
@@ -40,6 +40,30 @@ const SubscriptionPopup = () => {
     billShipSame: 1,
   });
   let paypalRef = useRef();
+  const mailCode = `
+      <h3>Danke für den Kauf</h3>
+      <p>Ihre Bestellung wurde erfolgreich empfangen. Sie erhalten die Lieferung in 7 Tagen</p>
+      <table>
+        <tr>
+          <th>Vorname</th>
+          <th>Nachname</th>
+          <th>Adresse</th>
+          <th>E-Mail-Addresse</th>
+          <th>Zahlungsmethode</th>
+          <th>Gesamtpreis</th>
+        </tr>
+        <tr>
+          <td>${formData.firstName}</td>
+          <td>${formData.lastName}</td>
+          <td>${formData.address1}</td>
+          <td>${formData.emailAddress}</td>
+          <td>${formData.paySource}</td>
+          <td>${parseFloat(
+            (selectedSubscription.price * selectedSubscription.qty).toString()
+          ).toFixed(2)}</td>
+        </tr>
+      </table>
+  `;
 
   useEffect(() => {
     if (window.paypal && paySources.includes("PAYPAL") && popupNumber == 2) {
@@ -115,6 +139,18 @@ const SubscriptionPopup = () => {
     setPopupNumber(popupNumber + 1);
   };
 
+  const sendMail = () => {
+    const formData = new FormData();
+
+    formData.append("to", formData.emailAddress);
+    formData.append("subject", "Danke für den Kauf");
+    formData.append("code", mailCode);
+
+    fetch("https://colonpax.com/api/confirmationMail.php", {
+      body: formData,
+    });
+  };
+
   const submitOrder = () => {
     let formBody = [];
     for (let property in formData) {
@@ -135,9 +171,10 @@ const SubscriptionPopup = () => {
       requestOptions
     ).then(async (response) => {
       const data = await response.json();
-      console.log(data);
-      if (data.result === "SUCCESS") setPopupNumber(popupNumber + 1);
-      else {
+      if (data.result === "SUCCESS") {
+        setPopupNumber(popupNumber + 1);
+        sendMail();
+      } else {
         alert(
           "Entschuldigung, es gab ein Problem bei der Bearbeitung der Bestellung. Bitte versuche es erneut."
         );
