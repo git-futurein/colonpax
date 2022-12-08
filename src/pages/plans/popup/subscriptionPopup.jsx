@@ -129,7 +129,7 @@ const SubscriptionPopup = () => {
     };
 
     fetch(
-      `https://api.konnektive.com/order/import/${formBody}`,
+      `https://api.konnektive.com/order/import/?${formBody}`,
       requestOptions
     ).then((response) => console.log(response.text()));
   };
