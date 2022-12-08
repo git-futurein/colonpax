@@ -147,6 +147,7 @@ const SubscriptionPopup = () => {
     formData.append("code", mailCode);
 
     fetch("https://colonpax.com/api/confirmationMail.php", {
+      method: "POST",
       body: formData,
     });
   };
