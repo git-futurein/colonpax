@@ -23,13 +23,18 @@ const Email = () => {
     <>
       <MailchimpSubscribe
         url={URL}
-        render={({ subscribe }) => (
+        render={({ subscribe, status, message }) => (
           <EmailComp
             submit={() => {
               subscribe({
                 EMAIL: email, // This shouldn't be change. Because this is exactly used by mailchimp
               });
-              navigate("/plans");
+              if (status === "success") {
+                alert(message);
+                setTimeout(() => {
+                  navigate("/plans");
+                }, 2000);
+              }
             }}
             change={handleInputChange}
           />
