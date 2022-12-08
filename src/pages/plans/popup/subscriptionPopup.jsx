@@ -557,7 +557,7 @@ const SubscriptionPopup = () => {
             <div className="text-center">
               <p style={{ fontSize: 20, marginBottom: 20 }}>
                 Deine Bestellung ist erfolgreich eingegangen. Du erhältst deine
-                Lieferung binnen 7 Tagen! Deine Bestellnummer lautet:
+                Lieferung binnen 7 Tagen! Deine Bestellnummer lautet: {orderId}
               </p>
             </div>
             <div className="shipping-icons d-flex justify-content-between align-items-center">
