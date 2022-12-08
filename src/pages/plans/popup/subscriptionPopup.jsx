@@ -43,26 +43,18 @@ const SubscriptionPopup = () => {
   const mailCode = `
       <h3>Danke für den Kauf</h3>
       <p>Ihre Bestellung wurde erfolgreich empfangen. Sie erhalten die Lieferung in 7 Tagen</p>
-      <table>
-        <tr>
-          <th>Vorname</th>
-          <th>Nachname</th>
-          <th>Adresse</th>
-          <th>E-Mail-Addresse</th>
-          <th>Zahlungsmethode</th>
-          <th>Gesamtpreis</th>
-        </tr>
-        <tr>
-          <td>${formData.firstName}</td>
-          <td>${formData.lastName}</td>
-          <td>${formData.address1}</td>
-          <td>${formData.emailAddress}</td>
-          <td>${formData.paySource}</td>
-          <td>${parseFloat(
+      <h5>
+        <ul>
+          <li>Vorname - ${formData.firstName}</li>
+          <li>Nachname - ${formData.lastName}</li>
+          <li>Adresse - ${formData.address1}</li>
+          <li>E-Mail-Addresse - ${formData.emailAddress}</li>
+          <li>Zahlungsmethode - ${formData.paySource}</li>
+          <li>Gesamtpreis - ${parseFloat(
             (selectedSubscription.price * selectedSubscription.qty).toString()
-          ).toFixed(2)}</td>
-        </tr>
-      </table>
+          ).toFixed(2)}</li>
+        </ul>
+      </h5>
   `;
 
   useEffect(() => {
