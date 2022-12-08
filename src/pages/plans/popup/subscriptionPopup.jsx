@@ -133,8 +133,9 @@ const SubscriptionPopup = () => {
     fetch(
       `https://api.konnektive.com/order/import/?${formBody}`,
       requestOptions
-    ).then((response) => {
-      const data = response.json();
+    ).then(async (response) => {
+      const data = await response.json();
+      console.log(data);
       if (data.result === "SUCCESS") setPopupNumber(popupNumber + 1);
       else {
         alert(
@@ -520,7 +521,7 @@ const SubscriptionPopup = () => {
               <h2 className="heading-2 mb-4">Erfolgreich</h2>
             </div>
             <div>
-              <p style="font-size: 20px">
+              <p style={{ fontSize: 20, marginBottom: 20 }}>
                 Ihre Bestellung wurde erfolgreich empfangen. Sie erhalten die
                 Lieferung in 7 Tagen
               </p>
