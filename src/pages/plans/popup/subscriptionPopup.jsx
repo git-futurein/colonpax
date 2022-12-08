@@ -84,6 +84,15 @@ const SubscriptionPopup = () => {
     }
   }, [popupNumber]);
 
+  useEffect(() => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      product1_id: selectedSubscription.id,
+      product1_price: parseFloat(selectedSubscription.price).toFixed(2),
+      product1_qty: selectedSubscription.qty,
+    }));
+  }, [selectedSubscription]);
+
   const handleChange = (e) => {
     setFormData((prevData) => ({
       ...prevData,
@@ -106,10 +115,11 @@ const SubscriptionPopup = () => {
 
   const submitOrder = () => {
     let headers = new Headers();
-    headers.append("Access-Control-Allow-Origin", "http://localhost:3000");
+    headers.append("Access-Control-Allow-Origin", "*");
     headers.append("Access-Control-Allow-Credentials", "true");
+    headers.append("Access-Control-Allow-Methods", "POST, OPTIONS");
 
-    headers.append("GET", "POST", "OPTIONS");
+    headers.append("POST", "OPTIONS");
 
     let formBody = new FormData();
     for (let property in formData) {
