@@ -20,7 +20,7 @@ const SubscriptionPopup = () => {
   const [popupNumber, setPopupNumber] = useState(1);
   const [formData, setFormData] = useState({
     loginId: "colonpax-api",
-    password: "ColonPax@API70",
+    password: "ColonPaxAPI71React",
     firstName: "",
     lastName: "",
     address1: "",
@@ -114,28 +114,24 @@ const SubscriptionPopup = () => {
   };
 
   const submitOrder = () => {
-    let headers = new Headers();
-    headers.append("Access-Control-Allow-Origin", "*");
-    headers.append("Access-Control-Allow-Credentials", "true");
-    headers.append("Access-Control-Allow-Methods", "POST, OPTIONS");
-
-    headers.append("POST", "OPTIONS");
-
-    let formBody = new FormData();
+    let formBody = [];
     for (let property in formData) {
-      formBody.append(property, formData[property]);
+      let encodedKey = encodeURIComponent(property);
+      let encodedValue = encodeURIComponent(formData[property]);
+      formBody.push(encodedKey + "=" + encodedValue);
     }
+    formBody = formBody.join("&");
 
     const requestOptions = {
       method: "POST",
-      body: formBody,
+      body: "",
       redirect: "follow",
-      headers: headers,
     };
 
-    fetch(`https://api.konnektive.com/order/import/`, requestOptions).then(
-      (response) => console.log(response.text())
-    );
+    fetch(
+      `https://api.konnektive.com/order/import/${formBody}`,
+      requestOptions
+    ).then((response) => console.log(response.text()));
   };
 
   useEffect(() => {
