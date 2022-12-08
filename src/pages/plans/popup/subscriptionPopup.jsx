@@ -50,7 +50,7 @@ const SubscriptionPopup = () => {
           <li>Adresse - ${formData.address1}</li>
           <li>E-Mail-Addresse - ${formData.emailAddress}</li>
           <li>Zahlungsmethode - ${formData.paySource}</li>
-          <li>Gesamtpreis - ${parseFloat(
+          <li>Gesamtpreis - €${parseFloat(
             (selectedSubscription.price * selectedSubscription.qty).toString()
           ).toFixed(2)}</li>
         </ul>
