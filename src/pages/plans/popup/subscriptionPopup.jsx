@@ -140,15 +140,15 @@ const SubscriptionPopup = () => {
   };
 
   const sendMail = () => {
-    const formData = new FormData();
+    const mailData = new FormData();
 
-    formData.append("to", formData.emailAddress);
-    formData.append("subject", "Danke für den Kauf");
-    formData.append("code", mailCode);
+    mailData.append("to", formData.emailAddress);
+    mailData.append("subject", "Danke für den Kauf");
+    mailData.append("code", mailCode);
 
     fetch("https://colonpax.com/api/confirmationMail.php", {
       method: "POST",
-      body: formData,
+      body: mailData,
     });
   };
 
