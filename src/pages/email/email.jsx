@@ -17,7 +17,7 @@ const Email = () => {
   };
 
   const URL =
-    "https://zarifprogrammer.us18.list-manage.com/subscribe/post?u=27d4c8458d633257a3f1f4a35&id=1f3b1d4094";
+    "https://colonpax.us17.list-manage.com/subscribe/post?u=4d20feda598bfff62190a7cea&id=66d2caf39a";
 
   return (
     <>
