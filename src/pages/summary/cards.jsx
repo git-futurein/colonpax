@@ -15,9 +15,12 @@ const Cards = () => {
 						</h2>
 
 						<button className="card_btn">
-							<Link to="/email" className="text-decoration-none text-black fw-bold">
+							<Link to="/plans" className="text-decoration-none text-black fw-bold">
 								PRODUKT ANZEIGEN
 							</Link>
+							{/* <Link to="/email" className="text-decoration-none text-black fw-bold">
+								PRODUKT ANZEIGEN
+							</Link> */}
 						</button>
 					</div>
 				</div>

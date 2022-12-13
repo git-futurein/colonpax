@@ -116,6 +116,9 @@ const Footer = () => {
 						<Link to="privacy">Datenschutzbestimmungen</Link>
 					</div>
 				</div>
+				<p className="text text-center down-p pt-3">
+					United Nutrition ÜO, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
+				</p>
 			</div>
 		</div>
 	);
