@@ -281,18 +281,17 @@ const SubscriptionPopup = () => {
 									onChange={(e) => handleContactConditions(e)}
 								/>
 								<label htmlFor="contact-checkbox" className="contact-label">
-									Ich möchte Sonderangebote und Rabatte von ColonBroom by erhalten SMS
+									Ich möchte Sonderangebote und Rabatte von Colonpax by erhalten SMS
 								</label>
 							</div>
 							{showContactConditions && (
 								<div className="desc">
 									Durch Aktivieren des Kontrollkästchens stimmen Sie zu, Marketingtexte zu erhalten
-									Nachrichten von ColonBroom unter der angegebenen Nummer, einschließlich
-									Nachrichten, die von Autodialer gesendet werden. Die Zustimmung ist keine
-									Bedingung kaufen. Msg&Data-Gebühren können anfallen. Die Nachrichtenhäufigkeit
-									variiert. Antworten Sie mit HELP, um Hilfe zu erhalten, oder mit STOP, um den
-									Vorgang abzubrechen. Prüfen Sie unsere Privatsphäre Richtlinien und
-									Geschäftsbedingungen.
+									Nachrichten von Colonpax unter der angegebenen Nummer, einschließlich Nachrichten,
+									die von Autodialer gesendet werden. Die Zustimmung ist keine Bedingung kaufen.
+									Msg&Data-Gebühren können anfallen. Die Nachrichtenhäufigkeit variiert. Antworten
+									Sie mit HELP, um Hilfe zu erhalten, oder mit STOP, um den Vorgang abzubrechen.
+									Prüfen Sie unsere Privatsphäre Richtlinien und Geschäftsbedingungen.
 								</div>
 							)}
 
@@ -302,26 +301,23 @@ const SubscriptionPopup = () => {
 						</form>
 						<div className="shipping-icons d-flex justify-content-between align-items-center">
 							<div className="shipping-icon">
-								<svg className="icon icon-shipping-1">
+								{/* <svg className="icon icon-shipping-1">
 									<use xlinkHref="./images/icons.svg#icon-shipping-1"></use>
-								</svg>
+								</svg> */}
+								<img src="/images/payment-icon-1.png" className="icon" alt="" />
 								<span className="text">kostenfreier Versand</span>
 							</div>
 							<div className="shipping-icon">
-								<svg className="icon icon-shipping-1">
-									<use xlinkHref="./images/icons.svg#icon-shipping-2"></use>
-								</svg>
+								<img src="/images/payment-icon-2.png" className="icon" alt="" />
 								<span className="text">made in Germany</span>
 							</div>
 							<div className="shipping-icon">
-								<svg className="icon icon-shipping-1">
-									<use xlinkHref="./images/icons.svg#icon-shipping-3"></use>
-								</svg>
+								<img src="/images/payment-icon-3.png" className="icon" alt="" />
 								<span className="text">Sichere Bezahlung</span>
 							</div>
 						</div>
 						<div className="phone-number text-center pt-4 d-flex align-items-center gap-2 justify-content-center">
-							<p className="text text-capitalize">phone number: </p>
+							<p className="text text-capitalize">Kundenservice: </p>
 							<a href="tel:1010370682" className="text-black">
 								1010370682
 							</a>
