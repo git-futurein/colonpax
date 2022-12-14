@@ -157,9 +157,12 @@ const Weight = () => {
 							</div>
 						</div>
 						<div className="button-area">
-							<Link to="/email" className="btn btn-product text-decoration-none text-white">
+							<Link to="/plans" className="btn btn-product text-decoration-none text-white">
 								PRODUKT ANZEIGEN
 							</Link>
+							{/* <Link to="/email" className="btn btn-product text-decoration-none text-white">
+								PRODUKT ANZEIGEN
+							</Link> */}
 						</div>
 					</div>
 

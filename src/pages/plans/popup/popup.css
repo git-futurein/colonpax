@@ -254,3 +254,7 @@
 	padding: 10px 0;
 	margin-right: 10px;
 }
+
+.phone-number .text {
+	margin-bottom: 0;
+}
