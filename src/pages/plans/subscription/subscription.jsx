@@ -44,6 +44,7 @@ const Subscription = ({ marginTop }) => {
       option1: "Einmaliger Kauf",
       option2: "Abonnieren & Sparen",
       btns: ["Jetzt abonnieren", "Jetzt Kaufen"],
+      prices: [49, 58],
       formulas: [
         ["60 Portionen", "0,91 Cent pro Drink", "1 Dose jeden Monat"],
         ["60 Portionen", "0,99 Cent pro Drink", "1 Dose wird geliefert"],
@@ -62,6 +63,7 @@ const Subscription = ({ marginTop }) => {
       option1: "Einmaliger Kauf",
       option2: "Abonnieren & Sparen",
       btns: ["Jetzt abonnieren", "Jetzt Kaufen"],
+      prices: [34, 44],
       formulas: [
         ["60 Portionen", "0,59 Cent pro Drink", "3 Dosen jeden Monat"],
         ["60 Portionen", "0,67 Cent pro Drink", "3 Dosen werden geliefert"],
@@ -77,6 +79,7 @@ const Subscription = ({ marginTop }) => {
       angebot: true,
       active: false,
       dose: 6,
+      prices: [24, 34],
       formulas: [
         ["60 Portionen", "6 Dosen werden alle Monate geliefert"],
         ["60 Portionen", "6 Dosen werden einmalig geliefert"],
@@ -133,6 +136,7 @@ const Subscription = ({ marginTop }) => {
               sparan,
               sparanNum,
               showSparan,
+              prices
             } = item;
 
             // console.log(
@@ -159,15 +163,11 @@ const Subscription = ({ marginTop }) => {
                   <div className="price-box d-flex align-items-start">
                     <span className="currency">&#8364;</span>
                     <span className="price">
-                      {products[value][index]
-                        ? parseFloat(products[value][index].price / dose).toFixed(2).toString().split(".")[0]
-                        : 0}
+                      {prices[value]}
                       .
                     </span>
                     <span className="price-small">
-                      {products[value][index]
-                        ? parseFloat(products[value][index].price / dose).toFixed(2).toString().split(".")[1]
-                        : 99}
+                      99
                     </span>
                     <span className="based">/ Monat</span>
                   </div>
@@ -232,7 +232,7 @@ const Subscription = ({ marginTop }) => {
                               ? "Einmaliger Kauf"
                               : "Abonnieren & Sparen",
                           price: products[value][index]
-                            ? parseFloat(products[value][index].price / dose).toFixed(2)
+                            ? parseFloat(products[value][index].price).toFixed(2)
                             : 0,
                           campaignId:
                             campaignIds.length > 0 ? campaignIds[value] : "2",
