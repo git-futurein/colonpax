@@ -133,9 +133,9 @@ const Subscription = ({ marginTop }) => {
               showSparan,
             } = item;
 
-            console.log(
-              products[value][index] ? products[value][index].price : 0
-            );
+            // console.log(
+            //   products[value][index] ? products[value][index].price : 0
+            // );
 
             return (
               <div className="col-12 col-lg-4" key={id}>
