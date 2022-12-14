@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../plans.css";
 import SubscriptionPopup from "../popup/subscriptionPopup";
 import { subscriptionPopupOpen } from "../../../counterSlice";
@@ -6,9 +6,31 @@ import { useDispatch } from "react-redux";
 
 const Subscription = ({ marginTop }) => {
   const dispatch = useDispatch();
-  // const [value, setValue] = useState(1);
-  // const [value, setValue] = useState(1);
-  // const [value, setValue] = useState(1);
+  const [products, setProducts] = useState({
+    0: [],
+    1: [],
+  });
+
+  useEffect(() => {
+    fetchPrices();
+  }, []);
+
+  const fetchPrices = () => {
+    const loginId = "colonpax-api";
+    const loginKey = "ColonPaxAPI71React";
+    fetch(
+      `https://api.konnektive.com/campaign/query/?loginId=${loginId}&password=${loginKey}`
+    )
+      .then((response) => response.json())
+      .then((res) => {
+        const option1Products = Object.entries(res.message.data)[0][1].products;
+        const option2Products = Object.entries(res.message.data)[1][1].products;
+        setProducts({
+          0: option2Products,
+          1: option1Products,
+        });
+      });
+  };
 
   const subscriptionData = [
     {
@@ -20,7 +42,6 @@ const Subscription = ({ marginTop }) => {
       option1: "Einmaliger Kauf",
       option2: "Abonnieren & Sparen",
       btns: ["Jetzt abonnieren", "Jetzt Kaufen"],
-      prices: [49, 58],
       formulas: [
         ["60 Portionen", "0,91 Cent pro Drink", "1 Dose jeden Monat"],
         ["60 Portionen", "0,99 Cent pro Drink", "1 Dose wird geliefert"],
@@ -39,7 +60,6 @@ const Subscription = ({ marginTop }) => {
       option1: "Einmaliger Kauf",
       option2: "Abonnieren & Sparen",
       btns: ["Jetzt abonnieren", "Jetzt Kaufen"],
-      prices: [34, 44],
       formulas: [
         ["60 Portionen", "0,59 Cent pro Drink", "3 Dosen jeden Monat"],
         ["60 Portionen", "0,67 Cent pro Drink", "3 Dosen werden geliefert"],
@@ -55,7 +75,6 @@ const Subscription = ({ marginTop }) => {
       angebot: true,
       active: false,
       dose: 6,
-      prices: [24, 34],
       formulas: [
         ["60 Portionen", "6 Dosen werden alle Monate geliefert"],
         ["60 Portionen", "6 Dosen werden einmalig geliefert"],
@@ -97,14 +116,13 @@ const Subscription = ({ marginTop }) => {
       <SubscriptionPopup />
       <div className="container">
         <div className="subscription row g-5">
-          {data.map((item) => {
+          {data.map((item, index) => {
             const {
               id,
               img,
               dose,
               angebot,
               active,
-              prices,
               btns,
               option1,
               option2,
@@ -114,6 +132,11 @@ const Subscription = ({ marginTop }) => {
               sparanNum,
               showSparan,
             } = item;
+
+            console.log(
+              products[value][index] ? products[value][index].price : 0
+            );
+
             return (
               <div className="col-12 col-lg-4" key={id}>
                 <div
@@ -133,8 +156,17 @@ const Subscription = ({ marginTop }) => {
                   <img src={img} className="mb-2" alt="" />
                   <div className="price-box d-flex align-items-start">
                     <span className="currency">&#8364;</span>
-                    <span className="price">{prices[value]}.</span>
-                    <span className="price-small">99</span>
+                    <span className="price">
+                      {products[value][index]
+                        ? products[value][index].price.toString().split(".")[0]
+                        : 0}
+                      .
+                    </span>
+                    <span className="price-small">
+                      {products[value][index]
+                        ? products[value][index].price.toString().split(".")[1]
+                        : 99}
+                    </span>
                     <span className="based">/ Monat</span>
                   </div>
                   <h5 className="heading-5 mb-4">pro Dose</h5>
@@ -197,7 +229,9 @@ const Subscription = ({ marginTop }) => {
                             value === 1
                               ? "Einmaliger Kauf"
                               : "Abonnieren & Sparen",
-                          price: parseFloat(`${prices[value]}.99`),
+                          price: products[value][index]
+                            ? products[value][index].price
+                            : 0,
                           discount:
                             showSparan === -1 || value === showSparan
                               ? sparanNum
