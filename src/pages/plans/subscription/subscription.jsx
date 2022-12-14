@@ -10,6 +10,7 @@ const Subscription = ({ marginTop }) => {
     0: [],
     1: [],
   });
+  const [campaignIds, setCampaignIds] = useState([]);
 
   useEffect(() => {
     fetchPrices();
@@ -29,6 +30,7 @@ const Subscription = ({ marginTop }) => {
           0: option2Products,
           1: option1Products,
         });
+        setCampaignIds(Object.keys(res.message.data));
       });
   };
 
@@ -232,6 +234,8 @@ const Subscription = ({ marginTop }) => {
                           price: products[value][index]
                             ? products[value][index].price
                             : 0,
+                          campaignId:
+                            campaignIds.length > 0 ? campaignIds[value] : "2",
                           discount:
                             showSparan === -1 || value === showSparan
                               ? sparanNum

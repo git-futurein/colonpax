@@ -37,7 +37,7 @@ const SubscriptionPopup = () => {
     product1_id: selectedSubscription.id,
     product1_price: parseFloat(selectedSubscription.price).toFixed(2),
     product1_qty: selectedSubscription.qty,
-    campaignId: 2,
+    campaignId: selectedSubscription.campaignId,
     billShipSame: 1,
   });
   let paypalRef = useRef();
