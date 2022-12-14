@@ -440,11 +440,13 @@ const SubscriptionPopup = () => {
                 <Link to="#"> Datenschutz</Link>.
               </div>
             </div>
-            {/* <form className="shipping-form payment-form mb-5">
-							<h4 className="heading4 mb-3">Wählen Sie eine Zahlungsmethode aus</h4>
-							<div className="w-full mb-4" ref={paypalRef} />
+            <form className="shipping-form payment-form mb-5">
+              <h4 className="heading4 mb-3">
+                Wählen Sie eine Zahlungsmethode aus
+              </h4>
+              <div className="w-full mb-4" ref={paypalRef} />
 
-							<label htmlFor="card-number">Card Number</label>
+              {/* <label htmlFor="card-number">Card Number</label>
 							<div className="card-number mb-3 d-flex">
 								<img src="/images/card-number.svg" alt="" />
 								<input
@@ -491,18 +493,18 @@ const SubscriptionPopup = () => {
 								placeholder="..."
 								onChange={handleChange}
 								value={formData['cardSecurityCode']}
-							/>
+							/> */}
 
-							<button
-								className="btn btn-submit mt-4"
-								onClick={(e) => {
-									e.preventDefault();
-									submitOrder();
-								}}
-							>
-								Fortsetzen
-							</button>
-						</form> */}
+              <button
+                className="btn btn-submit mt-4"
+                onClick={(e) => {
+                  e.preventDefault();
+                  submitOrder();
+                }}
+              >
+                Fortsetzen
+              </button>
+            </form>
             <div className="shipping-icons d-flex justify-content-between align-items-center">
               <div className="shipping-icon">
                 {/* <svg className="icon icon-shipping-1">
