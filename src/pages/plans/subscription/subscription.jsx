@@ -160,13 +160,13 @@ const Subscription = ({ marginTop }) => {
                     <span className="currency">&#8364;</span>
                     <span className="price">
                       {products[value][index]
-                        ? products[value][index].price.toString().split(".")[0]
+                        ? parseFloat((products[value][index].price / dose), 2).toString().split(".")[0]
                         : 0}
                       .
                     </span>
                     <span className="price-small">
                       {products[value][index]
-                        ? products[value][index].price.toString().split(".")[1]
+                        ? parseFloat((products[value][index].price / dose), 2).toString().split(".")[1]
                         : 99}
                     </span>
                     <span className="based">/ Monat</span>
