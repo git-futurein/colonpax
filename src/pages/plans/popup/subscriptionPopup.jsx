@@ -381,10 +381,9 @@ const SubscriptionPopup = () => {
                   <div className="amount">
                     €
                     {parseFloat(
-                      selectedSubscription.price * selectedSubscription.qty +
+                      selectedSubscription.price + selectedSubscription.price * 0.07 +
                         (selectedSubscription.price *
-                          selectedSubscription.discount *
-                          selectedSubscription.qty) /
+                          selectedSubscription.discount) /
                           100
                     ).toFixed(2)}
                   </div>
@@ -397,7 +396,6 @@ const SubscriptionPopup = () => {
                     - €
                     {parseFloat(
                       (selectedSubscription.price *
-                        selectedSubscription.qty *
                         selectedSubscription.discount) /
                         100
                     ).toFixed(2)}
@@ -425,7 +423,7 @@ const SubscriptionPopup = () => {
                     €
                     {parseFloat(
                       (
-                        selectedSubscription.price * selectedSubscription.qty
+                        selectedSubscription.price + selectedSubscription.price * 0.07
                       ).toString()
                     ).toFixed(2)}
                   </div>
