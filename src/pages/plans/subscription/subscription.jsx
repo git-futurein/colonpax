@@ -232,7 +232,7 @@ const Subscription = ({ marginTop }) => {
                               ? "Einmaliger Kauf"
                               : "Abonnieren & Sparen",
                           price: products[value][index]
-                            ? products[value][index].price
+                            ? parseFloat(products[value][index].price / dose).toFixed(2)
                             : 0,
                           campaignId:
                             campaignIds.length > 0 ? campaignIds[value] : "2",
