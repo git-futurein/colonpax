@@ -475,23 +475,26 @@ const SubscriptionPopup = () => {
 						</form>
 						<div className="shipping-icons d-flex justify-content-between align-items-center">
 							<div className="shipping-icon">
-								<svg className="icon icon-shipping-1">
+								{/* <svg className="icon icon-shipping-1">
 									<use xlinkHref="./images/icons.svg#icon-shipping-1"></use>
-								</svg>
-								<span className="text">Kostenloser Versand</span>
+								</svg> */}
+								<img src="/images/payment-icon-1.png" className="icon" alt="" />
+								<span className="text">kostenfreier Versand</span>
 							</div>
 							<div className="shipping-icon">
-								<svg className="icon icon-shipping-1">
-									<use xlinkHref="./images/icons.svg#icon-shipping-2"></use>
-								</svg>
-								<span className="text">Produkte hergestellt in den USA</span>
+								<img src="/images/payment-icon-2.png" className="icon" alt="" />
+								<span className="text">made in Germany</span>
 							</div>
 							<div className="shipping-icon">
-								<svg className="icon icon-shipping-1">
-									<use xlinkHref="./images/icons.svg#icon-shipping-3"></use>
-								</svg>
-								<span className="text">Zufriedenheitsgarantie</span>
+								<img src="/images/payment-icon-3.png" className="icon" alt="" />
+								<span className="text">Sichere Bezahlung</span>
 							</div>
+						</div>
+						<div className="phone-number text-center pt-4 d-flex align-items-center gap-2 justify-content-center">
+							<p className="text text-capitalize">Kundenservice: </p>
+							<a href="tel:1010370682" className="text-black">
+								1010370682
+							</a>
 						</div>
 					</div>
 				)}
@@ -527,23 +530,26 @@ const SubscriptionPopup = () => {
 						</div>
 						<div className="shipping-icons d-flex justify-content-between align-items-center">
 							<div className="shipping-icon">
-								<svg className="icon icon-shipping-1">
+								{/* <svg className="icon icon-shipping-1">
 									<use xlinkHref="./images/icons.svg#icon-shipping-1"></use>
-								</svg>
-								<span className="text">Kostenloser Versand</span>
+								</svg> */}
+								<img src="/images/payment-icon-1.png" className="icon" alt="" />
+								<span className="text">kostenfreier Versand</span>
 							</div>
 							<div className="shipping-icon">
-								<svg className="icon icon-shipping-1">
-									<use xlinkHref="./images/icons.svg#icon-shipping-2"></use>
-								</svg>
-								<span className="text">Produkte hergestellt in den USA</span>
+								<img src="/images/payment-icon-2.png" className="icon" alt="" />
+								<span className="text">made in Germany</span>
 							</div>
 							<div className="shipping-icon">
-								<svg className="icon icon-shipping-1">
-									<use xlinkHref="./images/icons.svg#icon-shipping-3"></use>
-								</svg>
-								<span className="text">Zufriedenheitsgarantie</span>
+								<img src="/images/payment-icon-3.png" className="icon" alt="" />
+								<span className="text">Sichere Bezahlung</span>
 							</div>
+						</div>
+						<div className="phone-number text-center pt-4 d-flex align-items-center gap-2 justify-content-center">
+							<p className="text text-capitalize">Kundenservice: </p>
+							<a href="tel:1010370682" className="text-black">
+								1010370682
+							</a>
 						</div>
 					</div>
 				)}
