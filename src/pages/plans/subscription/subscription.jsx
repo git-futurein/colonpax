@@ -17,11 +17,7 @@ const Subscription = ({ marginTop }) => {
   }, []);
 
   const fetchPrices = () => {
-    const loginId = "colonpax-api";
-    const loginKey = "ColonPaxAPI71React";
-    fetch(
-      `https://api.konnektive.com/campaign/query/?loginId=${loginId}&password=${loginKey}`
-    )
+    fetch(`https://colonpax.com/api/products.php`)
       .then((response) => response.json())
       .then((res) => {
         const option1Products = Object.entries(res.message.data)[0][1].products;
@@ -31,6 +27,7 @@ const Subscription = ({ marginTop }) => {
           1: option1Products,
         });
         setCampaignIds(Object.keys(res.message.data));
+        // console.log(Object.keys(res.message.data));
       });
   };
 
@@ -142,8 +139,6 @@ const Subscription = ({ marginTop }) => {
             const price = products[value][index]
               ? parseFloat(products[value][index].price)
               : 0;
-
-            console.log(price + price * 0.07);
 
             return (
               <div className="col-12 col-lg-4" key={id}>

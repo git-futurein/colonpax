@@ -5,23 +5,24 @@ import { subscriptionPopupClose } from "../../../counterSlice";
 import { Link } from "react-router-dom";
 
 const paySources = ["CREDITCARD", "PAYPAL"];
+
 const countries = {
   AT: "Austria",
   DE: "Germany",
 };
 
 const SubscriptionPopup = () => {
+  const [showCouponForm, setShowCouponForm] = useState(false);
   const { subscriptionPopup, selectedSubscription } = useSelector(
     (state) => state.counter
   );
+  const [couponPrice, setCouponPrice] = useState(0);
 
   const dispatch = useDispatch();
   const [showContactConditions, setShowContactConditions] = useState(false);
   const [popupNumber, setPopupNumber] = useState(1);
   const [orderId, setOrderId] = useState("");
   const [formData, setFormData] = useState({
-    loginId: "colonpax-api",
-    password: "ColonPaxAPI71React",
     firstName: "",
     lastName: "",
     address1: "",
@@ -42,6 +43,7 @@ const SubscriptionPopup = () => {
     campaignId: selectedSubscription.campaignId,
     billShipSame: 1,
     salesTax: 0.07,
+    couponCode: "",
   });
   let paypalRef = useRef();
   const mailCode = `
@@ -79,7 +81,7 @@ const SubscriptionPopup = () => {
                   description: "Payment to ColonPax",
                   amount: {
                     currency_code: "EUR",
-                    value: selectedSubscription.subtotal,
+                    value: selectedSubscription.subtotal - couponPrice,
                   },
                 },
               ],
@@ -110,6 +112,7 @@ const SubscriptionPopup = () => {
         selectedSubscription.price / selectedSubscription.qty
       ).toFixed(2),
       product1_qty: selectedSubscription.qty,
+      campaignId: selectedSubscription.campaignId,
     }));
   }, [selectedSubscription]);
 
@@ -155,26 +158,33 @@ const SubscriptionPopup = () => {
     }
     formBody = formBody.join("&");
 
-    const requestOptions = {
-      method: "POST",
-      body: "",
-      redirect: "follow",
-    };
+    fetch(`https://colonpax.com/api/orders.php/?${formBody}`).then(
+      async (response) => {
+        const data = await response.json();
+
+        if (data.result === "SUCCESS") {
+          setOrderId(data.message.orderId);
+          setPopupNumber(popupNumber + 1);
+          sendMail();
+        } else {
+          alert(
+            "Entschuldigung, es gab ein Problem bei der Bearbeitung der Bestellung. Bitte versuche es erneut."
+          );
+          dispatch(subscriptionPopupClose());
+        }
+      }
+    );
+  };
+
+  const handleCoupon = (e) => {
+    e.preventDefault();
 
     fetch(
-      `https://api.konnektive.com/order/import/?${formBody}`,
-      requestOptions
+      `https://colonpax.com/api/coupon.php?campaignId=${selectedSubscription.campaignId}&couponCode=${formData["couponCode"]}&product1_id=${formData["product1_id"]}`
     ).then(async (response) => {
       const data = await response.json();
       if (data.result === "SUCCESS") {
-        setOrderId(data.message.orderId);
-        setPopupNumber(popupNumber + 1);
-        sendMail();
-      } else {
-        alert(
-          "Entschuldigung, es gab ein Problem bei der Bearbeitung der Bestellung. Bitte versuche es erneut."
-        );
-        dispatch(subscriptionPopupClose());
+        setCouponPrice(parseInt(data.message.priceDiscount));
       }
     });
   };
@@ -419,12 +429,27 @@ const SubscriptionPopup = () => {
                 <div className="gift d-flex justify-content-between flex-wrap">
                   <p className="text mb-0">Abgerechneter Gesamtbetrag</p>
                   <div className="amount amount_total">
-                    €{selectedSubscription.subtotal.toFixed(2)}
+                    €{(selectedSubscription.subtotal - couponPrice).toFixed(2)}
                   </div>
                 </div>
                 <div className="coupon d-flex justify-content-between flex-wrap">
-                  <Link to="#">Gutschein erhalten?</Link>
+                  <a onClick={() => setShowCouponForm(!showCouponForm)}>
+                    Gutschein erhalten?
+                  </a>
                 </div>
+                {showCouponForm && (
+                  <form className="my-3" onSubmit={handleCoupon}>
+                    <input
+                      type="text"
+                      id="couponCode"
+                      placeholder="Gutschein erhalten?"
+                      name="couponCode"
+                      onChange={handleChange}
+                      value={formData["couponCode"]}
+                    />
+                    <button className="btn btn-submit mt-4">Fortsetzen</button>
+                  </form>
+                )}
               </div>
               <div className="dieloge">
                 Mit der Auswahl einer Zahlungsmethode stimmen Sie der zu{" "}
@@ -487,7 +512,7 @@ const SubscriptionPopup = () => {
 								value={formData['cardSecurityCode']}
 							/> */}
 
-              {/* <button
+              <button
                 className="btn btn-submit mt-4"
                 onClick={(e) => {
                   e.preventDefault();
@@ -495,7 +520,7 @@ const SubscriptionPopup = () => {
                 }}
               >
                 Fortsetzen
-              </button> */}
+              </button>
             </form>
             <div className="shipping-icons d-flex justify-content-between align-items-center">
               <div className="shipping-icon">
