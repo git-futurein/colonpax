@@ -31,7 +31,7 @@ const Weight = () => {
 		} else if (18.5 <= bmi && bmi <= 24.9) {
 			// 'Healthy';
 			setBmiText('Du Hast Dein Idealgewicht');
-		} else if (25 <= bmi && bmi <= 29.9) {
+		} else if (25 <= bmi) {
 			// 'Overweight';
 			setBmiText('Du bist Übergewichtig');
 		}
