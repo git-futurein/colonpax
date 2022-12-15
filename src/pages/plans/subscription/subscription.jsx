@@ -136,12 +136,14 @@ const Subscription = ({ marginTop }) => {
               sparan,
               sparanNum,
               showSparan,
-              prices
+              prices,
             } = item;
 
-            // console.log(
-            //   products[value][index] ? products[value][index].price : 0
-            // );
+            const price = products[value][index]
+              ? parseFloat(products[value][index].price)
+              : 0;
+
+            console.log(price + price * 0.07);
 
             return (
               <div className="col-12 col-lg-4" key={id}>
@@ -162,13 +164,8 @@ const Subscription = ({ marginTop }) => {
                   <img src={img} className="mb-2" alt="" />
                   <div className="price-box d-flex align-items-start">
                     <span className="currency">&#8364;</span>
-                    <span className="price">
-                      {prices[value]}
-                      .
-                    </span>
-                    <span className="price-small">
-                      99
-                    </span>
+                    <span className="price">{prices[value]}.</span>
+                    <span className="price-small">99</span>
                     <span className="based">/ Monat</span>
                   </div>
                   <h5 className="heading-5 mb-4">pro Dose</h5>
@@ -231,9 +228,8 @@ const Subscription = ({ marginTop }) => {
                             value === 1
                               ? "Einmaliger Kauf"
                               : "Abonnieren & Sparen",
-                          price: products[value][index]
-                            ? parseFloat(products[value][index].price).toFixed(2)
-                            : 0,
+                          price,
+                          subtotal: price + price * 0.07,
                           campaignId:
                             campaignIds.length > 0 ? campaignIds[value] : "2",
                           discount:

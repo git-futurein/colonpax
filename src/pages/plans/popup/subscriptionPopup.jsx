@@ -35,10 +35,13 @@ const SubscriptionPopup = () => {
     // cardYear: '',
     // cardSecurityCode: '',
     product1_id: selectedSubscription.id,
-    product1_price: parseFloat(selectedSubscription.price).toFixed(2),
+    product1_price: (
+      selectedSubscription.price / selectedSubscription.qty
+    ).toFixed(2),
     product1_qty: selectedSubscription.qty,
     campaignId: selectedSubscription.campaignId,
     billShipSame: 1,
+    salesTax: 0.07,
   });
   let paypalRef = useRef();
   const mailCode = `
@@ -51,8 +54,8 @@ const SubscriptionPopup = () => {
           <li>Adresse - ${formData.address1}</li>
           <li>E-Mail-Addresse - ${formData.emailAddress}</li>
           <li>Zahlungsmethode - ${formData.paySource}</li>
-          <li>Gesamtpreis - €${parseFloat(
-            (selectedSubscription.price * selectedSubscription.qty).toString()
+          <li>Gesamtpreis - €${(
+            selectedSubscription.subtotal / selectedSubscription.qty
           ).toFixed(2)}</li>
         </ul>
       </h5>
@@ -76,11 +79,7 @@ const SubscriptionPopup = () => {
                   description: "Payment to ColonPax",
                   amount: {
                     currency_code: "EUR",
-                    value: parseFloat(
-                      (
-                        selectedSubscription.price * selectedSubscription.qty
-                      ).toString()
-                    ).toFixed(2),
+                    value: selectedSubscription.subtotal,
                   },
                 },
               ],
@@ -107,7 +106,9 @@ const SubscriptionPopup = () => {
     setFormData((prevFormData) => ({
       ...prevFormData,
       product1_id: selectedSubscription.id,
-      product1_price: parseFloat(selectedSubscription.price).toFixed(2),
+      product1_price: (
+        selectedSubscription.price / selectedSubscription.qty
+      ).toFixed(2),
       product1_qty: selectedSubscription.qty,
     }));
   }, [selectedSubscription]);
@@ -249,7 +250,7 @@ const SubscriptionPopup = () => {
                 onChange={handleChange}
                 value={formData["address1"]}
               />
-              <select name="country" onChange={handleChange}>
+              {/* <select name="country" onChange={handleChange}>
                 {Object.entries(countries).map((country, index) => (
                   <option
                     value={country[0]}
@@ -259,7 +260,7 @@ const SubscriptionPopup = () => {
                     {country[1]}
                   </option>
                 ))}
-              </select>
+              </select> */}
               <input
                 required
                 type="text"
@@ -380,11 +381,11 @@ const SubscriptionPopup = () => {
                   <p className="text mb-0">{selectedSubscription.plan}</p>
                   <div className="amount">
                     €
-                    {parseFloat(
-                      selectedSubscription.price + selectedSubscription.price * 0.07 +
-                        (selectedSubscription.price *
-                          selectedSubscription.discount) /
-                          100
+                    {(
+                      selectedSubscription.subtotal +
+                      (selectedSubscription.subtotal *
+                        selectedSubscription.discount) /
+                        100
                     ).toFixed(2)}
                   </div>
                 </div>
@@ -394,16 +395,16 @@ const SubscriptionPopup = () => {
                   </p>
                   <div className="amount">
                     - €
-                    {parseFloat(
-                      (selectedSubscription.price *
+                    {(
+                      (selectedSubscription.subtotal *
                         selectedSubscription.discount) /
-                        100
+                      100
                     ).toFixed(2)}
                   </div>
                 </div>
               </div>
 
-              <div className="payment_item">
+              {/* <div className="payment_item">
                 <div className="gift d-flex justify-content-between flex-wrap">
                   <p className="text mb-0">
                     Versand nach {countries[formData["country"]]}
@@ -414,18 +415,13 @@ const SubscriptionPopup = () => {
                   <p className="text mb-0 text-danger">Rabatt (-100%)</p>
                   <div className="amount">- €15.00</div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="payment_item">
                 <div className="gift d-flex justify-content-between flex-wrap">
                   <p className="text mb-0">Abgerechneter Gesamtbetrag</p>
                   <div className="amount amount_total">
-                    €
-                    {parseFloat(
-                      (
-                        selectedSubscription.price + selectedSubscription.price * 0.07
-                      ).toString()
-                    ).toFixed(2)}
+                    €{selectedSubscription.subtotal.toFixed(2)}
                   </div>
                 </div>
                 <div className="coupon d-flex justify-content-between flex-wrap">
