@@ -225,7 +225,10 @@ const SubscriptionPopup = () => {
                 Geben Sie Ihre Versanddaten ein
               </h2>
             </div>
-            <form className="shipping-form mb-5">
+            <form
+              className="shipping-form mb-5"
+              onSubmit={handleShippingSubmit}
+            >
               <input
                 required
                 type="text"
@@ -313,12 +316,7 @@ const SubscriptionPopup = () => {
                 </div>
               )}
 
-              <button
-                className="btn btn-submit mt-4"
-                onClick={(e) => handleShippingSubmit(e)}
-              >
-                Fortsetzen
-              </button>
+              <button className="btn btn-submit mt-4">Fortsetzen</button>
             </form>
             <div className="shipping-icons d-flex justify-content-between align-items-center">
               <div className="shipping-icon">
