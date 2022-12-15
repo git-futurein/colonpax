@@ -512,7 +512,7 @@ const SubscriptionPopup = () => {
 								value={formData['cardSecurityCode']}
 							/> */}
 
-              <button
+              {/* <button
                 className="btn btn-submit mt-4"
                 onClick={(e) => {
                   e.preventDefault();
@@ -520,7 +520,7 @@ const SubscriptionPopup = () => {
                 }}
               >
                 Fortsetzen
-              </button>
+              </button> */}
             </form>
             <div className="shipping-icons d-flex justify-content-between align-items-center">
               <div className="shipping-icon">
