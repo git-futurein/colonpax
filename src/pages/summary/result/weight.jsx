@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Cards2 from '../cards2';
+import StrawberriesPopup from '../popup/strawberriesPopup';
 
 const Weight = () => {
 	const [bowelMovement, setBowelMovement] = useState({ text: 0, day: 0 });
@@ -9,6 +10,25 @@ const Weight = () => {
 	const [bmi, setBmi] = useState(0);
 	const [bmiText, setBmiText] = useState('');
 	const [weightChange, setWeightChange] = useState(0);
+	const [strawberries, setStrawberries] = useState(false);
+
+	useEffect(() => {
+		// console.log(healthCollectData);
+		healthCollectData[5].map((item) => {
+			if (item.text === 'Erdbeeren') {
+				setStrawberries(true);
+				// console.log('Erdbeeren', item.text);
+			} else {
+				setStrawberries(false);
+				// console.log('not Erdbeeren', item);
+			}
+		});
+	}, [healthCollectData]);
+
+	const closestrawberriesPopup = () => {
+		setStrawberries(false);
+		console.log(strawberries);
+	};
 
 	useEffect(() => {
 		if (healthCollectData.length > 0) {
@@ -75,6 +95,8 @@ const Weight = () => {
 
 	return (
 		<div>
+			<StrawberriesPopup show={strawberries} closestrawberriesPopup={closestrawberriesPopup} />
+
 			<div className="weight-container">
 				<div className="container">
 					<div className="weight">

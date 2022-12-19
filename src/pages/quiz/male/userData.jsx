@@ -17,21 +17,25 @@ const UserData = ({ title }) => {
 			id: 1,
 			placeholder: 'Alter',
 			label: 'Jahre',
+			min: 1,
 		},
 		{
 			id: 3,
 			placeholder: 'Körpergröße',
 			label: 'cm',
+			min: 140,
 		},
 		{
 			id: 4,
 			placeholder: 'Gewicht',
 			label: 'kg',
+			min: 50,
 		},
 		{
 			id: 5,
 			placeholder: 'Zielgewicht',
 			label: 'kg',
+			min: 50,
 		},
 	];
 	// const [userData, setUserData] = useState(imperialData);
@@ -52,42 +56,33 @@ const UserData = ({ title }) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		// setAge(e.target.Alter.value);
-		// setHeight(e.target.Körpergröße.value);
-		// setWeight(e.target.Gewicht.value);
-		// setDesiredWeight(e.target.Zielgewicht.value);
-
 		navigate('/summary');
 	};
-	// const url = 'https://api.konnektive.com/leads/import/';
-	const url = 'https://jsonplaceholder.typicode.com/posts';
+	// const url = 'https://jsonplaceholder.typicode.com/posts';
 	useEffect(() => {
 		// console.log(age, height, weight, desiredWeight);
-		fetch(url, {
-			method: 'POST',
-			body: JSON.stringify({ age, height, weight, desiredWeight }),
-			headers: {
-				'Content-type': 'application/json; charset=UTF-8',
-			},
-		})
-			.then((response) => response.json())
-			.then((data) => {
-				dispatch(updateUserCollectData(data));
-			});
-		// dispatch(updateUserCollectData({ age, height, weight, desiredWeight }));
+		// fetch(url, {
+		// 	method: 'POST',
+		// 	body: JSON.stringify({ age, height, weight, desiredWeight }),
+		// 	headers: {
+		// 		'Content-type': 'application/json; charset=UTF-8',
+		// 	},
+		// })
+		// 	.then((response) => response.json())
+		// 	.then((data) => {
+		// 		dispatch(updateUserCollectData(data));
+		// 	});
+		dispatch(updateUserCollectData({ age, height, weight, desiredWeight }));
 	}, [dispatch, age, height, weight, desiredWeight]);
 
 	return (
 		<div>
 			<h3 className="heading-3">{title}</h3>
 			<div className="userData">
-				{/* <div className="userData-btns">
-					<button className="btn btn-metric active">Metrisch</button>
-				</div> */}
 				<div className="userData-list">
 					<form className="userData-form" onSubmit={(e) => handleSubmit(e)}>
 						{metricData.map((item) => {
-							const { id, placeholder, label } = item;
+							const { id, placeholder, label, min } = item;
 							return (
 								<div className="userData-item" key={id}>
 									<input
@@ -96,6 +91,7 @@ const UserData = ({ title }) => {
 										name={placeholder}
 										id={id}
 										placeholder={placeholder}
+										min={min}
 										required
 										onChange={(e) => handleChange(e)}
 									/>
