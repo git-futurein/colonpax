@@ -15,7 +15,7 @@ const Summary = () => {
 		// }
 		setTimeout(() => {
 			setPreloader(false);
-		}, 2000);
+		}, 3000);
 	}, []);
 
 	if (preloader) {
