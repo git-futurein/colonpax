@@ -27,6 +27,9 @@ export const counterSlice = createSlice({
 		},
 		updateHealthCollectData: (state, action) => {
 			const payload = action.payload;
+			// console.log(payload);
+			localStorage.removeItem('healthCollectData');
+			localStorage.setItem('healthCollectData', JSON.stringify(payload));
 			state.healthCollectData = payload;
 		},
 		updateUserCollectData: (state, action) => {
@@ -34,20 +37,6 @@ export const counterSlice = createSlice({
 		},
 		getGender: (state, action) => {
 			state.gender = action.payload;
-		},
-		getTime: (state, action) => {
-			// const [delay, setDelay] = useState(+delayResend);
-			// let delay = action.payload;
-			// let minutes = Math.floor(delay / 60);
-			// let seconds = Math.floor(delay % 60);
-			// const timer = setInterval(() => {
-			// 	// setDelay(delay - 1);
-			// 	delay = delay - 1;
-			// 	minutes = Math.floor(delay / 60);
-			// 	seconds = Math.floor(delay % 60);
-			// }, 1000);
-			// console.log(delay, minutes, seconds);
-			// state.timer = { minutes, seconds };
 		},
 	},
 });

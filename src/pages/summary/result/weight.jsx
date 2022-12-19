@@ -6,24 +6,22 @@ import StrawberriesPopup from '../popup/strawberriesPopup';
 
 const Weight = () => {
 	const [bowelMovement, setBowelMovement] = useState({ text: 0, day: 0 });
-	const { healthCollectData, gender, userCollectData } = useSelector((state) => state.counter);
+	const { gender, userCollectData } = useSelector((state) => state.counter);
+	const healthCollectDataFromStorage = localStorage.getItem('healthCollectData');
 	const [bmi, setBmi] = useState(0);
 	const [bmiText, setBmiText] = useState('');
 	const [weightChange, setWeightChange] = useState(0);
 	const [strawberries, setStrawberries] = useState(false);
+	const [healthCollectData, sethealthCollectData] = useState(
+		JSON.parse(healthCollectDataFromStorage)
+	);
 
 	useEffect(() => {
-		// console.log(healthCollectData);
-		const cat = localStorage.getItem('healthCollectData');
-		console.log(cat);
-
 		healthCollectData[5].map((item) => {
 			if (item.text === 'Erdbeeren') {
 				setStrawberries(true);
-				// console.log('Erdbeeren', item.text);
 			} else {
 				setStrawberries(false);
-				// console.log('not Erdbeeren', item);
 			}
 		});
 	}, [healthCollectData]);
@@ -88,8 +86,6 @@ const Weight = () => {
 			: currentMonth != 11
 			? 1
 			: 2;
-
-	// console.log(firstMonth, secondMonth, thirdMonth);
 
 	useEffect(() => {
 		const value = (userCollectData.weight - userCollectData.desiredWeight) / 3;

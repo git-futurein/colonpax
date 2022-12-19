@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './quiz.css';
 
 const HeaderBox = ({ email }) => {
+	const [timeValue, setTimeValue] = useState(1);
 	const [sticky, setSticky] = useState(null);
 	const delayResend = localStorage.getItem('timer');
 	const [delay, setDelay] = useState(+delayResend);
-	// const [delay, setDelay] = useState(20);
 	const minutes = Math.floor(delay / 60);
 	const seconds = Math.floor(delay % 60);
 
@@ -15,17 +15,13 @@ const HeaderBox = ({ email }) => {
 			localStorage.setItem('timer', delay - 1);
 		}, 1000);
 
-		const secondChance = () => {
-			setDelay(10);
-		};
-
 		if (delay === 0) {
 			clearInterval(timer);
-			alert('Timeout');
-			// window.location = '/quiz';
-			// timer();
-			setDelay(900);
-			// secondChance();
+			if (timeValue !== 2) {
+				alert('Timeout');
+				setDelay(10);
+				setTimeValue(2);
+			}
 		}
 		return () => {
 			clearInterval(timer);

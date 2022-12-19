@@ -433,8 +433,9 @@ const Health = () => {
 		const newCollectedData = [...collectData, filteredData];
 		setCollectData(newCollectedData);
 		dispatch(updateHealthCollectData(collectData));
+		// console.log(collectData);
 		// localStorage.removeItem('healthCollectData');
-		// localStorage.setItem('healthCollectData', collectData);
+		// console.log(collectData);
 	};
 
 	const handleQuizPagesBack = () => {
