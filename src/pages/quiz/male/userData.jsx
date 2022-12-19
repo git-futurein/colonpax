@@ -73,6 +73,7 @@ const UserData = ({ title }) => {
 		// 		dispatch(updateUserCollectData(data));
 		// 	});
 		dispatch(updateUserCollectData({ age, height, weight, desiredWeight }));
+		// localStorage.setItem('myCat', 'Tom');
 	}, [dispatch, age, height, weight, desiredWeight]);
 
 	return (

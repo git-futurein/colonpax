@@ -24,8 +24,8 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	/* z-index: ; */
-	opacity: 1;
-	visibility: visible;
+	opacity: 0;
+	visibility: hidden;
 	padding: 4rem;
 	text-align: center;
 	z-index: 11;
@@ -82,4 +82,8 @@
 	opacity: 1;
 	visibility: visible;
 	transform: scale(1);
+}
+.show-strawberries .popup {
+	opacity: 1;
+	visibility: visible;
 }

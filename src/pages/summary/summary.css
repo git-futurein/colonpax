@@ -276,6 +276,11 @@
 	gap: 20px;
 	align-items: center;
 }
+.cards2-wrapper .cards2 img {
+	max-width: 70px;
+	height: 60px;
+	margin-top: 10px;
+}
 .cards2-wrapper .parcent {
 	font-size: 40px;
 	font-weight: 700;

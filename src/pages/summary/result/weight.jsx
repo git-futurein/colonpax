@@ -14,6 +14,9 @@ const Weight = () => {
 
 	useEffect(() => {
 		// console.log(healthCollectData);
+		const cat = localStorage.getItem('healthCollectData');
+		console.log(cat);
+
 		healthCollectData[5].map((item) => {
 			if (item.text === 'Erdbeeren') {
 				setStrawberries(true);
@@ -107,7 +110,7 @@ const Weight = () => {
 										<h3 className="heading-3 item-name">Gewicht:</h3>
 										<p className="text">basierend auf Deinen Antworten wirst Du:</p>
 										<div className="d-flex align-items-center">
-											<div className="cur-weight text-capitalize fw-semibold">
+											<div className="cur-weight fw-semibold">
 												von {userCollectData.weight} Kg auf {userCollectData.desiredWeight} Kg
 											</div>
 											{/* to
@@ -263,8 +266,11 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Stuhlgang</h4>
-									<h2 className="common_h2 common_h2_secondary ">{`${bowelMovement.text} mal pro Woche`}</h2>
-									<p className="text">Dein Stuhlgang ist viel zu wenig</p>
+									<h2 className="common_h2 common_h2_secondary ">
+										Du hast einen täglichen Stuhlgang
+									</h2>
+									{/* <h2 className="common_h2 common_h2_secondary ">{`${bowelMovement.text} mal pro Woche`}</h2> */}
+									<p className="text">Dein Stunhlgang is in Ordnung</p>
 								</div>
 							</div>
 							<div className="deine__item d-flex align-items-start">
