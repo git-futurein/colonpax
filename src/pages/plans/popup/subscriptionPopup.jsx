@@ -450,7 +450,7 @@ const SubscriptionPopup = () => {
                     <div className="total-price d-flex justify-content-between align-items-center gap-3">
                       <p className="text">total price</p>
                       <p className="price">
-                        €{selectedSubscription.subtotal - couponPrice}
+                        €{(selectedSubscription.subtotal - couponPrice)).toFixed(2)}
                       </p>
                     </div>
                   </form>
