@@ -67,7 +67,7 @@ const Subscription = ({ marginTop }) => {
       ],
       value: 0,
       sparan: "Sie Sparen bis zu",
-      sparanNum: 40,
+      sparanNum: 41,
       showSparan: -1,
     },
     {
