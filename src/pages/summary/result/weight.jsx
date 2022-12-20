@@ -12,9 +12,12 @@ const Weight = () => {
 	const [bmiText, setBmiText] = useState('');
 	const [weightChange, setWeightChange] = useState(0);
 	const [strawberries, setStrawberries] = useState(false);
+	const [stuhlgang, setStuhlgang] = useState('');
 	const [healthCollectData, sethealthCollectData] = useState(
 		JSON.parse(healthCollectDataFromStorage)
 	);
+
+	// console.log(healthCollectData);
 
 	useEffect(() => {
 		healthCollectData[5].map((item) => {
@@ -23,6 +26,10 @@ const Weight = () => {
 			} else {
 				setStrawberries(false);
 			}
+		});
+		healthCollectData[2].map((item) => {
+			// console.log(item.day);
+			setStuhlgang(item.day);
 		});
 	}, [healthCollectData]);
 
@@ -165,7 +172,7 @@ const Weight = () => {
 											Colonpax bewirkt eine Verbesserung des Stuhlgangs in 12-72 Stunden
 										</p>
 										<div className="d-flex justify-content-center align-items-center gap-3">
-											<div className="item-date">von: 1 Mal auf</div>
+											<div className="item-date">von: {stuhlgang} Mal auf</div>
 											<h3 className="heading-3 prev-wegiht fw-semibold">8 mal</h3>
 											<div className="item-date">pro Woche</div>
 										</div>

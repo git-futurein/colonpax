@@ -433,11 +433,6 @@ const SubscriptionPopup = () => {
 									</form>
 								)}
 							</div>
-							{/* <div className="dieloge">
-								Mit der Auswahl einer Zahlungsmethode stimmen Sie der zu{' '}
-								<Link to="/tarms">Nutzungsbedingungen</Link> and
-								<Link to="#"> Datenschutz</Link>.
-							</div> */}
 						</div>
 						<form className="shipping-form payment-form mb-5">
 							<h4 className="heading4 mb-3">Wählen Sie eine Zahlungsmethode aus</h4>

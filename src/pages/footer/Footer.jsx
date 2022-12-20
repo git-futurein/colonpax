@@ -116,9 +116,18 @@ const Footer = () => {
 						<Link to="privacy">Datenschutzbestimmungen</Link>
 					</div>
 				</div>
-				<p className="text text-center down-p pt-3">
-					United Nutrition ÜO, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
-				</p>
+				{/* <div className="down-footer d-flex flex-wrap justify-content-between align-items-center gap-4">
+					<p className="down-p">Copyright © 2022 Colonpax. Alle Rechte vorbehalten.</p>
+					<Link to="/tarms">Nutzungsbedingungen</Link>
+					<Link to="impressum">Impressum</Link>
+					<Link to="privacy">Datenschutzbestimmungen</Link>
+				</div> */}
+				<div className="d-flex flex-column flex-lg-row justify-content-between align-items-center down-p pt-3 gap-4">
+					<p className="text text-center mb-0">
+						United Nutrition ÜO, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
+					</p>
+					<img src="/images/payment-method-img.jpeg" alt="" />
+				</div>
 			</div>
 		</div>
 	);
