@@ -79,7 +79,7 @@
 	height: 4px;
 	width: 50%;
 	background-color: rgba(34, 191, 141, 0);
-	/* background-color: rgb(34, 191, 142); */
+	/* background-color: #62c476; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -89,7 +89,7 @@
 	height: 4px;
 	width: 50%;
 	background-color: rgba(34, 191, 141, 0);
-	/* background-color: rgb(34, 191, 142); */
+	/* background-color: #62c476; */
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -97,7 +97,7 @@
 }
 
 .popup .range .complated {
-	background-color: rgb(34, 191, 142);
+	background-color: #62c476;
 }
 
 .popup-range-circle {
@@ -110,7 +110,7 @@
 	z-index: 3;
 }
 .active .popup-range-circle {
-	border: 4px solid rgb(34, 191, 142);
+	border: 4px solid #62c476;
 }
 
 .popup h2 {
@@ -165,15 +165,22 @@
 	font-weight: 600;
 	text-align: center;
 	color: rgb(255, 255, 255);
-	background: rgb(34, 191, 142);
+	background: #62c476;
 	border: none;
 	border-radius: 9999px;
 	cursor: pointer;
 }
 
-.btn-submit:hover {
+.btn-submit:hover,
+.btn-submit:active {
 	color: rgb(255, 255, 255);
-	background: rgb(34, 191, 142);
+	background: #62c476;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+:not(.btn-check) + .btn:active {
+	color: rgb(255, 255, 255);
+	background: #62c476;
 	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
@@ -209,6 +216,10 @@
 .payment .dieloge {
 	padding: 20px 0;
 }
+.payment .dieloge {
+	/* padding-top: 0; */
+	border-top: 1px solid rgb(115, 122, 133);
+}
 .payment_item {
 	padding: 15px 0;
 	border-bottom: 1px solid rgb(115, 122, 133);
@@ -223,7 +234,7 @@
 	color: #000;
 }
 .payment .dieloge a {
-	color: rgb(34, 191, 142);
+	color: #62c476;
 }
 .payment .heading4 {
 	font-size: 16px;
@@ -255,8 +266,27 @@
 	margin-right: 10px;
 }
 
-.phone-number .text {
+.phone-number .text,
+.phone-number a {
 	margin-bottom: 0;
+	font-size: 12px;
+	color: rgb(115, 122, 133);
+	line-height: 1.5;
+	font-weight: 600;
+}
+
+.address .text {
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.web-link a {
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-weight: 700;
+	display: block;
+	color: #212529;
 }
 
 .couponbox input {
@@ -265,7 +295,7 @@
 }
 .couponbox .btn {
 	color: rgb(255, 255, 255);
-	background: rgb(34, 191, 142);
+	background: #62c476;
 	border: none;
 	/* box-shadow: 0 0 0 rgb(0 0 0 / 0%); */
 	text-transform: capitalize;
