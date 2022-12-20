@@ -423,7 +423,7 @@ const SubscriptionPopup = () => {
                 <div className="gift d-flex justify-content-between flex-wrap">
                   <p className="text mb-0">Abgerechneter Gesamtbetrag</p>
                   <div className="amount amount_total">
-                    €{(selectedSubscription.subtotal - couponPrice).toFixed(2)}
+                    €{selectedSubscription.subtotal.toFixed(2)}
                   </div>
                 </div>
                 <div className="coupon d-flex justify-content-between flex-wrap">
@@ -445,11 +445,13 @@ const SubscriptionPopup = () => {
                       <button className="btn btn-coupon-apply" type="submit">
                         apply
                       </button>
-                      <div className="coupon-price">-$20</div>
+                      <div className="coupon-price">-€{couponPrice}</div>
                     </div>
                     <div className="total-price d-flex justify-content-between align-items-center gap-3">
                       <p className="text">total price</p>
-                      <p className="price">$250</p>
+                      <p className="price">
+                        €{selectedSubscription.subtotal - couponPrice}
+                      </p>
                     </div>
                   </form>
                 )}
