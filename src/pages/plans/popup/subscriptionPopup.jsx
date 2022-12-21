@@ -355,7 +355,7 @@ const SubscriptionPopup = () => {
                   1010370682
                 </a>
               </div>
-              <img src="/images/payment-method-img.jpeg" alt="" />
+              <img src="/images/payment.png" alt="" />
             </div>
             <div className="d-flex align-items-center justify-content-center web-link">
               <a href="#" className="text text-center">
@@ -638,7 +638,7 @@ const SubscriptionPopup = () => {
                   1010370682
                 </a>
               </div>
-              <img src="/images/payment-method-img.jpeg" alt="" />
+              <img src="/images/payment.png" alt="" />
             </div>
             <div className="d-flex align-items-center justify-content-center web-link">
               <a href="#" className="text text-center">
