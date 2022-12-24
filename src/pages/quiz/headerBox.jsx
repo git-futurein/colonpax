@@ -19,7 +19,7 @@ const HeaderBox = ({ email }) => {
 			clearInterval(timer);
 			if (timeValue !== 2) {
 				alert('Timeout');
-				setDelay(10);
+				setDelay(900);
 				setTimeValue(2);
 			}
 		}

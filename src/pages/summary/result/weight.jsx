@@ -46,7 +46,8 @@ const Weight = () => {
 				bowelBigText = 'Du hast einen Stuhlgang von 1 mal pro Woche';
 				bowelSmallText = 'Dein Stuhlgang ist viel zu wenig';
 			} else if (item.day === 0) {
-				bowelBigText = 'Dein Stuhlgang ist unregelmässig und braucht Anschub';
+				bowelBigText = 'Du hast einen unregelmässigen';
+				bowelSmallText = 'Dein Stuhlgang ist unregelmässig und braucht Anschub';
 			}
 			setBowelMovement({
 				text: item.text,
