@@ -60,20 +60,7 @@ const UserData = ({ title }) => {
 	};
 	// const url = 'https://jsonplaceholder.typicode.com/posts';
 	useEffect(() => {
-		// console.log(age, height, weight, desiredWeight);
-		// fetch(url, {
-		// 	method: 'POST',
-		// 	body: JSON.stringify({ age, height, weight, desiredWeight }),
-		// 	headers: {
-		// 		'Content-type': 'application/json; charset=UTF-8',
-		// 	},
-		// })
-		// 	.then((response) => response.json())
-		// 	.then((data) => {
-		// 		dispatch(updateUserCollectData(data));
-		// 	});
 		dispatch(updateUserCollectData({ age, height, weight, desiredWeight }));
-		// localStorage.setItem('myCat', 'Tom');
 	}, [dispatch, age, height, weight, desiredWeight]);
 
 	return (

@@ -10,6 +10,7 @@
 	visibility: hidden;
 	transform: scale(0.4);
 	transition: all 0.3s;
+	overflow-y: scroll;
 }
 
 .strawberries .popup {
@@ -26,7 +27,7 @@
 	/* z-index: ; */
 	opacity: 0;
 	visibility: hidden;
-	padding: 4rem;
+	padding: 40px;
 	text-align: center;
 	z-index: 11;
 }
@@ -47,8 +48,7 @@
 	letter-spacing: -1.47px;
 	margin-bottom: 15px;
 }
-.strawberries {
-}
+
 .strawberries p {
 	font-size: 18px;
 	font-weight: 400;
@@ -58,10 +58,7 @@
 	margin: 0 auto;
 }
 .strawberries .btn {
-	/* position: relative; */
 	padding: 16px 52px;
-	/* margin: 0px 0px 52px; */
-	/* font-family: Inter; */
 	font-size: 12px;
 	font-weight: 600;
 	text-align: center;
@@ -69,13 +66,9 @@
 	background: rgb(34, 191, 142);
 	border: none;
 	border-radius: 9999px;
-	/* overflow: hidden; */
 	cursor: pointer;
 	z-index: 1;
-	/* transition: opacity 0.2s ease 0s; */
-	/* line-height: 1.4; */
 	text-transform: uppercase;
-	/* letter-spacing: 2px; */
 }
 
 .show-strawberries {
@@ -86,4 +79,31 @@
 .show-strawberries .popup {
 	opacity: 1;
 	visibility: visible;
+}
+
+@media only screen and (max-width: 992px) {
+	.strawberries h2 {
+		font-size: 41px;
+	}
+
+	.strawberries p {
+		font-size: 16px;
+	}
+
+	.strawberries .popup {
+		padding: 30px;
+	}
+}
+@media only screen and (max-width: 566px) {
+	.strawberries h2 {
+		font-size: 32px;
+	}
+
+	.strawberries p {
+		font-size: 16px;
+	}
+
+	.strawberries .popup {
+		padding: 15px;
+	}
 }

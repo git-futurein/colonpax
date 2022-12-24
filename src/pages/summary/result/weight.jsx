@@ -6,8 +6,9 @@ import StrawberriesPopup from '../popup/strawberriesPopup';
 
 const Weight = () => {
 	const [bowelMovement, setBowelMovement] = useState({ text: 0, day: 0 });
-	const { gender, userCollectData } = useSelector((state) => state.counter);
+	const { gender } = useSelector((state) => state.counter);
 	const healthCollectDataFromStorage = localStorage.getItem('healthCollectData');
+	const userCollectDataFromStorage = localStorage.getItem('userCollectData');
 	const [bmi, setBmi] = useState(0);
 	const [bmiText, setBmiText] = useState('');
 	const [weightChange, setWeightChange] = useState(0);
@@ -16,9 +17,9 @@ const Weight = () => {
 	const [healthCollectData, sethealthCollectData] = useState(
 		JSON.parse(healthCollectDataFromStorage)
 	);
+	const [userCollectData, setuserCollectData] = useState(JSON.parse(userCollectDataFromStorage));
 
-	// console.log(healthCollectData);
-
+	console.log(userCollectData);
 	useEffect(() => {
 		healthCollectData[5].map((item) => {
 			if (item.text === 'Erdbeeren') {
@@ -27,26 +28,39 @@ const Weight = () => {
 				setStrawberries(false);
 			}
 		});
+		// healthCollectData[2].map((item) => {
+		// 	setStuhlgang(item.day);
+		// });
+
 		healthCollectData[2].map((item) => {
-			// console.log(item.day);
-			setStuhlgang(item.day);
+			let bowelBigText = '';
+			let bowelSmallText = '';
+
+			if (item.day === 7) {
+				bowelBigText = 'Du hast einen täglichen Stuhlgang';
+				bowelSmallText = 'Dein Stuhlgang ist in Ordnung';
+			} else if (item.day === 2) {
+				bowelBigText = 'Du hast einen Stuhlgang von 2 mal pro Woche';
+				bowelSmallText = 'Dein Stuhlgang ist viel zu wenig';
+			} else if (item.day === 1) {
+				bowelBigText = 'Du hast einen Stuhlgang von 1 mal pro Woche';
+				bowelSmallText = 'Dein Stuhlgang ist viel zu wenig';
+			} else if (item.day === 0) {
+				bowelBigText = 'Dein Stuhlgang ist unregelmässig und braucht Anschub';
+			}
+			setBowelMovement({
+				text: item.text,
+				day: item.day,
+				bigText: bowelBigText,
+				smallText: bowelSmallText,
+			});
 		});
 	}, [healthCollectData]);
 
 	const closestrawberriesPopup = () => {
 		setStrawberries(false);
-		console.log(strawberries);
+		// console.log(strawberries);
 	};
-
-	useEffect(() => {
-		if (healthCollectData.length > 0) {
-			healthCollectData[2].map((item) => {
-				setBowelMovement({ text: item.text, day: item.day });
-			});
-		} else {
-			return;
-		}
-	}, [healthCollectData]);
 
 	useEffect(() => {
 		const newBmi =
@@ -172,7 +186,7 @@ const Weight = () => {
 											Colonpax bewirkt eine Verbesserung des Stuhlgangs in 12-72 Stunden
 										</p>
 										<div className="d-flex justify-content-center align-items-center gap-3">
-											<div className="item-date">von: {stuhlgang} Mal auf</div>
+											<div className="item-date">von: {bowelMovement.day} Mal auf</div>
 											<h3 className="heading-3 prev-wegiht fw-semibold">8 mal</h3>
 											<div className="item-date">pro Woche</div>
 										</div>
@@ -269,11 +283,9 @@ const Weight = () => {
 								</div>
 								<div className="desc">
 									<h4 className="heading-4">Stuhlgang</h4>
-									<h2 className="common_h2 common_h2_secondary ">
-										Du hast einen täglichen Stuhlgang
-									</h2>
+									<h2 className="common_h2 common_h2_secondary ">{bowelMovement.bigText}</h2>
 									{/* <h2 className="common_h2 common_h2_secondary ">{`${bowelMovement.text} mal pro Woche`}</h2> */}
-									<p className="text">Dein Stunhlgang is in Ordnung</p>
+									<p className="text">{bowelMovement.smallText}</p>
 								</div>
 							</div>
 							<div className="deine__item d-flex align-items-start">

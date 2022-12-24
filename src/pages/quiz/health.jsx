@@ -433,9 +433,6 @@ const Health = () => {
 		const newCollectedData = [...collectData, filteredData];
 		setCollectData(newCollectedData);
 		dispatch(updateHealthCollectData(collectData));
-		// console.log(collectData);
-		// localStorage.removeItem('healthCollectData');
-		// console.log(collectData);
 	};
 
 	const handleQuizPagesBack = () => {
@@ -484,7 +481,13 @@ const Health = () => {
 	};
 
 	useEffect(() => {
-		dispatch(getGender(gender));
+		let genderGerman = '';
+		if (gender === 'male') {
+			genderGerman = 'MÄNNLICH';
+		} else {
+			genderGerman = 'WEIBLICH';
+		}
+		dispatch(getGender(genderGerman));
 	}, [dispatch, gender]);
 
 	return (
