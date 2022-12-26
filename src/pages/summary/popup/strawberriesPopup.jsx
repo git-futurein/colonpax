@@ -1,6 +1,7 @@
 import React from 'react';
 import './strawberries.css';
 import '../../heroSection/HeroSection.css';
+import { Link } from 'react-router-dom';
 
 const StrawberriesPopup = ({ show, closestrawberriesPopup }) => {
 	return (
@@ -8,12 +9,14 @@ const StrawberriesPopup = ({ show, closestrawberriesPopup }) => {
 			<div className={show ? 'strawberries show-strawberries' : 'strawberries'}>
 				<div className="overlay" onClick={closestrawberriesPopup}></div>
 				<div className="popup">
-					<figure className="strawberries__logo mb-4">
-						<img src="/images/logo.svg" alt="" />
-					</figure>
-					<figure className="strawberries__img mb-4">
+					<Link to="/">
+						<figure className="strawberries__logo mb-4">
+							<img src="/images/logo.svg" alt="" />
+						</figure>
+					</Link>
+					{/* <figure className="strawberries__img mb-4">
 						<img src="/images/allergy_img.png" alt="" />
-					</figure>
+					</figure> */}
 					<h2 className="heading common_h2 text-center mb-4">
 						Es tut uns leid! Unser Produkt ist leider nicht für dich geeignet, da es Inhaltsstoffe
 						enthält, gegen die du allergisch bist.

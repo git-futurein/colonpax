@@ -13,30 +13,30 @@ const AdvantageSection = () => {
 			id: 1,
 			img: bord,
 			title: 'Entgiftung für den Körper',
-			desc: 'Der einzigartige Komplex aus essenziellen Nährstoffen fördert die Entgiftung deines Körpers, indem es den Darm ganzheitlich reinigt und exogene und endogene Toxine absorbiert, die das Darmnervensystem schädigen können.',
+			desc: 'Der einzigartige Komplex aus essenziellen Nährstoffen fördert die Entgiftung deines Körpers, indem es den Darm reinigt und exogene und endogene Toxine absorbiert, die das Darmnervensystem schädigen können.',
 		},
 		{
 			id: 2,
 			img: watch,
 			title: 'nachhaltige Abnehmerfolge',
-			desc: 'Colonpax ist ein einzigartiger Ballaststoffkomplex, der die Darmflora und das Verdauungssystem verbessert und deinen Stoffwechsel wieder in Schwung bringt.',
+			desc: 'Colonpax ist ein einzigartiger Ballaststoffkomplex, der die Darmflora und das Verdauungssystem verbessert und deinen Stoffwechsel aktiviert',
 		},
 		{
 			id: 3,
 			img: jar,
 			title: 'Mehr Energie und bessere Verdauung',
-			desc: 'Colonpax kann deine Energie steigern und bring die Darmfunktion in Schwung. Es löst die Verstofung, reduziert den Blähbauch und Blähungen und lindert die Krämpfe.',
+			desc: 'Colonpax kann deine Energie steigern und bringt die Darmfunktion in Schwung. Es löst die Verstofung, reduziert den Blähbauch und Blähungen und lindert die Krämpfe.',
 		},
 		{
 			id: 4,
 			img: glass,
 			title: 'Der essenzielle Ballaststoff',
-			desc: 'Einzigartiger Ballaststoffkomplex Colonpax ist ein einzigartiger Ballaststoffkomplex, der Darmbeschwerden wie Durchfall und Verstopfung lindert, den Blutzuckerspiegel reguliert und das Abnehmen beschleunigt',
+			desc: 'lindert Darmbeschwerden wie Durchfall und Verstopfung, reguliert den Blutzuckerspiegel und hilft dabei das Abnehmen zu Beschleunigen ohne dabei auf etwas zu verzichten',
 		},
 	];
 
 	return (
-		<div className="AdvantageSection py-5">
+		<div className="AdvantageSection py-5" id="lösung">
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-9 text-center m-auto">

@@ -58,6 +58,7 @@ li a:hover {
 .social_link ul li {
 	display: inline-block;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 .social_link ul li a {
@@ -172,6 +173,16 @@ li a:hover {
 	width: 44%;
 	background-size: 100%;
 	background-repeat: no-repeat;
+}
+
+.payment-imgs {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	/* gap: 10px; */
+}
+.payment-imgs img {
+	width: 100%;
+	height: 100%;
 }
 
 /*======== large device =========*/
