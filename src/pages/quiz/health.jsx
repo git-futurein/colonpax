@@ -103,7 +103,7 @@ const Health = () => {
 				id: 4,
 				img: 'health-9',
 				selected: false,
-				text: 'UnregelmaBig',
+				text: 'Unregelmäßig',
 				day: 0,
 			},
 		],

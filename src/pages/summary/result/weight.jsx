@@ -46,7 +46,7 @@ const Weight = () => {
 				bowelBigText = 'Du hast einen Stuhlgang von 1 mal pro Woche';
 				bowelSmallText = 'Dein Stuhlgang ist viel zu wenig';
 			} else if (item.day === 0) {
-				bowelBigText = 'Du hast einen unregelmässigen';
+				bowelBigText = 'Du hast einen unregelmässigen Stuhlgang';
 				bowelSmallText = 'Dein Stuhlgang ist unregelmässig und braucht Anschub';
 			}
 			setBowelMovement({
@@ -187,7 +187,11 @@ const Weight = () => {
 											Colonpax bewirkt eine Verbesserung des Stuhlgangs in 12-72 Stunden
 										</p>
 										<div className="d-flex justify-content-center align-items-center gap-3">
-											<div className="item-date">von: {bowelMovement.day} Mal auf</div>
+											<div className="item-date">
+												{bowelMovement.day !== 0
+													? `von: ${bowelMovement.day} Mal auf`
+													: `${bowelMovement.text} auf`}
+											</div>
 											<h3 className="heading-3 prev-wegiht fw-semibold">8 mal</h3>
 											<div className="item-date">pro Woche</div>
 										</div>

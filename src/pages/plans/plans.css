@@ -135,15 +135,34 @@
 	font-size: 16px;
 }
 
+.form-check-input.checked {
+	background-color: #62c476;
+	border-color: #62c476;
+	position: relative;
+}
 .form-check-input:checked {
 	background-color: #62c476;
 	border-color: #62c476;
+	position: relative;
+}
+.form-check-input.checked::after {
+	content: '';
+	display: block;
+	height: 8px;
+	width: 8px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
 }
 .form-check-input:focus {
 	border-color: #62c476;
 	outline: 0;
 	box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0);
 }
+
 .subscription .discount {
 	background-color: #e97575e6;
 	color: #fff;
@@ -194,10 +213,18 @@
 	border: 1px solid #62c476;
 }
 
+.active .form-check-input.checked {
+	background-color: #e97575e6;
+	border-color: #e97575e6;
+}
 .active .form-check-input:checked {
 	background-color: #e97575e6;
 	border-color: #e97575e6;
 }
+/* .active .form-check-input.checked::after {
+	background-color: #e97575e6;
+	border-color: #e97575e6;
+} */
 
 .active .btn {
 	background-color: #fff;

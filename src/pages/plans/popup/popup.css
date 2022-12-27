@@ -224,6 +224,17 @@
 	padding: 15px 0;
 	border-bottom: 1px solid rgb(115, 122, 133);
 }
+.payment_item.product-list {
+	border: 1px solid rgb(115, 122, 133);
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.payment_item form input {
+	border: 1px solid rgb(115, 122, 133);
+	padding-left: 10px;
+	border-radius: 10px;
+}
 .payment_item .discount .text {
 	font-weight: 500;
 }

@@ -54,9 +54,11 @@ const AdvantageSection = () => {
 				<AdvantageItems data={advantageItemData} />
 
 				<div className="text-center py-4">
-					<p className="link_paragraph">
-						LESEN SIE HIER DIE AUSFÜHRLICHE STUDIENLISTE ZU UNSEREN INHALTSSTOFFEN
-					</p>
+					<Link to="/studies">
+						<p className="link_paragraph">
+							LESEN SIE HIER DIE AUSFÜHRLICHE STUDIENLISTE ZU UNSEREN INHALTSSTOFFEN
+						</p>
+					</Link>
 					<Link to="/quiz">
 						<button className="nav_btn">MACH DEN TEST</button>
 					</Link>
