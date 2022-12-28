@@ -444,11 +444,11 @@ const SubscriptionPopup = () => {
 						</div>
 						<form className="shipping-form payment-form mb-5">
 							<h4 className="heading4 mb-3">Wählen Sie eine Zahlungsmethode aus</h4>
-							<button className={'btn btn-submit btn-coupon-apply my-5'} type="button">
+							{/* <button className={'btn btn-submit btn-coupon-apply my-5'} type="button">
 								Kreidkarte
-							</button>
+							</button> */}
 							<>
-								<label htmlFor="card-number">Card Number</label>
+								{/* <label htmlFor="card-number">Card Number</label> */}
 								<div className="card-number mb-3 d-flex">
 									<img src="/images/card-number.svg" alt="" />
 									<input
@@ -462,37 +462,40 @@ const SubscriptionPopup = () => {
 									/>
 								</div>
 
-								<label htmlFor="Expiry">Expiry Month (MM)</label>
-								<input
-									required
-									type="text"
-									id="ExpiryMonth"
-									placeholder="MM"
-									className="mb-3"
-									name="cardMonth"
-									onChange={handleChange}
-									value={formData['cardMonth']}
-								/>
+								{/* <label htmlFor="Expiry">Expiry Month (MM)</label> */}
+								<div className="d-flex align-items-center gap-3">
+									<input
+										required
+										type="text"
+										id="ExpiryMonth"
+										placeholder="Expiry Month (MM)"
+										className="input mb-3"
+										name="cardMonth"
+										onChange={handleChange}
+										value={formData['cardMonth']}
+									/>
+									<input
+										required
+										type="text"
+										id="ExpiryYear"
+										placeholder="Expiry Year (YYYY)"
+										className="input mb-3"
+										name="cardYear"
+										onChange={handleChange}
+										value={formData['cardYear']}
+									/>
+								</div>
 
-								<label htmlFor="Expiry">Expiry Year (YYYY)</label>
-								<input
-									required
-									type="text"
-									id="ExpiryYear"
-									placeholder="YYYY"
-									className="mb-3"
-									name="cardYear"
-									onChange={handleChange}
-									value={formData['cardYear']}
-								/>
+								{/* <label htmlFor="Expiry">Expiry Year (YYYY)</label> */}
 
-								<label htmlFor="cvv">CVV</label>
+								{/* <label htmlFor="cvv">CVV</label> */}
 								<input
 									required
 									type="text"
 									id="cvv"
+									className="input"
 									name="cardSecurityCode"
-									placeholder="..."
+									placeholder="CVV"
 									onChange={handleChange}
 									value={formData['cardSecurityCode']}
 								/>
