@@ -415,18 +415,20 @@ const SubscriptionPopup = () => {
 								{showCouponForm && (
 									<form onSubmit={handleCoupon}>
 										<div className="couponbox d-flex align-items-center justify-content-between gap-4">
-											<input
-												type="text"
-												id="couponCode"
-												placeholder="Gutschein erhalten?"
-												name="couponCode"
-												onChange={handleChange}
-												value={formData['couponCode']}
-												className="mb-0"
-											/>
-											<button className="btn btn-coupon-apply" type="submit">
-												Einlösen
-											</button>
+											<div className="d-flex align-items-center gap-2">
+												<input
+													type="text"
+													id="couponCode"
+													placeholder="Gutschein erhalten?"
+													name="couponCode"
+													onChange={handleChange}
+													value={formData['couponCode']}
+													className="mb-0"
+												/>
+												<button className="btn btn-coupon-apply" type="submit">
+													Einlösen
+												</button>
+											</div>
 											{/* <div className="coupon-price">{couponPrice !== 0 && `-€${couponPrice}`} </div> */}
 											<div className="coupon-price">-€{couponPrice}</div>
 										</div>
@@ -442,76 +444,69 @@ const SubscriptionPopup = () => {
 						</div>
 						<form className="shipping-form payment-form mb-5">
 							<h4 className="heading4 mb-3">Wählen Sie eine Zahlungsmethode aus</h4>
-							<button
-								className={`btn btn-submit btn-coupon-apply my-2 ${
-									showCreditForm ? 'mb-5' : 'mb-2'
-								}`}
-								onClick={() => setShowCreditForm(!showCreditForm)}
-								type="button"
-							>
+							<button className={'btn btn-submit btn-coupon-apply my-5'} type="button">
 								Kreidkarte
 							</button>
-							{showCreditForm && (
-								<>
-									<label htmlFor="card-number">Card Number</label>
-									<div className="card-number mb-3 d-flex">
-										<img src="/images/card-number.svg" alt="" />
-										<input
-											required
-											type="text"
-											placeholder="1234 1234 1234 1234"
-											id="card-number"
-											name="cardNumber"
-											onChange={handleChange}
-											value={formData['cardNumber']}
-										/>
-									</div>
-
-									<label htmlFor="Expiry">Expiry Month (MM)</label>
+							<>
+								<label htmlFor="card-number">Card Number</label>
+								<div className="card-number mb-3 d-flex">
+									<img src="/images/card-number.svg" alt="" />
 									<input
 										required
 										type="text"
-										id="ExpiryMonth"
-										placeholder="MM"
-										className="mb-3"
-										name="cardMonth"
+										placeholder="1234 1234 1234 1234"
+										id="card-number"
+										name="cardNumber"
 										onChange={handleChange}
-										value={formData['cardMonth']}
+										value={formData['cardNumber']}
 									/>
+								</div>
 
-									<label htmlFor="Expiry">Expiry Year (YYYY)</label>
-									<input
-										required
-										type="text"
-										id="ExpiryYear"
-										placeholder="YYYY"
-										className="mb-3"
-										name="cardYear"
-										onChange={handleChange}
-										value={formData['cardYear']}
-									/>
+								<label htmlFor="Expiry">Expiry Month (MM)</label>
+								<input
+									required
+									type="text"
+									id="ExpiryMonth"
+									placeholder="MM"
+									className="mb-3"
+									name="cardMonth"
+									onChange={handleChange}
+									value={formData['cardMonth']}
+								/>
 
-									<label htmlFor="cvv">CVV</label>
-									<input
-										required
-										type="text"
-										id="cvv"
-										name="cardSecurityCode"
-										placeholder="..."
-										onChange={handleChange}
-										value={formData['cardSecurityCode']}
-									/>
-									<button
-										className="btn btn-submit mt-4 mb-5"
-										onClick={(e) => {
-											e.preventDefault();
-											submitOrder();
-										}}
-									>
-										Fortsetzen
-									</button>
-								</>
-							)}
+								<label htmlFor="Expiry">Expiry Year (YYYY)</label>
+								<input
+									required
+									type="text"
+									id="ExpiryYear"
+									placeholder="YYYY"
+									className="mb-3"
+									name="cardYear"
+									onChange={handleChange}
+									value={formData['cardYear']}
+								/>
+
+								<label htmlFor="cvv">CVV</label>
+								<input
+									required
+									type="text"
+									id="cvv"
+									name="cardSecurityCode"
+									placeholder="..."
+									onChange={handleChange}
+									value={formData['cardSecurityCode']}
+								/>
+								<button
+									className="btn btn-submit mt-4 mb-5"
+									onClick={(e) => {
+										e.preventDefault();
+										submitOrder();
+									}}
+								>
+									Fortsetzen
+								</button>
+							</>
+
 							<div className="w-full mb-1" ref={paypalRef} />
 							{paySources.includes('GOOGLEPAY') && (
 								<div className="w-full mb-4">
