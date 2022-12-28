@@ -221,8 +221,8 @@
 	border-top: 1px solid rgba(51, 51, 51, 0.503);
 }
 .payment_item {
-	padding: 15px 0;
-	border-bottom: 1px solid rgba(51, 51, 51, 0.503);
+	padding-top: 15px;
+	/* border-bottom: 1px solid rgba(51, 51, 51, 0.503); */
 }
 .payment_item.product-list {
 	border: 1px solid rgba(51, 51, 51, 0.503);
@@ -298,6 +298,11 @@
 	font-weight: 700;
 	display: block;
 	color: #212529;
+}
+
+.couponbox {
+	border-bottom: 1px solid rgba(51, 51, 51, 0.503);
+	padding-bottom: 10px;
 }
 
 .couponbox input {

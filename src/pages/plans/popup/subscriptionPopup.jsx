@@ -500,7 +500,7 @@ const SubscriptionPopup = () => {
 									value={formData['cardSecurityCode']}
 								/>
 								<button
-									className="btn btn-submit mt-4 mb-5"
+									className="btn btn-submit mt-4 mb-2"
 									onClick={(e) => {
 										e.preventDefault();
 										submitOrder();
