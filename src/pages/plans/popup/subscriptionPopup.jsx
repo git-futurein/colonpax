@@ -191,7 +191,7 @@ const SubscriptionPopup = () => {
 		}
 	}, [subscriptionPopup]);
 
-	console.log(selectedSubscription.plan);
+	// console.log(selectedSubscription.plan);
 
 	return (
 		<div className={subscriptionPopup ? 'popup popup-active' : 'popup'}>
@@ -370,7 +370,7 @@ const SubscriptionPopup = () => {
 									<p className="text">KASSENBON</p>
 								</div>
 							</div>
-							<h2 className="heading-2 mb-4">Senden Sie eine sichere Zahlung</h2>
+							{/* <h2 className="heading-2 mb-4">Senden Sie eine sichere Zahlung</h2> */}
 						</div>
 						<div className="payment_wrapper">
 							<div className="payment_item product-list">
@@ -442,7 +442,7 @@ const SubscriptionPopup = () => {
 								)}
 							</div>
 						</div>
-						<h4 className="heading4 mb-3">Wählen Sie eine Zahlungsmethode aus</h4>
+						<h4 className="heading4 mb-3">Wähle Deinen Zahlungsmethode</h4>
 						<form className="shipping-form payment-form mb-5">
 							{/* <button className={'btn btn-submit btn-coupon-apply my-5'} type="button">
 								Kreidkarte
@@ -454,7 +454,7 @@ const SubscriptionPopup = () => {
 									<input
 										required
 										type="text"
-										placeholder="1234 1234 1234 1234"
+										placeholder="Kreditkartennummner"
 										id="card-number"
 										name="cardNumber"
 										onChange={handleChange}
@@ -468,7 +468,7 @@ const SubscriptionPopup = () => {
 										required
 										type="text"
 										id="ExpiryMonth"
-										placeholder="Expiry Month (MM)"
+										placeholder="Verfallsdatum"
 										className="input mb-3"
 										name="cardMonth"
 										onChange={handleChange}
@@ -477,12 +477,12 @@ const SubscriptionPopup = () => {
 									<input
 										required
 										type="text"
-										id="ExpiryYear"
-										placeholder="Expiry Year (YYYY)"
-										className="input mb-3"
-										name="cardYear"
+										id="cvv"
+										className="input"
+										name="cardSecurityCode"
+										placeholder="CVV"
 										onChange={handleChange}
-										value={formData['cardYear']}
+										value={formData['cardSecurityCode']}
 									/>
 								</div>
 
@@ -492,12 +492,12 @@ const SubscriptionPopup = () => {
 								<input
 									required
 									type="text"
-									id="cvv"
-									className="input"
-									name="cardSecurityCode"
-									placeholder="CVV"
+									id="ExpiryYear"
+									placeholder="Name auf der Karte"
+									className="input mb-3"
+									name="cardYear"
 									onChange={handleChange}
-									value={formData['cardSecurityCode']}
+									value={formData['cardYear']}
 								/>
 								<button
 									className="btn btn-submit mt-2 mb-2"
@@ -506,7 +506,7 @@ const SubscriptionPopup = () => {
 										submitOrder();
 									}}
 								>
-									Fortsetzen
+									mit Kreditkarte bezahlen
 								</button>
 
 								<div className="line-box d-flex align-items-center gap-2 mb-2">
