@@ -223,7 +223,7 @@ const SubscriptionPopup = () => {
 									<p className="text">KASSENBON</p>
 								</div>
 							</div>
-							<h2 className="heading-2 mb-4 text-center">Geben Sie Ihre Versanddaten ein</h2>
+							<h2 className="heading-2 mt-4 mb-4 text-center">Geben Sie Ihre Versanddaten ein</h2>
 						</div>
 						<form className="shipping-form mb-5" onSubmit={handleShippingSubmit}>
 							<input
@@ -370,7 +370,7 @@ const SubscriptionPopup = () => {
 									<p className="text">KASSENBON</p>
 								</div>
 							</div>
-							<h2 className="heading-2 mb-4 text-center">Gib eine sichere Zahlungsart an</h2>
+							<h2 className="heading-2 mt-4 mb-4 text-center">Gib eine sichere Zahlungsart an</h2>
 						</div>
 						<div className="payment_wrapper">
 							<div className="payment_item product-list">
@@ -424,11 +424,10 @@ const SubscriptionPopup = () => {
 										<a onClick={() => setShowCouponForm(!showCouponForm)}>Gutschein erhalten?</a>
 									</div>
 								)}
-
-								{showCouponForm && (
-									<form onSubmit={handleCoupon}>
-										<div className="couponbox d-flex align-items-center justify-content-between gap-4">
-											<div className="d-flex align-items-center gap-2">
+								<form onSubmit={handleCoupon}>
+									{showCouponForm && (
+										<div className="couponbox d-flex align-items-center justify-content-between gap-2">
+											<div className="coupon-input-box d-flex align-items-center gap-2">
 												<input
 													type="text"
 													id="couponCode"
@@ -445,14 +444,14 @@ const SubscriptionPopup = () => {
 											{/* <div className="coupon-price">{couponPrice !== 0 && `-€${couponPrice}`} </div> */}
 											<div className="coupon-price">-€{couponPrice}</div>
 										</div>
-										<div className="total-price d-flex justify-content-between align-items-center gap-3">
-											<p className="text mb-0">Gesamtbetrag (inkl. Mwst.)</p>
-											<p className="price mb-0">
-												€{(selectedSubscription.subtotal - couponPrice).toFixed(2)}
-											</p>
-										</div>
-									</form>
-								)}
+									)}
+									<div className="total-price d-flex justify-content-between align-items-center gap-3">
+										<p className="text mb-0">Gesamtbetrag (inkl. Mwst.)</p>
+										<p className="price mb-0">
+											€{(selectedSubscription.subtotal - couponPrice).toFixed(2)}
+										</p>
+									</div>
+								</form>
 							</div>
 						</div>
 						<h4 className="heading4 mb-3">Wähle Deinen Zahlungsmethode</h4>
@@ -608,7 +607,7 @@ const SubscriptionPopup = () => {
 								<span className="text">Sichere Bezahlung</span>
 							</div>
 						</div>
-						<div className="d-flex justify-content-between pt-4 ">
+						<div className="address-box d-flex justify-content-between pt-4 ">
 							<div className="phone-number text-center d-flex align-items-center gap-2 justify-content-center">
 								<p className="text text-capitalize">Kundenservice: </p>
 								<a href="tel:1010370682" className="text-black">
