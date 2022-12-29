@@ -468,7 +468,7 @@ const SubscriptionPopup = () => {
 										required
 										type="text"
 										id="ExpiryMonth"
-										placeholder="Verfallsdatum"
+										placeholder="Expiry Month (MM)"
 										className="input mb-3"
 										name="cardMonth"
 										onChange={handleChange}
@@ -477,12 +477,12 @@ const SubscriptionPopup = () => {
 									<input
 										required
 										type="text"
-										id="cvv"
-										className="input"
-										name="cardSecurityCode"
-										placeholder="CVV"
+										id="ExpiryYear"
+										placeholder="Expiry Year (YYYY)"
+										className="input mb-3"
+										name="cardYear"
 										onChange={handleChange}
-										value={formData['cardSecurityCode']}
+										value={formData['cardYear']}
 									/>
 								</div>
 
@@ -492,12 +492,12 @@ const SubscriptionPopup = () => {
 								<input
 									required
 									type="text"
-									id="ExpiryYear"
-									placeholder="Name auf der Karte"
-									className="input mb-3"
-									name="cardYear"
+									id="cvv"
+									className="input"
+									name="cardSecurityCode"
+									placeholder="CVV"
 									onChange={handleChange}
-									value={formData['cardYear']}
+									value={formData['cardSecurityCode']}
 								/>
 								<button
 									className="btn btn-submit mt-2 mb-2"
