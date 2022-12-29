@@ -442,8 +442,8 @@ const SubscriptionPopup = () => {
 								)}
 							</div>
 						</div>
+						<h4 className="heading4 mb-3">Wählen Sie eine Zahlungsmethode aus</h4>
 						<form className="shipping-form payment-form mb-5">
-							<h4 className="heading4 mb-3">Wählen Sie eine Zahlungsmethode aus</h4>
 							{/* <button className={'btn btn-submit btn-coupon-apply my-5'} type="button">
 								Kreidkarte
 							</button> */}
@@ -500,7 +500,7 @@ const SubscriptionPopup = () => {
 									value={formData['cardSecurityCode']}
 								/>
 								<button
-									className="btn btn-submit mt-4 mb-2"
+									className="btn btn-submit mt-2 mb-2"
 									onClick={(e) => {
 										e.preventDefault();
 										submitOrder();
@@ -508,6 +508,12 @@ const SubscriptionPopup = () => {
 								>
 									Fortsetzen
 								</button>
+
+								<div className="line-box d-flex align-items-center gap-2 mb-2">
+									<div className="line"></div>
+									<div className="text">oder</div>
+									<div className="line"></div>
+								</div>
 							</>
 
 							<div className="w-full mb-1" ref={paypalRef} />
