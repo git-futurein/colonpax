@@ -304,13 +304,15 @@
 }
 
 .couponbox {
-	/* border-bottom: 1px solid rgba(51, 51, 51, 0.503); */
 	margin-bottom: 10px;
 }
 
 .couponbox input {
 	width: 100%;
 	max-width: 300px;
+	border-radius: 0 !important;
+	background-color: #eee !important;
+	border: none !important;
 }
 .couponbox .btn {
 	color: rgb(255, 255, 255);

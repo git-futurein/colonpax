@@ -388,6 +388,16 @@ const SubscriptionPopup = () => {
 									</div>
 								</div>
 							</div>
+							<div className="payment_item product-list">
+								<div className="gift d-flex justify-content-between flex-wrap">
+									<p className="text mb-0">Versand Deutschland </p>
+									<div className="amount">€7.90</div>
+								</div>
+								<div className="discount d-flex justify-content-between flex-wrap">
+									<p className="text mb-0 text-danger">Rabatt (-100%):</p>
+									<div className="amount">-€ 7.90</div>
+								</div>
+							</div>
 
 							{/* <div className="payment_item">
                 <div className="gift d-flex justify-content-between flex-wrap">
@@ -412,34 +422,32 @@ const SubscriptionPopup = () => {
 								{/* <div className="coupon d-flex justify-content-between flex-wrap">
 									<a onClick={() => setShowCouponForm(!showCouponForm)}>Gutschein erhalten?</a>
 								</div> */}
-								{showCouponForm && (
-									<form onSubmit={handleCoupon}>
-										<div className="couponbox d-flex align-items-center justify-content-between gap-4">
-											<div className="d-flex align-items-center gap-2">
-												<input
-													type="text"
-													id="couponCode"
-													placeholder="Gutschein erhalten?"
-													name="couponCode"
-													onChange={handleChange}
-													value={formData['couponCode']}
-													className="mb-0"
-												/>
-												<button className="btn btn-coupon-apply" type="submit">
-													Einlösen
-												</button>
-											</div>
-											{/* <div className="coupon-price">{couponPrice !== 0 && `-€${couponPrice}`} </div> */}
-											<div className="coupon-price">-€{couponPrice}</div>
+								<form>
+									<div className="couponbox d-flex align-items-center justify-content-between gap-4">
+										<div className="d-flex align-items-center gap-2">
+											<input
+												type="text"
+												id="couponCode"
+												placeholder="Gutschein erhalten?"
+												name="couponCode"
+												onChange={handleChange}
+												value={formData['couponCode']}
+												className="mb-0"
+											/>
+											<button className="btn btn-coupon-apply" type="submit">
+												Einlösen
+											</button>
 										</div>
-										<div className="total-price d-flex justify-content-between align-items-center gap-3">
-											<p className="text mb-0">Gesamtbetrag (inkl. Mwst.)</p>
-											<p className="price mb-0">
-												€{(selectedSubscription.subtotal - couponPrice).toFixed(2)}
-											</p>
-										</div>
-									</form>
-								)}
+										{/* <div className="coupon-price">{couponPrice !== 0 && `-€${couponPrice}`} </div> */}
+										<div className="coupon-price">-€{couponPrice}</div>
+									</div>
+									<div className="total-price d-flex justify-content-between align-items-center gap-3">
+										<p className="text mb-0">Gesamtbetrag (inkl. Mwst.)</p>
+										<p className="price mb-0">
+											€{(selectedSubscription.subtotal - couponPrice).toFixed(2)}
+										</p>
+									</div>
+								</form>
 							</div>
 						</div>
 						<h4 className="heading4 mb-3">Wähle Deinen Zahlungsmethode</h4>
