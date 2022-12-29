@@ -13,7 +13,7 @@ const countries = {
 };
 
 const SubscriptionPopup = () => {
-	const [showCouponForm, setShowCouponForm] = useState(true);
+	const [showCouponForm, setShowCouponForm] = useState(false);
 	const { subscriptionPopup, selectedSubscription } = useSelector((state) => state.counter);
 	const [couponPrice, setCouponPrice] = useState(0);
 
@@ -223,7 +223,7 @@ const SubscriptionPopup = () => {
 									<p className="text">KASSENBON</p>
 								</div>
 							</div>
-							<h2 className="heading-2 mb-4">Geben Sie Ihre Versanddaten ein</h2>
+							<h2 className="heading-2 mb-4 text-center">Geben Sie Ihre Versanddaten ein</h2>
 						</div>
 						<form className="shipping-form mb-5" onSubmit={handleShippingSubmit}>
 							<input
@@ -370,7 +370,7 @@ const SubscriptionPopup = () => {
 									<p className="text">KASSENBON</p>
 								</div>
 							</div>
-							{/* <h2 className="heading-2 mb-4">Senden Sie eine sichere Zahlung</h2> */}
+							<h2 className="heading-2 mb-4 text-center">Gib eine sichere Zahlungsart an</h2>
 						</div>
 						<div className="payment_wrapper">
 							<div className="payment_item product-list">
@@ -388,7 +388,7 @@ const SubscriptionPopup = () => {
 									</div>
 								</div>
 							</div>
-							<div className="payment_item product-list">
+							<div className="payment_item mb-3">
 								<div className="gift d-flex justify-content-between flex-wrap">
 									<p className="text mb-0">Versand Deutschland </p>
 									<div className="amount">€7.90</div>
@@ -419,35 +419,40 @@ const SubscriptionPopup = () => {
 										€{selectedSubscription.subtotal.toFixed(2)}
 									</div>
 								</div> */}
-								{/* <div className="coupon d-flex justify-content-between flex-wrap">
-									<a onClick={() => setShowCouponForm(!showCouponForm)}>Gutschein erhalten?</a>
-								</div> */}
-								<form>
-									<div className="couponbox d-flex align-items-center justify-content-between gap-4">
-										<div className="d-flex align-items-center gap-2">
-											<input
-												type="text"
-												id="couponCode"
-												placeholder="Gutschein erhalten?"
-												name="couponCode"
-												onChange={handleChange}
-												value={formData['couponCode']}
-												className="mb-0"
-											/>
-											<button className="btn btn-coupon-apply" type="submit">
-												Einlösen
-											</button>
+								{!showCouponForm && (
+									<div className="coupon d-flex justify-content-between flex-wrap mb-2 cursor-pointer">
+										<a onClick={() => setShowCouponForm(!showCouponForm)}>Gutschein erhalten?</a>
+									</div>
+								)}
+
+								{showCouponForm && (
+									<form onSubmit={handleCoupon}>
+										<div className="couponbox d-flex align-items-center justify-content-between gap-4">
+											<div className="d-flex align-items-center gap-2">
+												<input
+													type="text"
+													id="couponCode"
+													placeholder="Gutschein erhalten?"
+													name="couponCode"
+													onChange={handleChange}
+													value={formData['couponCode']}
+													className="mb-0"
+												/>
+												<button className="btn btn-coupon-apply" type="submit">
+													Einlösen
+												</button>
+											</div>
+											{/* <div className="coupon-price">{couponPrice !== 0 && `-€${couponPrice}`} </div> */}
+											<div className="coupon-price">-€{couponPrice}</div>
 										</div>
-										{/* <div className="coupon-price">{couponPrice !== 0 && `-€${couponPrice}`} </div> */}
-										<div className="coupon-price">-€{couponPrice}</div>
-									</div>
-									<div className="total-price d-flex justify-content-between align-items-center gap-3">
-										<p className="text mb-0">Gesamtbetrag (inkl. Mwst.)</p>
-										<p className="price mb-0">
-											€{(selectedSubscription.subtotal - couponPrice).toFixed(2)}
-										</p>
-									</div>
-								</form>
+										<div className="total-price d-flex justify-content-between align-items-center gap-3">
+											<p className="text mb-0">Gesamtbetrag (inkl. Mwst.)</p>
+											<p className="price mb-0">
+												€{(selectedSubscription.subtotal - couponPrice).toFixed(2)}
+											</p>
+										</div>
+									</form>
+								)}
 							</div>
 						</div>
 						<h4 className="heading4 mb-3">Wähle Deinen Zahlungsmethode</h4>
