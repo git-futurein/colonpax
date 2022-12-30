@@ -382,7 +382,7 @@ const SubscriptionPopup = () => {
 									<p className="text mb-0 text-danger">
 										Der Sonderrabatt (-{selectedSubscription.discount}%):
 									</p>
-									<div className="amount">
+									<div className="amount text-danger">
 										- €
 										{(58.99 * selectedSubscription.qty - selectedSubscription.subtotal).toFixed(2)}
 									</div>
@@ -395,7 +395,7 @@ const SubscriptionPopup = () => {
 								</div>
 								<div className="discount d-flex justify-content-between flex-wrap">
 									<p className="text mb-0 text-danger">Rabatt (-100%):</p>
-									<div className="amount">-€ 7.90</div>
+									<div className="amount text-danger">-€ 7.90</div>
 								</div>
 							</div>
 

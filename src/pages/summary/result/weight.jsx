@@ -197,7 +197,7 @@ const Weight = () => {
 										</div>
 									</div>
 									<div className="item-chart">
-										<img src="/images/chart-img-2.png" alt="" />
+										<img src="/images/chart-2.svg" alt="" />
 									</div>
 									<div className="item-bottom "></div>
 								</div>
