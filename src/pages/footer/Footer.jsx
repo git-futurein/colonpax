@@ -112,7 +112,7 @@ const Footer = () => {
 				<div className="row g-4 align-items-center mt-3">
 					<div className="col-12 col-lg-6">
 						<p className="text text-center mb-0">
-							United Nutrition ÜO, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
+							United Nutrition OÜ, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
 						</p>
 					</div>
 					<div className="col-12 col-lg-6">

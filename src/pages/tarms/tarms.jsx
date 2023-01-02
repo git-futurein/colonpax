@@ -16,11 +16,13 @@ const Tarms = () => {
 					<Link to="/" className="mb-3 d-block">
 						<img src="/images/logo.svg" alt="" />
 					</Link>
+					{/* <a href="#"> */}
 					<h2 className="tarms_heading2_secondary text-center">allgemeine Geschäftsbedingungen</h2>
+					{/* </a> */}
 					<p className="text">
-						<a href="www.colonpax.com">www.colonpax.com</a> (nachfolgend die Website oder E
-						Commerce-Plattform) wird von der United Nutrition UÖ, Kesklinna linnaosa, Järvevana tee
-						9, 11314, Tallinn, eingetragen im estnischen Handelsregister mit der Registernummer
+						<a href="www.colonpax.com">www.colonpax.com</a> (nachfolgend die Website oder
+						E-Commerce-Plattform) wird von der United Nutrition OÜ, Kesklinna linnaosa, Järvevana
+						tee 9, 11314, Tallinn, eingetragen im estnischen Handelsregister mit der Registernummer
 						16591552, betrieben.
 					</p>
 				</div>
@@ -31,7 +33,8 @@ const Tarms = () => {
 						<p className="text">
 							Diese Allgemeinen Verkaufsbedingungen sowie die hierin erwähnten Dokumente (die
 							"Allgemeinen Geschäftsbedingungen") regeln die Nutzung dieser Website und den zwischen
-							Ihnen und uns geschlossenen Vertrag. <br />
+							Ihnen und uns geschlossenen Vertrag.
+							<br />
 							<br />
 							Sie sollten diese Allgemeinen Geschäftsbedingungen sorgfältig lesen, bevor Sie diese
 							Website nutzen. Indem Sie diese Website nutzen oder eine Bestellung über diese Website
@@ -50,10 +53,12 @@ const Tarms = () => {
 					<div className="tarms_item">
 						<h5 className="tarms_heading5">2. UNSERE KONTAKTDATEN</h5>
 						<p className="text">
-							Diese Website wird von United Nutrition UÖ, einer estnischen juristischen Gesellschaft
+							Diese Website wird von United Nutrition OÜ, einer estnischen juristischen Gesellschaft
 							mit Sitz in de, Kesklinna linnaosa, Järvevana tee 9, 11314, Tallinn betrieben. United
-							Nutrition UÖ ist im estnischen Register unter der Nr. eingetragen. 0739685673,
-							(nachstehend "United Nutrition UÖ," genannt). Sie können uns kontaktieren unter
+							Nutrition OÜ ist im estnischen Register unter der Nr. eingetragen. 0739685673,
+							(nachstehend "United Nutrition OÜ," genannt). <br />
+							<br /> Sie können uns kontaktieren unter <br />
+							<br />
 							<span className="mt-2 mb-2 text d-block">
 								E-Mail: <a href="mailto:info@colonpax.com">info@colonpax.com</a>
 							</span>
@@ -77,45 +82,49 @@ const Tarms = () => {
 							Durch die Nutzung dieser Website und das Aufgeben von Bestellungen über diese Website
 							erklären Sie sich damit einverstanden: <br />
 							<br />
-							1. Verwenden Sie die Website nur für legitime Anfragen oder Bestellungen. 2. Geben Sie
-							keine spekulativen, falschen oder betrügerischen Bestellungen auf. Wenn wir Grund zur
-							Annahme haben, dass eine solche Bestellung aufgegeben wurde, behalten wir uns das
-							Recht vor, die Bestellung zu stornieren und die zuständigen Behörden zu
-							benachrichtigen. <br />
+							1. Verwenden Sie die Website nur für legitime Anfragen oder Bestellungen. <br />
+							<br />
+							2. Geben Sie keine spekulativen, falschen oder betrügerischen Bestellungen auf. Wenn
+							wir Grund zur Annahme haben, dass eine solche Bestellung aufgegeben wurde, behalten
+							wir uns das Recht vor, die Bestellung zu stornieren und die zuständigen Behörden zu
+							benachrichtigen.
+							<br />
 							<br />
 							3. Geben Sie eine korrekte, genaue E-Mail-Adresse, Postanschrift und/oder andere
 							Informationen an, die es uns ermöglichen, mit Ihnen in Kontakt zu treten, in
 							Anerkennung der Tatsache, dass wir diese Angaben verwenden können, um Sie zu
-							kontaktieren, wenn wir dies für notwendig erachten (vgl. unsere Datenschutzerklärung).{' '}
+							kontaktieren, wenn wir dies für notwendig erachten (vgl. unsere Datenschutzerklärung).
 							<br />
 							<br />
 							Wenn Sie nicht alle erforderlichen Informationen angeben, können wir Ihre Bestellung
-							möglicherweise nicht bearbeiten. Mit der Bestellung über die Website erklären Sie,
-							dass Sie mindestens 18 Jahre alt und rechtsfähig sind, einen Vertrag abzuschließen.
+							möglicherweise nicht bearbeiten. <br />
+							<br />
+							Mit der Bestellung über die Website erklären Sie, dass Sie mindestens 18 Jahre alt und
+							rechtsfähig sind, einen Vertrag abzuschließen.
 						</p>
 					</div>
 					<div className="tarms_item">
 						<h5 className="tarms_heading5">5. DIENSTVERFÜGBARKEIT</h5>
 						<p className="text">
-							Trotz der Tatsache, dass die Website und die E-CommercePlattform mit grösstmöglicher
+							Trotz der Tatsache, dass die Website und die E-Commerce-Plattform mit grösstmöglicher
 							Sorgfalt zusammengestellt werden, ist es möglich, dass Informationen unvollständig
 							sind, materielle Fehler enthalten oder nicht auf dem neuesten Stand sind.
 							Offensichtliche Fehler oder Irrtümer bei der Produktauswahl sind für United Nutrition
-							UÖ, nicht bindend. Hinsichtlich der Richtigkeit und Vollständigkeit der zur Verfügung
-							gestellten Informationen ist United Nutrition UÖ, lediglich an die Mittelverpflichtung
-							gebunden. United Nutrition UÖ, ist in keiner Weise haftbar im Falle von
+							OÜ, nicht bindend. Hinsichtlich der Richtigkeit und Vollständigkeit der zur Verfügung
+							gestellten Informationen ist United Nutrition OÜ, lediglich an die Mittelverpflichtung
+							gebunden. United Nutrition OÜ, ist in keiner Weise haftbar im Falle von
 							offensichtlichen Material- oder Druckfehlern. Wenn der Kunde spezifische Fragen hat,
 							z.B. zu Größen, Farbe, Verfügbarkeit, Lieferbedingungen oder Methode, bitten wir den
 							Kunden, sich vorab mit unserer Kundendienstabteilung in Verbindung zu setzen. Die
 							Produktauswahl ist gültig solange der Vorrat reicht und kann jederzeit von United
-							Nutrition UÖ, geändert oder zurückgezogen werden. United Nutrition UÖ, kann nicht für
+							Nutrition OÜ, geändert oder zurückgezogen werden. United Nutrition OÜ, kann nicht für
 							die Nichtverfügbarkeit eines Produktes haftbar gemacht werden. Wenn ein Angebot
 							zeitlich begrenzt oder an Bedingungen geknüpft ist, wird dies im Angebot ausdrücklich
 							angegeben.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">6. ABSCHLUSS DES VERTRAGES </h5>
+						<h5 className="tarms_heading5">6. ABSCHLUSS DES VERTRAGES</h5>
 						<p className="text">
 							Die in diesen Allgemeinen Geschäftsbedingungen enthaltenen Informationen und die auf
 							der Website angegebenen Einzelheiten stellen eine Aufforderung zur Abgabe eines
@@ -131,16 +140,16 @@ const Tarms = () => {
 						<p className="text">
 							Um eine Bestellung aufzugeben, kann der Kunde zunächst ein persönliches Konto
 							einrichten, indem er seine persönlichen Daten ausfüllt (das "Persönliche Konto"). Das
-							Abonnement des Kunden wird von United Nutrition UÖ, nach Prüfung des vom Kunden
+							Abonnement des Kunden wird von United Nutrition OÜ, nach Prüfung des vom Kunden
 							ausgefüllten Standardformulars validiert. Eine Bestätigung des Abonnements wird dem
 							Kunden per E-Mail zugesandt. Durch die Erstellung des persönlichen Kontos
 							gewährleistet der Kunde die Richtigkeit und Vollständigkeit der angegebenen Daten. Der
 							Kunde muss seine persönlichen Daten aktualisieren. Wenn ein Fehler in Bezug auf die
-							Empfängeradresse auftritt, kann United Nutrition UÖ, nicht haftbar gemacht werden,
+							Empfängeradresse auftritt, kann United Nutrition OÜ, nicht haftbar gemacht werden,
 							falls die bestellten Produkte nicht geliefert werden können. Um eine Bestellung
 							aufzugeben, muss der Kunde volljährig und voll geschäftsfähig sein und eine gültige
-							Zahlungskarte besitzen, die von einer für den Zahlungsanbieter United Nutrition UÖ,
-							akzeptablen Bank ausgestellt wurde. United Nutrition UÖ, behält sich das Recht vor,
+							Zahlungskarte besitzen, die von einer für den Zahlungsanbieter United Nutrition OÜ,
+							akzeptablen Bank ausgestellt wurde. United Nutrition OÜ, behält sich das Recht vor,
 							jede Anfrage oder Bestellung abzulehnen und ein Konto nach eigenem Ermessen zu
 							schließen.
 						</p>
@@ -228,17 +237,10 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">13. PREIS UND BEZAHLUNG</h5>
+						<h5 className="tarms_heading5">13. PREIS</h5>
 						<p className="text">
 							Der Preis für jedes Produkt ist der zu einem bestimmten Zeitpunkt auf unserer Website
-							angegebene Preis, es sei denn, es handelt sich um offensichtliche Fehler. Obwohl wir
-							alle Anstrengungen unternehmen, um sicherzustellen, dass die Preise auf der Website
-							korrekt sind, können Fehler auftreten. Wenn wir einen Fehler im Preis der von Ihnen
-							bestellten Produkte entdecken, werden wir Sie so schnell wie möglich informieren und
-							Ihnen die Möglichkeit geben, entweder die Bestellung zum korrekten Preis erneut zu
-							bestätigen oder sie zu stornieren. Wenn wir Sie nicht kontaktieren können, gilt die
-							Bestellung als storniert, und wir erstatten Ihnen den vollen Betrag zurück, wenn Sie
-							das Produkt bereits bezahlt haben. <br />
+							angegebene Preis, es sei denn, es handelt sich um offensichtliche Fehler <br />
 							<br /> Wir sind nicht verpflichtet, Produkte zu einem falschen (niedrigeren) Preis zu
 							liefern (auch nicht nach Versendung unserer Versandbestätigung), wenn der Preisfehler
 							offensichtlich und unverkennbar ist und von Ihnen vernünftigerweise als solcher hätte
@@ -258,80 +260,176 @@ const Tarms = () => {
 							Schritten des Kaufprozesses folgen, indem Sie die in jedem Schritt erforderlichen
 							Informationen angeben oder bestätigen. Während des Kaufprozesses haben Sie weiterhin
 							die Möglichkeit, die Details Ihrer Bestellung vor der Bezahlung zu ändern. Der
-							Kaufvorgang wird in unserem Einkaufsführer ausführlich erklärt. Wenn Sie als Benutzer
-							in unserem System registriert sind, können außerdem alle Einzelheiten zu den
-							Bestellungen, die Sie über unsere Website aufgegeben haben, im Abschnitt "Mein Konto"
-							eingesehen werden. <br />
-							<br />
-							Sie können mit Visa, MasterCard, American Express, Bancontact, Bancontact-QR-Code
-							sowie über Amazonpay und Klarna bezahlen. Sie können Ihre Einkäufe auch ganz oder
-							teilweise mit einer Geschenkkarte oder einem Gutschein "colonpax", ausgestellt von
-							United Nutrition UÖ bezahlen. Die Produkte sind am Tag der Bestellung zahlbar. Die
-							Einkäufe werden über die von unseren Partnern Paysafe, Stripe, Mollie, AmazonPay,
-							Googlepay, PayPal oder über Klarna bereitgestellte sichere Plattform abgewickelt.{' '}
-							<br />
-							<br />
-							Paypal (Europe) S.à.r.l. et Cie, ist eine luxemburgische Kommanditgesellschaft auf
-							Aktien, eingetragen bei der R.C.S. von Luxemburg unter der Nummer B118349, mit Sitz in
-							22-24, Boulevard Royal - L-2449 Luxemburg. Für alle Informationen kann der Kunde die
-							folgende Website konsultieren:{' '}
-							<a href="https:// www.paypal.com">https:// www.paypal.com</a>. <br />
-							<br />
-							Stripe Payments Europe Ltd ist ein in Dublin (Irland) unter der Nummer 513174
-							eingetragenes Unternehmen, dessen eingetragener Sitz sich in 1 Grand Canal Street
-							Lower, Grand Canal Dock, Dublin, Irland, befindet. Für weitere Informationen kann der
-							Kunde die folgende Website konsultieren: https:// www.stripe.com <br />
-							<br />
-							Bancontact Payconiq Company NV/SA ist ein Unternehmen nach belgischem Recht,
-							eingetragen unter der Nummer 0675 984 882 RPR/RPM in Brüssel, dessen eingetragener
-							Sitz sich befindet: Rue d'Arlon 82, 1040- Brüssel, Belgien. Für alle Informationen
-							kann der Kunde die folgende Website konsultieren: www.bancontact.com. Klarna Bank AB
-							(publ), Sveavägen 46, 111 34 Stockholm, Schweden. Für alle Informationen kann der
-							Kunde die folgende Website konsultieren: <a href="www.klarna.com">
-								www.klarna.com
-							</a>. <br />
-							<br />
-							13.1 Abonnements <br />
-							DER BETREFFENDE DIENST Verlagert NACH ABLAUF DER AKTUELLEN LAUFZEIT AUTOMATISCH um
-							einen Zeitraum, der der letzten Vertragslaufzeit entspricht. Wenn zum Beispiel der
-							letzte Dienstleistungszeitraum des Kunden ein Jahr beträgt, wird der
-							Verlängerungszeitraum für gewöhnlich auch ein Jahr betragen. <br />
-							<br />
-							13.2 Sofern der Kunde das Abonnement nicht kündigt, verlängert das Unternehmen den
-							betreffenden Dienst automatisch, wenn er zur Verlängerung ansteht, und zieht die
-							Zahlung von der Zahlungsmethode ein, die mit dem Dienst im Konto des Kunden verbunden
-							ist. <br />
-							<br />
-							13.3 Das Unternehmen kann die Abonnementpläne und den Preis der Dienste von Zeit zu
-							Zeit ändern. Verlängerungen können zu den jeweils aktuellen Tarifen des Unternehmens
-							berechnet werden, wobei der Kunde anerkennt und zustimmt, dass diese höher oder
-							niedriger sein können als die Tarife für den ursprünglichen Servicezeitraum. <br />
-							<br />
-							13.4 WENN DER KUNDE KEINE AUTOMATISCHE VERLÄNGERUNG DES DIENSTES WÜNSCHT, kann er das
-							Abonnement mindestens 48 Stunden vor Ablauf des aktuellen Zeitraums kündigen. In
-							diesem Fall werden die Dienste mit Ablauf des aktuellen Zeitraums beendet, es sei
-							denn, er erneuert die Dienste manuell vor diesem Datum. <br />
-							<br />
-							13.5 Wenn der Kunde das Abonnement auf der Website des Unternehmens erworben hat, kann
-							er es nicht über den Apple App Store oder Google Play managen. Stattdessen kann der
-							Kunde das Abonnement einfach kündigen, indem er sich in sein Benutzerkonto auf der
-							Website des Unternehmens einloggt oder das Support-Team unter hello@colonpax.com
-							kontaktiert. 13.6 Wenn der Kunde das Abonnement über den Apple App Store oder Google
-							Play erworben hat, kann der Kunde das Abonnement nur über sein Apple- oder
-							Google-Konto kündigen. Der Kunde nimmt zur Kenntnis, dass das Löschen der App nicht
-							zur Kündigung des Abonnements führt. <br />
-							<br />
-							13.7 Wenn der Kunde ein Abonnement für Nahrungsergänzungsmittel erworben hat, kann er
-							die Lieferadresse für wiederkehrende Sendungen ändern, indem er sich mindestens 72
-							Stunden vor Ablauf des aktuellen Zeitraums an das Support-Team unter
-							hello@colonpax.com wendet. Wenn die Änderung der Lieferadresse nicht oder unter
-							Verstoß gegen das festgelegte Verfahren vorgenommen wurde und die wiederkehrenden
-							Sendungen versandt wurden, ist das Unternehmen nicht für Schäden verantwortlich, die
-							dem Kunden entstanden sind oder entstehen können.
+							Kaufvorgang wird in unserem Einkaufsführer ausführlich erklärt.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">14. MEHRWERTSTEUER</h5>
+						<h5 className="tarms_heading5">14.1 Bezahlung mit Applepay</h5>
+						<p className="text">
+							Um den Rechnungsbetrag über den Zahlungsdienstleister Apple Inc., One Apple Park Way,
+							Cupertino, CA 95014, USA („Apple“) bezahlen zu können, müssen Sie den Browser „Safari“
+							nutzen, bei Apple registriert sein, die Funktion Apple Pay aktiviert haben, sich mit
+							Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. Die
+							Zahlungstransaktion wird unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere
+							Hinweise erhalten Sie im Bestellvorgang.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">14.2 Bezahlung mit Paypal</h5>
+						<p className="text">
+							Bei Auswahl der Zahlungsart PayPal oder PayPal Express wird der Rechnungsbetrag über
+							den Online-Zahlungsanbieter PayPal bezahlt. Dafür wird der Kunde auf die Webseite von
+							Paypal umgeleitet, www.paypal.de. Der Kunde muss bei PayPal registriert sein oder sich
+							ggf. erstmalig registrieren, im Anschluss mit seinen Zugangsdaten bei PayPal
+							legitimieren und dann die Zahlungsanweisung an die Händlerin bestätigen. Wir fordern
+							PayPal nach Abgabe der Bestellung im Shop zur Einleitung der Zahlungstransaktion auf.
+							Weitere Hinweise erhalten Sie beim Bestellvorgang. Die Zahlungstransaktion wird durch
+							PayPal unmittelbar danach automatisch durchgeführt. Es gelten die unter www.paypal.com
+							abrufbaren „PayPal-Nutzungsbedingungen“ der PayPal (Europe) S.à r.l. & Cie, S.C.A. in
+							ihrer jeweils gültigen Fassung. Der Versand erfolgt nach Zahlungsbestätigung seitens
+							PayPal.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">14.3 Bezahlung mit Googlepay</h5>
+						<p className="text">
+							Bei Auswahl der Zahlungsart Google Pay wird der Rechnungsbetrag über den
+							Online-Zahlungsanbieter Google Pay bezahlt. Dafür wird der Kunde auf die Webseite von
+							Google Pay umgeleitet, www.pay.google.com. Der Kunde muss bei Google registriert sein
+							oder sich ggf. erstmalig registrieren, im Anschluss mit seinen Zugangsdaten bei Google
+							Pay legitimieren und dann die Zahlungsanweisung an die Händlerin bestätigen. Wir
+							fordern Google Pay nach Abgabe der Bestellung im Shop zur Einleitung der
+							Zahlungstransaktion auf. Weitere Hinweise erhalten Sie beim Bestellvorgang. Die
+							Zahlungstransaktion wird durch Google Pay unmittelbar danach automatisch durchgeführt.
+							Es gelten die unter https://
+							payments.google.com/payments/apis-secure/get_legal_document? ldo=0&ldt=buyertos&ldr=DE
+							abrufbaren „Google Pay-Nutzungsbedingungen“ der Google Ireland Limited, Gordon House,
+							Barrow Street, Dublin 4, Irland in ihrer jeweils gültigen Fassung. Der Versand erfolgt
+							nach Zahlungsbestätigung seitens Google Pay.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">14.4 Bezahlung mit Kreditkarte</h5>
+						<p className="text">
+							Bei Zahlung per Kreditkarte wird bei Absenden der Bestellung durch den Kunden der
+							Rechnungsbetrag auf der Kreditkarte des Kunden belastet. Der Versand der Ware erfolgt,
+							nachdem der ordnungsgemäße Zahlungseingang in unserem Buchungssystem für elektronische
+							Zahlungsmethoden festgestellt und geprüft wurde. Der Kunde hat für ausreichende
+							Deckung des angegebenen Kontos zu sorgen. Er hat ggf. jene Kosten zu tragen, welche
+							infolge einer Rückbuchung der Zahlungstransaktion mangels Kontodeckung oder aufgrund
+							vom Kunden falsch übermittelter Daten der Bankverbindung entstehen.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">14.5 Kauf auf Rechnung</h5>
+						<p className="text">
+							In Zusammenarbeit mit unseren Partnern, bieten wir Ihnen die Zahlungsoptionen Kauf auf
+							Rechnung an. Der Verkäufer hat das Recht die Forderung an einen von ihm beauftragten
+							Dienstleiter abzutreten. Dieser kann von ihm frei gewählt werden. Er bleibt jedoch
+							auch im Falle der Forderungsabtretung zuständig für allgemeine Kundenanfragen z. B.
+							zur Ware, Lieferzeit, Versendung, Retouren, Reklamationen oder Gutschriften. Die
+							Zahlung über Kauf auf Rechnung ist nur für Verbraucher verfügbar. Sofern nachfolgend
+							nichts anderes geregelt ist, setzt die Zahlung eine erfolgreiche Adress- und
+							Bonitätsprüfung voraus. Der Verkäufer behält sich vor, dem Kunden die Zahlungsart
+							„Kauf auf Rechnung“ im Falle eines negativen Prüfungsergebnisses zu verweigern. Wird
+							die Zahlungsart „Kauf auf Rechnung“ zugelassen, hat der Kunde den Rechnungsbetrag
+							innerhalb von 14 Tagen ab Erhalt der Ware bzw. Rechnungsdatum zu bezahlen, sofern ihm
+							kein anderes Zahlungsziel vorgegeben wird.
+						</p>
+					</div>
+
+					{/* ======================== */}
+					{/* problem from here */}
+					{/* ======================== */}
+
+					<div className="tarms_item">
+						{/* <h5 className="tarms_heading5">14.6 Bei Lieferungen</h5> */}
+						<p className="text">
+							14.6 Bei Lieferungen in Länder außerhalb der EU können weitere Kosten anfallen, die
+							der Verkäufer nicht zu vertreten hat. Diese sind vom Kunden zu tragen. Dazu zählen
+							unter anderem Kosten für die Geldübermittlung durch Kreditinstitute (Bsp.
+							Überweisungsgebühren) oder einfuhrrechtliche Abgaben bzw. Steuern (Bsp. Zölle).
+						</p>
+					</div>
+					<div className="tarms_item">
+						{/* <h5 className="tarms_heading5">14.7 Wenn Sie Verbraucher sind</h5> */}
+						<p className="text">
+							14.7 Wenn Sie Verbraucher sind, ist der Kaufpreis mit Eintritt des Zahlungsverzugs
+							während des Verzuges in Höhe von 5 Prozentpunkten über dem Basiszinssatz zu verzinsen.
+							Wenn Sie nicht Verbraucher sind, beträgt der Zinssatz während des Zahlungsverzuges 8
+							Prozentpunkte über dem Basiszinssatz. Wir behalten uns vor, einen höheren
+							Verzugsschaden nachzuweisen und geltend zu machen.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">14.8 Abonnements</h5>
+						<p className="text">
+							DER BETREFFENDE DIENST Verlagert NACH ABLAUF DER AKTUELLEN LAUFZEIT AUTOMATISCH um
+							einen Zeitraum, der der letzten Vertragslaufzeit entspricht. Wenn zum Beispiel der
+							letzte Dienstleistungszeitraum des Kunden ein Jahr beträgt, wird der
+							Verlängerungszeitraum für gewöhnlich auch ein Jahr betragen.
+						</p>
+					</div>
+					<div className="tarms_item">
+						{/* <h5 className="tarms_heading5">14.8.1 Sofern</h5> */}
+						<p className="text">
+							14.8.1 Sofern der Kunde das Abonnement nicht kündigt, verlängert das Unternehmen den
+							betreffenden Dienst automatisch, wenn er zur Verlängerung ansteht, und zieht die
+							Zahlung von der Zahlungsmethode ein, die mit dem Dienst im Konto des Kunden verbunden
+							ist.
+						</p>
+					</div>
+					<div className="tarms_item">
+						{/* <h5 className="tarms_heading5">19. LINKS ZU ANDEREN WEBSITES</h5> */}
+						<p className="text">
+							14.8.2 Das Unternehmen kann die Abonnementpläne und den Preis der Dienste von Zeit zu
+							Zeit ändern. Verlängerungen können zu den jeweils aktuellen Tarifen des Unternehmens
+							berechnet werden, wobei der Kunde anerkennt und zustimmt, dass diese höher oder
+							niedriger sein können als die Tarife für den ursprünglichen Servicezeitraum.
+						</p>
+					</div>
+					<div className="tarms_item">
+						{/* <h5 className="tarms_heading5">20. SCHRIFTLICHE MITTEILUNGEN</h5> */}
+						<p className="text">
+							14.8.3 WENN DER KUNDE KEINE AUTOMATISCHE VERLÄNGERUNG DES DIENSTES WÜNSCHT, kann er
+							das Abonnement mindestens 48 Stunden vor Ablauf des aktuellen Zeitraums kündigen. In
+							diesem Fall werden die Dienste mit Ablauf des aktuellen Zeitraums beendet, es sei
+							denn, er erneuert die Dienste manuell vor diesem Datum.
+						</p>
+					</div>
+					<div className="tarms_item">
+						{/* <h5 className="tarms_heading5">21. ANMERKUNGEN</h5> */}
+						<p className="text">
+							14.8.4 Wenn der Kunde das Abonnement auf der Website des Unternehmens erworben hat,
+							kann er es nicht über den Apple App Store oder Google Play managen. Stattdessen kann
+							der Kunde das Abonnement einfach kündigen, indem er sich in sein Benutzerkonto auf der
+							Website des Unternehmens einloggt oder das Support-Team unter hello@colonpax.com
+							kontaktiert.
+						</p>
+					</div>
+					<div className="tarms_item">
+						{/* <h5 className="tarms_heading5">22. ÜBERTRAGUNG VON RECHTEN UND PFLICHTEN</h5> */}
+						<p className="text">
+							14.8.5 Wenn der Kunde das Abonnement über den Apple App Store oder Google Play
+							erworben hat, kann der Kunde das Abonnement nur über sein Apple- oder Google-Konto
+							kündigen. Der Kunde nimmt zur Kenntnis, dass das Löschen der App nicht zur Kündigung
+							des Abonnements führt.
+						</p>
+					</div>
+					<div className="tarms_item">
+						{/* <h5 className="tarms_heading5">23. EREIGNISSE AUSSERHALB UNSERER KONTROLL</h5> */}
+						<p className="text">
+							13.8.6 Wenn der Kunde ein Abonnement für Nahrungsergänzungsmittel erworben hat, kann
+							er die Lieferadresse für wiederkehrende Sendungen ändern, indem er sich mindestens 72
+							Stunden vor Ablauf des aktuellen Zeitraums an das SupportTeam unter hello@colonpax.com
+							wendet. Wenn die Änderung der Lieferadresse nicht oder unter Verstoß gegen das
+							festgelegte Verfahren vorgenommen wurde und die wiederkehrenden Sendungen versandt
+							wurden, ist das Unternehmen nicht für Schäden verantwortlich, die dem Kunden
+							entstanden sind oder entstehen können.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">15. MEHRWERTSTEUER</h5>
 						<p className="text">
 							Gemäß den geltenden Regeln und Vorschriften unterliegen alle Käufe, die über die
 							Website getätigt werden, der Mehrwertsteuer, mit Ausnahme von Lieferungen direkt an
@@ -355,17 +453,19 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">15. WIDERRUF</h5>
-						<h5 className="tarms_heading5">15.1 GESETZLICHES WIDERRUFSRECHT</h5>
+						<h5 className="tarms_heading5">16. WIDERRUF</h5>
+						<h5 className="tarms_heading5">16.1 GESETZLICHES WIDERRUFSRECHT</h5>
 						<p className="text">
 							Rücktrittsrecht <br />
-							Als Verbraucher haben Sie das Recht, innerhalb von 14 Tagen ohne Angabe von Gründen
-							vom Vertrag zurückzutreten. Die Widerrufsfrist läuft nach 14 Tagen ab dem Datum ab, an
-							dem Sie oder ein von Ihnen benannter Dritter (außer dem Spediteur) die Artikel
-							erhalten oder, im Falle mehrerer Artikel, die Teil desselben Auftrags sind, aber
-							getrennt geliefert werden, nach 14 Tagen ab dem Datum, an dem Sie oder ein von Ihnen
-							benannter Dritter (außer dem Spediteur) den zuletzt gelieferten Artikel erhalten.{' '}
 							<br />
+							Als Verbraucher haben Sie das Recht, innerhalb von 14 Tagen ohne Angabe von Gründen
+							vom Vertrag zurückzutreten. <br />
+							<br />
+							Die Widerrufsfrist läuft nach 14 Tagen ab dem Datum ab, an dem Sie oder ein von Ihnen
+							benannter Dritter (außer dem Spediteur) die Artikel erhalten oder, im Falle mehrerer
+							Artikel, die Teil desselben Auftrags sind, aber getrennt geliefert werden, nach 14
+							Tagen ab dem Datum, an dem Sie oder ein von Ihnen benannter Dritter (außer dem
+							Spediteur) den zuletzt gelieferten Artikel erhalten. <br />
 							<br />
 							Um Ihren Rücktritt auszuüben, müssen Sie das Rückgabeformular ausfüllen, das in ihrem
 							persönlichen Konto in der Sektion Bestellungen verfügbar ist. Entweder senden Sie das
@@ -374,25 +474,27 @@ const Tarms = () => {
 							Järvevana tee 9, 11314, Tallinn. <br />
 							<br />
 							Der Rücksendeantrag wird dem Kunden von United Nutrition UÖ, per E-Mail bestätigt. Der
-							Kunde muss das in der E-MailBestätigung erwähnte Verfahren befolgen. Das
-							Rücktrittsrecht oder das Recht, Bestellungen zu stornieren oder Produkte
+							Kunde muss das in der E-Mail-Bestätigung erwähnte Verfahren befolgen. <br />
+							<br />
+							Das Rücktrittsrecht oder das Recht, Bestellungen zu stornieren oder Produkte
 							zurückzusenden, kundenspezifische oder personalisierte Produkte. <br />
 							<br />
 							Zur Einhaltung der Widerrufsfrist genügt es, wenn Sie uns vor Ablauf dieser Frist über
 							Ihre Entscheidung zur Ausübung Ihres Widerrufsrechts informieren. <br />
 							<br />
 							Auswirkungen des Rücktritts <br />
-							<br /> Wenn Sie vom Vertrag zurücktreten, erstatten wir Ihnen so schnell wie möglich
-							alle geleisteten Zahlungen, einschließlich der Versandkosten zum ursprünglichen
-							Lieferort (mit Ausnahme etwaiger zusätzlicher Kosten im Zusammenhang mit der gewählten
-							Versandmethode außer der günstigsten angebotenen Standardlieferung), in jedem Fall
-							jedoch innerhalb von 14 Tagen ab dem Datum, an dem wir Ihre Rücktrittsentscheidung
-							erhalten haben, zurück. Wir erstatten Ihnen das Geld mit derselben Zahlungsmethode
-							zurück, mit der Sie bezahlt haben. In jedem Fall entstehen Ihnen im Zusammenhang mit
-							dieser Rückerstattung keine Gebühren. Ungeachtet des Vorstehenden können wir die
-							Rückerstattung aufschieben, bis wir die zurückgesandten Artikel oder einen Nachweis
-							über deren Rücksendung erhalten haben, je nachdem, welcher Zeitpunkt früher liegt.{' '}
 							<br />
+							Wenn Sie vom Vertrag zurücktreten, erstatten wir Ihnen so schnell wie möglich alle
+							geleisteten Zahlungen, einschließlich der Versandkosten zum ursprünglichen Lieferort
+							(mit Ausnahme etwaiger zusätzlicher Kosten im Zusammenhang mit der gewählten
+							Versandmethode außer der günstigsten angebotenen <br /> Standardlieferung), in jedem
+							Fall jedoch innerhalb von 14 Tagen ab dem Datum, an dem wir Ihre
+							Rücktrittsentscheidung erhalten haben, zurück. Wir erstatten Ihnen das Geld mit
+							derselben Zahlungsmethode zurück, mit der Sie bezahlt haben. In jedem Fall entstehen
+							Ihnen im Zusammenhang mit dieser Rückerstattung keine Gebühren. Ungeachtet des
+							Vorstehenden können wir die Rückerstattung aufschieben, bis wir die zurückgesandten
+							Artikel oder einen Nachweis über deren Rücksendung erhalten haben, je nachdem, welcher
+							Zeitpunkt früher liegt. <br />
 							<br />
 							United Nutrition UÖ garantiert absolute Kundenzufriedenheit. Wenn Sie mit den
 							erhaltenen Produkten nicht vollständig zufrieden sind, können Sie das Produkt auf Ihre
@@ -406,19 +508,21 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">15.2 VERTRAGLICHES WIDERRUFSRECHT</h5>
+						<h5 className="tarms_heading5">16.2 VERTRAGLICHES WIDERRUFSRECHT</h5>
 						<p className="text">
 							Abgesehen von dem gesetzlichen Widerrufsrecht, das Verbrauchern gewährt wird, wie in
-							Klausel 15.1 oben erwähnt, können Sie jeden Artikel (mit Ausnahme der in Klausel 15.3
+							Klausel 16.1 oben erwähnt, können Sie jeden Artikel (mit Ausnahme der in Klausel 16.3
 							genannten Artikel, die vom Widerrufsrecht ausgenommen sind) innerhalb von 30 Tagen
-							nach dem Datum der Versandbestätigung an uns zurücksenden. <br />
-							<br /> Die Rückgabe von Geschenkkarten unterliegt den Bestimmungen, die in den
-							Nutzungsbedingungen der Geschenkkarte angegeben sind. Wenn Sie Produkte im Rahmen
-							Ihres vertraglichen Widerrufsrechts, aber außerhalb der gesetzlichen Widerrufsfrist
-							zurücksenden, wird Ihnen nur der für die Artikel bezahlte Betrag erstattet. Die
-							Versandkosten werden Ihnen nicht erstattet. <br />
-							<br /> Wenn Sie uns über Ihre Entscheidung zur Ausübung des Widerrufsrechts gemäß den
-							Bestimmungen von Klausel 15.1 oben informieren, aber nach Ablauf Ihres gesetzlichen
+							nach dem Datum der Versandbestätigung an uns zurücksenden. Die Rückgabe von
+							Geschenkkarten unterliegt den Bestimmungen, die in den Nutzungsbedingungen der
+							Geschenkkarte angegeben sind. <br />
+							<br />
+							Wenn Sie Produkte im Rahmen Ihres vertraglichen Widerrufsrechts, aber außerhalb der
+							gesetzlichen Widerrufsfrist zurücksenden, wird Ihnen nur der für die Artikel bezahlte
+							Betrag erstattet. Die Versandkosten werden Ihnen nicht erstattet. <br />
+							<br />
+							Wenn Sie uns über Ihre Entscheidung zur Ausübung des Widerrufsrechts gemäß den
+							Bestimmungen von Klausel 16.1 oben informieren, aber nach Ablauf Ihres gesetzlichen
 							Rechts, müssen Sie die Artikel in jedem Fall innerhalb von 30 Tagen nach dem Datum der
 							Versandbestätigung an uns zurücksenden.
 						</p>
@@ -442,11 +546,11 @@ const Tarms = () => {
 							gleichen Zustand wie beim Empfang befindet oder (iii) beschädigt ist. Sie sollten sich
 							um die in Ihrem Besitz befindlichen Gegenstände kümmern. Sie sollten die Artikel
 							zurücksenden, indem Sie die Originalverpackung verwenden oder einschließen, zusammen
-							mit den Anweisungen und ggf. den Dokumenten, die mit den Artikeln gesendet wurden.{' '}
+							mit den Anweisungen und ggf. den Dokumenten, die mit den Artikeln gesendet wurden.
 							<br />
 							<br />
 							Sie können sich auch durch Ausfüllen des entsprechenden Formulars mit uns in
-							Verbindung setzen oder den Artikel direkt an uns unter der in Abschnitt 15.1 oben
+							Verbindung setzen oder den Artikel direkt an uns unter der in Abschnitt 16.1 oben
 							angegebenen Adresse zurücksenden. Sie sollten den Artikel zusammen mit einem Ausdruck
 							des E-Tickets, das der Versandbestätigung beigefügt ist, so schnell wie möglich
 							zurücksenden. Sie tragen die Kosten für die Rücksendung des Artikels. <br />
@@ -456,14 +560,13 @@ const Tarms = () => {
 							werden erstattet, wenn das Widerrufsrecht innerhalb der gesetzlichen Frist ausgeübt
 							wurde und alle betreffenden Artikel zurückgesandt werden. Sie erhalten die
 							Rückerstattung so schnell wie möglich, in jedem Fall aber innerhalb von 14 Tagen nach
-							Ihrer Mitteilung, dass Sie von Ihrem Recht auf Vertragsauflösung Gebrauch machen.{' '}
-							<br />
-							<br /> Ungeachtet des Vorstehenden können wir die Rückerstattung aufschieben, bis wir
-							die zurückgesandten Artikel oder einen Nachweis über deren Rücksendung erhalten haben,
-							je nachdem, welcher Zeitpunkt früher liegt. Die Rückerstattung erfolgt immer über
+							Ihrer Mitteilung, dass Sie von Ihrem Recht auf Vertragsauflösung Gebrauch machen.
+							Ungeachtet des Vorstehenden können wir die Rückerstattung aufschieben, bis wir die
+							zurückgesandten Artikel oder einen Nachweis über deren Rücksendung erhalten haben, je
+							nachdem, welcher Zeitpunkt früher liegt. Die Rückerstattung erfolgt immer über
 							dieselbe Zahlungsmethode, mit der Sie Ihre Einkäufe bezahlt haben, es sei denn, Sie
 							legen für die Rücksendung einen Geschenkbeleg vor. In diesem letzteren Fall erfolgt
-							die Rückerstattung mittels einer von “colonpax” ausgestellten Rückerstattungskarte.{' '}
+							die Rückerstattung mittels einer von “colonpax” ausgestellten Rückerstattungskarte.
 							<br />
 							<br />
 							Sie sind für die Risiken und Kosten im Zusammenhang mit der Rücksendung der Artikel
@@ -473,14 +576,16 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">15.4 RÜCKSENDUNG FEHLERHAFTER ARTIKEL</h5>
+						<h5 className="tarms_heading5">17.4 RÜCKSENDUNG FEHLERHAFTER ARTIKEL</h5>
 						<p className="text">
 							In Fällen, in denen Sie der Ansicht sind, dass der Artikel zum Zeitpunkt der Lieferung
 							nicht vertragsgemäß ist, müssen Sie uns unverzüglich über das entsprechende Formular
 							kontaktieren und die Merkmale des betreffenden Artikels und die Art des Mangels
 							angeben. <br />
 							<br />
-							Sie müssen den Artikel zusammen mit einem Ausdruck des ETickets an uns zurückschicken.
+							Sie müssen den Artikel zusammen mit einem Ausdruck des E-Tickets an uns
+							zurückschicken. <br />
+							<br />
 							Wir werden den zurückgesandten Artikel genau prüfen und Sie innerhalb eines
 							angemessenen Zeitraums per E-Mail über Ihr Recht auf Ersatz oder Rückerstattung (falls
 							zutreffend) informieren. Wir werden den Artikel so schnell wie möglich zurückerstatten
@@ -493,27 +598,28 @@ const Tarms = () => {
 							Artikel, vollständig erstattet. Die Rückerstattung erfolgt immer über dieselbe
 							Zahlungsmethode, mit der Sie Ihre Einkäufe bezahlt haben, es sei denn, Sie legen für
 							die Rücksendung einen Geschenkbeleg vor. In diesem letzteren Fall erfolgt die
-							Rückerstattung mittels einer von Handwerkern ausgestellten Rückerstattungskarte.{' '}
+							Rückerstattung mittels einer von Handwerkern ausgestellten Rückerstattungskarte.
 							<br />
 							<br />
 							Diese Klausel hat keinen Einfluss auf Ihre gesetzlichen Rechte.
 						</p>
 					</div>
+
 					<div className="tarms_item">
 						<h5 className="tarms_heading5">
-							15.5 WIDERRUFS- UND RÜCKGABERECHT BEI BESTELLUNGEN AUS DEM AUSLAND
+							17.5 WIDERRUFS- UND RÜCKGABERECHT BEI BESTELLUNGEN AUS DEM AUSLAND
 						</h5>
 						<p className="text">
 							Wenn Sie Produkte von außerhalb Estlands aus einem anderen EU-Mitgliedsstaat über
-							diese Website bestellt haben, gelten die oben genannten Klauseln 15.1, 15.2, 15.3.
+							diese Website bestellt haben, gelten die oben genannten Klauseln 16.1, 16.2, 16.3.
 							Gleichzeitig möchten wir Sie darüber informieren, dass wir unter keinen Umständen (mit
-							Ausnahme von Klausel 15.4, auf die diese Klausel 15.5 nicht zutrifft) verpflichtet
+							Ausnahme von Klausel 16.4, auf die diese Klausel 16.5 nicht zutrifft) verpflichtet
 							sind, Versandkosten an andere Bestimmungsorte als die ursprüngliche Lieferadresse oder
 							die Rücksendekosten von Bestimmungsorten außerhalb Estlands zu zahlen.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">16. HAFTUNG UND AUSSCHLÜSSE</h5>
+						<h5 className="tarms_heading5">18. HAFTUNG UND AUSSCHLÜSSE</h5>
 						<p className="text">
 							Sofern nicht ausdrücklich an anderer Stelle in diesen Allgemeinen Geschäftsbedingungen
 							anders angegeben, ist unsere Haftung für jedes über unsere Website gekaufte Produkt
@@ -525,15 +631,21 @@ const Tarms = () => {
 							Tod oder Körperverletzung, die durch unsere Fahrlässigkeit verursacht wurden; <br />
 							<br />
 							Betrug oder vorsätzliche Falschdarstellung; oder <br />
-							<br /> jede Angelegenheit, bei der es für uns illegal oder ungesetzlich wäre, sie
-							auszuschließen oder <br />
-							<br /> unsere Haftung einschränken oder versuchen, sie auszuschließen oder zu
-							begrenzen. <br />
 							<br />
-							Ungeachtet des oben genannten Absatzes haften wir, soweit dies gesetzlich vorgesehen
-							ist und keine anderslautende Bestimmung in diesen Geschäftsbedingungen vorliegt, nicht
-							für die folgenden Verluste, unabhängig von ihrem Ursprung: <br />
-							<br /> Verlust von Einkünften oder Verkäufen; <br />
+							jede Angelegenheit, bei der es für uns illegal oder ungesetzlich wäre, sie
+							auszuschließen oder <br />
+							<br />
+							unsere Haftung einschränken oder versuchen, sie auszuschließen oder zu begrenzen.{' '}
+							<br />
+							<br />
+							Ungeachtet des oben genannten Absatzes haften wir, soweit dies gesetzlich <br />
+							<br />
+							vorgesehen ist und keine anderslautende Bestimmung in diesen <br />
+							<br />
+							Geschäftsbedingungen vorliegt, nicht für die folgenden Verluste, unabhängig von ihrem
+							Ursprung: <br />
+							<br />
+							Verlust von Einkünften oder Verkäufen; <br />
 							<br />
 							Betriebsverluste; <br />
 							<br />
@@ -542,11 +654,11 @@ const Tarms = () => {
 							Verlust der erwarteten Einsparungen; <br />
 							<br />
 							Datenverlust; und Verlust von Arbeits- oder Managementzeit. <br />
-							<br /> Aufgrund des offenen Charakters dieser Website und der Möglichkeit von Fehlern
-							bei der Speicherung und Übertragung digitaler Informationen übernehmen wir keine
-							Garantie für die Genauigkeit und Sicherheit der an diese Website übertragenen oder von
-							dieser Website erhaltenen Informationen, sofern nicht ausdrücklich anders angegeben.{' '}
 							<br />
+							Aufgrund des offenen Charakters dieser Website und der Möglichkeit von Fehlern bei der
+							Speicherung und Übertragung digitaler Informationen übernehmen wir keine Garantie für
+							die Genauigkeit und Sicherheit der an diese Website übertragenen oder von dieser
+							Website erhaltenen Informationen, sofern nicht ausdrücklich anders angegeben. <br />
 							<br />
 							Alle Dokumente, Beschreibungen und Informationen, die sich auf die auf dieser Website
 							erscheinenden Produkte beziehen, werden ohne Mängelgewähr und ohne ausdrückliche oder
@@ -561,25 +673,14 @@ const Tarms = () => {
 							Allgemeinen ausgelegt sind; (3) sie die Qualitäts- und Leistungskriterien erfüllen,
 							die für Produkte desselben Typs üblich sind und die vernünftigerweise erwartet werden
 							können. <br />
-							<br /> Nichts in dieser Klausel berührt Ihre gesetzlichen Rechte als Verbraucher oder
-							Nutzer oder Ihr Recht, den Vertrag zu kündigen.
-						</p>
-					</div>
-					<div className="tarms_item">
-						<h5 className="tarms_heading5">17. GEISTIGES EIGENTUM</h5>
-						<p className="text">
-							Sie erkennen an und akzeptieren, dass alle Urheberrechte, Marken und sonstigen
-							geistigen Eigentumsrechte an den auf der Website erscheinenden Informationen oder
-							Inhalten zu jeder Zeit bei uns oder unseren Lizenzgebern verbleiben. Es ist Ihnen
-							gestattet, solche Informationen innerhalb der von uns oder unseren Lizenzgebern
-							ausdrücklich genehmigten Grenzen zu verwenden. Diese Klausel hindert Sie nicht daran,
-							die Website in dem für das Kopieren von Bestellungen oder Kontaktdaten erforderlichen
-							Umfang zu nutzen.
+							<br />
+							Nichts in dieser Klausel berührt Ihre gesetzlichen Rechte als Verbraucher oder Nutzer
+							oder Ihr Recht, den Vertrag zu kündigen.
 						</p>
 					</div>
 					<div className="tarms_item">
 						<h5 className="tarms_heading5">
-							18. VIREN, PIRATERIE UND ANDERE ANGRIFFE AUF DIE COMPUTERSICHERHEIT
+							19. VIREN, PIRATERIE UND ANDERE ANGRIFFE AUF DIE COMPUTERSICHERHEIT
 						</h5>
 						<p className="text">
 							Sie dürfen die Website nicht illegal nutzen, indem Sie absichtlich Viren, Trojanische
@@ -588,12 +689,12 @@ const Tarms = () => {
 							unbefugten Zugang zur Website, zu dem Server, auf dem die Website gehostet wird, oder
 							zu einem Server, Computer oder einer Datenbank, die mit der Website verbunden sind, zu
 							verschaffen. Sie stimmen zu, die Website nicht durch einen Denial-of-Service-Angriff
-							oder einen Distributed-Denial-of-Service-Angriff anzugreifen. Jeder Verstoß gegen
-							diese Klausel könnte als Straftat im Sinne der geltenden Gesetzgebung betrachtet
-							werden. Wir werden jede derartige Verletzung den zuständigen Behörden melden und sie
-							bei der Identifizierung des Täters unterstützen. Ebenso erlischt Ihr Recht zur Nutzung
-							der Website sofort, wenn Sie gegen diese Klausel verstoßen. Wir übernehmen keine
-							Verantwortung für Verluste oder Schäden, die durch einen Denial-of-Service- Angriff,
+							oder einen Distributed-Denial-of-ServiceAngriff anzugreifen. Jeder Verstoß gegen diese
+							Klausel könnte als Straftat im Sinne der geltenden Gesetzgebung betrachtet werden. Wir
+							werden jede derartige Verletzung den zuständigen Behörden melden und sie bei der
+							Identifizierung des Täters unterstützen. Ebenso erlischt Ihr Recht zur Nutzung der
+							Website sofort, wenn Sie gegen diese Klausel verstoßen. Wir übernehmen keine
+							Verantwortung für Verluste oder Schäden, die durch einen Denial-of-Service-Angriff,
 							einen Virus oder andere technologisch schädliche Software oder Materialien entstehen,
 							die Ihren Computer, Ihre IT-Ausrüstung, Ihre Daten oder Materialien als Folge der
 							Nutzung der Website, des Herunterladens ihres Inhalts oder des Zugriffs auf eine
@@ -602,7 +703,7 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">19. LINKS ZU ANDEREN WEBSITES</h5>
+						<h5 className="tarms_heading5">20. LINKS ZU ANDEREN WEBSITES</h5>
 						<p className="text">
 							Soweit unsere Website Links zu anderen Websites und Materialien Dritter enthält,
 							dienen solche Links nur zu Informationszwecken, und der Inhalt dieser Websites und
@@ -611,14 +712,14 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">20. SCHRIFTLICHE MITTEILUNGEN</h5>
+						<h5 className="tarms_heading5">21. SCHRIFTLICHE MITTEILUNGEN</h5>
 						<p className="text">
 							Die geltenden Gesetze verlangen, dass wir Ihnen bestimmte Informationen oder
 							Mitteilungen schriftlich zukommen lassen. Wenn Sie diese Website nutzen, erklären Sie
 							sich damit einverstanden, dass die Kommunikation mit uns hauptsächlich in
 							elektronischer Form erfolgt. Wir setzen uns per E-Mail mit Ihnen in Verbindung - oder
 							per SMS, wenn Sie ein nicht registrierter Benutzer sind, der eine Bestellung über die
-							von United Nutrition UÖ zur Verfügung gestellten elektronischen Geräte aufgibt - oder
+							von United Nutrition OÜ zur Verfügung gestellten elektronischen Geräte aufgibt - oder
 							versorgen Sie mit Informationen durch Mitteilungen auf der Website. Aus vertraglichen
 							Gründen erklären Sie sich mit diesen elektronischen Kommunikationsmethoden
 							einverstanden und erkennen an, dass alle Verträge, Anweisungen, Informationen und
@@ -629,9 +730,9 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">21. ANMERKUNGEN</h5>
+						<h5 className="tarms_heading5">22. ANMERKUNGEN</h5>
 						<p className="text">
-							Alle Mitteilungen, die Sie an uns senden, müssen über unser Website-Kontaktformular
+							Alle Mitteilungen, die Sie an uns senden, müssen über unser WebsiteKontaktformular
 							erfolgen. Vorbehaltlich und sofern in Klausel 22 nicht anders angegeben, können wir
 							Ihnen Mitteilungen an die E-Mail- oder Postanschrift senden, die Sie bei Ihrer
 							Bestellung angegeben haben. Benachrichtigungen gelten als erhalten und ordnungsgemäß
@@ -646,7 +747,7 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">22. ÜBERTRAGUNG VON RECHTEN UND PFLICHTEN</h5>
+						<h5 className="tarms_heading5">23. ÜBERTRAGUNG VON RECHTEN UND PFLICHTEN</h5>
 						<p className="text">
 							Der Vertrag zwischen Ihnen und uns ist sowohl für beide Parteien als auch für unsere
 							jeweiligen Nachfolger und Rechtsnachfolger bindend. Ohne unsere vorherige schriftliche
@@ -663,7 +764,7 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">23. EREIGNISSE AUSSERHALB UNSERER KONTROLL</h5>
+						<h5 className="tarms_heading5">24. EREIGNISSE AUSSERHALB UNSERER KONTROLL</h5>
 						<p className="text">
 							Wir haften nicht für die Nichterfüllung oder verspätete Erfüllung unserer
 							vertraglichen Verpflichtungen, die durch Ereignisse außerhalb unserer angemessenen
@@ -672,22 +773,23 @@ const Tarms = () => {
 							Unfall, die sich unserer angemessenen Kontrolle entziehen, und umfasst insbesondere,
 							ist aber nicht beschränkt auf diese: <br />
 							<br />
-							Streiks, Aussperrungen oder andere Arbeitskampfmaßnahmen. Bürgerliche Unruhen,
-							Aufruhr, Invasion, Terroranschlag oder Bedrohung durch einen Terroranschlag, <br />
-							<br /> Krieg (erklärt oder nicht) oder die Androhung oder Vorbereitung eines Krieges.{' '}
+							Streiks, Aussperrungen oder andere Arbeitskampfmaßnahmen. <br />
 							<br />
+							Bürgerliche Unruhen, Aufruhr, Invasion, Terroranschlag oder Bedrohung durch einen
+							Terroranschlag, <br />
 							<br />
-							Feuer, Explosion, Sturm, Überschwemmung, Erdbeben, Erdrutsch, Epidemie oder <br />
-							<br /> andere Naturkatastrophen. <br />
+							Krieg (erklärt oder nicht) oder die Androhung oder Vorbereitung eines Krieges. <br />
+							<br />
+							Feuer, Explosion, Sturm, Überschwemmung, Erdbeben, Erdrutsch, Epidemie oder andere
+							Naturkatastrophen. <br />
 							<br />
 							Unmöglichkeit der Nutzung von Transportmitteln per Bahn, See, Luft, Straße oder
 							anderen Verkehrsmitteln <br />
-							<br /> öffentliche oder private Verkehrsmittel. <br />
 							<br />
-							Unmöglichkeit der Nutzung öffentlicher und privater Telekommunikationsnetze. <br />
+							öffentliche oder private Verkehrsmittel. <br />
 							<br />
-							Gesetze, Dekrete, Verordnungen, Regelungen oder Einschränkungen einer Regierung.{' '}
-							<br />
+							Unmöglichkeit der Nutzung öffentlicher und privater Telekommunikationsnetze. Gesetze,
+							Dekrete, Verordnungen, Regelungen oder Einschränkungen einer Regierung. <br />
 							<br />
 							Streiks, Pannen oder Unfälle im See-, Post- oder sonstigen Verkehr. <br />
 							<br />
@@ -698,7 +800,7 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">24. WAIVER</h5>
+						<h5 className="tarms_heading5">25. WAIVER</h5>
 						<p className="text">
 							Wenn wir zu irgendeinem Zeitpunkt während der Vertragserfüllung nicht auf die strikte
 							Einhaltung einer Ihrer vertraglichen Verpflichtungen oder der Verpflichtungen aus
@@ -711,7 +813,7 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">25. SEVERABILITÄT</h5>
+						<h5 className="tarms_heading5">26. SEVERABILITÄT</h5>
 						<p className="text">
 							Sollte eine Bestimmung dieser Allgemeinen Geschäftsbedingungen oder eines Vertrages
 							von einer zuständigen Behörde für ungültig, rechtswidrig oder nicht durchsetzbar
@@ -720,7 +822,7 @@ const Tarms = () => {
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">26. VOLLSTÄNDIGER TEXT DES VERTRAGS</h5>
+						<h5 className="tarms_heading5">27. VOLLSTÄNDIGER TEXT DES VERTRAGS</h5>
 						<p className="text">
 							Diese Allgemeinen Geschäftsbedingungen und jedes Dokument, das sich darauf bezieht,
 							bilden die gesamte Vereinbarung, die zwischen Ihnen und uns in Bezug auf den Vertrag
@@ -757,9 +859,10 @@ const Tarms = () => {
 						<p className="text">
 							Verträge über Produktkäufe, die über unsere Website abgeschlossen werden, unterliegen
 							dem estnischen Recht. <br />
-							<br /> Alle Streitigkeiten, die sich aus solchen Verträgen ergeben oder damit in
-							Zusammenhang stehen, werden zu jeder Zeit während der Erfüllung des Vertrags den
-							estnischen Gerichten vorgelegt.
+							<br />
+							Alle Streitigkeiten, die sich aus solchen Verträgen ergeben oder damit in Zusammenhang
+							stehen, werden zu jeder Zeit während der Erfüllung des Vertrags den estnischen
+							Gerichten vorgelegt.
 						</p>
 					</div>
 				</div>

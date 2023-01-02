@@ -29,10 +29,6 @@ const Privacy = () => {
 					<div className="tarms_item">
 						{/* <h5 className="tarms_heading5">1. EINFÜHRUNG</h5> */}
 						<p className="text">
-							Vielen Dank für Ihr Vertrauen in die Vielen Dank für Ihr Vertrauen in die United
-							Nutrition UÖ, und ihre E-Commerce-Plattform
-							<a href="www.colonpax.com">www.colonpax.com</a>. <br />
-							<br />
 							Herzlich willkommen auf unserer Website www.colonpax.com ("Website"), gemäß Artikel 12
 							ff. der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27.
 							April 2016 (Allgemeine Datenschutzverordnung / Allgemeine Datenschutzverordnung,
@@ -43,130 +39,353 @@ const Privacy = () => {
 							gestellt, die im Zusammenhang mit der Navigation auf der Website und der damit
 							verbundenen Interaktion durch den Benutzer gemacht werden. <br />
 							<br />
-							Daher sind diese Angaben sowohl dann relevant, wenn Sie auf die Website zugreifen und
-							beschließen, mit Hilfe ihrer Dienstleistungen durch die Website zu navigieren, ohne
-							ein Produkt zu kaufen, als auch dann, wenn Sie sich für den Kauf eines oder mehrerer
-							Produkte entscheiden. <br />
+							1. Name und Kontaktdaten des für die Verarbeitung Verantwortlichen: <br />
 							<br />
-							Sofern Sie dies noch nicht getan haben, lesen Sie bitte auch die Allgemeinen
-							Verkaufsbedingungen und unsere Cookie-Richtlinie für die Website. <br />
+							United Nutrition OÜ <br />
+							Firmennummer 305420438 <br />
 							<br />
-							Bedenken Sie bitte auch, dass die Informationen, die wir Ihnen im Zusammenhang mit der
-							Verarbeitung Ihrer personenbezogenen Daten zur Verfügung stellen (möglicherweise auch
-							durch Personen, die in unserem Namen durch Datenverarbeiter tätig sind), während Ihre
-							Interaktion mit Dritten (z.B. soziale Medien, auf die Sie über einen Link auf der
-							Website zugreifen können) bewirkt, dass letztere als für die Datenverarbeitung
-							Verantwortliche handeln, deren Informationen von ihnen zur Verfügung gestellt werden.
-							<br />
-							<br />
-							Diese Datenschutzerklärung gibt Ihnen einen Überblick über die Verarbeitung Ihrer
-							Daten bei colonpax. <br />
-							<br />
-							Falls Sie eine Frage zu dieser Datenschutzerklärung oder zum Thema Datenschutz bei
-							colonpax.com haben, können Sie sich an unser Datenschutz-Team unter hello@colonpax.com
-							wenden. Bitte senden Sie auch eine E-Mail an unser Datenschutz-Team, wenn Sie Ihr
-							Recht auf Auskunft oder Datenlöschung oder ein anderes Datenschutzrecht nach Art.
-							15-22 DSGVO geltend machen wollen, einschließlich des Widerrufs der Einwilligung für
-							Marketingzwecke, der Abmeldung vom Newsletter usw.
+							Adresse <br /> Järvevana tee 9 11314 - Tallin Harju maakond - Estland VAT /
+							Mwst.-Nummer EE102551020 <br />
+							<br /> E-Mail <br />
+							<a href="mailto:hello@colonpax.com">hello@colonpax.com</a> <br />
+							<br /> Oder
+							<br /> <a href="mailto:info@colonpax.com">info@colonpax.com</a>
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h4 className="tarms_heading4">1. Datenerfassung</h4>
-						<h5 className="tarms_heading5">1.1 Zweck</h5>
+						<h4 className="tarms_heading4">2. Datenerfassung</h4>
+						{/* <h5 className="tarms_heading5">1.1 Zweck</h5> */}
 						<p className="text">
-							Wir erheben und/oder verwenden die Kommunikation ausschließlich zu den in unserer
-							Datenschutzrichtlinie beschriebenen Zwecken. Für andere Verwendungszwecke werden wir
-							Sie immer ausdrücklich um Ihre vorherige Zustimmung bitten. Wir beschränken den Umfang
-							der Daten auf das für die nachstehend beschriebenen Zwecke erforderliche Minimum. Die
-							Archivierung beschränkt sich auf das zur Erreichung der nachstehend beschriebenen
-							Zwecke erforderliche Minimum.
+							2.1 Zwecke der Datenverarbeitung, Rechtsgrundlagen und berechtigte Interessen, die von
+							dem Verantwortlichen oder einem Dritten verfolgt werden sowie Kategorien von
+							Empfängern Wir erheben und/oder verwenden die Kommunikation ausschließlich zu den in
+							unserer Datenschutzrichtlinie beschriebenen Zwecken. Für andere Verwendungszwecke
+							werden wir Sie immer ausdrücklich um Ihre vorherige Zustimmung bitten. Wir beschränken
+							den Umfang der Daten auf das für die nachstehend beschriebenen Zwecke erforderliche
+							Minimum.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">1.2 Verwendung</h5>
+						<h5 className="tarms_heading5">2.2 Verwendung</h5>
 						<p className="text">
 							Wir verwenden eine breite Palette von Techniken, um das Verhalten der Besucher unserer
 							Website zu erfassen. Dies ist eine gängige Praxis, da sie uns die notwendigen
 							Informationen liefert, um die Qualität der Benutzererfahrung zu verbessern. <br />
 							<br />
-							Solche Informationen können sein: <br />
-							<br />- Die IP-Adresse, die Ihnen von Ihrem Provider zugewiesen wurde; - Das Datum und
-							die Uhrzeit Ihres Besuchs auf unserer Website; - Die Seiten, die Sie besucht haben; -
-							Der Typ des Betriebssystems und des Browsers, den Sie für Ihren Besuch verwendet
-							haben; <br />
+							Zur Abwicklung eines Kaufvertrages über unsere Websites/Applikationen sind des
+							Weiteren folgende Datenverarbeitungen erforderlich: <br />
 							<br />
-							- Die Suchmaschine, die Sie benutzt haben, die zu Ihrem Besuch geführt hat; <br />
+							2.3 Datenverarbeitung bei Vertragsabschluss <br />
 							<br />
-							- Durch die Erfassung dieser Daten können wir nicht nur die Anzahl der Besucher auf
-							unseren Webseiten messen, sondern auch eventuell auftretende technische Probleme
-							erkennen und verhindern. Auf diese Weise können Fehlerbehebung,
-							Plattformkonfiguration, Netzwerkkapazitätsplanung, SitemapOptimierung besser geplant
-							und organisiert werden. <br />
+							Wenn Sie sich bei einer unserer Websites/Applikationen registrieren und/oder mit uns
+							einen weiteren Vertrag abschließen, verarbeiten wir die für den Abschluss, die
+							Durchführung oder die Beendigung des Vertrages mit Ihnen erforderlichen Daten. Hierzu
+							zählen: <br />
 							<br />
-							Es ist wichtig zu wissen, dass alle Informationen anonymisiert erhoben werden und
-							nicht auf persönliche Daten zurückgeführt werden können. Sie als Besucher werden
-							niemals mit einem Namen oder Kontaktdaten in Verbindung gebracht.
-						</p>
-					</div>
-					<div className="tarms_item">
-						<h5 className="tarms_heading5">1.3 Speicherung</h5>
-						<p className="text">
-							Alle Daten werden auf geschützten Servern Dritter gespeichert. Diese Drittpartei
-							bestätigt die in dieser Datenschutzrichtlinie enthaltenen Garantien. United Nutrition
-							UÖ, ist der alleinige Sammler, Nutzer und Eigentümer der gesammelten Daten.
-						</p>
-					</div>
-					<div className="tarms_item">
-						<h5 className="tarms_heading5">1.4 Persönliche Daten</h5>
-						<p className="text">
-							Wir werden Ihre persönlichen Daten nicht an Dritte weitergeben, vermieten oder
-							verkaufen. Sie als Nutzer oder Besucher sind für die Geheimhaltung Ihrer Anmeldedaten
-							und die Verwendung Ihres Passwortes verantwortlich. Ihr Passwort wird in
-							verschlüsselter Form gespeichert und somit hat United Nutrition UÖ keinen Zugriff auf
-							Ihr Passwort. <br />
+							- Vorname, Nachname <br />
+							- Rechnungs- und Lieferanschrift <br />
+							- E-Mail-Adresse <br />
+							- Rechnungs- und Bezahldaten <br />
+							- Geburtsdatum <br />
+							- Telefonnummer <br />
+							- Information über getätigte Bestellungen <br />
 							<br />
-							Wir bieten allen Besuchern oder Nutzern unserer Dienstleistungen die Möglichkeit, die
-							uns zur Verfügung gestellten persönlichen Daten jederzeit einzusehen, zu ändern oder
-							zu löschen. <br />
+							Rechtsgrundlage hierfür ist Artikel 6 Absatz 1 Buchstabe a) und b) GDPR, d.h. Sie
+							stellen uns die Daten auf Grundlage des jeweiligen Vertragsverhältnisses (z.B. Führung
+							Ihres Kunden-/ Nutzerkontos, Abwicklung eines Kaufvertrages) zwischen Ihnen und uns
+							zur Verfügung. Zur Verarbeitung Ihrer E-Mail-Adresse im Falle eines Kaufs über unsere
+							Websites/Applikationen sind wir zudem aufgrund gesetzlicher Vorgaben, eine
+							elektronische Bestellbestätigung versenden zu müssen, verpflichtet (Artikel 6 Absatz 1
+							Buchstabe c) GDPR). <br />
 							<br />
-							Bitte kontaktieren Sie uns, wenn Sie Ihre Daten sehen, ändern oder aus unseren Dateien
-							entfernen möchten
+							Soweit wir Ihre Daten nicht für werbliche Zwecke nutzen (siehe unten 2.3) speichern
+							wir die für die Vertragsabwicklung erhobenen Daten für die Dauer des Vertrages sowie
+							bis zum Ablauf der gesetzlichen bzw. möglicher vertraglicher Gewährleistungs- und
+							Garantierechte. Nach Ablauf dieser Frist bewahren wir die nach Handels- und
+							Steuerrecht erforderlichen Informationen des Vertragsverhältnisses für die gesetzlich
+							bestimmten Zeiträume auf. Für diesen Zeitraum werden die Daten allein für den Fall
+							einer Überprüfung durch die Finanzverwaltung erneut verarbeitet. Zur Abwicklung eines
+							Kaufvertrages über unsere Websites/Applikationen sind des Weiteren folgende
+							Datenverarbeitungen erforderlich: <br />
+							<br />
+							Ihre Bezahldaten werden an von uns beauftragten Bezahldienstleister weitergegeben, die
+							die Zahlung(en) abwickeln. Angaben zu Ihrer Lieferanschrift geben wir an von uns
+							beauftragte Logistikunternehmen und Versandpartner weiter. Um sicherzustellen, dass
+							die Warenzustellung Ihren Wünschen entsprechend erfolgt, übermitteln wir Ihre
+							E-Mail-Adresse und ggf. die Telefonnummer an das von uns beauftragte
+							Logistikunternehmen und/oder Versandpartner, die die Zustellung übernehmen. Diese
+							werden ggf. im Vorfeld der Zustellung mit Ihnen Kontakt aufnehmen, um Einzelheiten der
+							Zustellung mit Ihnen abzustimmen. Die jeweiligen Daten werden allein zu den jeweiligen
+							Zwecken übermittelt und nach erfolgter Zustellung wieder gelöscht.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">1.5 Dritte Parteien</h5>
+						<h5 className="tarms_heading5">2.3.2 Bonität und Übermittlung an Auskunfteien</h5>
 						<p className="text">
-							Personenbezogene Daten werden niemals an Dritte weitergegeben, außer zu den oben
-							beschriebenen Speicherzwecken. Die Daten können an Mitarbeiter von United Nutrition
-							UÖ, weitergegeben werden, mit dem einzigen Zweck, unsere Dienstleistungen für Kunden
-							und Besucher zu erbringen und zu verbessern. Alle Mitarbeiter sind verpflichtet, Ihre
-							persönlichen Daten diskret zu behandeln und ihre Vertraulichkeit nicht zu verletzen.
+							In Zusammenarbeit mit unseren Partnern, bieten wir Ihnen die Zahlungsoptionen Kauf auf
+							Rechnung an. Wir haben das Recht die Forderung an einen von uns beauftragten
+							Dienstleiter abzutreten. Dieser kann von ihm frei gewählt werden. Er bleibt jedoch
+							auch im Falle der Forderungsabtretung zuständig für allgemeine Kundenanfragen z. B.
+							zur Ware, Lieferzeit, Versendung, Retouren, Reklamationen oder Gutschriften. Die
+							Zahlung über Kauf auf Rechnung ist nur für Verbraucher verfügbar. Sofern nachfolgend
+							nichts anderes geregelt ist, setzt die Zahlung eine erfolgreiche Adress- und
+							Bonitätsprüfung voraus. Der Verkäufer behält sich vor, dem Kunden die Zahlungsart
+							„Kauf auf Rechnung“ im Falle eines negativen Prüfungsergebnisses zu verweigern. Wird
+							die Zahlungsart „Kauf auf Rechnung“ zugelassen, hat der Kunde den Rechnungsbetrag
+							innerhalb von 14 Tagen ab Erhalt der Ware zu bezahlen, sofern ihm kein anderes
+							Zahlungsziel vorgegeben wird. <br />
+							Rechtsgrundlage dieser Datenverarbeitung ist Art. 6 Absatz 1 Buchstabe a) GDPR.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">1.5.1 Klarna</h5>
+						<h5 className="tarms_heading5">
+							2.3.3 Nutzung von Daten zu Zwecken der Betrugsprävention
+						</h5>
 						<p className="text">
-							Um Ihnen die Zahlungsoptionen von Klarna anbieten zu können, geben wir bestimmte
-							Aspekte Ihrer persönlichen Daten, wie z.B. Kontakt- und Bestelldaten, an Klarna
-							weiter, damit Klarna beurteilen kann, ob Sie für deren Zahlungsoptionen in Frage
-							kommen und die Zahlungsoptionen für Sie anpassen kann. <br />
-							<br /> Allgemeine Informationen über Klarna finden Sie hier. Ihre persönlichen Daten
-							werden in Übereinstimmung mit dem geltenden Datenschutzrecht und in Übereinstimmung
-							mit den Informationen in den Datenschutzrichtlinien von Klarna behandelt
+							Die von Ihnen im Rahmen einer Bestellung angegebenen Daten können dazu genutzt werden,
+							um zu überprüfen, ob ein atypischer Bestellvorgang vorliegt (z.B. zeitgleiche
+							Bestellung einer Vielzahl von Waren an dieselbe Adresse unter Nutzung verschiedener
+							Kundenkonten). An der Vornahme einer solchen Überprüfung besteht für uns grundsätzlich
+							ein berechtigtes Interesse. Rechtsgrundlage der Verarbeitung ist Art. 6 Absatz 1
+							Buchstabe f) GDPR.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">1.6 Kommunikation</h5>
+						<h5 className="tarms_heading5">
+							2.3.4 Übermittlung von Daten an Transportdienstleister
+						</h5>
 						<p className="text">
-							Wenn Sie mit dem Kundendienst von United Nutrition UÖ in Kontakt treten, können Ihre
-							Mitteilungen, ob in Form von Briefpost, E-Mail, Telefongesprächen, Textnachrichten
-							usw., zur späteren Verwendung in unserer Organisation aufgezeichnet werden. Wir werden
-							diese Informationen nicht mit anderen persönlichen Informationen, die wir bereits von
-							Ihnen haben, kombinieren.
+							Zum Zweck der Zustellung bestellter Waren arbeiten wir mit Logistikdienstleistern/
+							Transportunternehmen und/oder Versandpartnern zusammen: An diese können die folgenden
+							Daten zum Zweck der Zustellung der bestellten Waren bzw. zu deren Ankündigung
+							übermittelt werden: Vorname, Nachname, Postadresse, E-Mail-Adresse, Telefonnummer
+							(z.B. für Speditionsankündigungen). <br />
+							<br />
+							Rechtsgrundlage der Verarbeitung ist Artikel 6 Absatz 1 Buchstabe b) GDPR
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">2. Verwendung von Cookies</h5>
+						<h5 className="tarms_heading5">
+							2.3.5 Übermittlung von Daten über offene Forderungen an Inkassodienstleister oder
+							Factoringunternhemen
+						</h5>
+						<p className="text">
+							Wir können offene Forderungen an einen Inkassodienstleister beziehungsweise
+							Factoringunternhmen veräußern. Dieser wird dann Forderungsinhaber und macht die
+							Forderungen im eigenen Namen geltend. Rechtsgrundlage für die Übermittlung der Daten
+							im Rahmen des Treuhandinkasso ist Artikel 6 Absatz 1 Buchstabe b) GDPR; die
+							Übermittlung der Daten im Rahmen des Forderungsverkaufs erfolgt auf Basis von Artikel
+							6 Absatz 1 Buchstabe f) GDPR.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">2.3.6 Kategorien von Empfängern</h5>
+						<h5 className="tarms_heading5">2.3.6.1 Auftragsverarbeiter</h5>
+						<p className="text">
+							Wir setzen im Rahmen der Verarbeitung Ihrer Daten Auftragsverarbeiter ein. Bei einem
+							Auftragsverarbeiter handelt es sich um eine natürliche oder juristische Person,
+							Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des für
+							die Datenverarbeitung Verantwortlichen verarbeitet. Auftragsverarbeiter nutzen die
+							Daten nicht für eigene Zwecke, sondern führen die Datenverarbeitung ausschließlich für
+							den Verantwortlichen aus.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">2.3.6.2 Weitere Drittpartner</h5>
+						<p className="text">
+							Daneben setzen wir weitere Drittpartner ein, die für die Leistungserbringung und
+							Erreichung verschiedener Zwecke erforderlich sind. An diese Drittpartner übermitteln
+							wir personenbezogene Daten, sofern dies im Rahmen der Leistungserbringung notwendig
+							ist (zum Beispiel an Affiliatenetzwerke zu reinen Abrechnungszwecken). <br />
+							<br />
+							Rechtsgrundlage für diese Datenübermittlung ist Artikel 6 Absatz 1 Buchstabe b), f)
+							GDPR.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">2.3.7 Übermittlung von Daten an Partnerunternehmen</h5>
+						<p className="text">
+							Sie haben auf unserer Plattform die Möglichkeit Angebote von Drittunternehmen in
+							Anspruch zu nehmen. In diesen Fällen schließen Sie ggf. einen Vertrag direkt mit
+							unserem Partner ab, an den die für die Vertragsdurchführung erforderlichen Daten (z.B.
+							Vorname, Nachname, Rechnungsund Lieferanschrift, E-Mail-Adresse, Rechnungs- und
+							Bezahldaten, Geburtsdatum, Telefonnummer) übermittelt werden. Solche Vorteilsangebote
+							unserer Partner sind als Partnerangebote erkennbar.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">2.4 Datenverarbeitung zu Werbezwecken</h5>
+						<p className="text">
+							2.4.1 <br /> Falls Sie zustimmen, werden wir Sie per E-Mail oder Telefon kontaktieren,
+							um Sie über unsere Aktivitäten zu informieren. Bitte beachten Sie, dass Ihre
+							Zustimmung keine Bedingung für einen Kauf ist. Wenn wir bereits Dienstleistungen für
+							Sie erbracht haben und Sie nicht widersprechen, werden wir Sie auch per E-Mail oder
+							Telefon über unsere Unternehmen oder die Unternehmen unserer Gruppe und andere
+							Produkte informieren, die Sie interessieren könnten, einschließlich anderer damit
+							verbundener Informationen, sofern Sie uns diese zur Verfügung gestellt haben. <br />
+							<br />
+							Wenn wir Sie gemäß Abschnitt <br />
+							<br /> 2.4.1 telefonisch kontaktieren, werden SMS-Nachrichten von uns über Ihren
+							Mobilfunkanbieter an die von Ihnen angegebene Handynummer gesendet.
+							SMS-/SMS-Nachrichten können über ein automatisches Telefonwählsystem oder eine andere
+							Technologie gesendet werden. Die Häufigkeit der Nachrichten variiert. Es können
+							Gebühren für Nachrichten und Daten anfallen.
+						</p>
+					</div>
+
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">2.4 Widerspruch</h5>
+						<p className="text">
+							Sie können der Nutzung Ihrer personenbezogenen Daten zu vorgenannten Marketingzwecken
+							jederzeit kostenfrei mit Wirkung für die Zukunft unter hello@colonpax.com
+							widersprechen. <br />
+							<br />
+							Soweit Sie Widerspruch einlegen, werden Ihre Daten für die weitere werbliche
+							Datenverarbeitung gesperrt. Wir weisen darauf hin, dass es in Ausnahmefällen auch nach
+							Eingang Ihres Widerspruchs vorübergehend noch zu einem Versand von Werbematerial
+							kommen kann. Dies ist technisch durch die nötige Vorlaufzeit im Rahmen der Selektion
+							bedingt und bedeutet nicht, dass wir Ihren Widerspruch nicht umgesetzt haben.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">2.5</h5>
+						<p className="text">
+							Bitte beachten Sie, dass es aufgrund der Tatsache, dass unsere Geschäftstätigkeit aus
+							einem Netz eng miteinander verbundener Dienste besteht, einige Tage dauern kann, bis
+							alle Systeme aktualisiert sind, so dass Sie möglicherweise weiterhin
+							Marketingmitteilungen erhalten, während wir Ihre Anfrage noch bearbeiten. In jedem
+							Fall werden Sie durch die Abmeldung von den Marketingmitteilungen nicht daran
+							gehindert, Mitteilungen zu erhalten, die direkt mit der Erbringung von
+							Dienstleistungen zusammenhängen.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">3. Wie lange werden Ihre Daten gespeichert?</h5>
+						<p className="text">
+							3.1. Ihre personenbezogenen Daten, die wir für einen oder mehrere Zwecke verarbeiten,
+							dürfen nicht länger aufbewahrt werden, als es für diesen Zweck oder diese Zwecke
+							erforderlich ist. In jedem Fall dürfen sie nicht länger aufbewahrt werden als: <br />
+							<br />
+							(a) Kontodaten werden nicht länger als 5 (fünf) Jahre nach Ihrer letzten
+							Aktualisierung des Kontos aufbewahrt; <br />
+							<br />
+							Servicedaten werden nicht länger als 5 (fünf) Jahre nach Beendigung der Bereitstellung
+							der Dienste aufbewahrt; <br />
+							<br />
+							(b) Messaging-Daten werden nicht länger als 2 (zwei) Jahre nach Erteilung der
+							Einwilligung oder, falls die Messaging-Daten zur Pflege und Verbesserung der
+							Kundenbeziehungen an die derzeitigen Kunden gesendet werden, nicht länger als 2 (zwei)
+							Jahre nach Beendigung der Erbringung der jeweiligen Dienste aufbewahrt, es sei denn,
+							Sie ziehen Ihre Einwilligung früher zurück oder widersprechen einer solchen
+							Verarbeitung; <br />
+							<br />
+							Korrespondenzdaten werden nicht länger als 6 (sechs) Monate nach Beendigung einer
+							solchen Kommunikation aufbewahrt. <br />
+							<br />
+							3.2. In einigen Fällen ist es uns nicht möglich, die Zeiträume, für die Ihre
+							personenbezogenen Daten gespeichert werden, im Voraus festzulegen. D. h. die
+							Gerätedaten werden so lange aufbewahrt, wie es für die jeweiligen Verarbeitungszwecke
+							erforderlich ist. <br />
+							<br />
+							Nach Ablauf der geltenden Aufbewahrungsfrist oder auf Ihr Verlangen werden die
+							personenbezogenen Daten durch Überschreiben oder physische Vernichtung (falls
+							zutreffend) vernichtet.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">4. Ihre Rechte</h5>
+						<p className="text">
+							Im Zusammenhang mit der Verarbeitung personenbezogener Daten durch uns stehen Ihnen
+							Betroffenenrechte zu. Sie haben z.B. das Recht, Auskunft im Hinblick auf die über Sie
+							durch uns gespeicherten Daten geltend zu machen. Auch können Sie gegenüber uns
+							erteilte Einwilligungen widerrufen und Widerspruch gegen einzelne Datenverarbeitungen
+							einlegen. Sie haben des Weiteren das Recht, dass unrichtige Daten korrigiert werden
+							und können von uns verlangen, Ihnen bestimmte Daten in einem gängigen elektronischen
+							Format zu übermitteln. Außerdem haben Sie ein Recht auf Löschung der durch uns über
+							Sie gespeicherten Daten. Bitte beachten Sie diesbezüglich, dass wir aus gesetzlichen
+							Gründen verpflichtet sein können, trotz der Geltendmachung Ihres Rechts auf Löschung
+							die Daten weiterhin zu speichern. Außerdem haben wir in einzelnen Konstellationen ein
+							Interesse an der Fortführung der Speicherung Ihrer Daten, das Ihrem Interesse an deren
+							Löschung überwiegt (z.B., wenn wir noch offene Forderungen Ihnen gegenüber innehat).
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">4.1 Überblick</h5>
+						<p className="text">
+							Neben dem Recht auf Widerruf Ihrer uns gegenüber erteilten Einwilligungen stehen Ihnen
+							bei Vorliegen der jeweiligen gesetzlichen Voraussetzungen die folgenden weiteren
+							Rechte zu: <br />
+							<br />
+							<ul className="privacy-list">
+								<li className="text-black text">
+									- das Recht auf Auskunft über Ihre bei uns gespeicherten persönlichen Daten (Art.
+									15 GDPR), insbesondere können Sie Auskunft über die Verarbeitungszwecke, die
+									Kategorie der personenbezogenen Daten, die Kategorien von Empfängern, gegenüber
+									denen Ihre Daten offengelegt wurden oder werden, die geplante Speicherdauer, die
+									Herkunft ihrer Daten, sofern diese nicht direkt bei Ihnen erhoben wurden,
+									verlangen;
+								</li>
+								<li className="text-black text">
+									- das Recht auf Berichtigung unrichtiger oder auf Vervollständigung richtiger
+									Daten (Art. 16 GDPR),
+								</li>
+								<li className="text-black text">
+									- das Recht auf Löschung Ihrer bei uns gespeicherten Daten (Art. 17 GDPR), soweit
+									keine gesetzlichen oder vertraglichen Aufbewahrungsfristen oder andere gesetzliche
+									Pflichten bzw. Rechte zur weiteren Speicherung von uns einzuhalten sind,
+								</li>
+								<li className="text-black text">
+									- das Recht auf Einschränkung der Verarbeitung Ihrer Daten (Art. 18 GDPR), soweit
+									die Richtigkeit der Daten von Ihnen bestritten wird, die Verarbeitung unrechtmäßig
+									ist, Sie aber deren Löschung ablehnen; der Verantwortliche die Daten nicht mehr
+									benötigt, Sie jedoch diese zur Geltendmachung, Ausübung oder Verteidigung von
+									Rechtsansprüchen benötigen oder Sie gemäß Art. 21 DSGVO Widerspruch gegen die
+									Verarbeitung eingelegt haben,
+								</li>
+								<li className="text-black text">
+									- das Recht auf Datenübertragbarkeit gem. Art. 20 DSGVO, d.h. das Recht,
+									ausgewählte, bei uns über Sie gespeicherte Daten in einem gängigen,
+									maschinenlesbaren Format übertragen zu bekommen, oder die Übermittlung an einen
+									anderen Verantwortlichen zu verlangen,
+								</li>
+								<li className="text-black text">
+									- das Recht auf Beschwerde bei einer Aufsichtsbehörde. In der Regel können Sie
+									sich hierfür an die Aufsichtsbehörde Ihres üblichen Aufenthaltsortes oder
+									Arbeitsplatzes oder unseres Unternehmenssitzes wenden.
+								</li>
+							</ul>
+							Die zuvor genannten, Ihnen uns gegenüber zustehenden Rechte, können Sie unter
+							hello@colonpax.com geltend machen.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">4.2 Widerspruchsrecht</h5>
+						<p className="text">
+							Unter den Voraussetzungen des Art. 21 Abs. 1 GDPR kann der Datenverarbeitung aus
+							Gründen, die sich aus der besonderen Situation der betroffenen Person ergeben,
+							widersprochen werden. <br />
+							<br />
+							Das vorstehende allgemeine Widerspruchsrecht gilt für alle in dieser
+							Datenschutzerklärung beschriebenen Verarbeitungszwecke, die auf Grundlage von Artikel
+							6 Absatz 1 Buchstabe f) GDPR verarbeitet werden. Anders als bei dem auf die
+							Datenverarbeitung zu werblichen Zwecken gerichteten speziellen Widerspruchsrecht, sind
+							wir nach der GDPR zur Umsetzung eines solchen allgemeinen Widerspruchs nur
+							verpflichtet, wenn Sie uns hierfür Gründe von übergeordneter Bedeutung nennen (z.B.
+							eine mögliche Gefahr für Leben oder Gesundheit).
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">4.3 Widerrufsrecht</h5>
+						<p className="text">
+							Insofern wir Daten auf Basis einer durch Sie erteilten Einwilligung verarbeiten, haben
+							Sie jederzeit das Recht, die erteilte Einwilligung durch eine Mitteilung an
+							hello@colonpax.com zu widerrufen. Der Widerruf der Einwilligung hat nicht zur Folge,
+							dass die bis zum Zeitpunkt des Widerrufs auf Basis der Einwilligung erfolgte
+							Datenverarbeitung unwirksam wird.
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">5. Verwendung von Cookies</h5>
 						<p className="text">
 							Während Ihres Besuchs im Shop von www.colonpax.com können kleine Dateien, so genannte
 							Cookies, auf der Festplatte Ihres Computers gespeichert werden. Diese stellen sicher,
@@ -174,71 +393,356 @@ const Privacy = () => {
 							ist. Die Cookies werden nicht dazu verwendet, Ihr Surfverhalten auf anderen Websites
 							zu beobachten. Wir verwenden diese Informationen, um zu verfolgen, wie Besucher die
 							Website nutzen, um Berichte über die Website-Aktivitäten zu erstellen und um weitere
-							Dienstleistungen im Zusammenhang mit der WebsiteAktivität und der Internetnutzung zu
-							erbringen. Ein Cookie enthält keine persönlichen Daten, die es uns ermöglichen, Sie
-							direkt per Telefon, Post oder E-Mail zu kontaktieren. Die meisten Cookies werden
-							während einer Sitzung (Besuch) in unserem Webshop aktiviert. Ihr Internet-Browser
-							ermöglicht es Ihnen, die Verwendung von Cookies zu verhindern. Sie erhalten dann eine
-							Warnung, wenn ein Cookie installiert wird oder Sie können die Cookies nachträglich
-							löschen. Schauen Sie dazu in der Hilfefunktion Ihres Internetbrowsers nach. Wir
-							verwenden zwei Arten von Cookies: Erstanbieter-Cookies: Wir verwenden Cookies, um zu
-							überprüfen, wie Besucher unsere Website finden und nutzen. Wir berichten intern über
-							diese Aktivität und verwenden diese Informationen ausschließlich zur Überwachung und
-							Verbesserung unserer Website. Cookies von Drittanbietern: Wir verwenden eine Reihe von
-							weit verbreiteten Plug-ins von Drittanbietern als Marketing-Tools für unser eigenes
-							Geschäft und zur Bereitstellung von Komfortgeräten für unsere Besucher. Wir sind der
-							Meinung, dass die Verwendung dieser Plugins die derzeitige "Best Practice" ist.
-							DrittanbieterCookies sind Cookies, die von einem externen Dienst erstellt werden, wenn
-							Sie eine Seite auf unserer Website nutzen. Diese Cookies sind spezifisch für die
-							Domäne des Dritten und daher können die darin gespeicherten Daten von dem Dritten und
-							nicht von uns eingesehen und verwaltet werden. Wir verifizieren, dass wir einen
-							Drittdienst auf unserer Website verwenden und wir verwalten, wie er auf unserer
-							Website integriert und präsentiert wird. Wir kontrollieren dessen Cookies nicht
-							selbst. An dieser Stelle können Sie sich darüber informieren, welches Cookies wir
-							verwenden. Zur Übersicht über alle verwendeten Cookies gelangen Sie hier.
+							Dienstleistungen im Zusammenhang mit der Website-Aktivität und der Internetnutzung zu
+							erbringen. <br />
+							<br />
+							Ein Cookie enthält keine persönlichen Daten, die es uns ermöglichen, Sie direkt per
+							Telefon, Post oder E-Mail zu kontaktieren. Die meisten Cookies werden während einer
+							Sitzung (Besuch) in unserem Webshop aktiviert.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">3. AUSSCHLUSS UND BEGRENZUNG DER HAFTUNG:</h5>
+						<h5 className="tarms_heading5">5.1 Cookies, die wir verwenden</h5>
 						<p className="text">
-							United Nutrition UÖ, haftet Ihnen gegenüber in keiner Weise für die Richtigkeit der
-							Informationen, die in den Dokumenten und Grafiken ihrer Website enthalten sind, egal
-							für welchen Zweck. Alle Dokumente, Fotos und Grafiken werden "unverändert" zur
-							Verfügung gestellt und können technische Ungenauigkeiten und typographische Fehler
-							enthalten. United Nutrition UÖ, kann nicht für Garantien und Bedingungen in Bezug auf
-							ihre Informationen haftbar gemacht werden, einschließlich jeglicher stillschweigenden
-							Garantien und Bedingungen der Marktgängigkeit, der Eignung für einen bestimmten Zweck
-							oder eines bestimmten Titels und der Nichtverletzung von Rechten. Unter keinen
-							Umständen kann United Nutrition UÖ, für irgendeine Art von Schäden verantwortlich
-							gemacht werden, die sich aus irgendeinem Grund oder einer Ursache ergeben, aufgrund
-							oder in Verbindung mit der Nutzung dieser Website.
+							Auf der Website verwenden wir Cookies in drei Haupttypen für die folgenden Zwecke:
+							<br />
+							<br />
+							(a) Erforderliche Cookies - werden verwendet, um die ordnungsgemäße Funktion der
+							Website, die Sicherheit der Kunden und ihrer Daten sowie die Bereitstellung
+							hochwertiger Dienste zu gewährleisten; <br />
+							<br />
+							(b) Funktionale Cookies - werden verwendet, um das Benutzererlebnis auf der Website zu
+							verbessern, die Nutzung des Systems zu analysieren und auf diese Weise die
+							Bereitstellung von Dienstleistungen zu verbessern; <br />
+							<br />
+							(c) Werbe-Cookies - zur Beobachtung des Online-Verhaltens der Nutzer und zur
+							Optimierung von Marketing-Kampagnen auf der Grundlage dieser Informationen.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">4. Fragen und Rückmeldungen</h5>
+						<h5 className="tarms_heading5">5.1.1 Von unseren Dienstleistern verwendete Cookies</h5>
 						<p className="text">
-							Wir überprüfen regelmäßig, ob wir diese Datenschutzpolitik einhalten. Wenn Sie Fragen
-							zu dieser Datenschutzrichtlinie haben, zögern Sie nicht, uns zu kontaktieren. Unsere
-							Kontaktdaten finden Sie hier: <br />
+							5.1.1.1 <br />
 							<br />
-							Kesklinna linnaosa, <br />
+							Unsere Dienstleister verwenden Cookies und diese Cookies können auf Ihrem Computer
+							gespeichert werden, wenn Sie unsere Website besuchen. <br />
 							<br />
-							Järvevana tee 9 <br />
+							Wir können verwenden: <br />
 							<br />
-							11314 <br />
+							(a)Google <br />
 							<br />
-							Tallinn <br />
+							Diese Website nutzt den Dienst Google Ads. Google Ads ist ein Online-Werbeprogramm der
+							Google Ireland Limited ("Google"), Google Building Gordon House, 4 Barrow Street,
+							Dublin D04 E5W5, Ireland. <br />
 							<br />
-							Estland <br />
+							Dabei verwenden wir die Remarketing-Funktion innerhalb des Google Ads-Dienstes. Mit
+							der Remarketing-Funktion können wir Ihnen auf anderen Websites innerhalb des Google
+							Werbenetzwerks auf Ihren Interessen basierende Werbeanzeigen präsentieren. Dafür wird
+							Ihr Surfverhalten auf unserer Website analysiert, z. B. welche Angebote Sie sich
+							angesehen haben. Hierdurch können wir Ihnen auch nach Ihrem Besuch unserer Website auf
+							der OnlineSuchmaschine Google selbst, sog. „Google Anzeigen“ und auf anderen Websites
+							individualisierte Werbung anzeigen. Hierfür speichert Google ein Cookie in Ihrem
+							Browser, wenn Sie Google-Dienste oder Webseiten im Google Werbenetzwerk besuchen. Über
+							dieses Cookie werden Ihre Besuche erfasst. Das Cookie dient zur eindeutigen
+							Identifikation Ihres Webbrowsers und nicht der Identifikation Ihrer Person. Es besteht
+							die Möglichkeit, dass Google die über die Website limango.de erhobenen Daten über Ihr
+							Nutzungsverhalten auch zu eigenen Zwecken oder zu Zwecken anderer Kunden von Google
+							nutzt (z. B. zur Ausspielung individualisierter Werbungen Dritter). Eine derartige
+							Weiterverarbeitung der Daten sowie die Verarbeitung der Daten nach deren Übermittlung
+							durch limango an Google erfolgt durch Google als alleinig datenschutzrechtlich
+							Verantwortliche. In diesem Zusammenhang kann Google als datenschutzrechtlich alleinig
+							Verantwortliche Daten über Sie in den USA speichern. Der Europäische Gerichtshof hat
+							in Bezug auf die USA festgestellt, dass es sich bei diesen um ein Land mit einem nicht
+							ausreichenden Datenschutzniveau handelt. In diesem Zusammenhang besteht insbesondere
+							die Gefahr, dass Ihre Daten durch amerikanische Institutionen / Behörden zu Kontroll-
+							und zu Überwachungszwecken verarbeitet werden, ohne dass Ihrerseits ein ausreichender
+							Rechtsbehelf hiergegen gegeben ist. <br />
 							<br />
-							e-mail: <a href="mailto:hello@colonpax.com">hello@colonpax.com</a> <br />
+							Ferner verwenden wir im Rahmen der Nutzung des Google Ads-Dienstes das sog.
+							ConversionTracking. Wenn Sie auf eine von Google geschaltete Anzeige klicken, wird ein
+							Cookie für das Conversion-Tracking auf Ihrem Rechner / Endgerät abgelegt. Diese
+							Cookies verlieren nach 30 Tagen ihre Gültigkeit, enthalten keine personenbezogenen
+							Daten und dienen somit nicht der persönlichen Identifizierung. Die Informationen, die
+							mithilfe des Conversion-Cookie eingeholt werden, dienen dazu, Conversion-Statistiken
+							für Ads-Kunden zu erstellen, die sich für Conversion-Tracking entschieden haben.{' '}
 							<br />
-							datenschutz: <a href="mailto:hello@colonpax.com">hello@colonpax.com</a>
+							<br />
+							Rechtsgrundlage für diese Datenverarbeitung ist Artikel 6 Absatz 1 Buchstabe a) GDPR.
+							Nähere Informationen zu Google Ads sowie die Datenschutzerklärung von Google können
+							Sie einsehen unter: www.google.com/privacy/ads/ Hier können Sie auch Ihre
+							Betroffenenrechte (z. B. Recht auf Löschung) im Hinblick auf die Daten, die Google als
+							datenschutzrechtlich Verantwortliche verarbeitet, geltend machen. <br />
+							<br />
+							Über den Google-Ad-Manager können Cookies von Werbenetzwerken in Ihren Browser gesetzt
+							werden. Diese Cookies dienen dem Zweck, den von Ihnen bei Aufruf der Website
+							colonpax.com genutzten Browser wiederzuerkennen, um Ihnen auf Basis über Sie erhobener
+							Daten individualisierte Werbung ausspielen zu können. Google verarbeitet die über Sie
+							auf dieser Website erhobenen Daten als datenschutzrechtlich alleinig Verantwortliche
+							weiter. In diesem Zusammenhang besteht die Möglichkeit, dass Ihre Daten von Google in
+							die USA übermittelt werden. Der Europäische Gerichtshof hat in Bezug auf die USA
+							festgestellt, dass es sich bei diesen um ein Land mit einem nicht ausreichenden
+							Datenschutzniveau handelt. In diesem Zusammenhang besteht insbesondere die Gefahr,
+							dass Ihre Daten durch amerikanische Institutionen / Behörden zu Kontroll- und zu
+							Überwachungszwecken verarbeitet werden, ohne dass Ihrerseits ein ausreichender
+							Rechtsbehelf hiergegen gegeben ist. <br />
+							<br />
+							Rechtsgrundlage für diese Datenverarbeitung ist Artikel 6 Absatz 1 Buchstabe a) GDPR.{' '}
 							<br />
 							<br />
-							Eingetragen im Estnischen Handelsregirster unter: <br />
+							(b) outbrain <br />
 							<br />
-							Reg.Nr.: 16591552
+							Diese Website nutzt das Conversion-Tracking von Outbrain (Outbrain UK Ltd, 5 New
+							Bridge Street, London, EC4V 6JA, UK). Das Pixel für Conversion-Tracking wird gesetzt,
+							wenn ein Nutzer Kontakt zu einer von Outbrain geschalteten Anzeige hat. Die von
+							Outbrain integrierten Anzeigen werden auf Basis Ihrer bisher gelesenen Inhalte
+							bestimmt. Die Inhalte werden technisch von Outbrain automatisch gesteuert und
+							ausgeliefert. Outbrain Pixel enthalten keine Informationen, mit denen sich Nutzer
+							persönlich identifizieren lassen. Personenbezogene Daten werden nicht gespeichert. Das
+							Pixel verwendet zur Auswahl geeigneter Inhalte Informationen zur Geräte-Quelle,
+							Browser-Typ sowie Ihre mittels Entfernung des letzten Oktetts vollständig
+							anonymisierte IP-Adresse. Weitere Informationen zum Datenschutz von Outbrain finden
+							Sie unter{' '}
+							<a href="http:// www.outbrain.com/de/legal/privacy">
+								http:// www.outbrain.com/de/legal/privacy
+							</a>
+							. Sie können jederzeit dem Tracking zur Anzeige interessenbasierter Empfehlungen
+							widersprechen; klicken Sie dazu auf das Feld „Ablehnen“ (Opt-out) unter der
+							Datenschutzerklärung von Outbrain, abrufbar unter{' '}
+							<a
+								href="http://
+							www.outbrain.com/de/legal/privacy"
+							>
+								http:// www.outbrain.com/de/legal/privacy
+							</a>
+							.
+							<br />
+							<br />
+							(d)Google Maps-Cookies, um den Standort des Nutzers zu bestimmen, sofern der Nutzer
+							dies erlaubt. Cookies, die zu diesem Zweck verwendet werden, helfen uns, die
+							WebsiteEinstellungen an den Standort des Nutzers anzupassen und die Nutzererfahrung
+							auf unserer Website zu verbessern. Die Datenschutzrichtlinien von Google Maps können
+							Sie hier einsehen; <br />
+							<br />
+							(e) Doubleclick-Cookies zur Steuerung der Anzeige von Werbung für unsere Nutzer.
+							Cookies, die zu diesem Zweck verwendet werden, helfen uns, Nutzer zu unterscheiden,
+							die unsere Dienste bereits nutzen, und die Anzeige unserer Werbung für diese Nutzer zu
+							reduzieren oder zu stoppen. <br />
+							<br />
+							(f) META <br />
+							<br />
+							In diese Website ist ein Pixel der Meta Platforms Ireland Limited, 4 Grand Canal
+							Square, Dublin, Ireland („Meta“) integriert (Website-Custom-Audience-Pixel). Durch
+							dieses Pixel werden Informationen über die Nutzung dieser Website (z. B. Informationen
+							über angesehene Artikel) durch die limango GmbH und die Meta Platforms Ireland Limited
+							in gemeinschaftlicher Verantwortlichkeit erhoben und an die Meta Platforms Ireland
+							Limited übermittelt. Zudem übermitteln wir Ihre im Kundenkonto hinterlegte
+							E-Mailadresse als Hashwert an Meta, sofern wir Sie im eingeloggten Zustand erkennen
+							und Sie Ihre Einwilligung in diese Datenübermittlung über die auf dieser Website
+							eingesetzte Banner-Lösung erteilen. Der Hashwert der E-MailAdresse wird durch Meta
+							ausschließlich zur Wiedererkennung der Websitebesuchenden im Rahmen der Ausspielung
+							von personalisierten Werbeanzeigen verwendet. Gleiches gilt in Bezug auf die
+							Übermittlung / Nutzung Ihrer IP-Adresse und Ihres User-Agents. Diese Informationen
+							können Ihrer Person unter Zuhilfenahme weiterer Informationen, die Meta z. B. aufgrund
+							Ihrer Inhaberschaft eines Accounts dem sozialen Netzwerk „Facebook“ sowie „Instagram“
+							über Sie gespeichert hat, zugeordnet werden. Anhand der über das Pixel erhobenen
+							Informationen können Ihnen in Ihrem Facebook- bzw. Instagram-Account
+							interessenbezogene Werbeeinblendungen zu unseren Angeboten angezeigt werden
+							(Retargeting). Die über das Pixel erhobenen Informationen können außerdem durch Meta
+							aggregiert werden und die aggregierten Informationen können durch die Meta Platforms
+							Ireland Limited zu eigenen Webezwecken sowie zu Werbezwecken Dritter genutzt werden.
+							So kann die Meta z.B. aus Ihrem Surfverhalten auf dieser Website auf bestimmte
+							Interessen schließen und diese Informationen auch dazu nutzen, um Angebote Dritter zu
+							bewerben. Die Meta Platforms Ireland Limited kann die über das Pixel erhobenen
+							Informationen außerdem mit weiteren Informationen, die Meta Platforms Ireland Limited
+							über Sie über andere Websiten und / oder im Zusammenhang mit des sozialen Netzwerks
+							„Facebook“ sowie „Instagram“ erhoben hat, verbinden, so dass bei der Meta Platforms
+							Ireland Limited ein Profil über Sie gespeichert werden kann. Dieses Profil kann zu
+							Zwecken der Werbung genutzt werden. Für die dauerhafte Speicherung und die
+							dargestellte Weiterverarbeitung der über das auf dieser Website eingesetzte
+							Website-Custom-Audience-Pixel erhobenen Trackingdaten ist die Meta Platforms Ireland
+							Limited alleinig verantwortlich. In diesem Zusammenhang kann die Meta Platforms
+							Ireland Limited als datenschutzrechtlich alleinig Verantwortliche Daten über Sie in
+							den USA speichern. Der Europäische Gerichtshof hat in Bezug auf die USA festgestellt,
+							dass es sich bei diesen um ein Land mit einem nicht ausreichenden Datenschutzniveau
+							handelt. In diesem Zusammenhang besteht insbesondere die Gefahr, dass Ihre Daten durch
+							amerikanische Institutionen / Behörden zu Kontroll- und zu Überwachungszwecken
+							verarbeitet werden, ohne dass Ihrerseits ein ausreichender Rechtsbehelf hiergegen
+							gegeben ist. <br />
+							<br />
+							Rechtsgrundlage für diese Datenverarbeitung ist Artikel 6 Absatz 1 Buchstabe a) GDPR
+							(Einwilligung). <br />
+							<br />
+							Nähere Informationen zum Datenschutz bei Meta erhalten Sie hier:
+							<a href="https://de-de.facebook.com/ policy.php	">
+								https://de-de.facebook.com/ policy.php
+							</a>
+							<br />
+							<br />
+							(g Wir nutzen Hotjar, um die Bedürfnisse unserer Nutzer besser zu verstehen und das
+							Angebot auf dieser Webseite zu optimieren. Mithilfe der Technologie von Hotjar
+							bekommen wir ein besseres Verständnis von den Erfahrungen unserer Nutzer (z.B. wieviel
+							Zeit Nutzer auf welchen Seiten verbringen, welche Links sie anklicken, was sie mögen
+							und was nicht etc.) und das hilft uns, unser Angebot am Feedback unserer Nutzer
+							auszurichten. Hotjar arbeitet mit Cookies und anderen Technologien, um Informationen
+							über das Verhalten unserer Nutzer und über ihre Endgeräte zu sammeln (insbesondere IP
+							Adresse des Geräts (wird nur in anonymisierter Form erfasst und gespeichert),
+							Bildschirmgröße, Gerätetyp (Unique Device Identifiers), Informationen über den
+							verwendeten Browser, Standort (nur Land), zum Anzeigen unserer Webseite bevorzugte
+							Sprache). Hotjar speichert diese Informationen in einem pseudonymisierten
+							Nutzerprofil. Die Informationen werden weder von Hotjar noch von uns zur
+							Identifizierung einzelner Nutzer verwendet oder mit weiteren Daten über einzelne
+							Nutzer zusammengeführt. Rechtsgrundlage ist Art. 6 abs. 1 S. 1 lit. F DSGVO. Weitere
+							Informationen findest Du in Hotjars Datenschutzerklärung:
+							<a href="https://www.hotjar.com/legal/policies/privacy">
+								https://www.hotjar.com/legal/policies/privacy
+							</a>
+							Sie können der Speicherung eines Nutzerprofils und von Informationen über Ihren Besuch
+							auf unserer Webseite durch Hotjar sowie dem Setzen von Hotjar Tracking Cookies auf
+							anderen Webseiten über diesen Link widersprechen:
+							<a href="https://www.hotjar.com/legal/compliance/opt-out">
+								https://www.hotjar.com/legal/compliance/opt-out
+							</a>
+						</p>
+					</div>
+					{/* ======================== */}
+					{/* ======================== */}
+					{/* done */}
+					{/* ======================== */}
+					{/* ======================== */}
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">5.2 Wie können Sie Cookies verwalten?</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
+						</p>
+					</div>
+					<div className="tarms_item">
+						<h5 className="tarms_heading5">lorem</h5>
+						<p className="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
+							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
+							officiis? Expedita dolor obcaecati repellendus!
 						</p>
 					</div>
 				</div>
