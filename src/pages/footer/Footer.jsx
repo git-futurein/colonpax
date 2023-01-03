@@ -82,7 +82,7 @@ const Footer = () => {
 								<Link to="/subscription-cancellation">Abo verwalten</Link>
 							</li>
 							<li>
-								<Link to="/studies">studies</Link>
+								<Link to="/studies">studien</Link>
 							</li>
 						</ul>
 					</div>
@@ -115,7 +115,8 @@ const Footer = () => {
 							United Nutrition OÜ, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
 						</p>
 					</div>
-					<div className="col-12 col-lg-6">
+					<div className="col-lg-2"></div>
+					<div className="col-12 col-lg-4">
 						<div className="payment-imgs">
 							<img src="/images/pay-img-1.png" alt="" />
 							<img src="/images/pay-img-2.png" alt="" />
