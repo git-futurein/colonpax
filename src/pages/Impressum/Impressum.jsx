@@ -28,7 +28,7 @@ const Impressum = () => {
 				<div className="tarms_wrapper">
 					<div className="tarms_item">
 						<h5 className="tarms_heading5">Unternehmen</h5>
-						<p className="text">United Nutrition ÜO,</p>
+						<p className="text">United Nutrition OÜ,</p>
 					</div>
 					<div className="tarms_item">
 						<h5 className="tarms_heading5">Firmennummer</h5>
