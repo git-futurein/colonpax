@@ -464,7 +464,7 @@ const Privacy = () => {
 							Cookies verlieren nach 30 Tagen ihre Gültigkeit, enthalten keine personenbezogenen
 							Daten und dienen somit nicht der persönlichen Identifizierung. Die Informationen, die
 							mithilfe des Conversion-Cookie eingeholt werden, dienen dazu, Conversion-Statistiken
-							für Ads-Kunden zu erstellen, die sich für Conversion-Tracking entschieden haben.{' '}
+							für Ads-Kunden zu erstellen, die sich für Conversion-Tracking entschieden haben.
 							<br />
 							<br />
 							Rechtsgrundlage für diese Datenverarbeitung ist Artikel 6 Absatz 1 Buchstabe a) GDPR.
@@ -486,7 +486,7 @@ const Privacy = () => {
 							Überwachungszwecken verarbeitet werden, ohne dass Ihrerseits ein ausreichender
 							Rechtsbehelf hiergegen gegeben ist. <br />
 							<br />
-							Rechtsgrundlage für diese Datenverarbeitung ist Artikel 6 Absatz 1 Buchstabe a) GDPR.{' '}
+							Rechtsgrundlage für diese Datenverarbeitung ist Artikel 6 Absatz 1 Buchstabe a) GDPR.
 							<br />
 							<br />
 							(b) outbrain <br />
@@ -501,13 +501,13 @@ const Privacy = () => {
 							Pixel verwendet zur Auswahl geeigneter Inhalte Informationen zur Geräte-Quelle,
 							Browser-Typ sowie Ihre mittels Entfernung des letzten Oktetts vollständig
 							anonymisierte IP-Adresse. Weitere Informationen zum Datenschutz von Outbrain finden
-							Sie unter{' '}
+							Sie unter
 							<a href="http:// www.outbrain.com/de/legal/privacy">
 								http:// www.outbrain.com/de/legal/privacy
 							</a>
 							. Sie können jederzeit dem Tracking zur Anzeige interessenbasierter Empfehlungen
 							widersprechen; klicken Sie dazu auf das Feld „Ablehnen“ (Opt-out) unter der
-							Datenschutzerklärung von Outbrain, abrufbar unter{' '}
+							Datenschutzerklärung von Outbrain, abrufbar unter
 							<a
 								href="http://
 							www.outbrain.com/de/legal/privacy"
@@ -604,145 +604,243 @@ const Privacy = () => {
 							</a>
 						</p>
 					</div>
-					{/* ======================== */}
-					{/* ======================== */}
-					{/* done */}
-					{/* ======================== */}
-					{/* ======================== */}
+
 					<div className="tarms_item">
 						<h5 className="tarms_heading5">5.2 Wie können Sie Cookies verwalten?</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							Selbstverständlich können Sie Ihren Browser so einrichten, dass er bestimmte Cookies
+							nicht auf Ihrem Endgerät ablegt. Die Hilfe-Funktion in der Menüleiste der meisten
+							Webbrowser erklärt Ihnen, wie Sie Ihren Browser davon abhalten, neue Cookies zu
+							akzeptieren, wie Sie Ihren Browser darauf hinweisen lassen, wenn Sie ein neues Cookie
+							erhalten oder auch wie Sie sämtliche bereits erhaltenen Cookies löschen und für alle
+							weiteren sperren können. <br />
+							<br />
+							Gehen Sie dafür bitte wie folgt vor: <br />
+							<br />
+							Im Internet Explorer: <br />
+							<br />
+							1. Wählen Sie im Menü "Extras" den Punkt "Internetoptionen". <br />
+							2. Klicken Sie auf den Reiter "Datenschutz". <br />
+							3. Nun können Sie die Sicherheitseinstellungen für die Internetzone vornehmen. Hier
+							stellen Sie ein, ob und welche Cookies angenommen oder abgelehnt werden sollen. <br />
+							4. Mit "OK" bestätigen Sie Ihre Einstellung. <br />
+							<br />
+							Im Firefox: <br />
+							<br />
+							1. Wählen Sie im Menü "Extras" den Punkt "Einstellungen". <br />
+							2. Klicken Sie auf "Datenschutz". <br />
+							3. Wählen Sie in dem Drop-Down Menü den Eintrag "nach benutzerdefinierten
+							Einstellungen anlegen" aus. <br />
+							4. Nun können Sie einstellen, ob Cookies akzeptiert werden sollen, wie lange Sie diese
+							Cookies behalten wollen und Ausnahmen hinzufügen, welchen Websites Sie immer bzw.
+							niemals erlauben möchten, Cookies zu benutzen. <br />
+							5. Mit "OK" bestätigen Sie Ihre Einstellung. <br />
+							<br />
+							Im Google Chrome: <br />
+							<br />
+							1. Klicken Sie auf das Chrome-Menü in der Symbolleiste des Browsers. <br />
+							2. Wählen Sie nun "Einstellungen" aus. <br />
+							3. Klicken Sie auf "Erweiterte Einstellungen anzeigen". <br />
+							4. Klicken Sie unter "Datenschutz" auf "Inhaltseinstellungen". <br />
+							5. Unter "Cookies" können Sie die folgenden Einstellungen für Cookies vornehmen:
+							<br />
+							- Cookies löschen <br />
+							- Cookies standardmäßig blockieren <br />
+							- Cookies und Webseitendaten standardmäßig nach Beenden des Browsers löschen <br />
+							- Ausnahmen für Cookies von bestimmten Webseiten oder Domains zulassen <br />
+							<br />
+							Insofern Sie einzelne in Ihrem Browser gesetzte Cookies löschen möchten bzw. erfahren
+							wollen, welche Dienstleister / Anbieter Cookies in Ihren Browser gesetzt haben, können
+							Sie dies auch über einen „Präferenzmanager“ vornehmen / erfahren. Ein solcher ist z.B.
+							unter
+							<a href="https:// www.youronlinechoices.com/de/ abrufbar">
+								https:// www.youronlinechoices.com/de/ abrufbar
+							</a>
+							.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							5.2.1 Wenn Sie Cookies blockieren, können Sie nicht alle Funktionen auf unserer
+							Website nutzen
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
+						<h5 className="tarms_heading5">6. Zahlung</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							Ihre Zahlungsinformationen verarbeiten wir zum Zwecke der Zahlungsabwicklung, z.B.
+							wenn Sie ein Produkt und/oder eine Dienstleistungen über limango.de erwerben bzw. in
+							Anspruch nehmen. Je nach Zahlart leiten wir Ihre Zahlungsinformationen an Dritte
+							weiter (z.B. bei Kreditkartenzahlung an Ihren Kreditkartenanbieter). <br />
+							<br />
+							Rechtsgrundlage für diese Datenverarbeitung ist Art. 6 Absatz 1 Buchstabe a), Art. 6
+							Absatz 1 Buchstabe b), GDPR sowie Art. 6 Abs. 1 Buchstabe f) GDPR.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
+						<h5 className="tarms_heading5">6.1 PayPal</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							Bei Zahlung via PayPal werden Ihre Zahlungsdaten im Rahmen der Zahlungsabwicklung an
+							die PayPal (Europe) S.à r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg
+							(nachfolgend "PayPal"), weitergeleitet. PayPal behält sich für die Zahlungsmethoden
+							Kreditkarte via PayPal, Lastschrift via PayPal oder – falls angeboten - "Kauf auf
+							Rechnung" via PayPal die Durchführung einer Bonitätsauskunft vor. Das Ergebnis der
+							Bonitätsprüfung in Bezug auf die statistische Zahlungsausfallwahrscheinlichkeit
+							verwendet PayPal zum Zwecke der Entscheidung über die Bereitstellung der jeweiligen
+							Zahlungsmethode. Die Bonitätsauskunft kann Wahrscheinlichkeitswerte enthalten (sog.
+							Score-Werte). Soweit Score-Werte in das Ergebnis der Bonitätsauskunft einfließen,
+							haben diese ihre Grundlage in einem wissenschaftlich anerkannten
+							mathematisch-statistischen Verfahren. In die Berechnung der Score-Werte fließen unter
+							anderem Anschriftendaten ein. Weitere datenschutzrechtliche Informationen, unter
+							anderem zu den verwendeten Auskunfteien, entnehmen Sie bitte der Datenschutzerklärung
+							von PayPal:
+							<a href="https://www.paypal.com/de/webapps/mpp/ua/privacy-full">
+								https://www.paypal.com/de/webapps/mpp/ua/privacy-full
+							</a>
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
+						<h5 className="tarms_heading5">6.2 Kauf auf Rechnung</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							Bei Kauf auf Rechnung willigt der Käufer einer Forderungsabtretung seiner Bestellung,
+							sprich vertraglichen Verpflichtung, an einen von der United Nutrion OÜ beauftragtes
+							Factoringunternehmen ein. Wählt ein Käufer in unserem Online-Shop als
+							Zahlungsmöglichkeit „Kauf auf Rechnung“, werden automatisiert Daten des Käufers, im
+							Rahmen der Identiäts- und Bonitätsprüfung, an einen unserer Partner übermittelt. Mit
+							der Auswahl dieser Zahlungsoptionen willigt der Käufer in diese, zur Abwicklung des
+							Rechnungskaufs oder zur Identitäts- und Bonitätsprüfung erforderliche, Übermittlung
+							personenbezogener Daten ein. <br />
+							<br />
+							Bei den übermittelten personenbezogenen Daten handelt es sich in der Regel um Vorname,
+							Nachname, Adresse, Geburtsdatum, Geschlecht, Email-Adresse, IP-Adresse, Telefonnummer,
+							Mobiltelefonnummer sowie um andere Daten, die zur Abwicklung eines Rechnungskaufs
+							notwendig sind. Zur Abwicklung des Kaufvertrages notwendig sind auch solche
+							personenbezogenen Daten, die im Zusammenhang mit der jeweiligen Bestellung stehen.
+							Insbesondere kann es zum wechselseitigen Austausch von Bestellinformationen, wie
+							Artikelanzahl, Artikelnummer, Daten zu Waren und Dienstleistungen, Preise derKäufers
+							kommen. <br />
+							<br />
+							Die Übermittlung der Daten bezweckt insbesondere die Identitätsüberprüfung, die
+							Zahlungsadministration und die Betrugsprävention. Diese Übermittlung bezweckt die
+							Identitätsund Bonitätsprüfung. <br />
+							<br />
+							Der Käufer hat die Möglichkeit, die Einwilligung zum Umgang mit personenbezogenen
+							Daten jederzeit gegenüber der United Nutrition zu widerrufen. Ein Widerruf wirkt sich
+							nicht auf personenbezogene Daten aus, die zwingend zur (vertragsgemäßen)
+							Zahlungsabwicklung verarbeitet, genutzt oder übermittelt werden müssen.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
+						<h5 className="tarms_heading5">6.3 GooglePay</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							Auf unserer Website bieten wir u.a. die Bezahlung via Google Pay an. Anbieter dieses
+							Zahlungsdienstes ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4,
+							Irland, Tel: +353 1 543 1000, Fax: +353 1 686 5660, E-Mail:
+							support-deutschland@google.com (im Folgenden “Google Pay”). Wenn Sie die Bezahlung via
+							GooglePay auswählen, werden die von Ihnen eingegebenen Zahlungsdaten an GooglePay
+							übermittelt. Die Übermittlung Ihrer Daten an GooglePay erfolgt auf Grundlage von Art.
+							6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (Verarbeitung zur
+							Erfüllung eines Vertrags). <br />
+							<br />
+							Sie haben die Möglichkeit, Ihre Einwilligung zur Datenverarbeitung jederzeit zu
+							widerrufen. Ein Widerruf wirkt sich auf die Wirksamkeit von in der Vergangenheit
+							liegenden Datenverarbeitungsvorgängen nicht aus. <br />
+							<br />
+							Weitere Details zur Zahlung mit Google Pay entnehmen Sie folgenden Links: <br />
+							<a href="https://pay.google.com/about/">https://pay.google.com/about/</a> <br />
+							<a href="https://payments.google.com/legaldocument?family=0.privacynotice&hl=de">
+								https://payments.google.com/legaldocument?family=0.privacynotice&hl=de
+							</a>
+							<br />
+							<a href="https://pay.google.com/intl/de_de/about/terms/">
+								https://pay.google.com/intl/de_de/about/terms/
+							</a>
+							<br />
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
+						<h5 className="tarms_heading5">6.4 Apple Pay</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							Auf unserer Website bieten wir u.a. die Bezahlung via Apple Pay an. Anbieter dieses
+							Zahlungsdienstes ist Apple Inc., Infinite Loop, Cupertino, CA 95014, Telefon: +1 408
+							996 1010, in Europa vertreten durch Apple Distribution International Ltd., Hollyhill
+							Industrial Estate, Hollyhill, Cork, Republic of Ireland, contactus.de@euro.apple.com,
+							Registrierungsnummer: 470672, Eingetragen beim Handelsregister in Irland, USt-IdNr.:
+							DE 27946362, (im Folgenden “Apple Pay”). Wenn Sie die Bezahlung via Apple Pay
+							auswählen, werden die von Ihnen eingegebenen Zahlungsdaten an Apple Pay übermittelt.
+							Die Übermittlung Ihrer Daten an Apple Pay erfolgt auf Grundlage von Art. 6 Abs. 1 lit.
+							a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (Verarbeitung zur Erfüllung
+							eines Vertrags). <br />
+							<br />
+							Sie haben die Möglichkeit, Ihre Einwilligung zur Datenverarbeitung jederzeit zu
+							widerrufen. Ein Widerruf wirkt sich auf die Wirksamkeit von in der Vergangenheit
+							liegenden Datenverarbeitungsvorgängen nicht aus. <br />
+							<br />
+							Weitere Details zur Zahlung mit Apple Pay entnehmen Sie folgenden Links: <br />
+							<a href="https://support.apple.com/de-de/HT201469">
+								https://support.apple.com/de-de/HT201469
+							</a>
+							<br />
+							<a href="https://support.apple.com/de-de/HT203027">
+								https://support.apple.com/de-de/HT203027
+							</a>
+							<br />
+							<a href="https://www.apple.com/legal/privacy/de-ww/">
+								https://www.apple.com/legal/privacy/de-ww/
+							</a>
+							<br />
+							<a href="https://www.apple.com/de/privacy/">https://www.apple.com/de/privacy/</a>
+							<br />
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
+						<h5 className="tarms_heading5">7. Empfänger außerhalb der EU</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							Mit Ausnahme der dargestellten Verarbeitungen geben wir Ihre Daten nicht an Empfänger
+							mit Sitz außerhalb der Europäischen Union oder des Europäischen Wirtschaftsraumes
+							weiter. Die genannten Verarbeitungen beinhalten eine Datenübermittlung an die Server
+							der durch uns beauftragten Anbieter von Tracking- bzw. Targetingtechnologien. Diese
+							Server befinden sich in den USA. Die Datenübermittlung erfolgt auf Grundlage <br />
+							sogenannter Standardvertragsklauseln der EU-Kommission.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
+						<h5 className="tarms_heading5">8 Datensicherheit</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							Alle von Ihnen persönlich übermittelten Daten, einschließlich Ihrer Zahlungsdaten,
+							werden mit dem allgemein üblichen und sicheren Standard SSL (Secure Socket Layer)
+							übertragen. SSL ist ein sicherer und erprobter Standard, der z.B. auch beim
+							Onlinebanking Verwendung findet. Sie erkennen eine sichere SSL-Verbindung unter
+							anderem an dem angehängten s am http (also https://...) in der Adressleiste Ihres
+							Browsers oder am Schloss-Symbol im unteren Bereich Ihres Browsers. <br /> <br />
+							Wir bedienen uns im Übrigen geeigneter technischer und organisatorischer
+							Sicherheitsmaßnahmen, um Ihre bei uns gespeicherten persönlichen Daten gegen
+							Manipulation, teilweisen oder vollständigen Verlust und gegen unbefugten Zugriff
+							Dritter zu schützen. Unsere Sicherheitsmaßnahmen werden entsprechend der
+							technologischen Entwicklung fortlaufend verbessert.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
+						<h5 className="tarms_heading5">9. AUSSCHLUSS UND BEGRENZUNG DER HAFTUNG:</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							United Nutrition UÖ, haftet Ihnen gegenüber in keiner Weise für die Richtigkeit der
+							Informationen, die in den Dokumenten und Grafiken ihrer Website enthalten sind, egal
+							für welchen Zweck. Alle Dokumente, Fotos und Grafiken werden "unverändert" zur
+							Verfügung gestellt und können technische Ungenauigkeiten und typographische Fehler
+							enthalten. United Nutrition UÖ, kann nicht für Garantien und Bedingungen in Bezug auf
+							ihre Informationen haftbar gemacht werden, einschließlich jeglicher stillschweigenden
+							Garantien und Bedingungen der Marktgängigkeit, der Eignung für einen bestimmten Zweck
+							oder eines bestimmten Titels und der Nichtverletzung von Rechten. Unter keinen
+							Umständen kann United Nutrition UÖ, für irgendeine Art von Schäden verantwortlich
+							gemacht werden, die sich aus irgendeinem Grund oder einer Ursache ergeben, aufgrund
+							oder in Verbindung mit der Nutzung dieser Website.
 						</p>
 					</div>
 					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
+						<h5 className="tarms_heading5">10. Fragen und Rückmeldungen</h5>
 						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
-						</p>
-					</div>
-					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
-						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
-						</p>
-					</div>
-					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
-						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
-						</p>
-					</div>
-					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
-						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
-						</p>
-					</div>
-					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
-						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
-						</p>
-					</div>
-					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
-						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
-						</p>
-					</div>
-					<div className="tarms_item">
-						<h5 className="tarms_heading5">lorem</h5>
-						<p className="text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, inventore, quasi natus
-							ullam vel ipsum ea consequatur sunt deleniti, iusto odio iure enim dicta quaerat
-							officiis? Expedita dolor obcaecati repellendus!
+							Wir überprüfen regelmäßig, ob wir diese Datenschutzpolitik einhalten. Wenn Sie Fragen
+							zu dieser Datenschutzrichtlinie haben, zögern Sie nicht, uns zu kontaktieren.
 						</p>
 					</div>
 				</div>
