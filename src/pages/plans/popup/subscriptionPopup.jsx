@@ -343,7 +343,7 @@ const SubscriptionPopup = () => {
 						</div>
 						<div className="d-flex align-items-center justify-content-center address">
 							<p className="text text-center">
-								United Nutrition ÜO, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
+								United Nutrition OÜ, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
 							</p>
 						</div>
 					</div>
@@ -623,7 +623,7 @@ const SubscriptionPopup = () => {
 						</div>
 						<div className="d-flex align-items-center justify-content-center address">
 							<p className="text text-center">
-								United Nutrition ÜO, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
+								United Nutrition OÜ, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
 							</p>
 						</div>
 					</div>
@@ -675,12 +675,31 @@ const SubscriptionPopup = () => {
 								<span className="text">Sichere Bezahlung</span>
 							</div>
 						</div>
-						<div className="phone-number text-center pt-4 d-flex align-items-center gap-2 justify-content-center">
+						<div className="d-flex justify-content-between pt-4 ">
+							<div className="phone-number text-center d-flex align-items-center gap-2 justify-content-center">
+								<p className="text text-capitalize">Kundenservice: </p>
+								<a href="tel:1010370682" className="text-black">
+									1010370682
+								</a>
+							</div>
+							<img src="/images/payment.png" alt="" />
+						</div>
+						<div className="d-flex align-items-center justify-content-center web-link">
+							<a href="#" className="text text-center">
+								colonpax.com
+							</a>
+						</div>
+						<div className="d-flex align-items-center justify-content-center address">
+							<p className="text text-center">
+								United Nutrition OÜ, Järvevana tee 9, 11314 - Tallin, Harju maakond - Estland
+							</p>
+						</div>
+						{/* <div className="phone-number text-center pt-4 d-flex align-items-center gap-2 justify-content-center">
 							<p className="text text-capitalize">Kundenservice: </p>
 							<a href="tel:1010370682" className="text-black">
 								1010370682
 							</a>
-						</div>
+						</div> */}
 					</div>
 				)}
 			</div>

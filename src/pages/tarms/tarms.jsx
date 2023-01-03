@@ -470,10 +470,10 @@ const Tarms = () => {
 							Um Ihren Rücktritt auszuüben, müssen Sie das Rückgabeformular ausfüllen, das in ihrem
 							persönlichen Konto in der Sektion Bestellungen verfügbar ist. Entweder senden Sie das
 							Rücktrittsformular, das am Ende der Allgemeinen Geschäftsbedingungen verfügbar ist, an
-							United Nutrition UÖ, unter info@colonpax.com oder per Post/Post an Kesklinna linnaosa,
+							United Nutrition OÜ, unter info@colonpax.com oder per Post/Post an Kesklinna linnaosa,
 							Järvevana tee 9, 11314, Tallinn. <br />
 							<br />
-							Der Rücksendeantrag wird dem Kunden von United Nutrition UÖ, per E-Mail bestätigt. Der
+							Der Rücksendeantrag wird dem Kunden von United Nutrition OÜ, per E-Mail bestätigt. Der
 							Kunde muss das in der E-Mail-Bestätigung erwähnte Verfahren befolgen. <br />
 							<br />
 							Das Rücktrittsrecht oder das Recht, Bestellungen zu stornieren oder Produkte
