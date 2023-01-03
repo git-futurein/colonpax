@@ -252,21 +252,23 @@ span {
 	}
 
 	.bold_tag {
-		text-align: center;
+		text-align: left;
 		padding: 20px 0px;
 	}
 
 	.btn_one {
-		width: 100%;
+		width: 155px;
 		height: 55px;
-		display: block;
+		display: inline-block;
 		margin-bottom: 10px;
+		font-size: 14px;
 	}
 
 	.btn_two {
-		width: 100%;
+		width: 155px;
 		height: 55px;
-		display: block;
+		display: inline-block;
+		font-size: 14px
 	}
 
 	.hero_section {
