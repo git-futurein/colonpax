@@ -82,7 +82,7 @@ const Footer = () => {
 								<Link to="/subscription-cancellation">Abo verwalten</Link>
 							</li>
 							<li>
-								<Link to="/studies">studien</Link>
+								<Link to="/studies">Studien</Link>
 							</li>
 						</ul>
 					</div>
