@@ -6,7 +6,7 @@ import HeaderBox from '../../quiz/headerBox';
 const Header = () => {
 	return (
 		<div>
-			<div className="hero_section overflow-hidden pb-5">
+			<div className="hero_section overflow-hidden" style={{ marginBottom: '80px' }}>
 				<div className="container">
 					<div className="hero_section_heading d-flex justify-content-between align-items-center flex-wrap pt-5">
 						{/* <h2 className="common_h2">Colonpax</h2> */}

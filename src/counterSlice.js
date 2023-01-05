@@ -30,10 +30,12 @@ export const counterSlice = createSlice({
 			// console.log(payload);
 			localStorage.removeItem('healthCollectData');
 			localStorage.setItem('healthCollectData', JSON.stringify(payload));
-			state.healthCollectData = payload;
+			// state.healthCollectData = payload;
 		},
 		updateUserCollectData: (state, action) => {
-			state.userCollectData = action.payload;
+			localStorage.removeItem('userCollectData');
+			localStorage.setItem('userCollectData', JSON.stringify(action.payload));
+			// state.userCollectData = action.payload;
 		},
 		getGender: (state, action) => {
 			state.gender = action.payload;

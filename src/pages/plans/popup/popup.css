@@ -193,8 +193,8 @@
 	align-items: center;
 }
 .shipping-icon .icon {
-	height: 48px;
-	width: 48px;
+	height: 32px;
+	width: 32px;
 	margin-bottom: 10px;
 }
 .shipping-icon .text {
@@ -203,7 +203,7 @@
 	letter-spacing: 1;
 	margin: 0;
 	font-size: 12px;
-	color: rgb(115, 122, 133);
+	color: rgba(51, 51, 51, 0.503);
 	line-height: 1.5;
 	margin-top: 8px;
 }
@@ -212,17 +212,33 @@
 /* payment */
 /* ========================= */
 
+.payment_wrapper {
+	border: 1px solid rgba(51, 51, 51, 0.503);
+	border-radius: 10px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
 .payment_wrapper,
 .payment .dieloge {
-	padding: 20px 0;
+	/* padding: 20px 0; */
 }
 .payment .dieloge {
 	/* padding-top: 0; */
-	border-top: 1px solid rgb(115, 122, 133);
+	border-top: 1px solid rgba(51, 51, 51, 0.503);
 }
-.payment_item {
-	padding: 15px 0;
-	border-bottom: 1px solid rgb(115, 122, 133);
+.payment_item .coupon {
+	cursor: pointer;
+}
+.payment_item.product-list {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgba(51, 51, 51, 0.503);
+}
+
+.payment_item form input {
+	border: 1px solid rgba(51, 51, 51, 0.503);
+	padding-left: 10px;
+	border-radius: 10px;
 }
 .payment_item .discount .text {
 	font-weight: 500;
@@ -270,7 +286,7 @@
 .phone-number a {
 	margin-bottom: 0;
 	font-size: 12px;
-	color: rgb(115, 122, 133);
+	color: rgba(51, 51, 51, 0.503);
 	line-height: 1.5;
 	font-weight: 600;
 }
@@ -289,9 +305,18 @@
 	color: #212529;
 }
 
+.couponbox {
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(51, 51, 51, 0.503);
+	padding-bottom: 15px;
+}
+
 .couponbox input {
 	width: 100%;
 	max-width: 300px;
+	border-radius: 0 !important;
+	background-color: #eee !important;
+	border: none !important;
 }
 .couponbox .btn {
 	color: rgb(255, 255, 255);
@@ -303,15 +328,74 @@
 .couponbox .coupon-price {
 }
 .total-price {
-	padding-top: 15px;
+	/* padding-top: 15px; */
 }
 .total-price .price,
 .total-price .text {
 	text-align: right;
-	font-size: 25px;
+	font-size: 22px;
 	text-transform: capitalize;
 	font-weight: 500;
 }
 .total-price .text {
 	font-size: 18px;
+}
+
+/* shipping form */
+.shipping-form {
+	border: 1px solid rgba(51, 51, 51, 0.503) !important;
+	padding: 15px;
+	border-radius: 10px;
+}
+.payment-form .card-number,
+.payment-form .input {
+	border: 1px solid rgba(51, 51, 51, 0.503) !important;
+	padding-left: 10px;
+	border-radius: 10px;
+}
+
+.line-box {
+}
+.line-box .line {
+	width: 100%;
+	height: 1px;
+	background-color: rgba(51, 51, 51, 0.503);
+}
+.line-box .text {
+}
+
+@media only screen and (max-width: 566px) {
+	.couponbox input {
+		font-size: 13px;
+	}
+
+	.total-price .text {
+		font-size: 16px;
+		text-align: left;
+	}
+	.total-price .price {
+		font-size: 20px;
+	}
+
+	.address-box {
+		flex-direction: column;
+		justify-content: center !important;
+		align-items: center;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.couponbox {
+		align-items: flex-end !important;
+	}
+	.couponbox .coupon-input-box {
+		flex-direction: column;
+		align-items: flex-start !important;
+	}
+	.total-price .text {
+		font-size: 14px;
+	}
+
+	.total-price .price {
+		font-size: 18px;
+	}
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import AdvantageItems from '../../advantageSection/advantageItems';
 import './diese.css';
 
@@ -7,26 +8,29 @@ const Diese = () => {
 		{
 			id: 1,
 			img: '/images/diese-img-1.png',
-			title: 'Entgiftung für den Körper',
-			desc: 'Der einzigartige Komplex aus essenziellen Nährstoffen fördert die Entgiftung deines Körpers, indem es den Darm ganzheitlich reinigt und exogene und endogene Toxine absorbiert, die das Darmnervensystem schädigen können.',
+			title: 'Inulin',
+			desc: 'Der in Colonpax verwendet kalorienarme Ballaststoff Inulin ist in Studien bewährt. Inulin reguliert den Energiestoffwechsel, kurbelt die Verdauung an und löst auch Verstopfungen. Es kettet sich an Flüssigkeiten und quillt auf, wodurch der Stuhlgang normalisiert wird und du dich länger satt fühlst',
+			link: 1,
 		},
 		{
 			id: 2,
 			img: '/images/diese-img-2.png',
-			title: 'nachhaltige Abnehmerfolge',
-			desc: 'Colonpax ist ein einzigartiger Ballaststoffkomplex, der die Darmflora und das Verdauungssystem verbessert und deinen Stoffwechsel wieder in Schwung bringt.',
+			title: 'Flohsamenschalenpullver',
+			desc: 'Das in Colonpax verwendete hochkonzentrierten Flohsamenschalenpullver ist ein wahrer Alleskönner: Es reguliert sie Blutdruck, die Blutfette und auch den Blutzuckerspiegel und unterstützt gleichzeitig das Abnehmen. Es fördert eine gesunde Darmflora und hilft bei Darmbeschwerden, stoppt den Durchfall und löst die Verstopfung.',
+			link: 2,
 		},
 		{
 			id: 3,
 			img: '/images/diese-img-3.png',
-			title: 'Mehr bessere Verdauung',
-			desc: 'Colonpax kann deine Energie steigern und bring die Darmfunktion in Schwung. Es löst die Verstofung, reduziert den Blähbauch und Blähungen und lindert die Krämpfe.',
+			title: 'Guar',
+			desc: 'Colonpax enthält konzentriertes Guar. Durch Studien belegt, besitzt es nicht nur eine aufquellende Wirkung und schützt dich somit vor Heisshunger und Essattacken, sondern auch eine bindende Wirkung. So werden Fette im Körper aufgefangen, was wiederum zu einer Reduzierung des Körpergewicht führt. Es unterstützt die Darmfunktion und hilft dabei exogene und endogene Toxine zu absorbieren, die das Darmnervensystem schädigen können.',
+			link: 2,
 		},
 		{
 			id: 4,
 			img: '/images/diese-img-4.png',
-			title: 'Der essenzielle Ballaststoff',
-			desc: 'Einzigartiger Ballaststoffkomplex Colonpax ist ein einzigartiger Ballaststoffkomplex, der Darmbeschwerden wie Durchfall und Verstopfung lindert, den Blutzuckerspiegel reguliert und das Abnehmen beschleunigt',
+			title: 'Natürlicher Erdbeergschmack',
+			desc: 'Damit es nicht nur wirkt sondern auch einfach lecker schmeckt. Aus natürliche Aromen hergestellt ist unser Produkt einzigartig lecker und erfrischend zugleich mit einer zart süaßen Note. Jeder Drink schmeckt einfach einzigartig!',
 		},
 	];
 
@@ -43,9 +47,11 @@ const Diese = () => {
 					<img src="/images/Brus-img.png" alt="" />
 					<span>12–72 Stunden</span>
 				</h2>
-				<p className="text text-center mb-5">
-					KLICKE HIER FÜR DIE VOLLSTÄNDIGE LISTE DER INHALTSSTOFFE
-				</p>
+				<Link to="/studies">
+					<p className="text text-center mb-5">
+						KLICKE HIER FÜR DIE VOLLSTÄNDIGE LISTE DER INHALTSSTOFFE
+					</p>
+				</Link>
 
 				<AdvantageItems data={diesesItemData} />
 			</div>

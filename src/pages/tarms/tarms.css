@@ -76,7 +76,12 @@
 	font-weight: 700;
 }
 
-.color-blue {
+.privacy-list {
+	list-style: circle !important;
+}
+.privacy-list li {
+	list-style: disc !important;
+	letter-spacing: normal;
 }
 
 /* ============================ */

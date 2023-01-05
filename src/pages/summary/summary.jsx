@@ -8,11 +8,7 @@ import Preloader from './Preloader';
 
 const Summary = () => {
 	const [preloader, setPreloader] = useState(true);
-	// const [loaderTime, setloaderTime] = useState(1);
 	useEffect(() => {
-		// if (localStorage.getItem('timer') && parseInt(localStorage.getItem('timer')) === 0) {
-		// 	window.location = '/quiz';
-		// }
 		setTimeout(() => {
 			setPreloader(false);
 		}, 2500);
