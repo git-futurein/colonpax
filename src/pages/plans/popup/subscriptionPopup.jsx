@@ -49,22 +49,22 @@ const SubscriptionPopup = () => {
   });
   let paypalRef = useRef();
 
-  const mailCode = `
-      <h3>Danke für den Kauf</h3>
-      <p>Ihre Bestellung wurde erfolgreich empfangen. Sie erhalten die Lieferung in 7 Tagen</p>
-      <h5>
-        <ul>
-          <li>Vorname - ${formData.firstName}</li>
-          <li>Nachname - ${formData.lastName}</li>
-          <li>Adresse - ${formData.address1}</li>
-          <li>E-Mail-Addresse - ${formData.emailAddress}</li>
-          <li>Zahlungsmethode - ${formData.paySource}</li>
-          <li>Gesamtpreis - €${(
-            selectedSubscription.subtotal / selectedSubscription.qty
-          ).toFixed(2)}</li>
-        </ul>
-      </h5>
-  `;
+  // const mailCode = `
+  //     <h3>Danke für den Kauf</h3>
+  //     <p>Ihre Bestellung wurde erfolgreich empfangen. Sie erhalten die Lieferung in 7 Tagen</p>
+  //     <h5>
+  //       <ul>
+  //         <li>Vorname - ${formData.firstName}</li>
+  //         <li>Nachname - ${formData.lastName}</li>
+  //         <li>Adresse - ${formData.address1}</li>
+  //         <li>E-Mail-Addresse - ${formData.emailAddress}</li>
+  //         <li>Zahlungsmethode - ${formData.paySource}</li>
+  //         <li>Gesamtpreis - €${(
+  //           selectedSubscription.subtotal / selectedSubscription.qty
+  //         ).toFixed(2)}</li>
+  //       </ul>
+  //     </h5>
+  // `;
 
   useEffect(() => {
     if (window.paypal && paySources.includes("PAYPAL") && popupNumber == 2) {
@@ -189,18 +189,18 @@ const SubscriptionPopup = () => {
   //     setPopupNumber(popupNumber + 1);
   //   };
 
-  const sendMail = () => {
-    const mailData = new FormData();
+  // const sendMail = () => {
+  //   const mailData = new FormData();
 
-    mailData.append("to", formData.emailAddress);
-    mailData.append("subject", "Danke für den Kauf");
-    mailData.append("code", mailCode);
+  //   mailData.append("to", formData.emailAddress);
+  //   mailData.append("subject", "Danke für den Kauf");
+  //   mailData.append("code", mailCode);
 
-    fetch("https://colonpax.com/api/confirmationMail.php", {
-      method: "POST",
-      body: mailData,
-    });
-  };
+  //   fetch("https://colonpax.com/api/confirmationMail.php", {
+  //     method: "POST",
+  //     body: mailData,
+  //   });
+  // };
 
   const submitOrder = () => {
     let formBody = [];
@@ -218,7 +218,7 @@ const SubscriptionPopup = () => {
         if (data.result === "SUCCESS") {
           setOrderId(data.message.orderId);
           setPopupNumber(popupNumber + 1);
-          sendMail();
+          // sendMail();
         } else {
           alert(
             "Entschuldigung, es gab ein Problem bei der Bearbeitung der Bestellung. Bitte versuche es erneut."
