@@ -28,7 +28,7 @@ const Subscription = ({ marginTop }) => {
 					1: option1Products,
 				});
 				setCampaignIds(Object.keys(res.message.data).slice(0, 2).reverse());
-				// console.log(Object.keys(res.message.data));
+				console.log(Object.keys(res.message.data));
 			});
 	};
 
